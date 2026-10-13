@@ -9,7 +9,7 @@ export function commonApiTests(site: SiteConfig): void {
   const home = `${site.baseURL}${site.homePath}`;
 
   test.describe(`${site.name}: HTTP contract`, () => {
-    test('landing page responds 200 with HTML within the time budget', async ({ request }, testInfo) => {
+    test('landing page responds 200 with HTML within the time budget', { tag: '@blocker' }, async ({ request }, testInfo) => {
       const started = Date.now();
       const res = await request.get(home);
       const elapsed = Date.now() - started;
@@ -21,13 +21,13 @@ export function commonApiTests(site: SiteConfig): void {
       expect(elapsed, `landing page took ${elapsed}ms`).toBeLessThan(site.responseBudgetMs);
     });
 
-    test('plain HTTP is redirected to HTTPS', async ({ request }) => {
+    test('plain HTTP is redirected to HTTPS', { tag: '@critical' }, async ({ request }) => {
       const res = await request.get(home.replace(/^https:/, 'http:'), { maxRedirects: 0 });
       expect([301, 302, 307, 308]).toContain(res.status());
       expect(res.headers()['location']).toMatch(/^https:\/\//);
     });
 
-    test('landing page is indexable and has SEO metadata', async ({ request }) => {
+    test('landing page is indexable and has SEO metadata', { tag: '@minor' }, async ({ request }) => {
       const res = await request.get(home);
       const meta = pageMeta(await res.text(), res.url());
 
@@ -43,7 +43,7 @@ export function commonApiTests(site: SiteConfig): void {
       }
     });
 
-    test('robots.txt allows crawling and lists only own sitemaps', async ({ request }) => {
+    test('robots.txt allows crawling and lists only own sitemaps', { tag: '@minor' }, async ({ request }) => {
       const res = await request.get(`${site.baseURL}/robots.txt`);
       expect(res.status()).toBe(200);
       const robots = parseRobots(await res.text());
@@ -51,7 +51,7 @@ export function commonApiTests(site: SiteConfig): void {
       for (const sitemap of robots.sitemaps) expect(sameSite(sitemap, site.baseURL), sitemap).toBe(true);
     });
 
-    test('every page in the sitemap is live', async ({ request }) => {
+    test('every page in the sitemap is live', { tag: '@minor' }, async ({ request }) => {
       const { sources, urls } = await discoverSitemap(request, site.baseURL);
       test.skip(!sources.length, 'The site publishes no sitemap');
       expect(urls.length, `pages listed in ${sources.join(', ')}`).toBeGreaterThan(0);
@@ -61,7 +61,7 @@ export function commonApiTests(site: SiteConfig): void {
       expect(await brokenUrls(request, sample(urls, 40))).toEqual([]);
     });
 
-    test('unknown URL returns 404, not a soft 200', async ({ request }) => {
+    test('unknown URL returns 404, not a soft 200', { tag: '@minor' }, async ({ request }) => {
       const res = await request.get(`${site.baseURL}/pw-missing-page-${Date.now()}`);
       expect([404, 410]).toContain(res.status());
     });
@@ -73,7 +73,7 @@ export function commonApiTests(site: SiteConfig): void {
       expect(await brokenUrls(request, sample(assets, 60))).toEqual([]);
     });
 
-    test('every language version is live and declares its language', async ({ request }) => {
+    test('every language version is live and declares its language', { tag: '@minor' }, async ({ request }) => {
       const res = await request.get(home);
       const { alternates } = pageMeta(await res.text(), res.url());
       test.skip(!alternates.length, 'The landing page declares no hreflang alternates');
@@ -88,7 +88,7 @@ export function commonApiTests(site: SiteConfig): void {
     });
 
     if (site.contacts.emails.length + site.contacts.phones.length + site.contacts.telegram.length) {
-      test('published contact details are correct', async ({ request }) => {
+      test('published contact details are correct', { tag: '@critical' }, async ({ request }) => {
         const res = await request.get(home);
         const html = await res.text();
         const text = textContent(html).toLowerCase();

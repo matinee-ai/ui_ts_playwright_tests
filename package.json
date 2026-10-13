@@ -17,11 +17,17 @@
     "typecheck": "tsc --noEmit",
     "report": "playwright show-report",
     "schedule": "node scripts/schedule-cli.ts show 14",
-    "schedule:cron": "node scripts/schedule-cli.ts cron"
+    "schedule:cron": "node scripts/schedule-cli.ts cron",
+    "allure": "allure generate && echo 'Allure report: allure-report/index.html'",
+    "allure:open": "allure open allure-report",
+    "allure:clean": "rm -rf allure-results allure-report"
   },
   "devDependencies": {
     "@playwright/test": "^1.56.1",
     "@types/node": "^22.20.5",
+    "allure": "^3.18.0",
+    "allure-js-commons": "^3.11.1",
+    "allure-playwright": "^3.11.1",
     "chessground": "^9.2.1",
     "typescript": "5.9"
   },

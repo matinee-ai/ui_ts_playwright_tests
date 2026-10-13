@@ -26,9 +26,12 @@ export default defineConfig({
   // Live production sites: one retry absorbs a dropped connection, a second failure is reported.
   retries: CI ? 1 : 0,
   workers: CI ? 4 : undefined,
-  reporter: CI
-    ? [['github'], ['list'], ['html', { open: 'never' }], ['junit', { outputFile: 'reports/junit.xml' }]]
-    : [['list'], ['html', { open: 'never' }]],
+  reporter: [
+    ...(CI ? ([['github'], ['list'], ['junit', { outputFile: 'reports/junit.xml' }]] as const) : ([['list']] as const)),
+    ['html', { open: 'never' }],
+    // Raw results for the Allure report (`npm run allure`); report settings live in allurerc.mjs.
+    ['allure-playwright', { resultsDir: 'allure-results', detail: true, suiteTitle: true }],
+  ],
   use: {
     locale: 'en-US',
     timezoneId: 'UTC',

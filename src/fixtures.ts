@@ -1,4 +1,6 @@
 import { test as base, expect, type Page, type Request } from '@playwright/test';
+import * as allure from 'allure-js-commons';
+import { SITES, type SiteKey } from '../config/sites.ts';
 
 /**
  * Third-party trackers are blocked in UI runs (set BLOCK_ANALYTICS=0 to allow):
@@ -88,7 +90,12 @@ export class FormSpy {
         message: `form submission containing ${values.join(', ')} (captured: ${this.submissions.map((s) => s.url).join(', ') || 'none'})`,
       })
       .toBe(true);
-    return this.submissions.find((s) => containsAll(s, values))!;
+    const submission = this.submissions.find((s) => containsAll(s, values))!;
+    await base.info().attach('captured form submission', {
+      body: JSON.stringify(submission, null, 2),
+      contentType: 'application/json',
+    });
+    return submission;
   }
 
   /** Asserts nothing was sent within `ms` (e.g. after submitting an invalid form). */
@@ -123,10 +130,14 @@ function containsAll(submission: CapturedSubmission, values: string[]): boolean 
   return values.every((v) => body.includes(v.toLowerCase()));
 }
 
+const SEVERITIES = ['blocker', 'critical', 'normal', 'minor', 'trivial'];
+
 interface Fixtures {
   /** Uncaught exceptions thrown by page scripts. */
   pageErrors: Error[];
   formSpy: FormSpy;
+  /** Labels every test for the Allure report: epic = site, feature = API/UI, story = describe block. */
+  allureMetadata: void;
 }
 
 export const test = base.extend<Fixtures>({
@@ -149,6 +160,23 @@ export const test = base.extend<Fixtures>({
     await spy.install();
     await use(spy);
   },
+  allureMetadata: [
+    async ({}, use, testInfo) => {
+      const [key, layer] = testInfo.project.name.split('-');
+      const site = SITES[key as SiteKey];
+      await allure.epic(site ? site.name : 'Framework self-tests');
+      await allure.feature(layer === 'api' ? 'API' : layer === 'ui' ? 'UI' : testInfo.project.name);
+      // titlePath: [file, ...describe blocks, test title]; "Chessorro: offline board" -> "offline board"
+      const describe = testInfo.titlePath.slice(1, -1)[0];
+      if (describe) await allure.story(describe.replace(/^[^:]+:\s*/, ''));
+      // Severity comes from tags: test.describe('...', { tag: '@critical' }, ...)
+      const tagged = testInfo.tags.map((t) => t.replace(/^@/, '')).find((t) => SEVERITIES.includes(t));
+      await allure.severity(tagged ?? 'normal');
+      if (site) await allure.link(`${site.baseURL}${site.homePath}`, site.name);
+      await use();
+    },
+    { auto: true },
+  ],
 });
 
 export { expect };

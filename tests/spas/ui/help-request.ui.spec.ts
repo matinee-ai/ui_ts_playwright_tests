@@ -2,7 +2,7 @@ import { expect, test } from '../../../src/fixtures.ts';
 import { SpasSite } from '../../../src/pages/spas.ts';
 
 // Submissions are intercepted by formSpy: no request ever reaches the mentors.
-test.describe('Spas Life: "need help?" request form', () => {
+test.describe('Spas Life: "need help?" request form', { tag: '@critical' }, () => {
   test('an empty request is not sent and shows what is missing', async ({ page, formSpy }) => {
     const site = new SpasSite(page);
     await site.openEnglish();

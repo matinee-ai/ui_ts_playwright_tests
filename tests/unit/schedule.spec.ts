@@ -1,5 +1,5 @@
 import { readFileSync } from 'node:fs';
-import { expect, test } from '@playwright/test';
+import { expect, test } from '../../src/fixtures.ts';
 import { PROJECTS, HOUR_SLOTS, cronForHour, dueProjects, hourFromCron, planForDate, toUtcDate } from '../../scripts/schedule.ts';
 
 const DAY = 86_400_000;

@@ -2,7 +2,7 @@ import { expect, test } from '../../../src/fixtures.ts';
 import { START_POSITION, signature, type ChessBoard } from '../../../src/helpers/chess-board.ts';
 import { ChessorroApp } from '../../../src/pages/chessorro.ts';
 
-test.describe('Chessorro: offline board', () => {
+test.describe('Chessorro: offline board', { tag: '@critical' }, () => {
   let board: ChessBoard;
 
   test.beforeEach(async ({ page }) => {

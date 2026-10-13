@@ -1,7 +1,7 @@
 import { expect, test } from '../../../src/fixtures.ts';
 import { QaStartingSite } from '../../../src/pages/qastarting.ts';
 
-test.describe('QA Starting: FAQ', () => {
+test.describe('QA Starting: FAQ', { tag: '@minor' }, () => {
   test('questions expand to reveal their answers and collapse again', async ({ page }) => {
     const site = new QaStartingSite(page);
     await site.open();

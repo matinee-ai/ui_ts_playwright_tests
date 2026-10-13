@@ -1,4 +1,4 @@
-import { expect, test } from '@playwright/test';
+import { expect, test } from '../../src/fixtures.ts';
 import { parseBundle, parsePricePlans } from '../../src/pages/qastarting.ts';
 import { extractAssets, extractLinks, pageMeta, textContent } from '../../src/utils/html.ts';
 import { parseRobots, parseSitemap } from '../../src/utils/sitemap.ts';

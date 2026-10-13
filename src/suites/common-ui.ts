@@ -16,7 +16,7 @@ const LANGUAGE_LABEL: Record<string, RegExp> = {
 /** Registers the browser checks every site must pass. */
 export function commonUiTests(site: SiteConfig): void {
   test.describe(`${site.name}: common UI`, () => {
-    test('landing page renders without script errors or failed requests', async ({ page, pageErrors }) => {
+    test('landing page renders without script errors or failed requests', { tag: '@critical' }, async ({ page, pageErrors }) => {
       const failed: string[] = [];
       page.on('response', (r) => {
         if (r.status() >= 400 && sameSite(r.url(), site.baseURL)) failed.push(`${r.status()} ${r.url()}`);
@@ -53,7 +53,7 @@ export function commonUiTests(site: SiteConfig): void {
       expect(await brokenUrls(page.request, links)).toEqual([]);
     });
 
-    test('language switcher changes the page language', async ({ page }) => {
+    test('language switcher changes the page language', { tag: '@minor' }, async ({ page }) => {
       const sitePage = new SitePage(page, site);
       await sitePage.open();
       const startLang = ((await page.locator('html').getAttribute('lang')) ?? '').toLowerCase().split('-')[0];
@@ -102,7 +102,7 @@ export function commonUiTests(site: SiteConfig): void {
 
     const { emails, phones, telegram } = site.contacts;
     if (emails.length + phones.length + telegram.length) {
-      test('contact details are clickable links', async ({ page }) => {
+      test('contact details are clickable links', { tag: '@critical' }, async ({ page }) => {
         const sitePage = new SitePage(page, site);
         await sitePage.open();
         const links = await sitePage.contactLinks();

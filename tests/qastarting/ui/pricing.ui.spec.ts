@@ -1,7 +1,7 @@
 import { expect, test } from '../../../src/fixtures.ts';
 import { QaStartingSite, parseBundle, parsePricePlans } from '../../../src/pages/qastarting.ts';
 
-test.describe('QA Starting: pricing', () => {
+test.describe('QA Starting: pricing', { tag: '@critical' }, () => {
   let text: string;
 
   test.beforeEach(async ({ page }) => {

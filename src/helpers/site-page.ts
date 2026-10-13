@@ -1,4 +1,4 @@
-import type { Locator, Page, Response } from '@playwright/test';
+import { test, type Locator, type Page, type Response } from '@playwright/test';
 import type { SiteConfig } from '../../config/sites.ts';
 
 const CONSENT_BUTTON =
@@ -12,10 +12,12 @@ export class SitePage {
   ) {}
 
   async open(path = this.site.homePath): Promise<Response | null> {
-    const response = await this.page.goto(path, { waitUntil: 'domcontentloaded' });
-    await this.page.waitForLoadState('load', { timeout: 20_000 }).catch(() => {});
-    await this.dismissConsent();
-    return response;
+    return test.step(`Open ${path}`, async () => {
+      const response = await this.page.goto(path, { waitUntil: 'domcontentloaded' });
+      await this.page.waitForLoadState('load', { timeout: 20_000 }).catch(() => {});
+      await this.dismissConsent();
+      return response;
+    });
   }
 
   /** Closes a cookie/consent banner if one is shown. */
@@ -32,38 +34,40 @@ export class SitePage {
    * href is followed; if there is no such link the first live fallback path is used.
    */
   async openSection(name: RegExp, fallbackPaths: string[] = []): Promise<void> {
-    const visible = this.page.getByRole('link', { name }).filter({ visible: true }).first();
-    if (await visible.count()) {
-      const href = await visible.getAttribute('href');
-      if ((await visible.getAttribute('target')) === '_blank' && href) {
-        await this.open(href);
+    await test.step(`Open section ${name}`, async () => {
+      const visible = this.page.getByRole('link', { name }).filter({ visible: true }).first();
+      if (await visible.count()) {
+        const href = await visible.getAttribute('href');
+        if ((await visible.getAttribute('target')) === '_blank' && href) {
+          await this.open(href);
+          return;
+        }
+        const before = this.page.url().split('#')[0];
+        const target = href ? new URL(href, before).href.split('#')[0] : before;
+        await visible.click();
+        if (target !== before) await this.page.waitForURL((url) => url.href.split('#')[0] !== before, { timeout: 30_000 });
+        await this.page.waitForLoadState('domcontentloaded');
+        await this.dismissConsent();
         return;
       }
-      const before = this.page.url().split('#')[0];
-      const target = href ? new URL(href, before).href.split('#')[0] : before;
-      await visible.click();
-      if (target !== before) await this.page.waitForURL((url) => url.href.split('#')[0] !== before, { timeout: 30_000 });
-      await this.page.waitForLoadState('domcontentloaded');
-      await this.dismissConsent();
-      return;
-    }
-    const hidden = this.page.getByRole('link', { name, includeHidden: true }).first();
-    const hiddenHref = (await hidden.count()) ? await hidden.getAttribute('href') : null;
-    if (hiddenHref && !hiddenHref.startsWith('#')) {
-      await this.open(hiddenHref);
-      return;
-    }
-    for (const path of fallbackPaths) {
-      const res = await this.page.request.get(new URL(path, this.site.baseURL).href, { failOnStatusCode: false });
-      if (res.ok()) {
-        await this.open(path);
+      const hidden = this.page.getByRole('link', { name, includeHidden: true }).first();
+      const hiddenHref = (await hidden.count()) ? await hidden.getAttribute('href') : null;
+      if (hiddenHref && !hiddenHref.startsWith('#')) {
+        await this.open(hiddenHref);
         return;
       }
-    }
-    throw new Error(
-      `No link matching ${name} on ${this.page.url()} and none of [${fallbackPaths.join(', ')}] exist. ` +
-        `Update the page object for ${this.site.name}.`,
-    );
+      for (const path of fallbackPaths) {
+        const res = await this.page.request.get(new URL(path, this.site.baseURL).href, { failOnStatusCode: false });
+        if (res.ok()) {
+          await this.open(path);
+          return;
+        }
+      }
+      throw new Error(
+        `No link matching ${name} on ${this.page.url()} and none of [${fallbackPaths.join(', ')}] exist. ` +
+          `Update the page object for ${this.site.name}.`,
+      );
+    });
   }
 
   /** Same-site links in the header, navigation menus and footer. */

@@ -2,7 +2,7 @@ import { expect, test } from '../../../src/fixtures.ts';
 import { QaStartingSite } from '../../../src/pages/qastarting.ts';
 
 // Submissions are intercepted by formSpy: no real lead is ever created.
-test.describe('QA Starting: enrolment form', () => {
+test.describe('QA Starting: enrolment form', { tag: '@critical' }, () => {
   test('an empty form is not sent and shows what is missing', async ({ page, formSpy }) => {
     const form = await new QaStartingSite(page).openEnrolment('QA BASIC');
     formSpy.arm();

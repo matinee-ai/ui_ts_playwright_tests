@@ -5,3 +5,6 @@ blob-report/
 playwright/.cache/
 reports/
 .env
+allure-results/
+allure-report/
+allure-history/

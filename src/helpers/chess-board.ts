@@ -1,4 +1,4 @@
-import type { Locator, Page } from '@playwright/test';
+import { test, type Locator, type Page } from '@playwright/test';
 
 /** e.g. "wp" = white pawn, "bk" = black king; "?" when the piece colour/type can't be read. */
 export type PieceCode = string;
@@ -61,20 +61,22 @@ export class ChessBoard {
    * to click-from / click-to. Does not assert legality: check the position after.
    */
   async move(from: string, to: string): Promise<void> {
-    const before = await this.position();
-    const a = await this.squareCenter(from);
-    const b = await this.squareCenter(to);
+    await test.step(`Move ${from} → ${to}`, async () => {
+      const before = await this.position();
+      const a = await this.squareCenter(from);
+      const b = await this.squareCenter(to);
 
-    await this.page.mouse.move(a.x, a.y);
-    await this.page.mouse.down();
-    await this.page.mouse.move((a.x + b.x) / 2, (a.y + b.y) / 2, { steps: 5 });
-    await this.page.mouse.move(b.x, b.y, { steps: 5 });
-    await this.page.mouse.up();
-    if (await this.changedFrom(before, from)) return;
+      await this.page.mouse.move(a.x, a.y);
+      await this.page.mouse.down();
+      await this.page.mouse.move((a.x + b.x) / 2, (a.y + b.y) / 2, { steps: 5 });
+      await this.page.mouse.move(b.x, b.y, { steps: 5 });
+      await this.page.mouse.up();
+      if (await this.changedFrom(before, from)) return;
 
-    await this.page.mouse.click(a.x, a.y);
-    await this.page.mouse.click(b.x, b.y);
-    await this.changedFrom(before, from);
+      await this.page.mouse.click(a.x, a.y);
+      await this.page.mouse.click(b.x, b.y);
+      await this.changedFrom(before, from);
+    }, { box: true });
   }
 
   /** Viewport coordinates of the centre of a square, honouring board orientation. */

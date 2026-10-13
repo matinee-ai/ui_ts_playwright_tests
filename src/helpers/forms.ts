@@ -1,4 +1,4 @@
-import type { Locator, Page } from '@playwright/test';
+import { test, type Locator, type Page } from '@playwright/test';
 
 export type FieldKind = 'email' | 'phone' | 'name' | 'message' | 'checkbox' | 'radio' | 'select' | 'text';
 
@@ -68,48 +68,50 @@ export class FormHelper {
 
   /** Fills every visible field with data matching its kind; ticks consent checkboxes. */
   async fill(data: FormData, overrides: Partial<Record<FieldKind, string>> = {}): Promise<FormField[]> {
-    const fields = await this.fields();
-    const values: Record<FieldKind, string> = {
-      email: data.email,
-      phone: data.phone,
-      name: data.name,
-      message: data.message,
-      text: data.name,
-      checkbox: '',
-      radio: '',
-      select: '',
-      ...overrides,
-    };
-    const checkedRadioGroups = new Set<string>();
-    for (const f of fields) {
-      const el = this.field(f.index);
-      switch (f.kind) {
-        case 'checkbox':
-          await tick(el);
-          break;
-        case 'radio': {
-          const group = (await el.evaluate((e) => e.getAttribute('name') ?? e.querySelector('input')?.name)) ?? String(f.index);
-          if (!checkedRadioGroups.has(group)) {
+    return test.step('Fill the form', async () => {
+      const fields = await this.fields();
+      const values: Record<FieldKind, string> = {
+        email: data.email,
+        phone: data.phone,
+        name: data.name,
+        message: data.message,
+        text: data.name,
+        checkbox: '',
+        radio: '',
+        select: '',
+        ...overrides,
+      };
+      const checkedRadioGroups = new Set<string>();
+      for (const f of fields) {
+        const el = this.field(f.index);
+        switch (f.kind) {
+          case 'checkbox':
             await tick(el);
-            checkedRadioGroups.add(group);
+            break;
+          case 'radio': {
+            const group = (await el.evaluate((e) => e.getAttribute('name') ?? e.querySelector('input')?.name)) ?? String(f.index);
+            if (!checkedRadioGroups.has(group)) {
+              await tick(el);
+              checkedRadioGroups.add(group);
+            }
+            break;
           }
-          break;
+          case 'select': {
+            const options = await el.locator('option').evaluateAll((opts) =>
+              (opts as HTMLOptionElement[]).filter((o) => o.value && !o.disabled).map((o) => o.value),
+            );
+            if (options.length) await el.selectOption(options[0]);
+            break;
+          }
+          default:
+            await el.click();
+            await el.fill('');
+            // pressSequentially, not fill: input masks (phone fields) only react to key events.
+            await el.pressSequentially(values[f.kind], { delay: 10 });
         }
-        case 'select': {
-          const options = await el.locator('option').evaluateAll((opts) =>
-            (opts as HTMLOptionElement[]).filter((o) => o.value && !o.disabled).map((o) => o.value),
-          );
-          if (options.length) await el.selectOption(options[0]);
-          break;
-        }
-        default:
-          await el.click();
-          await el.fill('');
-          // pressSequentially, not fill: input masks (phone fields) only react to key events.
-          await el.pressSequentially(values[f.kind], { delay: 10 });
       }
-    }
-    return fields;
+      return fields;
+    });
   }
 
   async fieldOfKind(kind: FieldKind): Promise<Locator | null> {
@@ -118,14 +120,16 @@ export class FormHelper {
   }
 
   async submit(): Promise<void> {
-    const explicit = this.root.locator('button[type="submit"], input[type="submit"]').filter({ visible: true });
-    if (await explicit.count()) return explicit.first().click();
-    const named = this.root.getByRole('button', { name: SUBMIT_TEXT }).filter({ visible: true });
-    if (await named.count()) return named.last().click();
-    const anyButton = this.root.locator('button, [role="button"], a[class*="submit" i], a[class*="btn" i]').filter({ visible: true });
-    if (await anyButton.count()) return anyButton.last().click();
-    const lastInput = this.root.locator('input:visible').last();
-    await lastInput.press('Enter');
+    await test.step('Submit the form', async () => {
+      const explicit = this.root.locator('button[type="submit"], input[type="submit"]').filter({ visible: true });
+      if (await explicit.count()) return explicit.first().click();
+      const named = this.root.getByRole('button', { name: SUBMIT_TEXT }).filter({ visible: true });
+      if (await named.count()) return named.last().click();
+      const anyButton = this.root.locator('button, [role="button"], a[class*="submit" i], a[class*="btn" i]').filter({ visible: true });
+      if (await anyButton.count()) return anyButton.last().click();
+      const lastInput = this.root.locator('input:visible').last();
+      await lastInput.press('Enter');
+    });
   }
 
   /**

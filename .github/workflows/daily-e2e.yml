@@ -119,11 +119,52 @@ jobs:
             ui)  npx playwright test --project="$PROJECT-ui" ;;
             *)   npx playwright test --project="$PROJECT-api" --project="$PROJECT-ui" ;;
           esac
-      - name: Upload report
+
+      # Allure: one self-contained HTML file per project. History (trends, "new failure" / "fixed"
+      # markers) lives in the Actions cache, one entry per project, refreshed by every run.
+      - name: Restore Allure history
+        if: ${{ !cancelled() }}
+        uses: actions/cache/restore@v4
+        with:
+          path: allure-history
+          key: allure-history-${{ matrix.project }}-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: allure-history-${{ matrix.project }}-
+      - name: Build Allure report
+        if: ${{ !cancelled() }}
+        env:
+          ALLURE_REPORT_NAME: Daily E2E - ${{ matrix.project }}
+          SCHEDULE_SLOT: ${{ github.event.schedule }}
+        run: npx allure generate
+      - name: Save Allure history
+        if: ${{ !cancelled() }}
+        uses: actions/cache/save@v4
+        with:
+          path: allure-history
+          key: allure-history-${{ matrix.project }}-${{ github.run_id }}-${{ github.run_attempt }}
+      - name: Upload Allure report
         if: ${{ !cancelled() }}
         uses: actions/upload-artifact@v4
         with:
-          name: report-${{ matrix.project }}-${{ github.run_id }}
+          name: allure-report-${{ matrix.project }}-${{ github.run_id }}
+          path: allure-report/
+          retention-days: 30
+      - name: Summary
+        if: ${{ !cancelled() }}
+        env:
+          PROJECT: ${{ matrix.project }}
+        run: |
+          node -e '
+            const { stats } = JSON.parse(require("fs").readFileSync("allure-report/summary.json", "utf8"));
+            const parts = Object.entries(stats).filter(([k]) => k !== "total").map(([k, v]) => `${v} ${k}`);
+            console.log(`### ${process.env.PROJECT}: ${stats.total} tests, ${parts.join(", ")}`);
+            console.log(`Allure report: download the \`allure-report-${process.env.PROJECT}-${process.env.GITHUB_RUN_ID}\` artifact and open \`index.html\`.`);
+          ' >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload Playwright report and traces
+        if: ${{ !cancelled() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-report-${{ matrix.project }}-${{ github.run_id }}
           path: |
             playwright-report/
             reports/
