@@ -114,7 +114,11 @@ export class QaStartingSite extends SitePage {
 
   /** Plan buttons of a selected course on /checkout ("Starter $259 ..."). */
   planButton(course: string, plan: 'Starter' | 'Standard' | 'Unlimited'): Locator {
-    return this.checkoutCourse(course).getByRole('button', { name: new RegExp(`^${plan} \\$`) });
+    // A selected course card holds its "✓ Selected" toggle plus the three plan buttons.
+    return this.page
+      .getByRole('heading', { name: course, exact: true })
+      .locator('xpath=ancestor::*[count(.//button) >= 4][1]')
+      .getByRole('button', { name: new RegExp(`^${plan} \\$`) });
   }
 
   /** Total shown in the order panel, in dollars. */

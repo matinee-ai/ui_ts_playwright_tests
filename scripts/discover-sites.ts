@@ -165,6 +165,8 @@ async function discover(site: (typeof SITE_LIST)[number]): Promise<void> {
     }
   }
 
+  const raw = await context.request.get(`${site.baseURL}${site.homePath}`);
+  writeFileSync(join(dir, 'home.raw.html'), await raw.text());
   writeFileSync(join(dir, 'pages.json'), JSON.stringify(pages, null, 2));
   writeFileSync(join(dir, 'api.json'), JSON.stringify([...allApi.values()], null, 2));
   console.log(`${site.key}: ${pages.length} pages, ${allApi.size} API endpoints, ${pages.filter((p) => p.passwordInputs).length} pages with password fields`);

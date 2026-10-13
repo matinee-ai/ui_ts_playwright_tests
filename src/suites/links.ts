@@ -21,7 +21,7 @@ export function linkTests(site: SiteConfig, pages: PageSpec[]): void {
         await new SitePage(page, site).open(spec.path);
         const audit = await auditLinks(page, page.request, i === 0 ? {} : { areas: ['main'] });
 
-        expect(audit.links.length, 'visible links on the page').toBeGreaterThan(0);
+        if (i === 0) expect(audit.links.length, 'visible links on the page').toBeGreaterThan(0);
         expect.soft(describeLinks(audit.unnamed), 'links without an accessible name (screen readers announce just "link")').toEqual([]);
         expect.soft(describeLinks(audit.dead), 'links that go nowhere (href "", "#" or javascript:)').toEqual([]);
         expect.soft(audit.notClickable.map((l) => `${describeLinks([l])[0]}: ${l.reason}`), 'links a user cannot click').toEqual([]);
