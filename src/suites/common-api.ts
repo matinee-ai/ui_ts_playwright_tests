@@ -1,6 +1,6 @@
 import type { SiteConfig } from '../../config/sites.ts';
 import { expect, test } from '../fixtures.ts';
-import { cloudflareEmails, extractAssets, pageMeta, textContent } from '../utils/html.ts';
+import { cloudflareEmails, extractAssets, jsonLd, pageMeta, textContent } from '../utils/html.ts';
 import { brokenUrls, sample, sameSite } from '../utils/http.ts';
 import { discoverSitemap, parseRobots } from '../utils/sitemap.ts';
 
@@ -94,19 +94,30 @@ export function commonApiTests(site: SiteConfig): void {
         const text = textContent(html).toLowerCase();
         const lowerHtml = html.toLowerCase();
 
+        // Accepted sources: visible text, mailto:/tel: links, Cloudflare-protected addresses,
+        // and schema.org structured data (what search engines read when the page is rendered by script).
         const obfuscated = cloudflareEmails(html).map((e) => e.toLowerCase());
+        const structured = JSON.stringify(jsonLd(html).flatMap((b) => b.items)).toLowerCase();
         for (const email of site.contacts.emails) {
-          expect(text.includes(email) || lowerHtml.includes(`mailto:${email}`) || obfuscated.includes(email), `email ${email}`).toBe(true);
+          expect(text.includes(email) || lowerHtml.includes(`mailto:${email}`) || obfuscated.includes(email) || structured.includes(email), `email ${email}`).toBe(true);
         }
         for (const phone of site.contacts.phones) {
           // Last 10 digits, any formatting between them: "+1 (954) 501-0763", "9545010763", ...
           const pattern = new RegExp(phone.slice(-10).split('').join('[\\s().\\-]*'));
-          expect(pattern.test(text) || pattern.test(lowerHtml), `phone ${phone}`).toBe(true);
+          expect(pattern.test(text) || pattern.test(lowerHtml) || pattern.test(structured), `phone ${phone}`).toBe(true);
         }
         for (const handle of site.contacts.telegram) {
-          expect(lowerHtml.includes(`t.me/${handle}`) || text.includes(`@${handle}`), `telegram @${handle}`).toBe(true);
+          expect(lowerHtml.includes(`t.me/${handle}`) || text.includes(`@${handle}`) || structured.includes(`t.me/${handle}`), `telegram @${handle}`).toBe(true);
         }
       });
     }
+
+    test('structured data (JSON-LD) is valid and points to this site', { tag: '@minor' }, async ({ request }) => {
+      const blocks = jsonLd(await (await request.get(home)).text());
+      test.skip(!blocks.length, 'The landing page has no structured data');
+      expect(blocks.filter((b) => b.error).map((b) => `${b.error}: ${b.raw.trim().slice(0, 80)}`), 'blocks that are not valid JSON').toEqual([]);
+      const urls = blocks.flatMap((b) => b.items).map((item) => item.url).filter((u): u is string => typeof u === 'string');
+      for (const url of urls) expect(sameSite(url, site.baseURL), `structured data url ${url}`).toBe(true);
+    });
   });
 }

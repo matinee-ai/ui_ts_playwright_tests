@@ -129,3 +129,23 @@ export function decodeCloudflareEmail(hex: string): string {
   for (let i = 2; i < hex.length; i += 2) out += String.fromCharCode(parseInt(hex.slice(i, i + 2), 16) ^ key);
   return out;
 }
+
+export interface JsonLdBlock {
+  raw: string;
+  /** Parsed objects (a top-level array and @graph are flattened); empty when the block is not valid JSON. */
+  items: Array<Record<string, unknown>>;
+  error?: string;
+}
+
+/** schema.org structured data from <script type="application/ld+json"> blocks. */
+export function jsonLd(html: string): JsonLdBlock[] {
+  return [...html.matchAll(/<script[^>]*type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi)].map((m) => {
+    try {
+      const parsed = JSON.parse(m[1]);
+      const list = (Array.isArray(parsed) ? parsed : [parsed]).flatMap((x) => (x && Array.isArray(x['@graph']) ? x['@graph'] : [x]));
+      return { raw: m[1], items: list.filter((x) => x && typeof x === 'object') };
+    } catch (e) {
+      return { raw: m[1], items: [], error: (e as Error).message };
+    }
+  });
+}

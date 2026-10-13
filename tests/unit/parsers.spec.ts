@@ -1,6 +1,6 @@
 import { expect, test } from '../../src/fixtures.ts';
 import { parseBundleOffer, parsePlanPrices } from '../../src/pages/qastarting.ts';
-import { cloudflareEmails, extractAssets, extractLinks, pageMeta, textContent } from '../../src/utils/html.ts';
+import { cloudflareEmails, extractAssets, extractLinks, jsonLd, pageMeta, textContent } from '../../src/utils/html.ts';
 import { parseRobots, parseSitemap } from '../../src/utils/sitemap.ts';
 
 test.describe('robots.txt', () => {
@@ -97,5 +97,18 @@ test.describe('Cloudflare email obfuscation', () => {
     const hex = key.toString(16) + [...'val@qastarting.org'].map((c) => (c.charCodeAt(0) ^ key).toString(16).padStart(2, '0')).join('');
     const html = `<a href="/cdn-cgi/l/email-protection#${hex}"><span class="__cf_email__" data-cfemail="${hex}">[email&#160;protected]</span></a>`;
     expect(cloudflareEmails(html)).toEqual(['val@qastarting.org']);
+  });
+});
+
+test.describe('JSON-LD structured data', () => {
+  test('parses blocks, flattens @graph and reports invalid JSON', () => {
+    const html = `
+      <script type="application/ld+json">{"@type":"Organization","telephone":"+1-310-920-4331","email":"val@qastarting.org"}</script>
+      <script type='application/ld+json'>{"@graph":[{"@type":"WebSite","url":"https://www.example.org/"},{"@type":"Course","name":"QA BASIC"}]}</script>
+      <script type="application/ld+json">{"@type": "Organization",}</script>`;
+    const blocks = jsonLd(html);
+    expect(blocks.map((b) => b.items.map((i) => i['@type']))).toEqual([['Organization'], ['WebSite', 'Course'], []]);
+    expect(blocks[0].items[0].email).toBe('val@qastarting.org');
+    expect(blocks[2].error).toBeTruthy();
   });
 });
