@@ -1,0 +1,3843 @@
+[
+  {
+    "url": "https://www.chessorro.com/en",
+    "status": 200,
+    "finalUrl": "https://www.chessorro.com/en",
+    "title": "Chessorro — asynchronous board games with friends",
+    "lang": "en",
+    "headings": [
+      {
+        "level": 1,
+        "text": "Chessorro —Your move."
+      },
+      {
+        "level": 2,
+        "text": "Four games. No sign-in to try."
+      },
+      {
+        "level": 3,
+        "text": "Chess"
+      },
+      {
+        "level": 3,
+        "text": "Checkers"
+      },
+      {
+        "level": 3,
+        "text": "Backgammon"
+      },
+      {
+        "level": 3,
+        "text": "Dominoes"
+      },
+      {
+        "level": 2,
+        "text": "Every move is a statement."
+      },
+      {
+        "level": 2,
+        "text": "How it works"
+      },
+      {
+        "level": 3,
+        "text": "Choose your game"
+      },
+      {
+        "level": 3,
+        "text": "Share the link"
+      },
+      {
+        "level": 3,
+        "text": "Make moves anytime"
+      },
+      {
+        "level": 2,
+        "text": "Slow chess is still sharp chess."
+      },
+      {
+        "level": 2,
+        "text": "Board games deserve better than casino apps."
+      },
+      {
+        "level": 2,
+        "text": "The campaign film"
+      },
+      {
+        "level": 2,
+        "text": "One set. Six characters."
+      }
+    ],
+    "navLinks": [
+      {
+        "area": "header",
+        "text": "Chessorro",
+        "href": "https://www.chessorro.com/en",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "header",
+        "text": "Play now",
+        "href": "https://www.chessorro.com/en/play/chess",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "header",
+        "text": "History",
+        "href": "https://www.chessorro.com/en/history",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "header",
+        "text": "Ratings",
+        "href": "https://www.chessorro.com/en/ratings",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "header",
+        "text": "Sign in",
+        "href": "https://www.chessorro.com/en/login",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "header",
+        "text": "Start a game",
+        "href": "https://www.chessorro.com/en/signup",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "footer",
+        "text": "Contact",
+        "href": "https://www.chessorro.com/en/contact",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "footer",
+        "text": "History",
+        "href": "https://www.chessorro.com/en/history",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "footer",
+        "text": "Ratings",
+        "href": "https://www.chessorro.com/en/ratings",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "footer",
+        "text": "Terms",
+        "href": "https://www.chessorro.com/en/terms",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "footer",
+        "text": "Privacy",
+        "href": "https://www.chessorro.com/en/privacy",
+        "target": null,
+        "visible": true
+      }
+    ],
+    "allLinkCount": 25,
+    "buttons": [
+      "EN",
+      "Switch to dark theme",
+      "Pause the campaign frames"
+    ],
+    "forms": [],
+    "passwordInputs": 0,
+    "authLinks": [
+      {
+        "text": "Sign in",
+        "href": "https://www.chessorro.com/en/login"
+      },
+      {
+        "text": "Start a game",
+        "href": "https://www.chessorro.com/en/signup"
+      },
+      {
+        "text": "[Play a friend]",
+        "href": "https://www.chessorro.com/en/signup"
+      },
+      {
+        "text": "Sign in",
+        "href": "https://www.chessorro.com/en/login"
+      },
+      {
+        "text": "[Make yours]",
+        "href": "https://www.chessorro.com/en/signup"
+      }
+    ],
+    "api": [
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/ratings?_rsc=ry-B8umWgNEV4JR9",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en?_rsc=ry-B8umWgNEV4JR9",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/history?_rsc=ry-B8umWgNEV4JR9",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/play/chess?_rsc=ry-B8umWgNEV4JR9",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en?_rsc=FUh3Gxqryw1dTRX2",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/login?_rsc=ry-B8umWgNEV4JR9",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/play/checkers?_rsc=ry-B8umWgNEV4JR9",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/signup?_rsc=ry-B8umWgNEV4JR9",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en?_rsc=GEWm3wZNBmiVH78F",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/history?_rsc=6l3LkZC8g0aTJFto",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/ratings?_rsc=ED1EeQEKJZ2f_Fno",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/play/chess?_rsc=1vwYfVB7_E9t4fEj",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/login?_rsc=1vwYfVB7_E9t4fEj",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/signup?_rsc=1vwYfVB7_E9t4fEj",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/play/checkers?_rsc=1vwYfVB7_E9t4fEj",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/play/backgammon?_rsc=1vwYfVB7_E9t4fEj",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/play/dominoes?_rsc=1vwYfVB7_E9t4fEj",
+        "status": 200,
+        "type": "text/x-component"
+      }
+    ],
+    "consoleErrors": [],
+    "aria": "- link \"Skip to content\":\n  - /url: \"#main\"\n- banner:\n  - link \"Chessorro\":\n    - /url: /en\n  - navigation \"Main\":\n    - link \"Play now\":\n      - /url: /en/play/chess\n    - link \"History\":\n      - /url: /en/history\n    - link \"Ratings\":\n      - /url: /en/ratings\n    - link \"Sign in\":\n      - /url: /en/login\n    - link \"Start a game\":\n      - /url: /en/signup\n  - button \"Choose a language\": EN\n  - button \"Switch to dark theme\"\n- main:\n  - paragraph: Four games. One link.\n  - heading \"Chessorro — Your move.\" [level=1]\n  - paragraph: Start a chess, checkers, backgammon, or dominoes game and send it to a friend.\n  - link \"Play now\":\n    - /url: /en/play/chess\n  - link \"Play a friend\":\n    - /url: /en/signup\n  - paragraph:\n    - text: No account needed to play the computer —\n    - link \"Chess\":\n      - /url: /en/play/chess\n    - text: ·\n    - link \"Checkers\":\n      - /url: /en/play/checkers\n    - text: ·\n    - link \"Backgammon\":\n      - /url: /en/play/backgammon\n    - text: ·\n    - link \"Dominoes\":\n      - /url: /en/play/dominoes\n  - paragraph:\n    - text: Already have an account?\n    - link \"Sign in\":\n      - /url: /en/login\n  - text: The pieces\n  - button \"Pause the campaign frames\"\n  - paragraph: CHESS · CHECKERS · BACKGAMMON · DOMINOES · RATED · CASUAL · PLAY BY LINK · CHESSORRO · NO ADS · FREE\n  - region \"Four games. No sign-in to try.\":\n    - paragraph: 02 — Play now\n    - heading \"Four games. No sign-in to try.\" [level=2]\n    - paragraph: Play any of them against the computer right now, then create a free account to challenge a friend by link.\n    - article:\n      - heading \"Chess\" [level=3]\n      - text: 2P\n      - paragraph: Full standard rules — castling, en passant, promotion — validated on the server every move.\n      - link \"Play vs computer\":\n        - /url: /en/play/chess\n    - article:\n      - heading \"Checkers\" [level=3]\n      - text: 2P\n      - paragraph: American checkers with mandatory captures and multi-jumps, exactly by the book.\n      - link \"Play vs computer\":\n        - /url: /en/play/checkers\n    - article:\n      - heading \"Backgammon\" [level=3]\n      - text: 2P\n      - paragraph: Server-rolled dice, forced-play rules, and atomic whole-turn moves.\n      - link \"Play vs computer\":\n        - /url: /en/play/backgammon\n    - article:\n      - heading \"Dominoes\" [level=3]\n      - text: 2P\n      - paragraph: Draw dominoes with hidden hands — your tiles stay secret until the end.\n      - link \"Play vs computer\":\n        - /url: /en/play/dominoes\n    - paragraph: Elo ratings per game · MOVE Points for finishing\n    - paragraph: MOVE Points are a free in-app reward with no cash value and cannot be purchased, transferred, or exchanged.\n  - region \"Every move is a statement.\":\n    - paragraph: 03 — The campaign\n    - heading \"Every move is a statement.\" [level=2]\n    - paragraph: No clocks ticking in your face. No ads between turns. Just you, a friend, and the next move — whenever you are ready to make it.\n    - link \"Make yours\":\n      - /url: /en/signup\n  - region \"How it works\":\n    - heading \"How it works\" [level=2]\n    - list:\n      - listitem:\n        - heading \"Choose your game\" [level=3]\n        - paragraph: Pick chess, checkers, backgammon, or dominoes — rated or casual, and your side.\n      - listitem:\n        - heading \"Share the link\" [level=3]\n        - paragraph: Send a private invitation link to a friend — no app needed.\n      - listitem:\n        - heading \"Make moves anytime\" [level=3]\n        - paragraph: Play at your own pace. Your turn waits in your Chessorro notifications until you come back to it.\n  - region \"Slow chess is still sharp chess.\":\n    - img \"White marble rook photographed on a blush pink backdrop\"\n    - paragraph: 05 — Spotlight\n    - heading \"Slow chess is still sharp chess.\" [level=2]\n    - paragraph: \"A day per move changes what the game rewards: preparation over panic, ideas over instinct. Rated games feed a real Elo ladder — separately for every game we host.\"\n    - link \"See the ladder\":\n      - /url: /en/leaderboard\n    - paragraph: Sign in required — the ladder shows real players and their ratings.\n  - region \"Board games deserve better than casino apps.\":\n    - paragraph: 06 — Manifesto\n    - heading \"Board games deserve better than casino apps.\" [level=2]\n    - paragraph: No chips, no wagers, no cash-out button. MOVE Points are bragging rights, not currency — and your opponent is a friend, not a matchmaking queue.\n  - region \"The campaign film\":\n    - paragraph: 07 — A vision in motion\n    - heading \"The campaign film\" [level=2]\n    - paragraph: The film is still being shot. This is a still from it — we will put the cut here when it is finished.\n    - figure \"Opening moves — film still\":\n      - img \"Cinematic film still of two chess armies facing off across a smoky board lit in orange and teal\"\n      - text: Opening moves — film still\n  - region \"One set. Six characters.\":\n    - paragraph: 08 — Featured pieces\n    - heading \"One set. Six characters.\" [level=2]\n    - figure \"The King Every game ends here.\":\n      - text: MOST PLAYED\n      - img \"The King — Every game ends here.\"\n      - text: The King Every game ends here.\n    - figure \"The Queen Power in every direction.\":\n      - text: TOP RATED\n      - img \"The Queen — Power in every direction.\"\n      - text: The Queen Power in every direction.\n    - figure \"The Rook Straight lines. No apologies.\":\n      - img \"The Rook — Straight lines. No apologies.\"\n      - text: The Rook Straight lines. No apologies.\n    - figure \"The Bishop Long diagonals, quiet menace.\":\n      - img \"The Bishop — Long diagonals, quiet menace.\"\n      - text: The Bishop Long diagonals, quiet menace.\n    - figure \"The Knight Thinks in L. Jumps the rest.\":\n      - img \"The Knight — Thinks in L. Jumps the rest.\"\n      - text: The Knight Thinks in L. Jumps the rest.\n    - figure \"The Pawn Underestimated. Until the last rank.\":\n      - text: GRANDMASTER PICK\n      - img \"The Pawn — Underestimated. Until the last rank.\"\n      - text: The Pawn Underestimated. Until the last rank.\n- contentinfo:\n  - paragraph: © 2026 Chessorro\n  - paragraph: MOVE Points are a free in-app reward with no cash value. They cannot be purchased, transferred, or exchanged.\n  - navigation \"More\":\n    - link \"Contact\":\n      - /url: /en/contact\n    - link \"History\":\n      - /url: /en/history\n    - link \"Ratings\":\n      - /url: /en/ratings\n    - link \"Terms\":\n      - /url: /en/terms\n    - link \"Privacy\":\n      - /url: /en/privacy\n- alert",
+    "screenshot": "00-en.jpg"
+  },
+  {
+    "url": "https://www.chessorro.com/en/signup",
+    "status": 200,
+    "finalUrl": "https://www.chessorro.com/en/signup",
+    "title": "Create account · Chessorro",
+    "lang": "en",
+    "headings": [
+      {
+        "level": 3,
+        "text": "Create your account"
+      }
+    ],
+    "navLinks": [
+      {
+        "area": "header",
+        "text": "Chessorro",
+        "href": "https://www.chessorro.com/en",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "header",
+        "text": "Play now",
+        "href": "https://www.chessorro.com/en/play/chess",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "header",
+        "text": "History",
+        "href": "https://www.chessorro.com/en/history",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "header",
+        "text": "Ratings",
+        "href": "https://www.chessorro.com/en/ratings",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "header",
+        "text": "Sign in",
+        "href": "https://www.chessorro.com/en/login",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "header",
+        "text": "Start a game",
+        "href": "https://www.chessorro.com/en/signup",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "footer",
+        "text": "Contact",
+        "href": "https://www.chessorro.com/en/contact",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "footer",
+        "text": "History",
+        "href": "https://www.chessorro.com/en/history",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "footer",
+        "text": "Ratings",
+        "href": "https://www.chessorro.com/en/ratings",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "footer",
+        "text": "Terms",
+        "href": "https://www.chessorro.com/en/terms",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "footer",
+        "text": "Privacy",
+        "href": "https://www.chessorro.com/en/privacy",
+        "target": null,
+        "visible": true
+      }
+    ],
+    "allLinkCount": 13,
+    "buttons": [
+      "EN",
+      "Switch to dark theme",
+      "Sign up with Google",
+      "Create account"
+    ],
+    "forms": [
+      {
+        "selector": "form:nth-of-type(1)",
+        "action": null,
+        "method": null,
+        "visible": true,
+        "fields": [
+          {
+            "tag": "input",
+            "type": "email",
+            "name": "email",
+            "id": "email",
+            "placeholder": "",
+            "label": "Email",
+            "required": false,
+            "autocomplete": "email",
+            "visible": true
+          },
+          {
+            "tag": "input",
+            "type": "password",
+            "name": "password",
+            "id": "password",
+            "placeholder": "",
+            "label": "Password",
+            "required": false,
+            "autocomplete": "new-password",
+            "visible": true
+          }
+        ],
+        "submit": [
+          "Create account"
+        ]
+      }
+    ],
+    "passwordInputs": 1,
+    "authLinks": [
+      {
+        "text": "Sign in",
+        "href": "https://www.chessorro.com/en/login"
+      },
+      {
+        "text": "Start a game",
+        "href": "https://www.chessorro.com/en/signup"
+      },
+      {
+        "text": "Sign in",
+        "href": "https://www.chessorro.com/en/login"
+      }
+    ],
+    "api": [
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en?_rsc=02Tu82Njg1QhB86v",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/history?_rsc=02Tu82Njg1QhB86v",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/ratings?_rsc=02Tu82Njg1QhB86v",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/play/chess?_rsc=02Tu82Njg1QhB86v",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/terms?_rsc=02Tu82Njg1QhB86v",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/contact?_rsc=02Tu82Njg1QhB86v",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/login?_rsc=02Tu82Njg1QhB86v",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/privacy?_rsc=02Tu82Njg1QhB86v",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en?_rsc=rDeIUw3clm-d9p2W",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en?_rsc=OSj5y8_NhNLpsDwj",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/play/chess?_rsc=IzJ2LMnoHTVHkbya",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/history?_rsc=1BT4bqIYR_vkyJhu",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/ratings?_rsc=VRKZXDasuFK7S2T_",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/login?_rsc=IzJ2LMnoHTVHkbya",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/contact?_rsc=0QDUOJxPKBpfC4Bh",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/signup?_rsc=IzJ2LMnoHTVHkbya",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/terms?_rsc=-AGFz7aQjghALxBk",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/privacy?_rsc=vvG2S167-8ZJ4gzm",
+        "status": 200,
+        "type": "text/x-component"
+      }
+    ],
+    "consoleErrors": [],
+    "aria": "- link \"Skip to content\":\n  - /url: \"#main\"\n- banner:\n  - link \"Chessorro\":\n    - /url: /en\n  - navigation \"Main\":\n    - link \"Play now\":\n      - /url: /en/play/chess\n    - link \"History\":\n      - /url: /en/history\n    - link \"Ratings\":\n      - /url: /en/ratings\n    - link \"Sign in\":\n      - /url: /en/login\n    - link \"Start a game\":\n      - /url: /en/signup\n  - button \"Choose a language\": EN\n  - button \"Switch to dark theme\"\n- main:\n  - heading \"Create your account\" [level=3]\n  - paragraph: Free forever. Start a game and send it to a friend.\n  - button \"Sign up with Google\"\n  - text: Email\n  - textbox \"Email\"\n  - text: Password\n  - textbox \"Password\"\n  - paragraph: Password must be at least 8 characters\n  - button \"Create account\"\n  - paragraph:\n    - text: Already have an account?\n    - link \"Sign in\":\n      - /url: /en/login\n  - paragraph: ( First move is free — they all are )\n- contentinfo:\n  - paragraph: © 2026 Chessorro\n  - paragraph: MOVE Points are a free in-app reward with no cash value. They cannot be purchased, transferred, or exchanged.\n  - navigation \"More\":\n    - link \"Contact\":\n      - /url: /en/contact\n    - link \"History\":\n      - /url: /en/history\n    - link \"Ratings\":\n      - /url: /en/ratings\n    - link \"Terms\":\n      - /url: /en/terms\n    - link \"Privacy\":\n      - /url: /en/privacy\n- alert",
+    "screenshot": "01-en-signup.jpg"
+  },
+  {
+    "url": "https://www.chessorro.com/en/login",
+    "status": 200,
+    "finalUrl": "https://www.chessorro.com/en/login",
+    "title": "Sign in · Chessorro",
+    "lang": "en",
+    "headings": [
+      {
+        "level": 3,
+        "text": "Sign in"
+      }
+    ],
+    "navLinks": [
+      {
+        "area": "header",
+        "text": "Chessorro",
+        "href": "https://www.chessorro.com/en",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "header",
+        "text": "Play now",
+        "href": "https://www.chessorro.com/en/play/chess",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "header",
+        "text": "History",
+        "href": "https://www.chessorro.com/en/history",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "header",
+        "text": "Ratings",
+        "href": "https://www.chessorro.com/en/ratings",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "header",
+        "text": "Sign in",
+        "href": "https://www.chessorro.com/en/login",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "header",
+        "text": "Start a game",
+        "href": "https://www.chessorro.com/en/signup",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "footer",
+        "text": "Contact",
+        "href": "https://www.chessorro.com/en/contact",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "footer",
+        "text": "History",
+        "href": "https://www.chessorro.com/en/history",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "footer",
+        "text": "Ratings",
+        "href": "https://www.chessorro.com/en/ratings",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "footer",
+        "text": "Terms",
+        "href": "https://www.chessorro.com/en/terms",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "footer",
+        "text": "Privacy",
+        "href": "https://www.chessorro.com/en/privacy",
+        "target": null,
+        "visible": true
+      }
+    ],
+    "allLinkCount": 14,
+    "buttons": [
+      "EN",
+      "Switch to dark theme",
+      "Continue with Google",
+      "Sign in"
+    ],
+    "forms": [
+      {
+        "selector": "form:nth-of-type(1)",
+        "action": null,
+        "method": null,
+        "visible": true,
+        "fields": [
+          {
+            "tag": "input",
+            "type": "email",
+            "name": "email",
+            "id": "email",
+            "placeholder": "",
+            "label": "Email",
+            "required": false,
+            "autocomplete": "email",
+            "visible": true
+          },
+          {
+            "tag": "input",
+            "type": "password",
+            "name": "password",
+            "id": "password",
+            "placeholder": "",
+            "label": "Password",
+            "required": false,
+            "autocomplete": "current-password",
+            "visible": true
+          }
+        ],
+        "submit": [
+          "Sign in"
+        ]
+      }
+    ],
+    "passwordInputs": 1,
+    "authLinks": [
+      {
+        "text": "Sign in",
+        "href": "https://www.chessorro.com/en/login"
+      },
+      {
+        "text": "Start a game",
+        "href": "https://www.chessorro.com/en/signup"
+      },
+      {
+        "text": "Create one",
+        "href": "https://www.chessorro.com/en/signup"
+      }
+    ],
+    "api": [
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en?_rsc=5Ytq4yus8l7WMcr0",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/history?_rsc=5Ytq4yus8l7WMcr0",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/ratings?_rsc=5Ytq4yus8l7WMcr0",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/play/chess?_rsc=5Ytq4yus8l7WMcr0",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/forgot-password?_rsc=5Ytq4yus8l7WMcr0",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/contact?_rsc=5Ytq4yus8l7WMcr0",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/signup?_rsc=5Ytq4yus8l7WMcr0",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/terms?_rsc=5Ytq4yus8l7WMcr0",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/privacy?_rsc=5Ytq4yus8l7WMcr0",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en?_rsc=KoV5yp7cmiwoJ-Vr",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en?_rsc=U-dmjCBEN0eFCLaK",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/history?_rsc=pXEbWE2X4UHRmjQd",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/play/chess?_rsc=DnuDkKnAGTXmZ9vQ",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/ratings?_rsc=TU_kgttHx48cjSwH",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/login?_rsc=DnuDkKnAGTXmZ9vQ",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/forgot-password?_rsc=iwfnxCjfU4yEaV0r",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/contact?_rsc=FeeXHVBNJTBr6oin",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/signup?_rsc=DnuDkKnAGTXmZ9vQ",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/terms?_rsc=bao3B9eXK9QTwGCK",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/privacy?_rsc=a_Qxr6pKS9P0PBR4",
+        "status": 200,
+        "type": "text/x-component"
+      }
+    ],
+    "consoleErrors": [],
+    "aria": "- link \"Skip to content\":\n  - /url: \"#main\"\n- banner:\n  - link \"Chessorro\":\n    - /url: /en\n  - navigation \"Main\":\n    - link \"Play now\":\n      - /url: /en/play/chess\n    - link \"History\":\n      - /url: /en/history\n    - link \"Ratings\":\n      - /url: /en/ratings\n    - link \"Sign in\":\n      - /url: /en/login\n    - link \"Start a game\":\n      - /url: /en/signup\n  - button \"Choose a language\": EN\n  - button \"Switch to dark theme\"\n- main:\n  - heading \"Sign in\" [level=3]\n  - paragraph: Welcome back. It's your move.\n  - button \"Continue with Google\"\n  - text: Email\n  - textbox \"Email\"\n  - text: Password\n  - textbox \"Password\"\n  - button \"Sign in\"\n  - paragraph:\n    - link \"Forgot your password?\":\n      - /url: /en/forgot-password\n  - paragraph:\n    - text: No account yet?\n    - link \"Create one\":\n      - /url: /en/signup\n  - paragraph: ( Welcome back )\n- contentinfo:\n  - paragraph: © 2026 Chessorro\n  - paragraph: MOVE Points are a free in-app reward with no cash value. They cannot be purchased, transferred, or exchanged.\n  - navigation \"More\":\n    - link \"Contact\":\n      - /url: /en/contact\n    - link \"History\":\n      - /url: /en/history\n    - link \"Ratings\":\n      - /url: /en/ratings\n    - link \"Terms\":\n      - /url: /en/terms\n    - link \"Privacy\":\n      - /url: /en/privacy\n- alert",
+    "screenshot": "02-en-login.jpg"
+  },
+  {
+    "url": "https://www.chessorro.com/en/play/chess",
+    "status": 200,
+    "finalUrl": "https://www.chessorro.com/en/play/chess",
+    "title": "Chess vs computer · Chessorro",
+    "lang": "en",
+    "headings": [
+      {
+        "level": 1,
+        "text": "Chess vs computer"
+      },
+      {
+        "level": 2,
+        "text": "Set up your game"
+      }
+    ],
+    "navLinks": [
+      {
+        "area": "header",
+        "text": "Chessorro",
+        "href": "https://www.chessorro.com/en",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "header",
+        "text": "Play now",
+        "href": "https://www.chessorro.com/en/play/chess",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "header",
+        "text": "History",
+        "href": "https://www.chessorro.com/en/history",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "header",
+        "text": "Ratings",
+        "href": "https://www.chessorro.com/en/ratings",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "header",
+        "text": "Sign in",
+        "href": "https://www.chessorro.com/en/login",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "header",
+        "text": "Start a game",
+        "href": "https://www.chessorro.com/en/signup",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "footer",
+        "text": "Contact",
+        "href": "https://www.chessorro.com/en/contact",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "footer",
+        "text": "History",
+        "href": "https://www.chessorro.com/en/history",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "footer",
+        "text": "Ratings",
+        "href": "https://www.chessorro.com/en/ratings",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "footer",
+        "text": "Terms",
+        "href": "https://www.chessorro.com/en/terms",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "footer",
+        "text": "Privacy",
+        "href": "https://www.chessorro.com/en/privacy",
+        "target": null,
+        "visible": true
+      }
+    ],
+    "allLinkCount": 12,
+    "buttons": [
+      "EN",
+      "Switch to dark theme",
+      "Beginner",
+      "Standard",
+      "Advanced",
+      "White",
+      "Black",
+      "Random",
+      "Single game",
+      "First to 3",
+      "First to 5",
+      "Instant",
+      "Normal",
+      "Relaxed",
+      "No clock",
+      "Bullet 1+0",
+      "Blitz 3+2",
+      "Blitz 5+0",
+      "Rapid 10+5",
+      "Royal Ivory",
+      "Walnut",
+      "Emerald Club",
+      "Midnight",
+      "Crimson Noir",
+      "Tournament Blue",
+      "Start game"
+    ],
+    "forms": [],
+    "passwordInputs": 0,
+    "authLinks": [
+      {
+        "text": "Sign in",
+        "href": "https://www.chessorro.com/en/login"
+      },
+      {
+        "text": "Start a game",
+        "href": "https://www.chessorro.com/en/signup"
+      }
+    ],
+    "api": [
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en?_rsc=TpBsJTAhPEZCiC73",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/history?_rsc=TpBsJTAhPEZCiC73",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/ratings?_rsc=TpBsJTAhPEZCiC73",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en?_rsc=DMBJkCOc-Hiwd6T5",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en?_rsc=yHg61zSoZseMSEA1",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/signup?_rsc=TpBsJTAhPEZCiC73",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/login?_rsc=TpBsJTAhPEZCiC73",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/ratings?_rsc=OVK1XNXZIGDeo2ye",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/history?_rsc=mY7knBrgrJSayWbF",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/play/chess?_rsc=MxiGGYkTXT_YPaTU",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/signup?_rsc=MxiGGYkTXT_YPaTU",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/login?_rsc=MxiGGYkTXT_YPaTU",
+        "status": 200,
+        "type": "text/x-component"
+      }
+    ],
+    "consoleErrors": [],
+    "aria": "- link \"Skip to content\":\n  - /url: \"#main\"\n- banner:\n  - link \"Chessorro\":\n    - /url: /en\n  - navigation \"Main\":\n    - link \"Play now\":\n      - /url: /en/play/chess\n    - link \"History\":\n      - /url: /en/history\n    - link \"Ratings\":\n      - /url: /en/ratings\n    - link \"Sign in\":\n      - /url: /en/login\n    - link \"Start a game\":\n      - /url: /en/signup\n  - button \"Choose a language\": EN\n  - button \"Switch to dark theme\"\n- main:\n  - paragraph: Play instantly · no sign in required\n  - heading \"Chess vs computer\" [level=1]\n  - heading \"Set up your game\" [level=2]\n  - paragraph: Choose how you want to play chess. You can change any of it between games.\n  - group \"Difficulty\":\n    - text: Difficulty\n    - radiogroup \"Difficulty\":\n      - radio \"Beginner\"\n      - radio \"Standard\" [checked]\n      - radio \"Advanced\"\n    - paragraph: Takes the obvious captures and points.\n  - group \"You play\":\n    - text: You play\n    - radiogroup \"You play\":\n      - radio \"White\" [checked]\n      - radio \"Black\"\n      - radio \"Random\"\n    - paragraph: You play White and move first.\n  - group \"Match length\":\n    - text: Match length\n    - radiogroup \"Match length\":\n      - radio \"Single game\" [checked]\n      - radio \"First to 3\"\n      - radio \"First to 5\"\n    - paragraph: One game, then you are done.\n  - group \"Computer speed\":\n    - text: Computer speed\n    - radiogroup \"Computer speed\":\n      - radio \"Instant\"\n      - radio \"Normal\" [checked]\n      - radio \"Relaxed\"\n    - paragraph: Short pause before replying.\n  - group \"Clock\":\n    - text: Clock\n    - radiogroup \"Clock\":\n      - radio \"No clock\" [checked]\n      - radio \"Bullet 1+0\"\n      - radio \"Blitz 3+2\"\n      - radio \"Blitz 5+0\"\n      - radio \"Rapid 10+5\"\n    - paragraph: Take as long as you like.\n  - group \"Board style\":\n    - text: Board style\n    - radiogroup \"Board style\":\n      - radio \"Royal Ivory\" [checked]\n      - radio \"Walnut\"\n      - radio \"Emerald Club\"\n      - radio \"Midnight\"\n      - radio \"Crimson Noir\"\n      - radio \"Tournament Blue\"\n  - group: Sound\n  - button \"Start game\"\n- contentinfo:\n  - paragraph: © 2026 Chessorro\n  - paragraph: MOVE Points are a free in-app reward with no cash value. They cannot be purchased, transferred, or exchanged.\n  - navigation \"More\":\n    - link \"Contact\":\n      - /url: /en/contact\n    - link \"History\":\n      - /url: /en/history\n    - link \"Ratings\":\n      - /url: /en/ratings\n    - link \"Terms\":\n      - /url: /en/terms\n    - link \"Privacy\":\n      - /url: /en/privacy\n- alert",
+    "screenshot": "03-en-play-chess.jpg"
+  },
+  {
+    "url": "https://www.chessorro.com/en/history",
+    "status": 200,
+    "finalUrl": "https://www.chessorro.com/en/history",
+    "title": "History of the games · Chessorro",
+    "lang": "en",
+    "headings": [
+      {
+        "level": 1,
+        "text": "History of the games"
+      },
+      {
+        "level": 2,
+        "text": "Chess"
+      },
+      {
+        "level": 3,
+        "text": "Interesting facts"
+      },
+      {
+        "level": 2,
+        "text": "Checkers"
+      },
+      {
+        "level": 3,
+        "text": "Interesting facts"
+      },
+      {
+        "level": 2,
+        "text": "Backgammon"
+      },
+      {
+        "level": 3,
+        "text": "Interesting facts"
+      },
+      {
+        "level": 2,
+        "text": "Dominoes"
+      },
+      {
+        "level": 3,
+        "text": "Interesting facts"
+      }
+    ],
+    "navLinks": [
+      {
+        "area": "header",
+        "text": "Chessorro",
+        "href": "https://www.chessorro.com/en",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "header",
+        "text": "Play now",
+        "href": "https://www.chessorro.com/en/play/chess",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "header",
+        "text": "History",
+        "href": "https://www.chessorro.com/en/history",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "header",
+        "text": "Ratings",
+        "href": "https://www.chessorro.com/en/ratings",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "header",
+        "text": "Sign in",
+        "href": "https://www.chessorro.com/en/login",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "header",
+        "text": "Start a game",
+        "href": "https://www.chessorro.com/en/signup",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "footer",
+        "text": "Contact",
+        "href": "https://www.chessorro.com/en/contact",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "footer",
+        "text": "History",
+        "href": "https://www.chessorro.com/en/history",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "footer",
+        "text": "Ratings",
+        "href": "https://www.chessorro.com/en/ratings",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "footer",
+        "text": "Terms",
+        "href": "https://www.chessorro.com/en/terms",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "footer",
+        "text": "Privacy",
+        "href": "https://www.chessorro.com/en/privacy",
+        "target": null,
+        "visible": true
+      }
+    ],
+    "allLinkCount": 16,
+    "buttons": [
+      "EN",
+      "Switch to dark theme"
+    ],
+    "forms": [],
+    "passwordInputs": 0,
+    "authLinks": [
+      {
+        "text": "Sign in",
+        "href": "https://www.chessorro.com/en/login"
+      },
+      {
+        "text": "Start a game",
+        "href": "https://www.chessorro.com/en/signup"
+      }
+    ],
+    "api": [
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en?_rsc=Z6AORsAPLFsg4zjz",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/history?_rsc=Z6AORsAPLFsg4zjz",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/ratings?_rsc=Z6AORsAPLFsg4zjz",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/play/chess?_rsc=Z6AORsAPLFsg4zjz",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/login?_rsc=Z6AORsAPLFsg4zjz",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en?_rsc=ezPjiOe3DziyEZSB",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/signup?_rsc=Z6AORsAPLFsg4zjz",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en?_rsc=o0otUsaLIkavt1-L",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/ratings?_rsc=4ttOVgUQTQq3tkRC",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/history?_rsc=r3vC2bWnT2gHpPT2",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/play/chess?_rsc=6mbucjbqIzli9ja4",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/login?_rsc=6mbucjbqIzli9ja4",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/signup?_rsc=6mbucjbqIzli9ja4",
+        "status": 200,
+        "type": "text/x-component"
+      }
+    ],
+    "consoleErrors": [],
+    "aria": "- link \"Skip to content\":\n  - /url: \"#main\"\n- banner:\n  - link \"Chessorro\":\n    - /url: /en\n  - navigation \"Main\":\n    - link \"Play now\":\n      - /url: /en/play/chess\n    - link \"History\":\n      - /url: /en/history\n    - link \"Ratings\":\n      - /url: /en/ratings\n    - link \"Sign in\":\n      - /url: /en/login\n    - link \"Start a game\":\n      - /url: /en/signup\n  - button \"Choose a language\": EN\n  - button \"Switch to dark theme\"\n- main:\n  - paragraph: Where these games come from\n  - heading \"History of the games\" [level=1]\n  - paragraph: Four games, between them about four and a half thousand years old. None of them was invented in the way software is invented — they were played into their current shape, argued over, and in one case proved finished. Where the record is genuinely uncertain, this says so.\n  - region \"Chess\":\n    - heading \"Chess\" [level=2]\n    - link \"Play Chess\":\n      - /url: /en/play/chess\n    - paragraph: Northern India, by the 6th century\n    - paragraph: Nobody invented chess. It arrived by degrees, across a thousand years and three continents, and the version played today is younger than the printing press.\n    - list:\n      - listitem:\n        - text: c. 600\n        - paragraph: Chaturanga is played in northern India — the four arms of an army, infantry, cavalry, elephants and chariots, on sixty-four squares. There is no inventor to name. The story of a sage who asks to be paid in grain, doubled on each square, is a legend attached to the game long afterwards.\n      - listitem:\n        - text: c. 650\n        - paragraph: \"Carried into Persia as chatrang, then across the Islamic world as shatranj. Two of its words are still in English: shah for the king under attack, and shah mat — the king is helpless — for checkmate.\"\n      - listitem:\n        - text: c. 1000\n        - paragraph: Established in Europe by way of Muslim Spain and the Mediterranean. The queen is still the ferz, an adviser that shuffles one square diagonally, and games take a very long time.\n      - listitem:\n        - text: \"1475\"\n        - paragraph: In Valencia the queen and the bishop are given their modern range. It is the largest rule change chess has ever had — it made the opening sharp and the game fast — and the earliest surviving record of it is a poem, Scachs d'amor. Players elsewhere called the new version mad queen chess.\n      - listitem:\n        - text: \"1749\"\n        - paragraph: Philidor publishes L'analyze des échecs and argues that the pawns are the soul of chess. It is the first real positional theory, and it is written by a man better known in his lifetime as a composer of comic opera.\n      - listitem:\n        - text: \"1851\"\n        - paragraph: London holds the first international tournament.\n      - listitem:\n        - text: \"1886\"\n        - paragraph: Wilhelm Steinitz beats Johannes Zukertort for the first official world championship.\n      - listitem:\n        - text: \"1924\"\n        - paragraph: FIDE is founded in Paris.\n      - listitem:\n        - text: \"1997\"\n        - paragraph: \"Deep Blue beats Garry Kasparov 3½–2½: the first time a reigning world champion lost a match to a machine at standard time controls.\"\n    - heading \"Interesting facts\" [level=3]\n    - list:\n      - listitem:\n        - paragraph: Longest game\n        - paragraph: 269 moves\n        - paragraph: Ivan Nikolić against Goran Arsović, Belgrade 1989. It ran past twenty hours and was drawn.\n      - listitem:\n        - paragraph: Fastest checkmate\n        - paragraph: 2 moves\n        - paragraph: Fool's Mate — 1.f3 e5 2.g4 Qh4#. It only happens if White cooperates.\n      - listitem:\n        - paragraph: Longest title match\n        - paragraph: 48 games\n        - paragraph: Karpov against Kasparov, 1984–85. Called off after five months with no result and both players spent.\n      - listitem:\n        - paragraph: Possible games\n        - paragraph:\n          - text: ~10\n          - superscript: \"120\"\n        - paragraph:\n          - text: The Shannon number, an estimate of the game tree. There are perhaps 10\n          - superscript: \"80\"\n          - text: atoms in the observable universe.\n  - region \"Checkers\":\n    - heading \"Checkers\" [level=2]\n    - link \"Play Checkers\":\n      - /url: /en/play/checkers\n    - paragraph: The ancient Mediterranean; the modern game, France c. 1100\n    - paragraph: Checkers is older than chess and, unlike chess, it is finished. In 2007 a computer proved the game out to its last position.\n    - list:\n      - listitem:\n        - text: Antiquity\n        - paragraph: Boards for alquerque — a game of capturing by jumping — are cut into stone across the Mediterranean and the Near East, including roof slabs at the temple of Kurna in Egypt. Those are often dated to around 1400 BCE, though the dating is disputed. The game is certainly very old.\n      - listitem:\n        - text: c. 1100\n        - paragraph: In southern France, alquerque's pieces move onto a chessboard. The promoted piece takes its name from the chess queen — fierge — which is why the French still call the game jeu de dames and the Germans Dame.\n      - listitem:\n        - text: c. 1535\n        - paragraph: France makes capturing compulsory. That version, jeu forcé, becomes the modern game; the older one, where you could decline a capture, survives for a while as le plaisant.\n      - listitem:\n        - text: \"1952\"\n        - paragraph: \"Arthur Samuel starts a checkers program at IBM that improves by playing against itself. He later coins a phrase for what it is doing: machine learning.\"\n      - listitem:\n        - text: \"1994\"\n        - paragraph: Chinook, from the University of Alberta, becomes the first program to win a world championship in any game against humans. Its rival Marion Tinsley withdrew from the match ill; he died the following year.\n      - listitem:\n        - text: \"2007\"\n        - paragraph: Chinook's team announces that checkers is solved. Played perfectly by both sides, the game is a draw. The proof took eighteen years.\n    - heading \"Interesting facts\" [level=3]\n    - list:\n      - listitem:\n        - paragraph: Solved\n        - paragraph: A draw\n        - paragraph: Perfect play from both sides ends level. Checkers is the largest game ever solved outright.\n      - listitem:\n        - paragraph: Positions accounted for\n        - paragraph:\n          - text: 5 × 10\n          - superscript: \"20\"\n        - paragraph:\n          - text: What the proof had to cover. Chess is thought to have something nearer 10\n          - superscript: \"44\"\n          - text: .\n      - listitem:\n        - paragraph: Tinsley's career losses\n        - paragraph: 7 games\n        - paragraph: Marion Tinsley lost only seven games in forty-five years of competitive play. Two of the seven were to Chinook.\n      - listitem:\n        - paragraph: Two games, one name\n        - paragraph: 64 or 100 squares\n        - paragraph: English draughts uses sixty-four squares and men that move only forwards. International draughts uses a hundred, and kings that fly the length of a diagonal.\n  - region \"Backgammon\":\n    - heading \"Backgammon\" [level=2]\n    - link \"Play Backgammon\":\n      - /url: /en/play/backgammon\n    - paragraph: Mesopotamia and Rome; the modern name, England c. 1650\n    - paragraph: The board has barely changed in two thousand years. The thing that made backgammon a modern game is a hundred years old and fits in your palm.\n    - list:\n      - listitem:\n        - text: c. 2600 BCE\n        - paragraph: The Royal Game of Ur is played in Mesopotamia — a race decided by dice, on boards recovered from the graves at Ur. Its rules survive because a Babylonian scribe wrote them on a tablet more than two thousand years later.\n      - listitem:\n        - text: 1st century\n        - paragraph: Romans play tabula on a board of twenty-four points that a modern player would recognise at a glance. The emperor Claudius is said to have written a book on it and had a board fitted to his carriage.\n      - listitem:\n        - text: c. 1650\n        - paragraph: The name backgammon appears in English.\n      - listitem:\n        - text: 1920s\n        - paragraph: \"Someone in a New York club invents the doubling cube: before your roll you may offer to double the stakes, and your opponent must take it or concede. Nobody knows who. It is the most important change in the game's history — it turned a race into a running argument about who is actually winning.\"\n      - listitem:\n        - text: \"1979\"\n        - paragraph: Hans Berliner's program BKG 9.8 beats world champion Luigi Villa in Monte Carlo — the first time a computer beat a reigning world champion at any board game. Berliner said afterwards that the dice had been kind to it.\n      - listitem:\n        - text: \"1992\"\n        - paragraph: \"TD-Gammon, written by Gerald Tesauro at IBM, teaches itself by playing itself a million times over. It reaches world-class strength, and then does something rarer: it changes how the best humans play, because it kept preferring opening moves the books had rejected.\"\n    - heading \"Interesting facts\" [level=3]\n    - list:\n      - listitem:\n        - paragraph: The doubling cube\n        - paragraph: 1920s\n        - paragraph: Invented in New York. The inventor's name was never recorded.\n      - listitem:\n        - paragraph: Distinct rolls\n        - paragraph: 21, not 36\n        - paragraph: Two dice land thirty-six ways but only twenty-one of them are different turns, since 5-3 and 3-5 are the same. Doubles come up half as often as the other rolls.\n      - listitem:\n        - paragraph: The opening throw\n        - paragraph: Never a double\n        - paragraph: Each player rolls a single die to decide who begins, and a tie is thrown again — so the first move of a game is always two different numbers.\n      - listitem:\n        - paragraph: Checkers per side\n        - paragraph: \"15\"\n        - paragraph: Each running a track of twenty-four points in opposite directions, which is why a blot left behind you is safe and one in front of you is not.\n  - region \"Dominoes\":\n    - heading \"Dominoes\" [level=2]\n    - link \"Play Dominoes\":\n      - /url: /en/play/dominoes\n    - paragraph: China, by the 13th century; Europe, early 1700s\n    - paragraph: Dominoes came out of China, and somewhere on the way to Europe they gained the blanks that make the modern game.\n    - list:\n      - listitem:\n        - text: c. 1270s\n        - paragraph: The earliest clear written record of dominoes is in Zhou Mi's Former Events in Wulin, which describes tiles for sale in the markets of the Song capital.\n      - listitem:\n        - text: Chinese sets\n        - paragraph: Chinese dominoes are the twenty-one throws of two dice made solid. There are no blanks, and eleven of the tiles are duplicated, which gives a set of thirty-two.\n      - listitem:\n        - text: Early 1700s\n        - paragraph: Dominoes appear in Italy, in Venice and Naples. By now they have blanks — a whole extra rank that China's sets never had — and a double-six set has grown to twenty-eight tiles.\n      - listitem:\n        - text: The name\n        - paragraph: Probably from the domino, a black hooded cloak lined with white worn at Venetian carnival. The same contrast as the tiles.\n      - listitem:\n        - text: 1998–2009\n        - paragraph: Domino Day turns toppling into a televised spectacle in the Netherlands, and the record climbs year after year.\n    - heading \"Interesting facts\" [level=3]\n    - list:\n      - listitem:\n        - paragraph: A double-six set\n        - paragraph: 28 tiles\n        - paragraph: Every pairing of nought through six, counted once. The blank-blank is a tile like any other.\n      - listitem:\n        - paragraph: Bigger sets\n        - paragraph: 55 and 91\n        - paragraph: Double-nine has fifty-five tiles and double-twelve has ninety-one. A double-n set always has (n+1)(n+2)/2.\n      - listitem:\n        - paragraph: Toppling record\n        - paragraph: 4,491,863\n        - paragraph: Tiles felled at Domino Day in the Netherlands, 2009.\n      - listitem:\n        - paragraph: What Europe added\n        - paragraph: The blanks\n        - paragraph: Chinese tiles cover only what two dice can show. Adding a blank rank is what makes a European set larger and the games different.\n  - paragraph: Dates before about 1500 are approximate, and the earliest ones are contested — board games leave boards behind far more often than they leave rules. Where a claim is commonly repeated but thinly evidenced, such as the age of the Kurna boards, it is marked as disputed rather than dropped.\n- contentinfo:\n  - paragraph: © 2026 Chessorro\n  - paragraph: MOVE Points are a free in-app reward with no cash value. They cannot be purchased, transferred, or exchanged.\n  - navigation \"More\":\n    - link \"Contact\":\n      - /url: /en/contact\n    - link \"History\":\n      - /url: /en/history\n    - link \"Ratings\":\n      - /url: /en/ratings\n    - link \"Terms\":\n      - /url: /en/terms\n    - link \"Privacy\":\n      - /url: /en/privacy\n- alert",
+    "screenshot": "04-en-history.jpg"
+  },
+  {
+    "url": "https://www.chessorro.com/en/ratings",
+    "status": 200,
+    "finalUrl": "https://www.chessorro.com/en/ratings",
+    "title": "How ratings work · Chessorro",
+    "lang": "en",
+    "headings": [
+      {
+        "level": 1,
+        "text": "How ratings work"
+      },
+      {
+        "level": 2,
+        "text": "A rating is a prediction, not a score"
+      },
+      {
+        "level": 2,
+        "text": "K decides how fast it moves"
+      },
+      {
+        "level": 2,
+        "text": "How to actually raise it"
+      },
+      {
+        "level": 2,
+        "text": "The top of the scale"
+      },
+      {
+        "level": 2,
+        "text": "The other three games"
+      }
+    ],
+    "navLinks": [
+      {
+        "area": "header",
+        "text": "Chessorro",
+        "href": "https://www.chessorro.com/en",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "header",
+        "text": "Play now",
+        "href": "https://www.chessorro.com/en/play/chess",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "header",
+        "text": "History",
+        "href": "https://www.chessorro.com/en/history",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "header",
+        "text": "Ratings",
+        "href": "https://www.chessorro.com/en/ratings",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "header",
+        "text": "Sign in",
+        "href": "https://www.chessorro.com/en/login",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "header",
+        "text": "Start a game",
+        "href": "https://www.chessorro.com/en/signup",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "footer",
+        "text": "Contact",
+        "href": "https://www.chessorro.com/en/contact",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "footer",
+        "text": "History",
+        "href": "https://www.chessorro.com/en/history",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "footer",
+        "text": "Ratings",
+        "href": "https://www.chessorro.com/en/ratings",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "footer",
+        "text": "Terms",
+        "href": "https://www.chessorro.com/en/terms",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "footer",
+        "text": "Privacy",
+        "href": "https://www.chessorro.com/en/privacy",
+        "target": null,
+        "visible": true
+      }
+    ],
+    "allLinkCount": 14,
+    "buttons": [
+      "EN",
+      "Switch to dark theme"
+    ],
+    "forms": [],
+    "passwordInputs": 0,
+    "authLinks": [
+      {
+        "text": "Sign in",
+        "href": "https://www.chessorro.com/en/login"
+      },
+      {
+        "text": "Start a game",
+        "href": "https://www.chessorro.com/en/signup"
+      }
+    ],
+    "api": [
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/ratings?_rsc=adJR64p0Ep-evsfY",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/history?_rsc=adJR64p0Ep-evsfY",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en?_rsc=adJR64p0Ep-evsfY",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/play/chess?_rsc=adJR64p0Ep-evsfY",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en?_rsc=6c82pTJbm_kza_jq",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/login?_rsc=adJR64p0Ep-evsfY",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/signup?_rsc=adJR64p0Ep-evsfY",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en?_rsc=zsTuDSdDcOVkqDmq",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/history?_rsc=m1Jbkr0wybYFU0Lc",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/ratings?_rsc=fXTkNDdvNSktbxty",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/play/chess?_rsc=TLgfk86C3kEE6CZ6",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/login?_rsc=TLgfk86C3kEE6CZ6",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/signup?_rsc=TLgfk86C3kEE6CZ6",
+        "status": 200,
+        "type": "text/x-component"
+      }
+    ],
+    "consoleErrors": [],
+    "aria": "- link \"Skip to content\":\n  - /url: \"#main\"\n- banner:\n  - link \"Chessorro\":\n    - /url: /en\n  - navigation \"Main\":\n    - link \"Play now\":\n      - /url: /en/play/chess\n    - link \"History\":\n      - /url: /en/history\n    - link \"Ratings\":\n      - /url: /en/ratings\n    - link \"Sign in\":\n      - /url: /en/login\n    - link \"Start a game\":\n      - /url: /en/signup\n  - button \"Choose a language\": EN\n  - button \"Switch to dark theme\"\n- main:\n  - paragraph: What the number means\n  - heading \"How ratings work\" [level=1]\n  - paragraph: Every rated game here moves a number, and the rules it moves by are seventy years old and simpler than they look. This is what the number claims, what it takes to move it, and how far anyone has ever got. Every figure in the tables is computed from the rating code this site actually runs.\n  - region \"A rating is a prediction, not a score\":\n    - heading \"A rating is a prediction, not a score\" [level=2]\n    - paragraph: Arpad Elo, a physics professor and a strong amateur player, built the system in the 1950s. The US federation adopted it in 1960 and FIDE in 1970.\n    - paragraph: \"The number does not measure how much you have won. It makes one claim, and only one: the difference between two ratings predicts how a match between those two players will go. Everything else follows from that.\"\n    - paragraph: A gap of 400 points means the stronger player is expected to score about nine games in ten. Level ratings mean an even match. The scale is deliberately arbitrary — 1500 is not twice as good as 750, and the numbers only mean something relative to each other.\n    - paragraph: After a game, your rating moves by the difference between what you actually scored and what the system expected you to score. Beat someone you were expected to beat and you gain almost nothing, because the prediction was already right. Beat someone far above you and the prediction was badly wrong, so it corrects hard in your favour.\n  - region \"K decides how fast it moves\":\n    - heading \"K decides how fast it moves\" [level=2]\n    - paragraph: The same result moves a newcomer's rating much further than a veteran's, and that is deliberate.\n    - paragraph: K is the multiplier on every correction. A high K means the system does not yet trust its own estimate of you and will move it a long way on new evidence; a low K means it thinks it has you about right and wants proof before shifting.\n    - paragraph: \"FIDE uses 40 for a player's first thirty games, 20 for most players, and 10 once someone has reached 2400 — at the top, ratings are meant to be slow and stable. This app starts everyone at 1200 and follows the same shape: fast at first, slower as it learns.\"\n    - paragraph: \"The practical consequence is worth knowing before you play: your first twenty games move your rating more than the fifty after them. That is the window where the number is really being set.\"\n  - region \"How to actually raise it\":\n    - heading \"How to actually raise it\" [level=2]\n    - paragraph: \"The honest instruction is shorter than people expect: play opponents near or above your level, and play enough games.\"\n    - paragraph: There is no streak that unlocks anything, and no bonus for consecutive wins — each game is scored on its own. What decides how fast you climb is who you play. Beating someone far below you was already predicted, so it pays a point or two; losing to them was not predicted at all, and costs ten times as much. Farming weaker opponents is close to worthless and quietly risky.\n    - paragraph: Beating someone above you is where the points are. The table below is computed from this app's own rating code, so it is what will actually happen to your number.\n    - paragraph: \"If you want a target: against evenly matched opponents, roughly thirteen straight wins moves an established rating a hundred points. In your first twenty games, when K is at its highest, five will do it.\"\n    - figure \"Your first twenty games · K = 40\":\n      - text: Your first twenty games · K = 40\n      - table:\n        - rowgroup:\n          - row \"Opponent Expected If you win If you lose\":\n            - columnheader \"Opponent\"\n            - columnheader \"Expected\"\n            - columnheader \"If you win\"\n            - columnheader \"If you lose\"\n        - rowgroup:\n          - row \"-400 91% +4 -36\":\n            - rowheader \"-400\"\n            - cell \"91%\"\n            - cell \"+4\"\n            - cell \"-36\"\n          - row \"-200 76% +10 -30\":\n            - rowheader \"-200\"\n            - cell \"76%\"\n            - cell \"+10\"\n            - cell \"-30\"\n          - row \"-100 64% +14 -26\":\n            - rowheader \"-100\"\n            - cell \"64%\"\n            - cell \"+14\"\n            - cell \"-26\"\n          - row \"Level with you 50% +20 -20\":\n            - rowheader \"Level with you\"\n            - cell \"50%\"\n            - cell \"+20\"\n            - cell \"-20\"\n          - row \"+100 36% +26 -14\":\n            - rowheader \"+100\"\n            - cell \"36%\"\n            - cell \"+26\"\n            - cell \"-14\"\n          - row \"+200 24% +30 -10\":\n            - rowheader \"+200\"\n            - cell \"24%\"\n            - cell \"+30\"\n            - cell \"-10\"\n          - row \"+400 9% +36 -4\":\n            - rowheader \"+400\"\n            - cell \"9%\"\n            - cell \"+36\"\n            - cell \"-4\"\n    - figure \"Once you are established · K = 16\":\n      - text: Once you are established · K = 16\n      - table:\n        - rowgroup:\n          - row \"Opponent Expected If you win If you lose\":\n            - columnheader \"Opponent\"\n            - columnheader \"Expected\"\n            - columnheader \"If you win\"\n            - columnheader \"If you lose\"\n        - rowgroup:\n          - row \"-400 91% +1 -15\":\n            - rowheader \"-400\"\n            - cell \"91%\"\n            - cell \"+1\"\n            - cell \"-15\"\n          - row \"-200 76% +4 -12\":\n            - rowheader \"-200\"\n            - cell \"76%\"\n            - cell \"+4\"\n            - cell \"-12\"\n          - row \"-100 64% +6 -10\":\n            - rowheader \"-100\"\n            - cell \"64%\"\n            - cell \"+6\"\n            - cell \"-10\"\n          - row \"Level with you 50% +8 -8\":\n            - rowheader \"Level with you\"\n            - cell \"50%\"\n            - cell \"+8\"\n            - cell \"-8\"\n          - row \"+100 36% +10 -6\":\n            - rowheader \"+100\"\n            - cell \"36%\"\n            - cell \"+10\"\n            - cell \"-6\"\n          - row \"+200 24% +12 -4\":\n            - rowheader \"+200\"\n            - cell \"24%\"\n            - cell \"+12\"\n            - cell \"-4\"\n          - row \"+400 9% +15 -1\":\n            - rowheader \"+400\"\n            - cell \"9%\"\n            - cell \"+15\"\n            - cell \"-1\"\n  - region \"The top of the scale\":\n    - heading \"The top of the scale\" [level=2]\n    - paragraph: Nobody has passed 2882, and the number itself has drifted over the decades.\n    - paragraph: \"Ratings are a closed system: points come from other players, so the whole population can drift up or down over time without anyone getting better or worse. Comparing a 1972 rating with a 2024 one by the number alone is not safe, which is why direct cross-era claims about who was strongest tend to generate more heat than light.\"\n    - paragraph: Titles are awarded on rating plus norms — results in strong international events — and unlike ratings they are permanent. Grandmaster needs 2500 and three norms; International Master 2400; FIDE Master 2300, no norms required.\n    - list:\n      - listitem:\n        - paragraph: Highest ever\n        - paragraph: \"2882\"\n        - paragraph: Magnus Carlsen, on the FIDE list of May 2014. Still the record.\n      - listitem:\n        - paragraph: The previous record\n        - paragraph: \"2851\"\n        - paragraph: Garry Kasparov, July 1999. It stood for fifteen years.\n      - listitem:\n        - paragraph: Grandmaster\n        - paragraph: 2500 + 3 norms\n        - paragraph: The rating alone is not enough — the norms have to come from strong international events.\n      - listitem:\n        - paragraph: FIDE's floor\n        - paragraph: \"1400\"\n        - paragraph: Raised from 1000 in 2024. Below the floor, FIDE simply does not publish a number.\n  - region \"The other three games\":\n    - heading \"The other three games\" [level=2]\n    - paragraph: Elo travels wherever a game ends in a win, a draw or a loss — but the more luck a game has, the more games it takes before the number means anything.\n    - paragraph: \"Draughts uses Elo essentially unchanged; the international federation rates players on the same curve chess does. Its problem is the opposite of chess's: at the top, near-perfect play draws almost everything, and a rating built on draws separates people slowly.\"\n    - paragraph: \"Backgammon has to adapt it. A single game turns heavily on the dice, so one result is weak evidence — the established systems scale the rating change by the square root of the match length, which means a long match moves your rating far more than a one-pointer. That is the same instinct as K: move further on better evidence.\"\n    - paragraph: Dominoes has no world body and no single rating. Where online sites rate it at all, they use an Elo variant, and the same caveat applies more strongly still — with a hidden hand and a shuffled boneyard, a short run of results says very little.\n  - link \"Where these games came from\":\n    - /url: /en/history\n  - link \"See the leaderboard\":\n    - /url: /en/leaderboard\n- contentinfo:\n  - paragraph: © 2026 Chessorro\n  - paragraph: MOVE Points are a free in-app reward with no cash value. They cannot be purchased, transferred, or exchanged.\n  - navigation \"More\":\n    - link \"Contact\":\n      - /url: /en/contact\n    - link \"History\":\n      - /url: /en/history\n    - link \"Ratings\":\n      - /url: /en/ratings\n    - link \"Terms\":\n      - /url: /en/terms\n    - link \"Privacy\":\n      - /url: /en/privacy\n- alert",
+    "screenshot": "05-en-ratings.jpg"
+  },
+  {
+    "url": "https://www.chessorro.com/en/contact",
+    "status": 200,
+    "finalUrl": "https://www.chessorro.com/en/contact",
+    "title": "Contact us · Chessorro",
+    "lang": "en",
+    "headings": [
+      {
+        "level": 1,
+        "text": "Contact us"
+      },
+      {
+        "level": 2,
+        "text": "What to write about"
+      },
+      {
+        "level": 2,
+        "text": "Things that are not support questions"
+      }
+    ],
+    "navLinks": [
+      {
+        "area": "header",
+        "text": "Chessorro",
+        "href": "https://www.chessorro.com/en",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "header",
+        "text": "Play now",
+        "href": "https://www.chessorro.com/en/play/chess",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "header",
+        "text": "History",
+        "href": "https://www.chessorro.com/en/history",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "header",
+        "text": "Ratings",
+        "href": "https://www.chessorro.com/en/ratings",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "header",
+        "text": "Sign in",
+        "href": "https://www.chessorro.com/en/login",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "header",
+        "text": "Start a game",
+        "href": "https://www.chessorro.com/en/signup",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "footer",
+        "text": "Contact",
+        "href": "https://www.chessorro.com/en/contact",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "footer",
+        "text": "History",
+        "href": "https://www.chessorro.com/en/history",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "footer",
+        "text": "Ratings",
+        "href": "https://www.chessorro.com/en/ratings",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "footer",
+        "text": "Terms",
+        "href": "https://www.chessorro.com/en/terms",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "footer",
+        "text": "Privacy",
+        "href": "https://www.chessorro.com/en/privacy",
+        "target": null,
+        "visible": true
+      }
+    ],
+    "allLinkCount": 19,
+    "buttons": [
+      "EN",
+      "Switch to dark theme"
+    ],
+    "forms": [],
+    "passwordInputs": 0,
+    "authLinks": [
+      {
+        "text": "Sign in",
+        "href": "https://www.chessorro.com/en/login"
+      },
+      {
+        "text": "Start a game",
+        "href": "https://www.chessorro.com/en/signup"
+      },
+      {
+        "text": "Account help",
+        "href": "mailto:support@chessorro.com?subject=Account%20help"
+      },
+      {
+        "text": "Delete my account",
+        "href": "mailto:support@chessorro.com?subject=Delete%20my%20account"
+      }
+    ],
+    "api": [
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/history?_rsc=0jGZgW6Ln_bTiVd1",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/ratings?_rsc=0jGZgW6Ln_bTiVd1",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en?_rsc=0jGZgW6Ln_bTiVd1",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/play/chess?_rsc=0jGZgW6Ln_bTiVd1",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/terms?_rsc=0jGZgW6Ln_bTiVd1",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/privacy?_rsc=0jGZgW6Ln_bTiVd1",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/signup?_rsc=0jGZgW6Ln_bTiVd1",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/login?_rsc=0jGZgW6Ln_bTiVd1",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en?_rsc=v6ldk5Q99EEhPR3R",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/contact?_rsc=0jGZgW6Ln_bTiVd1",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en?_rsc=oH6hl8u8Ifh5c5em",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/play/chess?_rsc=bQfaZETtmDBiuz93",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/history?_rsc=mrmuSxoOr7IeGoKL",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/login?_rsc=bQfaZETtmDBiuz93",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/ratings?_rsc=Em4YXLb-8Lg4cYmh",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/terms?_rsc=of5hPYH2bqdj3RfQ",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/signup?_rsc=bQfaZETtmDBiuz93",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/privacy?_rsc=Knahtnew-kmSIsRZ",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/contact?_rsc=TMR9pL5K-iqUUzY9",
+        "status": 200,
+        "type": "text/x-component"
+      }
+    ],
+    "consoleErrors": [],
+    "aria": "- link \"Skip to content\":\n  - /url: \"#main\"\n- banner:\n  - link \"Chessorro\":\n    - /url: /en\n  - navigation \"Main\":\n    - link \"Play now\":\n      - /url: /en/play/chess\n    - link \"History\":\n      - /url: /en/history\n    - link \"Ratings\":\n      - /url: /en/ratings\n    - link \"Sign in\":\n      - /url: /en/login\n    - link \"Start a game\":\n      - /url: /en/signup\n  - button \"Choose a language\": EN\n  - button \"Switch to dark theme\"\n- main:\n  - article:\n    - heading \"Contact us\" [level=1]\n    - paragraph: One inbox, read by a person.\n    - paragraph: Email\n    - link \"support@chessorro.com\":\n      - /url: mailto:support@chessorro.com?subject=Chessorro\n    - paragraph: Write in English or Russian — either is fine. Chessorro is in beta, so please say what you were doing when something went wrong; it is usually the difference between a fix and a guess.\n    - heading \"What to write about\" [level=2]\n    - list:\n      - listitem:\n        - link \"Account help\":\n          - /url: mailto:support@chessorro.com?subject=Account%20help\n        - paragraph: Cannot sign in, lost access to your email, or want your username changed.\n      - listitem:\n        - link \"Something is broken\":\n          - /url: mailto:support@chessorro.com?subject=Something%20is%20broken\n        - paragraph: A game that will not load, a move the board refused, a score that looks wrong. Include the game link if you have it.\n      - listitem:\n        - link \"Delete my account\":\n          - /url: mailto:support@chessorro.com?subject=Delete%20my%20account\n        - paragraph: Send this from the address you signed up with and we will remove your account and its data.\n      - listitem:\n        - link \"Report a player\":\n          - /url: mailto:support@chessorro.com?subject=Report%20a%20player\n        - paragraph: Engine use in rated games, point farming, or abuse. Send the username and the game link.\n    - heading \"Things that are not support questions\" [level=2]\n    - paragraph: MOVE Points are a free in-app reward with no cash value — they cannot be bought, sold, transferred, or paid out, and support cannot make an exception.\n    - paragraph:\n      - text: \"The details are in the terms and the privacy policy:\"\n      - link \"terms\":\n        - /url: /en/terms\n      - text: ·\n      - link \"privacy policy\":\n        - /url: /en/privacy\n- contentinfo:\n  - paragraph: © 2026 Chessorro\n  - paragraph: MOVE Points are a free in-app reward with no cash value. They cannot be purchased, transferred, or exchanged.\n  - navigation \"More\":\n    - link \"Contact\":\n      - /url: /en/contact\n    - link \"History\":\n      - /url: /en/history\n    - link \"Ratings\":\n      - /url: /en/ratings\n    - link \"Terms\":\n      - /url: /en/terms\n    - link \"Privacy\":\n      - /url: /en/privacy\n- alert",
+    "screenshot": "06-en-contact.jpg"
+  },
+  {
+    "url": "https://www.chessorro.com/en/terms",
+    "status": 200,
+    "finalUrl": "https://www.chessorro.com/en/terms",
+    "title": "Terms of Service · Chessorro",
+    "lang": "en",
+    "headings": [
+      {
+        "level": 1,
+        "text": "Terms of Service"
+      },
+      {
+        "level": 2,
+        "text": "MOVE Points"
+      },
+      {
+        "level": 2,
+        "text": "Fair play"
+      },
+      {
+        "level": 2,
+        "text": "Your account"
+      },
+      {
+        "level": 2,
+        "text": "Service status"
+      },
+      {
+        "level": 2,
+        "text": "After the beta"
+      },
+      {
+        "level": 2,
+        "text": "Contact"
+      }
+    ],
+    "navLinks": [
+      {
+        "area": "header",
+        "text": "Chessorro",
+        "href": "https://www.chessorro.com/en",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "header",
+        "text": "Play now",
+        "href": "https://www.chessorro.com/en/play/chess",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "header",
+        "text": "History",
+        "href": "https://www.chessorro.com/en/history",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "header",
+        "text": "Ratings",
+        "href": "https://www.chessorro.com/en/ratings",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "header",
+        "text": "Sign in",
+        "href": "https://www.chessorro.com/en/login",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "header",
+        "text": "Start a game",
+        "href": "https://www.chessorro.com/en/signup",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "footer",
+        "text": "Contact",
+        "href": "https://www.chessorro.com/en/contact",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "footer",
+        "text": "History",
+        "href": "https://www.chessorro.com/en/history",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "footer",
+        "text": "Ratings",
+        "href": "https://www.chessorro.com/en/ratings",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "footer",
+        "text": "Terms",
+        "href": "https://www.chessorro.com/en/terms",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "footer",
+        "text": "Privacy",
+        "href": "https://www.chessorro.com/en/privacy",
+        "target": null,
+        "visible": true
+      }
+    ],
+    "allLinkCount": 13,
+    "buttons": [
+      "EN",
+      "Switch to dark theme"
+    ],
+    "forms": [],
+    "passwordInputs": 0,
+    "authLinks": [
+      {
+        "text": "Sign in",
+        "href": "https://www.chessorro.com/en/login"
+      },
+      {
+        "text": "Start a game",
+        "href": "https://www.chessorro.com/en/signup"
+      }
+    ],
+    "api": [
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/ratings?_rsc=VjpTGDT2Uz0JUNLL",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/history?_rsc=VjpTGDT2Uz0JUNLL",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en?_rsc=VjpTGDT2Uz0JUNLL",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/play/chess?_rsc=VjpTGDT2Uz0JUNLL",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/contact?_rsc=VjpTGDT2Uz0JUNLL",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/terms?_rsc=VjpTGDT2Uz0JUNLL",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/login?_rsc=VjpTGDT2Uz0JUNLL",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/signup?_rsc=VjpTGDT2Uz0JUNLL",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/privacy?_rsc=VjpTGDT2Uz0JUNLL",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en?_rsc=5z_HeRcMfx_-xdWW",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en?_rsc=XljVrN2-vP9RLJHu",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/history?_rsc=h63-uVQyqMMsV9Xs",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/ratings?_rsc=RvZ28ffxPV8n8jt2",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/play/chess?_rsc=_ReIjphzfb-o0dLE",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/contact?_rsc=wtyiK2qeJHWkfVgl",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/login?_rsc=_ReIjphzfb-o0dLE",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/signup?_rsc=_ReIjphzfb-o0dLE",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/privacy?_rsc=W2VthwBnKwdN3PkD",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/terms?_rsc=lrk-HH6amwxUBq5d",
+        "status": 200,
+        "type": "text/x-component"
+      }
+    ],
+    "consoleErrors": [],
+    "aria": "- link \"Skip to content\":\n  - /url: \"#main\"\n- banner:\n  - link \"Chessorro\":\n    - /url: /en\n  - navigation \"Main\":\n    - link \"Play now\":\n      - /url: /en/play/chess\n    - link \"History\":\n      - /url: /en/history\n    - link \"Ratings\":\n      - /url: /en/ratings\n    - link \"Sign in\":\n      - /url: /en/login\n    - link \"Start a game\":\n      - /url: /en/signup\n  - button \"Choose a language\": EN\n  - button \"Switch to dark theme\"\n- main:\n  - article:\n    - heading \"Terms of Service\" [level=1]\n    - paragraph: Beta terms — last updated August 2026.\n    - paragraph: Chessorro is a free platform for playing chess, checkers, backgammon, and dominoes with friends. By creating an account you agree to these terms.\n    - heading \"MOVE Points\" [level=2]\n    - paragraph:\n      - text: MOVE Points are a free, internal reward with\n      - strong: no monetary or cash value\n      - text: . They cannot be purchased, sold, transferred, exchanged, withdrawn, or redeemed for anything of value. Chessorro involves no wagering, gambling, cryptocurrency, or real-money play of any kind.\n    - heading \"Fair play\" [level=2]\n    - paragraph: Play your own moves. Using engines or assistance in rated games, farming points, or abusing other players may lead to account suspension. Suspensions are logged and reviewed.\n    - heading \"Your account\" [level=2]\n    - paragraph: You are responsible for your account credentials. We may remove accounts that violate these terms. You may stop using the service at any time.\n    - heading \"Service status\" [level=2]\n    - paragraph: Chessorro is in beta and provided as-is, without warranties. Features may change and downtime may occur; we work to keep your game data safe across both.\n    - heading \"After the beta\" [level=2]\n    - paragraph: All four games are free to play during the beta and we have no plans to put the core games behind a payment. If pricing or how long we keep your data ever changes, we will update this page and tell account holders by email before the change takes effect. Games, ratings, and MOVE Points earned in the beta carry over.\n    - heading \"Contact\" [level=2]\n    - paragraph:\n      - text: Questions about these terms, your account, or deleting your data go to\n      - link \"contact\":\n        - /url: /en/contact\n      - text: .\n- contentinfo:\n  - paragraph: © 2026 Chessorro\n  - paragraph: MOVE Points are a free in-app reward with no cash value. They cannot be purchased, transferred, or exchanged.\n  - navigation \"More\":\n    - link \"Contact\":\n      - /url: /en/contact\n    - link \"History\":\n      - /url: /en/history\n    - link \"Ratings\":\n      - /url: /en/ratings\n    - link \"Terms\":\n      - /url: /en/terms\n    - link \"Privacy\":\n      - /url: /en/privacy\n- alert",
+    "screenshot": "07-en-terms.jpg"
+  },
+  {
+    "url": "https://www.chessorro.com/en/privacy",
+    "status": 200,
+    "finalUrl": "https://www.chessorro.com/en/privacy",
+    "title": "Privacy Policy · Chessorro",
+    "lang": "en",
+    "headings": [
+      {
+        "level": 1,
+        "text": "Privacy Policy"
+      },
+      {
+        "level": 2,
+        "text": "What we collect"
+      },
+      {
+        "level": 2,
+        "text": "How it is used"
+      },
+      {
+        "level": 2,
+        "text": "Where it lives"
+      },
+      {
+        "level": 2,
+        "text": "What others see"
+      },
+      {
+        "level": 2,
+        "text": "Your choices"
+      },
+      {
+        "level": 2,
+        "text": "Getting in touch"
+      }
+    ],
+    "navLinks": [
+      {
+        "area": "header",
+        "text": "Chessorro",
+        "href": "https://www.chessorro.com/en",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "header",
+        "text": "Play now",
+        "href": "https://www.chessorro.com/en/play/chess",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "header",
+        "text": "History",
+        "href": "https://www.chessorro.com/en/history",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "header",
+        "text": "Ratings",
+        "href": "https://www.chessorro.com/en/ratings",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "header",
+        "text": "Sign in",
+        "href": "https://www.chessorro.com/en/login",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "header",
+        "text": "Start a game",
+        "href": "https://www.chessorro.com/en/signup",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "footer",
+        "text": "Contact",
+        "href": "https://www.chessorro.com/en/contact",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "footer",
+        "text": "History",
+        "href": "https://www.chessorro.com/en/history",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "footer",
+        "text": "Ratings",
+        "href": "https://www.chessorro.com/en/ratings",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "footer",
+        "text": "Terms",
+        "href": "https://www.chessorro.com/en/terms",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "footer",
+        "text": "Privacy",
+        "href": "https://www.chessorro.com/en/privacy",
+        "target": null,
+        "visible": true
+      }
+    ],
+    "allLinkCount": 14,
+    "buttons": [
+      "EN",
+      "Switch to dark theme"
+    ],
+    "forms": [],
+    "passwordInputs": 0,
+    "authLinks": [
+      {
+        "text": "Sign in",
+        "href": "https://www.chessorro.com/en/login"
+      },
+      {
+        "text": "Start a game",
+        "href": "https://www.chessorro.com/en/signup"
+      },
+      {
+        "text": "support@chessorro.com",
+        "href": "mailto:support@chessorro.com?subject=Delete%20my%20account"
+      }
+    ],
+    "api": [
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/history?_rsc=xyzclthuw36O5VMs",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en?_rsc=xyzclthuw36O5VMs",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/ratings?_rsc=xyzclthuw36O5VMs",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/play/chess?_rsc=xyzclthuw36O5VMs",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/contact?_rsc=xyzclthuw36O5VMs",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/login?_rsc=xyzclthuw36O5VMs",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/signup?_rsc=xyzclthuw36O5VMs",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/privacy?_rsc=xyzclthuw36O5VMs",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/terms?_rsc=xyzclthuw36O5VMs",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en?_rsc=cvIYpyfwdM0zB7_H",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en?_rsc=osWGwh4nWIr9IIOv",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/history?_rsc=_bEP2zPb3DLA7GCC",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/play/chess?_rsc=eoRf6MsOUd7DGNah",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/ratings?_rsc=T-ASAGn0ajuD4dlK",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/login?_rsc=eoRf6MsOUd7DGNah",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/contact?_rsc=J4I5SIiDza9GM2K-",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/terms?_rsc=u7ETa6rrBF7RCNxd",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/privacy?_rsc=vJ3Oaw_tLpn7L4i6",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/signup?_rsc=eoRf6MsOUd7DGNah",
+        "status": 200,
+        "type": "text/x-component"
+      }
+    ],
+    "consoleErrors": [],
+    "aria": "- link \"Skip to content\":\n  - /url: \"#main\"\n- banner:\n  - link \"Chessorro\":\n    - /url: /en\n  - navigation \"Main\":\n    - link \"Play now\":\n      - /url: /en/play/chess\n    - link \"History\":\n      - /url: /en/history\n    - link \"Ratings\":\n      - /url: /en/ratings\n    - link \"Sign in\":\n      - /url: /en/login\n    - link \"Start a game\":\n      - /url: /en/signup\n  - button \"Choose a language\": EN\n  - button \"Switch to dark theme\"\n- main:\n  - article:\n    - heading \"Privacy Policy\" [level=1]\n    - paragraph: Beta policy — last updated August 2026.\n    - heading \"What we collect\" [level=2]\n    - paragraph: Your email address and password (or Google or Apple account identity) for sign-in; your username, display name, and optional avatar; your games, moves, ratings, MOVE Points, and notifications; and, if you enable push notifications in the iPhone app, a device push token used only to deliver them. We hash invitation tokens and IP addresses used for rate limiting — raw values are never stored.\n    - heading \"How it is used\" [level=2]\n    - paragraph: \"Solely to run Chessorro: authenticating you, pairing games, keeping score, and notifying you when it is your move. We do not sell your data or use it for advertising.\"\n    - heading \"Where it lives\" [level=2]\n    - paragraph: Data is stored with Supabase (PostgreSQL and authentication) and the app is served by Vercel. Passwords are hashed by Supabase Auth and are never visible to us.\n    - heading \"What others see\" [level=2]\n    - paragraph: Your username, display name, avatar, and ratings are visible to other players (for example on the leaderboard and in games). Your email is never shown to other players.\n    - heading \"Your choices\" [level=2]\n    - paragraph:\n      - text: You can edit your profile at any time, and delete your account yourself from the Profile page — this removes your sign-in, email, profile, notifications, and devices immediately, while finished games remain in your opponents' histories under an anonymous name. You can also email\n      - link \"support@chessorro.com\":\n        - /url: mailto:support@chessorro.com?subject=Delete%20my%20account\n      - text: from the address you signed up with and we will remove it.\n    - heading \"Getting in touch\" [level=2]\n    - paragraph:\n      - text: Questions about any of the above go to the same address. See\n      - link \"contact\":\n        - /url: /en/contact\n      - text: for what else support can help with.\n- contentinfo:\n  - paragraph: © 2026 Chessorro\n  - paragraph: MOVE Points are a free in-app reward with no cash value. They cannot be purchased, transferred, or exchanged.\n  - navigation \"More\":\n    - link \"Contact\":\n      - /url: /en/contact\n    - link \"History\":\n      - /url: /en/history\n    - link \"Ratings\":\n      - /url: /en/ratings\n    - link \"Terms\":\n      - /url: /en/terms\n    - link \"Privacy\":\n      - /url: /en/privacy\n- alert",
+    "screenshot": "08-en-privacy.jpg"
+  },
+  {
+    "url": "https://www.chessorro.com/en/play/checkers",
+    "status": 200,
+    "finalUrl": "https://www.chessorro.com/en/play/checkers",
+    "title": "Checkers vs computer · Chessorro",
+    "lang": "en",
+    "headings": [
+      {
+        "level": 1,
+        "text": "Checkers vs computer"
+      },
+      {
+        "level": 2,
+        "text": "Set up your game"
+      }
+    ],
+    "navLinks": [
+      {
+        "area": "header",
+        "text": "Chessorro",
+        "href": "https://www.chessorro.com/en",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "header",
+        "text": "Play now",
+        "href": "https://www.chessorro.com/en/play/chess",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "header",
+        "text": "History",
+        "href": "https://www.chessorro.com/en/history",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "header",
+        "text": "Ratings",
+        "href": "https://www.chessorro.com/en/ratings",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "header",
+        "text": "Sign in",
+        "href": "https://www.chessorro.com/en/login",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "header",
+        "text": "Start a game",
+        "href": "https://www.chessorro.com/en/signup",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "footer",
+        "text": "Contact",
+        "href": "https://www.chessorro.com/en/contact",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "footer",
+        "text": "History",
+        "href": "https://www.chessorro.com/en/history",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "footer",
+        "text": "Ratings",
+        "href": "https://www.chessorro.com/en/ratings",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "footer",
+        "text": "Terms",
+        "href": "https://www.chessorro.com/en/terms",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "footer",
+        "text": "Privacy",
+        "href": "https://www.chessorro.com/en/privacy",
+        "target": null,
+        "visible": true
+      }
+    ],
+    "allLinkCount": 12,
+    "buttons": [
+      "EN",
+      "Switch to dark theme",
+      "Beginner",
+      "Standard",
+      "Advanced",
+      "White",
+      "Black",
+      "Random",
+      "Single game",
+      "First to 3",
+      "First to 5",
+      "Instant",
+      "Normal",
+      "Relaxed",
+      "No clock",
+      "Bullet 1+0",
+      "Blitz 3+2",
+      "Blitz 5+0",
+      "Rapid 10+5",
+      "English",
+      "Russian",
+      "International",
+      "Royal Ivory",
+      "Walnut",
+      "Emerald Club",
+      "Midnight",
+      "Crimson Noir",
+      "Tournament Blue",
+      "Start game"
+    ],
+    "forms": [],
+    "passwordInputs": 0,
+    "authLinks": [
+      {
+        "text": "Sign in",
+        "href": "https://www.chessorro.com/en/login"
+      },
+      {
+        "text": "Start a game",
+        "href": "https://www.chessorro.com/en/signup"
+      }
+    ],
+    "api": [
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en?_rsc=9qJicZZ4EATxo3Ro",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/history?_rsc=9qJicZZ4EATxo3Ro",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/ratings?_rsc=9qJicZZ4EATxo3Ro",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/login?_rsc=9qJicZZ4EATxo3Ro",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en?_rsc=JwcmPFbVaHS0CbE0",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en?_rsc=uX3gkdmYgTDFQx4G",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/signup?_rsc=9qJicZZ4EATxo3Ro",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/history?_rsc=_xAHHirjlNqMH8YF",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/play/chess?_rsc=OlEe8i6WBchnWXAm",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/ratings?_rsc=MBuBqmF1zSi29lt0",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/login?_rsc=OlEe8i6WBchnWXAm",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/signup?_rsc=OlEe8i6WBchnWXAm",
+        "status": 200,
+        "type": "text/x-component"
+      }
+    ],
+    "consoleErrors": [],
+    "aria": "- link \"Skip to content\":\n  - /url: \"#main\"\n- banner:\n  - link \"Chessorro\":\n    - /url: /en\n  - navigation \"Main\":\n    - link \"Play now\":\n      - /url: /en/play/chess\n    - link \"History\":\n      - /url: /en/history\n    - link \"Ratings\":\n      - /url: /en/ratings\n    - link \"Sign in\":\n      - /url: /en/login\n    - link \"Start a game\":\n      - /url: /en/signup\n  - button \"Choose a language\": EN\n  - button \"Switch to dark theme\"\n- main:\n  - paragraph: Play instantly · no sign in required\n  - heading \"Checkers vs computer\" [level=1]\n  - heading \"Set up your game\" [level=2]\n  - paragraph: Choose how you want to play checkers. You can change any of it between games.\n  - group \"Difficulty\":\n    - text: Difficulty\n    - radiogroup \"Difficulty\":\n      - radio \"Beginner\"\n      - radio \"Standard\" [checked]\n      - radio \"Advanced\"\n    - paragraph: Takes the obvious captures and points.\n  - group \"You play\":\n    - text: You play\n    - radiogroup \"You play\":\n      - radio \"White\" [checked]\n      - radio \"Black\"\n      - radio \"Random\"\n    - paragraph: You play White and move first.\n  - group \"Match length\":\n    - text: Match length\n    - radiogroup \"Match length\":\n      - radio \"Single game\" [checked]\n      - radio \"First to 3\"\n      - radio \"First to 5\"\n    - paragraph: One game, then you are done.\n  - group \"Computer speed\":\n    - text: Computer speed\n    - radiogroup \"Computer speed\":\n      - radio \"Instant\"\n      - radio \"Normal\" [checked]\n      - radio \"Relaxed\"\n    - paragraph: Short pause before replying.\n  - group \"Clock\":\n    - text: Clock\n    - radiogroup \"Clock\":\n      - radio \"No clock\" [checked]\n      - radio \"Bullet 1+0\"\n      - radio \"Blitz 3+2\"\n      - radio \"Blitz 5+0\"\n      - radio \"Rapid 10+5\"\n    - paragraph: Take as long as you like.\n  - group \"Variant\":\n    - text: Variant\n    - radiogroup \"Variant\":\n      - radio \"English\" [checked]\n      - radio \"Russian\"\n      - radio \"International\"\n    - paragraph: 8×8 board.\n  - group \"Board style\":\n    - text: Board style\n    - radiogroup \"Board style\":\n      - radio \"Royal Ivory\" [checked]\n      - radio \"Walnut\"\n      - radio \"Emerald Club\"\n      - radio \"Midnight\"\n      - radio \"Crimson Noir\"\n      - radio \"Tournament Blue\"\n  - group: Sound\n  - button \"Start game\"\n- contentinfo:\n  - paragraph: © 2026 Chessorro\n  - paragraph: MOVE Points are a free in-app reward with no cash value. They cannot be purchased, transferred, or exchanged.\n  - navigation \"More\":\n    - link \"Contact\":\n      - /url: /en/contact\n    - link \"History\":\n      - /url: /en/history\n    - link \"Ratings\":\n      - /url: /en/ratings\n    - link \"Terms\":\n      - /url: /en/terms\n    - link \"Privacy\":\n      - /url: /en/privacy\n- alert",
+    "screenshot": "09-en-play-checkers.jpg"
+  },
+  {
+    "url": "https://www.chessorro.com/en/play/backgammon",
+    "status": 200,
+    "finalUrl": "https://www.chessorro.com/en/play/backgammon",
+    "title": "Backgammon vs computer · Chessorro",
+    "lang": "en",
+    "headings": [
+      {
+        "level": 1,
+        "text": "Backgammon vs computer"
+      },
+      {
+        "level": 2,
+        "text": "Set up your game"
+      }
+    ],
+    "navLinks": [
+      {
+        "area": "header",
+        "text": "Chessorro",
+        "href": "https://www.chessorro.com/en",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "header",
+        "text": "Play now",
+        "href": "https://www.chessorro.com/en/play/chess",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "header",
+        "text": "History",
+        "href": "https://www.chessorro.com/en/history",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "header",
+        "text": "Ratings",
+        "href": "https://www.chessorro.com/en/ratings",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "header",
+        "text": "Sign in",
+        "href": "https://www.chessorro.com/en/login",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "header",
+        "text": "Start a game",
+        "href": "https://www.chessorro.com/en/signup",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "footer",
+        "text": "Contact",
+        "href": "https://www.chessorro.com/en/contact",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "footer",
+        "text": "History",
+        "href": "https://www.chessorro.com/en/history",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "footer",
+        "text": "Ratings",
+        "href": "https://www.chessorro.com/en/ratings",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "footer",
+        "text": "Terms",
+        "href": "https://www.chessorro.com/en/terms",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "footer",
+        "text": "Privacy",
+        "href": "https://www.chessorro.com/en/privacy",
+        "target": null,
+        "visible": true
+      }
+    ],
+    "allLinkCount": 12,
+    "buttons": [
+      "EN",
+      "Switch to dark theme",
+      "Beginner",
+      "Standard",
+      "Advanced",
+      "White",
+      "Black",
+      "Random",
+      "Single game",
+      "First to 3",
+      "First to 5",
+      "Instant",
+      "Normal",
+      "Relaxed",
+      "No clock",
+      "Bullet 1+0",
+      "Blitz 3+2",
+      "Blitz 5+0",
+      "Rapid 10+5",
+      "Backgammon",
+      "Long backgammon",
+      "Auto-roll",
+      "Roll myself",
+      "Royal Ivory",
+      "Walnut",
+      "Emerald Club",
+      "Midnight",
+      "Crimson Noir",
+      "Tournament Blue",
+      "Start game"
+    ],
+    "forms": [],
+    "passwordInputs": 0,
+    "authLinks": [
+      {
+        "text": "Sign in",
+        "href": "https://www.chessorro.com/en/login"
+      },
+      {
+        "text": "Start a game",
+        "href": "https://www.chessorro.com/en/signup"
+      }
+    ],
+    "api": [
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/ratings?_rsc=2PvrV575phm-Exnf",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en?_rsc=2PvrV575phm-Exnf",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/history?_rsc=2PvrV575phm-Exnf",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/login?_rsc=2PvrV575phm-Exnf",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en?_rsc=tzBhETtJyYSDkRI_",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en?_rsc=Xip1Fy6puisdS5BC",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/signup?_rsc=2PvrV575phm-Exnf",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/play/chess?_rsc=4izCQvmXQx6tluVY",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/history?_rsc=ztTyjiuJL5YihSl0",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/ratings?_rsc=u-ZX0UK2_57AJd3e",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/login?_rsc=4izCQvmXQx6tluVY",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/signup?_rsc=4izCQvmXQx6tluVY",
+        "status": 200,
+        "type": "text/x-component"
+      }
+    ],
+    "consoleErrors": [],
+    "aria": "- link \"Skip to content\":\n  - /url: \"#main\"\n- banner:\n  - link \"Chessorro\":\n    - /url: /en\n  - navigation \"Main\":\n    - link \"Play now\":\n      - /url: /en/play/chess\n    - link \"History\":\n      - /url: /en/history\n    - link \"Ratings\":\n      - /url: /en/ratings\n    - link \"Sign in\":\n      - /url: /en/login\n    - link \"Start a game\":\n      - /url: /en/signup\n  - button \"Choose a language\": EN\n  - button \"Switch to dark theme\"\n- main:\n  - paragraph: Play instantly · no sign in required\n  - heading \"Backgammon vs computer\" [level=1]\n  - heading \"Set up your game\" [level=2]\n  - paragraph: Choose how you want to play backgammon. You can change any of it between games.\n  - group \"Difficulty\":\n    - text: Difficulty\n    - radiogroup \"Difficulty\":\n      - radio \"Beginner\"\n      - radio \"Standard\" [checked]\n      - radio \"Advanced\"\n    - paragraph: Takes the obvious captures and points.\n  - group \"You play\":\n    - text: You play\n    - radiogroup \"You play\":\n      - radio \"White\" [checked]\n      - radio \"Black\"\n      - radio \"Random\"\n    - paragraph: You play White and move first.\n  - group \"Match length\":\n    - text: Match length\n    - radiogroup \"Match length\":\n      - radio \"Single game\" [checked]\n      - radio \"First to 3\"\n      - radio \"First to 5\"\n    - paragraph: One game, then you are done.\n  - group \"Computer speed\":\n    - text: Computer speed\n    - radiogroup \"Computer speed\":\n      - radio \"Instant\"\n      - radio \"Normal\" [checked]\n      - radio \"Relaxed\"\n    - paragraph: Short pause before replying.\n  - group \"Clock\":\n    - text: Clock\n    - radiogroup \"Clock\":\n      - radio \"No clock\" [checked]\n      - radio \"Bullet 1+0\"\n      - radio \"Blitz 3+2\"\n      - radio \"Blitz 5+0\"\n      - radio \"Rapid 10+5\"\n    - paragraph: Take as long as you like.\n  - group \"Rules\":\n    - text: Rules\n    - radiogroup \"Rules\":\n      - radio \"Backgammon\" [checked]\n      - radio \"Long backgammon\"\n    - paragraph: \"The standard game: land on a lone checker to send it to the bar.\"\n  - group \"Dice\":\n    - text: Dice\n    - radiogroup \"Dice\":\n      - radio \"Auto-roll\" [checked]\n      - radio \"Roll myself\"\n    - paragraph: The dice are rolled for you when your turn begins.\n  - group \"Board style\":\n    - text: Board style\n    - radiogroup \"Board style\":\n      - radio \"Royal Ivory\" [checked]\n      - radio \"Walnut\"\n      - radio \"Emerald Club\"\n      - radio \"Midnight\"\n      - radio \"Crimson Noir\"\n      - radio \"Tournament Blue\"\n  - group: Sound\n  - button \"Start game\"\n- contentinfo:\n  - paragraph: © 2026 Chessorro\n  - paragraph: MOVE Points are a free in-app reward with no cash value. They cannot be purchased, transferred, or exchanged.\n  - navigation \"More\":\n    - link \"Contact\":\n      - /url: /en/contact\n    - link \"History\":\n      - /url: /en/history\n    - link \"Ratings\":\n      - /url: /en/ratings\n    - link \"Terms\":\n      - /url: /en/terms\n    - link \"Privacy\":\n      - /url: /en/privacy\n- alert",
+    "screenshot": "10-en-play-backgammon.jpg"
+  },
+  {
+    "url": "https://www.chessorro.com/en/play/dominoes",
+    "status": 200,
+    "finalUrl": "https://www.chessorro.com/en/play/dominoes",
+    "title": "Dominoes vs computer · Chessorro",
+    "lang": "en",
+    "headings": [
+      {
+        "level": 1,
+        "text": "Dominoes vs computer"
+      },
+      {
+        "level": 2,
+        "text": "Set up your game"
+      }
+    ],
+    "navLinks": [
+      {
+        "area": "header",
+        "text": "Chessorro",
+        "href": "https://www.chessorro.com/en",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "header",
+        "text": "Play now",
+        "href": "https://www.chessorro.com/en/play/chess",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "header",
+        "text": "History",
+        "href": "https://www.chessorro.com/en/history",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "header",
+        "text": "Ratings",
+        "href": "https://www.chessorro.com/en/ratings",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "header",
+        "text": "Sign in",
+        "href": "https://www.chessorro.com/en/login",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "header",
+        "text": "Start a game",
+        "href": "https://www.chessorro.com/en/signup",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "footer",
+        "text": "Contact",
+        "href": "https://www.chessorro.com/en/contact",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "footer",
+        "text": "History",
+        "href": "https://www.chessorro.com/en/history",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "footer",
+        "text": "Ratings",
+        "href": "https://www.chessorro.com/en/ratings",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "footer",
+        "text": "Terms",
+        "href": "https://www.chessorro.com/en/terms",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "footer",
+        "text": "Privacy",
+        "href": "https://www.chessorro.com/en/privacy",
+        "target": null,
+        "visible": true
+      }
+    ],
+    "allLinkCount": 12,
+    "buttons": [
+      "EN",
+      "Switch to dark theme",
+      "Beginner",
+      "Standard",
+      "Advanced",
+      "Lead",
+      "Follow",
+      "Random",
+      "Single game",
+      "First to 3",
+      "First to 5",
+      "Instant",
+      "Normal",
+      "Relaxed",
+      "No clock",
+      "Bullet 1+0",
+      "Blitz 3+2",
+      "Blitz 5+0",
+      "Rapid 10+5",
+      "Royal Ivory",
+      "Walnut",
+      "Emerald Club",
+      "Midnight",
+      "Crimson Noir",
+      "Tournament Blue",
+      "Start game"
+    ],
+    "forms": [],
+    "passwordInputs": 0,
+    "authLinks": [
+      {
+        "text": "Sign in",
+        "href": "https://www.chessorro.com/en/login"
+      },
+      {
+        "text": "Start a game",
+        "href": "https://www.chessorro.com/en/signup"
+      }
+    ],
+    "api": [
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/ratings?_rsc=bew4I57_7fdCruzp",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/history?_rsc=bew4I57_7fdCruzp",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en?_rsc=bew4I57_7fdCruzp",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/login?_rsc=bew4I57_7fdCruzp",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en?_rsc=JrtR38hCuDvSx3Oa",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en?_rsc=8LZRF_sGJUb61ke4",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/play/chess?_rsc=oI8KAlQGtY-vcRe-",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/signup?_rsc=bew4I57_7fdCruzp",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/history?_rsc=MUX9WzBeTGBOMpf0",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/ratings?_rsc=n2gmnWNaUh3uBhoq",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/login?_rsc=oI8KAlQGtY-vcRe-",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/signup?_rsc=oI8KAlQGtY-vcRe-",
+        "status": 200,
+        "type": "text/x-component"
+      }
+    ],
+    "consoleErrors": [],
+    "aria": "- link \"Skip to content\":\n  - /url: \"#main\"\n- banner:\n  - link \"Chessorro\":\n    - /url: /en\n  - navigation \"Main\":\n    - link \"Play now\":\n      - /url: /en/play/chess\n    - link \"History\":\n      - /url: /en/history\n    - link \"Ratings\":\n      - /url: /en/ratings\n    - link \"Sign in\":\n      - /url: /en/login\n    - link \"Start a game\":\n      - /url: /en/signup\n  - button \"Choose a language\": EN\n  - button \"Switch to dark theme\"\n- main:\n  - paragraph: Play instantly · no sign in required\n  - heading \"Dominoes vs computer\" [level=1]\n  - heading \"Set up your game\" [level=2]\n  - paragraph: Choose how you want to play dominoes. You can change any of it between games.\n  - group \"Difficulty\":\n    - text: Difficulty\n    - radiogroup \"Difficulty\":\n      - radio \"Beginner\"\n      - radio \"Standard\" [checked]\n      - radio \"Advanced\"\n    - paragraph: Takes the obvious captures and points.\n  - group \"You play\":\n    - text: You play\n    - radiogroup \"You play\":\n      - radio \"Lead\" [checked]\n      - radio \"Follow\"\n      - radio \"Random\"\n    - paragraph: You play the first tile.\n  - group \"Match length\":\n    - text: Match length\n    - radiogroup \"Match length\":\n      - radio \"Single game\" [checked]\n      - radio \"First to 3\"\n      - radio \"First to 5\"\n    - paragraph: One game, then you are done.\n  - group \"Computer speed\":\n    - text: Computer speed\n    - radiogroup \"Computer speed\":\n      - radio \"Instant\"\n      - radio \"Normal\" [checked]\n      - radio \"Relaxed\"\n    - paragraph: Short pause before replying.\n  - group \"Clock\":\n    - text: Clock\n    - radiogroup \"Clock\":\n      - radio \"No clock\" [checked]\n      - radio \"Bullet 1+0\"\n      - radio \"Blitz 3+2\"\n      - radio \"Blitz 5+0\"\n      - radio \"Rapid 10+5\"\n    - paragraph: Take as long as you like.\n  - group \"Board style\":\n    - text: Board style\n    - radiogroup \"Board style\":\n      - radio \"Royal Ivory\" [checked]\n      - radio \"Walnut\"\n      - radio \"Emerald Club\"\n      - radio \"Midnight\"\n      - radio \"Crimson Noir\"\n      - radio \"Tournament Blue\"\n  - group: Sound\n  - button \"Start game\"\n- contentinfo:\n  - paragraph: © 2026 Chessorro\n  - paragraph: MOVE Points are a free in-app reward with no cash value. They cannot be purchased, transferred, or exchanged.\n  - navigation \"More\":\n    - link \"Contact\":\n      - /url: /en/contact\n    - link \"History\":\n      - /url: /en/history\n    - link \"Ratings\":\n      - /url: /en/ratings\n    - link \"Terms\":\n      - /url: /en/terms\n    - link \"Privacy\":\n      - /url: /en/privacy\n- alert",
+    "screenshot": "11-en-play-dominoes.jpg"
+  },
+  {
+    "url": "https://www.chessorro.com/en/leaderboard",
+    "status": 200,
+    "finalUrl": "https://www.chessorro.com/en/login?next=%2Fen%2Fleaderboard",
+    "title": "Sign in · Chessorro",
+    "lang": "en",
+    "headings": [
+      {
+        "level": 3,
+        "text": "Sign in"
+      }
+    ],
+    "navLinks": [
+      {
+        "area": "header",
+        "text": "Chessorro",
+        "href": "https://www.chessorro.com/en",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "header",
+        "text": "Play now",
+        "href": "https://www.chessorro.com/en/play/chess",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "header",
+        "text": "History",
+        "href": "https://www.chessorro.com/en/history",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "header",
+        "text": "Ratings",
+        "href": "https://www.chessorro.com/en/ratings",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "header",
+        "text": "Sign in",
+        "href": "https://www.chessorro.com/en/login",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "header",
+        "text": "Start a game",
+        "href": "https://www.chessorro.com/en/signup",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "footer",
+        "text": "Contact",
+        "href": "https://www.chessorro.com/en/contact",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "footer",
+        "text": "History",
+        "href": "https://www.chessorro.com/en/history",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "footer",
+        "text": "Ratings",
+        "href": "https://www.chessorro.com/en/ratings",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "footer",
+        "text": "Terms",
+        "href": "https://www.chessorro.com/en/terms",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "footer",
+        "text": "Privacy",
+        "href": "https://www.chessorro.com/en/privacy",
+        "target": null,
+        "visible": true
+      }
+    ],
+    "allLinkCount": 14,
+    "buttons": [
+      "EN",
+      "Switch to dark theme",
+      "Continue with Google",
+      "Sign in"
+    ],
+    "forms": [
+      {
+        "selector": "form:nth-of-type(1)",
+        "action": null,
+        "method": null,
+        "visible": true,
+        "fields": [
+          {
+            "tag": "input",
+            "type": "email",
+            "name": "email",
+            "id": "email",
+            "placeholder": "",
+            "label": "Email",
+            "required": false,
+            "autocomplete": "email",
+            "visible": true
+          },
+          {
+            "tag": "input",
+            "type": "password",
+            "name": "password",
+            "id": "password",
+            "placeholder": "",
+            "label": "Password",
+            "required": false,
+            "autocomplete": "current-password",
+            "visible": true
+          }
+        ],
+        "submit": [
+          "Sign in"
+        ]
+      }
+    ],
+    "passwordInputs": 1,
+    "authLinks": [
+      {
+        "text": "Sign in",
+        "href": "https://www.chessorro.com/en/login"
+      },
+      {
+        "text": "Start a game",
+        "href": "https://www.chessorro.com/en/signup"
+      },
+      {
+        "text": "Create one",
+        "href": "https://www.chessorro.com/en/signup?next=%2Fen%2Fleaderboard"
+      }
+    ],
+    "api": [
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/history?_rsc=5Ytq4yus8l7WMcr0",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en?_rsc=5Ytq4yus8l7WMcr0",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/ratings?_rsc=5Ytq4yus8l7WMcr0",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/play/chess?_rsc=5Ytq4yus8l7WMcr0",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/forgot-password?_rsc=5Ytq4yus8l7WMcr0",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/signup?_rsc=5Ytq4yus8l7WMcr0",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/signup?next=%2Fen%2Fleaderboard&_rsc=5Ytq4yus8l7WMcr0",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/contact?_rsc=5Ytq4yus8l7WMcr0",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/terms?_rsc=5Ytq4yus8l7WMcr0",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/privacy?_rsc=5Ytq4yus8l7WMcr0",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en?_rsc=U-dmjCBEN0eFCLaK",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en?_rsc=KoV5yp7cmiwoJ-Vr",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/history?_rsc=pXEbWE2X4UHRmjQd",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/ratings?_rsc=TU_kgttHx48cjSwH",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/play/chess?_rsc=DnuDkKnAGTXmZ9vQ",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/login?_rsc=DnuDkKnAGTXmZ9vQ",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/forgot-password?_rsc=iwfnxCjfU4yEaV0r",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/signup?_rsc=DnuDkKnAGTXmZ9vQ",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/contact?_rsc=FeeXHVBNJTBr6oin",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/signup?next=%2Fen%2Fleaderboard&_rsc=DnuDkKnAGTXmZ9vQ",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/terms?_rsc=bao3B9eXK9QTwGCK",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/privacy?_rsc=a_Qxr6pKS9P0PBR4",
+        "status": 200,
+        "type": "text/x-component"
+      }
+    ],
+    "consoleErrors": [],
+    "aria": "- link \"Skip to content\":\n  - /url: \"#main\"\n- banner:\n  - link \"Chessorro\":\n    - /url: /en\n  - navigation \"Main\":\n    - link \"Play now\":\n      - /url: /en/play/chess\n    - link \"History\":\n      - /url: /en/history\n    - link \"Ratings\":\n      - /url: /en/ratings\n    - link \"Sign in\":\n      - /url: /en/login\n    - link \"Start a game\":\n      - /url: /en/signup\n  - button \"Choose a language\": EN\n  - button \"Switch to dark theme\"\n- main:\n  - heading \"Sign in\" [level=3]\n  - paragraph: Welcome back. It's your move.\n  - button \"Continue with Google\"\n  - text: Email\n  - textbox \"Email\"\n  - text: Password\n  - textbox \"Password\"\n  - button \"Sign in\"\n  - paragraph:\n    - link \"Forgot your password?\":\n      - /url: /en/forgot-password\n  - paragraph:\n    - text: No account yet?\n    - link \"Create one\":\n      - /url: /en/signup?next=%2Fen%2Fleaderboard\n  - paragraph: ( Welcome back )\n- contentinfo:\n  - paragraph: © 2026 Chessorro\n  - paragraph: MOVE Points are a free in-app reward with no cash value. They cannot be purchased, transferred, or exchanged.\n  - navigation \"More\":\n    - link \"Contact\":\n      - /url: /en/contact\n    - link \"History\":\n      - /url: /en/history\n    - link \"Ratings\":\n      - /url: /en/ratings\n    - link \"Terms\":\n      - /url: /en/terms\n    - link \"Privacy\":\n      - /url: /en/privacy\n- alert",
+    "screenshot": "12-en-login.jpg"
+  },
+  {
+    "url": "https://www.chessorro.com/en/login?next=%2Fen%2Fleaderboard#main",
+    "status": null,
+    "finalUrl": "https://www.chessorro.com/en/login?next=%2Fen%2Fleaderboard#main",
+    "title": "Sign in · Chessorro",
+    "lang": "en",
+    "headings": [
+      {
+        "level": 3,
+        "text": "Sign in"
+      }
+    ],
+    "navLinks": [
+      {
+        "area": "header",
+        "text": "Chessorro",
+        "href": "https://www.chessorro.com/en",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "header",
+        "text": "Play now",
+        "href": "https://www.chessorro.com/en/play/chess",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "header",
+        "text": "History",
+        "href": "https://www.chessorro.com/en/history",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "header",
+        "text": "Ratings",
+        "href": "https://www.chessorro.com/en/ratings",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "header",
+        "text": "Sign in",
+        "href": "https://www.chessorro.com/en/login",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "header",
+        "text": "Start a game",
+        "href": "https://www.chessorro.com/en/signup",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "footer",
+        "text": "Contact",
+        "href": "https://www.chessorro.com/en/contact",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "footer",
+        "text": "History",
+        "href": "https://www.chessorro.com/en/history",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "footer",
+        "text": "Ratings",
+        "href": "https://www.chessorro.com/en/ratings",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "footer",
+        "text": "Terms",
+        "href": "https://www.chessorro.com/en/terms",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "footer",
+        "text": "Privacy",
+        "href": "https://www.chessorro.com/en/privacy",
+        "target": null,
+        "visible": true
+      }
+    ],
+    "allLinkCount": 14,
+    "buttons": [
+      "EN",
+      "Switch to dark theme",
+      "Continue with Google",
+      "Sign in"
+    ],
+    "forms": [
+      {
+        "selector": "form:nth-of-type(1)",
+        "action": null,
+        "method": null,
+        "visible": true,
+        "fields": [
+          {
+            "tag": "input",
+            "type": "email",
+            "name": "email",
+            "id": "email",
+            "placeholder": "",
+            "label": "Email",
+            "required": false,
+            "autocomplete": "email",
+            "visible": true
+          },
+          {
+            "tag": "input",
+            "type": "password",
+            "name": "password",
+            "id": "password",
+            "placeholder": "",
+            "label": "Password",
+            "required": false,
+            "autocomplete": "current-password",
+            "visible": true
+          }
+        ],
+        "submit": [
+          "Sign in"
+        ]
+      }
+    ],
+    "passwordInputs": 1,
+    "authLinks": [
+      {
+        "text": "Sign in",
+        "href": "https://www.chessorro.com/en/login"
+      },
+      {
+        "text": "Start a game",
+        "href": "https://www.chessorro.com/en/signup"
+      },
+      {
+        "text": "Create one",
+        "href": "https://www.chessorro.com/en/signup?next=%2Fen%2Fleaderboard"
+      }
+    ],
+    "api": [],
+    "consoleErrors": [],
+    "aria": "- link \"Skip to content\":\n  - /url: \"#main\"\n- banner:\n  - link \"Chessorro\":\n    - /url: /en\n  - navigation \"Main\":\n    - link \"Play now\":\n      - /url: /en/play/chess\n    - link \"History\":\n      - /url: /en/history\n    - link \"Ratings\":\n      - /url: /en/ratings\n    - link \"Sign in\":\n      - /url: /en/login\n    - link \"Start a game\":\n      - /url: /en/signup\n  - button \"Choose a language\": EN\n  - button \"Switch to dark theme\"\n- main:\n  - heading \"Sign in\" [level=3]\n  - paragraph: Welcome back. It's your move.\n  - button \"Continue with Google\"\n  - text: Email\n  - textbox \"Email\"\n  - text: Password\n  - textbox \"Password\"\n  - button \"Sign in\"\n  - paragraph:\n    - link \"Forgot your password?\":\n      - /url: /en/forgot-password\n  - paragraph:\n    - text: No account yet?\n    - link \"Create one\":\n      - /url: /en/signup?next=%2Fen%2Fleaderboard\n  - paragraph: ( Welcome back )\n- contentinfo:\n  - paragraph: © 2026 Chessorro\n  - paragraph: MOVE Points are a free in-app reward with no cash value. They cannot be purchased, transferred, or exchanged.\n  - navigation \"More\":\n    - link \"Contact\":\n      - /url: /en/contact\n    - link \"History\":\n      - /url: /en/history\n    - link \"Ratings\":\n      - /url: /en/ratings\n    - link \"Terms\":\n      - /url: /en/terms\n    - link \"Privacy\":\n      - /url: /en/privacy\n- alert",
+    "screenshot": "13-en-login.jpg"
+  },
+  {
+    "url": "https://www.chessorro.com/en/signup?next=%2Fen%2Fleaderboard",
+    "status": 200,
+    "finalUrl": "https://www.chessorro.com/en/signup?next=%2Fen%2Fleaderboard",
+    "title": "Create account · Chessorro",
+    "lang": "en",
+    "headings": [
+      {
+        "level": 3,
+        "text": "Create your account"
+      }
+    ],
+    "navLinks": [
+      {
+        "area": "header",
+        "text": "Chessorro",
+        "href": "https://www.chessorro.com/en",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "header",
+        "text": "Play now",
+        "href": "https://www.chessorro.com/en/play/chess",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "header",
+        "text": "History",
+        "href": "https://www.chessorro.com/en/history",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "header",
+        "text": "Ratings",
+        "href": "https://www.chessorro.com/en/ratings",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "header",
+        "text": "Sign in",
+        "href": "https://www.chessorro.com/en/login",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "header",
+        "text": "Start a game",
+        "href": "https://www.chessorro.com/en/signup",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "footer",
+        "text": "Contact",
+        "href": "https://www.chessorro.com/en/contact",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "footer",
+        "text": "History",
+        "href": "https://www.chessorro.com/en/history",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "footer",
+        "text": "Ratings",
+        "href": "https://www.chessorro.com/en/ratings",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "footer",
+        "text": "Terms",
+        "href": "https://www.chessorro.com/en/terms",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "footer",
+        "text": "Privacy",
+        "href": "https://www.chessorro.com/en/privacy",
+        "target": null,
+        "visible": true
+      }
+    ],
+    "allLinkCount": 13,
+    "buttons": [
+      "EN",
+      "Switch to dark theme",
+      "Sign up with Google",
+      "Create account"
+    ],
+    "forms": [
+      {
+        "selector": "form:nth-of-type(1)",
+        "action": null,
+        "method": null,
+        "visible": true,
+        "fields": [
+          {
+            "tag": "input",
+            "type": "email",
+            "name": "email",
+            "id": "email",
+            "placeholder": "",
+            "label": "Email",
+            "required": false,
+            "autocomplete": "email",
+            "visible": true
+          },
+          {
+            "tag": "input",
+            "type": "password",
+            "name": "password",
+            "id": "password",
+            "placeholder": "",
+            "label": "Password",
+            "required": false,
+            "autocomplete": "new-password",
+            "visible": true
+          }
+        ],
+        "submit": [
+          "Create account"
+        ]
+      }
+    ],
+    "passwordInputs": 1,
+    "authLinks": [
+      {
+        "text": "Sign in",
+        "href": "https://www.chessorro.com/en/login"
+      },
+      {
+        "text": "Start a game",
+        "href": "https://www.chessorro.com/en/signup"
+      },
+      {
+        "text": "Sign in",
+        "href": "https://www.chessorro.com/en/login?next=%2Fen%2Fleaderboard"
+      }
+    ],
+    "api": [
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/ratings?_rsc=02Tu82Njg1QhB86v",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/history?_rsc=02Tu82Njg1QhB86v",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/play/chess?_rsc=02Tu82Njg1QhB86v",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en?_rsc=02Tu82Njg1QhB86v",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/login?_rsc=02Tu82Njg1QhB86v",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/login?next=%2Fen%2Fleaderboard&_rsc=02Tu82Njg1QhB86v",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/terms?_rsc=02Tu82Njg1QhB86v",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/contact?_rsc=02Tu82Njg1QhB86v",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en?_rsc=rDeIUw3clm-d9p2W",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/privacy?_rsc=02Tu82Njg1QhB86v",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en?_rsc=OSj5y8_NhNLpsDwj",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/history?_rsc=1BT4bqIYR_vkyJhu",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/ratings?_rsc=VRKZXDasuFK7S2T_",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/play/chess?_rsc=IzJ2LMnoHTVHkbya",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/login?_rsc=IzJ2LMnoHTVHkbya",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/contact?_rsc=0QDUOJxPKBpfC4Bh",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/login?next=%2Fen%2Fleaderboard&_rsc=IzJ2LMnoHTVHkbya",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/signup?_rsc=IzJ2LMnoHTVHkbya",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/terms?_rsc=-AGFz7aQjghALxBk",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/privacy?_rsc=vvG2S167-8ZJ4gzm",
+        "status": 200,
+        "type": "text/x-component"
+      }
+    ],
+    "consoleErrors": [],
+    "aria": "- link \"Skip to content\":\n  - /url: \"#main\"\n- banner:\n  - link \"Chessorro\":\n    - /url: /en\n  - navigation \"Main\":\n    - link \"Play now\":\n      - /url: /en/play/chess\n    - link \"History\":\n      - /url: /en/history\n    - link \"Ratings\":\n      - /url: /en/ratings\n    - link \"Sign in\":\n      - /url: /en/login\n    - link \"Start a game\":\n      - /url: /en/signup\n  - button \"Choose a language\": EN\n  - button \"Switch to dark theme\"\n- main:\n  - heading \"Create your account\" [level=3]\n  - paragraph: Free forever. Start a game and send it to a friend.\n  - button \"Sign up with Google\"\n  - text: Email\n  - textbox \"Email\"\n  - text: Password\n  - textbox \"Password\"\n  - paragraph: Password must be at least 8 characters\n  - button \"Create account\"\n  - paragraph:\n    - text: Already have an account?\n    - link \"Sign in\":\n      - /url: /en/login?next=%2Fen%2Fleaderboard\n  - paragraph: ( First move is free — they all are )\n- contentinfo:\n  - paragraph: © 2026 Chessorro\n  - paragraph: MOVE Points are a free in-app reward with no cash value. They cannot be purchased, transferred, or exchanged.\n  - navigation \"More\":\n    - link \"Contact\":\n      - /url: /en/contact\n    - link \"History\":\n      - /url: /en/history\n    - link \"Ratings\":\n      - /url: /en/ratings\n    - link \"Terms\":\n      - /url: /en/terms\n    - link \"Privacy\":\n      - /url: /en/privacy\n- alert",
+    "screenshot": "14-en-signup.jpg"
+  },
+  {
+    "url": "https://www.chessorro.com/en/forgot-password",
+    "status": 200,
+    "finalUrl": "https://www.chessorro.com/en/forgot-password",
+    "title": "Reset password · Chessorro",
+    "lang": "en",
+    "headings": [
+      {
+        "level": 3,
+        "text": "Reset your password"
+      }
+    ],
+    "navLinks": [
+      {
+        "area": "header",
+        "text": "Chessorro",
+        "href": "https://www.chessorro.com/en",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "header",
+        "text": "Play now",
+        "href": "https://www.chessorro.com/en/play/chess",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "header",
+        "text": "History",
+        "href": "https://www.chessorro.com/en/history",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "header",
+        "text": "Ratings",
+        "href": "https://www.chessorro.com/en/ratings",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "header",
+        "text": "Sign in",
+        "href": "https://www.chessorro.com/en/login",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "header",
+        "text": "Start a game",
+        "href": "https://www.chessorro.com/en/signup",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "footer",
+        "text": "Contact",
+        "href": "https://www.chessorro.com/en/contact",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "footer",
+        "text": "History",
+        "href": "https://www.chessorro.com/en/history",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "footer",
+        "text": "Ratings",
+        "href": "https://www.chessorro.com/en/ratings",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "footer",
+        "text": "Terms",
+        "href": "https://www.chessorro.com/en/terms",
+        "target": null,
+        "visible": true
+      },
+      {
+        "area": "footer",
+        "text": "Privacy",
+        "href": "https://www.chessorro.com/en/privacy",
+        "target": null,
+        "visible": true
+      }
+    ],
+    "allLinkCount": 13,
+    "buttons": [
+      "EN",
+      "Switch to dark theme",
+      "Send reset link"
+    ],
+    "forms": [
+      {
+        "selector": "form:nth-of-type(1)",
+        "action": null,
+        "method": null,
+        "visible": true,
+        "fields": [
+          {
+            "tag": "input",
+            "type": "email",
+            "name": "email",
+            "id": "email",
+            "placeholder": "",
+            "label": "Email",
+            "required": false,
+            "autocomplete": "email",
+            "visible": true
+          }
+        ],
+        "submit": [
+          "Send reset link"
+        ]
+      }
+    ],
+    "passwordInputs": 0,
+    "authLinks": [
+      {
+        "text": "Sign in",
+        "href": "https://www.chessorro.com/en/login"
+      },
+      {
+        "text": "Start a game",
+        "href": "https://www.chessorro.com/en/signup"
+      },
+      {
+        "text": "Back to sign in",
+        "href": "https://www.chessorro.com/en/login"
+      }
+    ],
+    "api": [
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en?_rsc=Whieshz-RIfwc5HM",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/history?_rsc=Whieshz-RIfwc5HM",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/ratings?_rsc=Whieshz-RIfwc5HM",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/play/chess?_rsc=Whieshz-RIfwc5HM",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/login?_rsc=Whieshz-RIfwc5HM",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/signup?_rsc=Whieshz-RIfwc5HM",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/contact?_rsc=Whieshz-RIfwc5HM",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/terms?_rsc=Whieshz-RIfwc5HM",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/privacy?_rsc=Whieshz-RIfwc5HM",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en?_rsc=4ryGiYQej_YCJeN9",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en?_rsc=S9y5ahOPX3R6JOt6",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/history?_rsc=r8lCcxyWWHgDp0TS",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/play/chess?_rsc=geYv-GM4XEpheyYO",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/ratings?_rsc=sofiY7EB5NDAgOyG",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/login?_rsc=geYv-GM4XEpheyYO",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/terms?_rsc=qmXSNOYtoCl1XY5p",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/contact?_rsc=DWHndEYbiGqSApvu",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/signup?_rsc=geYv-GM4XEpheyYO",
+        "status": 200,
+        "type": "text/x-component"
+      },
+      {
+        "method": "GET",
+        "url": "https://www.chessorro.com/en/privacy?_rsc=zSZIpda9JLRrkQuL",
+        "status": 200,
+        "type": "text/x-component"
+      }
+    ],
+    "consoleErrors": [],
+    "aria": "- link \"Skip to content\":\n  - /url: \"#main\"\n- banner:\n  - link \"Chessorro\":\n    - /url: /en\n  - navigation \"Main\":\n    - link \"Play now\":\n      - /url: /en/play/chess\n    - link \"History\":\n      - /url: /en/history\n    - link \"Ratings\":\n      - /url: /en/ratings\n    - link \"Sign in\":\n      - /url: /en/login\n    - link \"Start a game\":\n      - /url: /en/signup\n  - button \"Choose a language\": EN\n  - button \"Switch to dark theme\"\n- main:\n  - heading \"Reset your password\" [level=3]\n  - paragraph: Enter your email and we'll send you a reset link.\n  - text: Email\n  - textbox \"Email\"\n  - button \"Send reset link\"\n  - paragraph:\n    - text: Remembered it?\n    - link \"Back to sign in\":\n      - /url: /en/login\n- contentinfo:\n  - paragraph: © 2026 Chessorro\n  - paragraph: MOVE Points are a free in-app reward with no cash value. They cannot be purchased, transferred, or exchanged.\n  - navigation \"More\":\n    - link \"Contact\":\n      - /url: /en/contact\n    - link \"History\":\n      - /url: /en/history\n    - link \"Ratings\":\n      - /url: /en/ratings\n    - link \"Terms\":\n      - /url: /en/terms\n    - link \"Privacy\":\n      - /url: /en/privacy\n- alert",
+    "screenshot": "15-en-forgot-password.jpg"
+  }
+]

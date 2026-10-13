@@ -1,0 +1,59 @@
+[
+  {
+    "method": "POST",
+    "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/fo/3133930597:1791900934:vQfixAB2_pIxI824Rx_JQSvsyVOrrZaUsmQC0OrzF88/a49f34e759ca0def/l7.tp4J2R_AuspFsNAO.RwrCEZYQuKVZv8zzoB.VExU-1791903550-1.2.1.1-9j9pAnT0obZJqHDFAnhmTA.qFbC.89m7UIs3QU1SqfYinP4uw2wmI2smwC7EURs8",
+    "status": 200,
+    "type": "text/plain; charset=UTF-8",
+    "pages": [
+      "https://www.spas.life/register",
+      "https://www.spas.life/register"
+    ]
+  },
+  {
+    "method": "GET",
+    "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/pat/a49f34e759ca0def/1791903550885/cd8a73e9595aa825ebfce2f8f667b851c78bab52e392cfcb2d8adba8567e6743/75xGaGQ7Sygd29jFcyJsi54.sMAea9_w7gURWTxvyZY-1791903550-1.3.1.1-r7_.Wtwkrds2_bCy9fgEY2NPXJS2f.yLYEE8e3oDgGrspC6Dsd7phu44T5DoDJ0byasFVc24",
+    "status": 401,
+    "type": "text/plain; charset=utf-8",
+    "pages": [
+      "https://www.spas.life/register"
+    ]
+  },
+  {
+    "method": "POST",
+    "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/fo/3133930597:1791900934:vQfixAB2_pIxI824Rx_JQSvsyVOrrZaUsmQC0OrzF88/a49f35268fe90def/OGz._iyl89WWv9KiBibhNgf5lUsFS2_NqePOBkBbtn0-1791903560-1.2.1.1-COuw7v3oE4f5wHCgl6ZzQxvcaKBLOCJUyLMCjnFLjoby9HVTB15wi70gunrpcF0x",
+    "status": 200,
+    "type": "text/plain; charset=UTF-8",
+    "pages": [
+      "https://www.spas.life/en/register",
+      "https://www.spas.life/en/register"
+    ]
+  },
+  {
+    "method": "GET",
+    "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/pat/a49f35268fe90def/1791903560991/cc40f3aa85215ca8254856d1a5c8aad283a96d23d76dcb4596ff0aa0cf8d87a2/og_e.hRIKhC_ke1entVBA1EwB0EPXfTuRIxq.vnBe38-1791903560-1.3.1.1-DhiYj5_lSZgLaZDyqUcmdT0f518wOKpGLdYkGT3TfjY6u2Xes_TplbDHVzWlW886Q4iDx5Mv",
+    "status": 401,
+    "type": "text/plain; charset=utf-8",
+    "pages": [
+      "https://www.spas.life/en/register"
+    ]
+  },
+  {
+    "method": "POST",
+    "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/fo/3133930597:1791900934:vQfixAB2_pIxI824Rx_JQSvsyVOrrZaUsmQC0OrzF88/a49f358499e90def/.IT8i4KNka9wrCJ6IVC2_8T_wlPjiUa2bic.fskFdOI-1791903575-1.2.1.1-CLfzkn7DqaI_.Hv.f.7ElXjq0nVn0puSccHT0AKEoFff81Ig9J_NipCwU_pDSS5A",
+    "status": 200,
+    "type": "text/plain; charset=UTF-8",
+    "pages": [
+      "https://www.spas.life/contact",
+      "https://www.spas.life/contact"
+    ]
+  },
+  {
+    "method": "GET",
+    "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/pat/a49f358499e90def/1791903576033/88929efec75eb1ade17b16dc8786514c083bc22c05e5f9f2d2ac0d3cc50213e8/cslfIhKB1Pog6EzYMz3rOgWnkab4u9j3btvBL90aLIM-1791903576-1.3.1.1-Sthz.60jTZc3S7KmGVCBv27RumlP1oSVRYbmlnwYt.b8NxiJx9kEnFck723NSqS1n0XBT0Cb",
+    "status": 401,
+    "type": "text/plain; charset=utf-8",
+    "pages": [
+      "https://www.spas.life/contact"
+    ]
+  }
+]
