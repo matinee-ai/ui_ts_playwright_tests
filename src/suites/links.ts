@@ -14,10 +14,12 @@ export function linkTests(site: SiteConfig, pages: PageSpec[]): void {
   test.describe(`${site.name}: links`, () => {
     test.describe.configure({ timeout: 180_000 });
 
-    for (const spec of pages) {
-      test(`links on ${spec.name} are named, clickable and live`, async ({ page }) => {
+    for (const [i, spec] of pages.entries()) {
+      // Header and footer are shared by every page: audit them once (first page), page content everywhere.
+      const scope = i === 0 ? 'page, header and footer' : 'page content';
+      test(`links on ${spec.name} (${scope}) are named, clickable and live`, async ({ page }) => {
         await new SitePage(page, site).open(spec.path);
-        const audit = await auditLinks(page, page.request);
+        const audit = await auditLinks(page, page.request, i === 0 ? {} : { areas: ['main'] });
 
         expect(audit.links.length, 'visible links on the page').toBeGreaterThan(0);
         expect.soft(describeLinks(audit.unnamed), 'links without an accessible name (screen readers announce just "link")').toEqual([]);

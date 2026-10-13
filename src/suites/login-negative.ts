@@ -116,6 +116,18 @@ export function loginNegativeTests(site: SiteConfig, options: LoginSuiteOptions)
       expect(login.authCalls().filter((c) => c.passwordInUrl).map((c) => c.url), 'requests with the password in the URL').toEqual([]);
     });
 
+    test('fields have accessible labels', { tag: '@minor' }, async () => {
+      await expect(login.identifier, 'email field is announced by name').toHaveAccessibleName(/\S/);
+      await expect(login.password, 'password field is announced by name').toHaveAccessibleName(/\S/);
+    });
+
+    test('sign-in errors are announced to screen readers', { tag: '@minor' }, async ({ page }) => {
+      await login.attempt(unknownAccount(), 'Wrong-Passw0rd!');
+      await login.waitForAuthResponse();
+      const shown = await expectRejected(page);
+      expect(await login.announcedErrors(), `error "${shown.join(' | ')}" needs role="alert", aria-live or aria-invalid/aria-describedby`).not.toEqual([]);
+    });
+
     test('very long input is handled gracefully', { tag: '@minor' }, async ({ page }) => {
       await login.attempt(`${'a'.repeat(300)}@example.com`, 'p'.repeat(300));
       await login.waitForAuthResponse(5_000);

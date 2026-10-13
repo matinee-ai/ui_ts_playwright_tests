@@ -25,7 +25,7 @@ test.describe('Spas Life: English version', () => {
     test(`English menu "${menu}" opens an English page`, async ({ page, pageErrors }) => {
       const site = new SpasSite(page);
       await site.open('/en');
-      await page.locator('header').getByRole('link', { name: menu, exact: true }).filter({ visible: true }).first().click();
+      await (await site.revealLink(page.locator('header'), new RegExp(`^${menu}$`))).click();
       await expect(page).toHaveURL(new RegExp(`${path}/?$`));
       await expect(page.locator('html')).toHaveAttribute('lang', /^en/);
       const h1 = page.getByRole('heading', { level: 1 }).first();

@@ -1,6 +1,6 @@
 import type { SiteConfig } from '../../config/sites.ts';
 import { expect, test } from '../fixtures.ts';
-import { extractAssets, pageMeta, textContent } from '../utils/html.ts';
+import { cloudflareEmails, extractAssets, pageMeta, textContent } from '../utils/html.ts';
 import { brokenUrls, sample, sameSite } from '../utils/http.ts';
 import { discoverSitemap, parseRobots } from '../utils/sitemap.ts';
 
@@ -94,8 +94,9 @@ export function commonApiTests(site: SiteConfig): void {
         const text = textContent(html).toLowerCase();
         const lowerHtml = html.toLowerCase();
 
+        const obfuscated = cloudflareEmails(html).map((e) => e.toLowerCase());
         for (const email of site.contacts.emails) {
-          expect(text.includes(email) || lowerHtml.includes(`mailto:${email}`), `email ${email}`).toBe(true);
+          expect(text.includes(email) || lowerHtml.includes(`mailto:${email}`) || obfuscated.includes(email), `email ${email}`).toBe(true);
         }
         for (const phone of site.contacts.phones) {
           // Last 10 digits, any formatting between them: "+1 (954) 501-0763", "9545010763", ...

@@ -112,3 +112,20 @@ export function textContent(html: string): string {
 export function escapeRegExp(text: string): string {
   return text.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 }
+
+/**
+ * Cloudflare "email obfuscation" replaces addresses in served HTML with
+ * data-cfemail="<hex>" / href="/cdn-cgi/l/email-protection#<hex>" (decoded by a script in the browser).
+ * Returns the real addresses so HTTP-level checks see what visitors see.
+ */
+export function cloudflareEmails(html: string): string[] {
+  const hexes = [...html.matchAll(/data-cfemail="([0-9a-f]+)"|email-protection#([0-9a-f]+)/gi)].map((m) => m[1] ?? m[2]);
+  return [...new Set(hexes.map(decodeCloudflareEmail).filter(Boolean))];
+}
+
+export function decodeCloudflareEmail(hex: string): string {
+  const key = parseInt(hex.slice(0, 2), 16);
+  let out = '';
+  for (let i = 2; i < hex.length; i += 2) out += String.fromCharCode(parseInt(hex.slice(i, i + 2), 16) ^ key);
+  return out;
+}

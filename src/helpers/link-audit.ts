@@ -42,9 +42,14 @@ const EMAIL = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
 export async function auditLinks(
   page: Page,
   request: APIRequestContext,
-  { checkHttp = true, checkExternal = false, clickSample = 40 } = {},
+  { checkHttp = true, checkExternal = false, clickSample = 40, areas = ['header', 'nav', 'main', 'footer'] as AuditedLink['area'][] } = {},
 ): Promise<LinkAudit> {
   return test.step(`Audit links on ${new URL(page.url()).pathname}`, async () => {
+    // Freeze animations and smooth scrolling: a link that moves a few pixels is still clickable for a person,
+    // but Playwright's "stable" check would wait for it forever.
+    const freeze = await page.addStyleTag({
+      content: '*,*::before,*::after{animation-play-state:paused!important;transition:none!important;scroll-behavior:auto!important}',
+    });
     const links = await page.evaluate(() => {
       const shown = (el: Element) => {
         const r = el.getBoundingClientRect();
@@ -82,12 +87,15 @@ export async function auditLinks(
           // "#pricing" must point at an element on this page; "#" alone and SPA routes like "#/login" are not anchors.
           const anchor = kind === 'fragment' && /^#[^/]/.test(href) ? decodeURIComponent(href.slice(1)) : '';
           const anchorMissing = !!anchor && !document.getElementById(anchor) && !document.getElementsByName(anchor).length;
-          return { index: i, name, href, url, kind, target: a.getAttribute('target'), rel: a.getAttribute('rel') ?? '', area, visible: shown(a), isButton: a.getAttribute('role') === 'button', anchorMissing };
+          // Skip links ("Skip to content") sit off-screen until focused: visible to keyboard users only.
+          const rect = a.getBoundingClientRect();
+          const offscreen = rect.right <= 0 || rect.bottom + window.scrollY <= 0 || rect.left >= document.documentElement.scrollWidth;
+          return { index: i, name, href, url, kind, target: a.getAttribute('target'), rel: a.getAttribute('rel') ?? '', area, visible: shown(a), offscreen, isButton: a.getAttribute('role') === 'button', anchorMissing };
         })
         .filter((l) => l.visible);
     });
 
-    const typed = links as Array<AuditedLink & { isButton: boolean; anchorMissing: boolean }>;
+    const typed = (links as Array<AuditedLink & { isButton: boolean; anchorMissing: boolean; offscreen: boolean }>).filter((l) => areas.includes(l.area));
     const unnamed = typed.filter((l) => !l.name);
     const dead = typed.filter((l) => !l.isButton && (l.kind === 'empty' || l.kind === 'javascript' || l.href === '#'));
     const unsafeBlank = typed.filter((l) => l.target === '_blank' && l.kind === 'external' && !/noopener|noreferrer/i.test(l.rel));
@@ -100,16 +108,21 @@ export async function auditLinks(
 
     // Actionability without clicking: visible, stable, enabled and not covered by another element.
     const notClickable: LinkAudit['notClickable'] = [];
-    const candidates = typed.filter((l) => !['empty', 'javascript'].includes(l.kind)).slice(0, clickSample);
+    const candidates = typed.filter((l) => !l.offscreen && !['empty', 'javascript'].includes(l.kind)).slice(0, clickSample);
     for (const link of candidates) {
       const el = page.locator(`[data-pw-link="${link.index}"]`);
+      if (!(await el.isVisible())) continue; // e.g. inside a collapsed menu: not something a user can click right now
       try {
         // trial: runs every actionability check (and Playwright's own scroll-into-view retries) without clicking.
         await el.click({ trial: true, timeout: 5_000 });
       } catch (e) {
-        notClickable.push({ ...link, reason: (e as Error).message.split('\n').find((line) => /intercepts|not visible|not stable|disabled|outside/i.test(line))?.trim() ?? 'not actionable' });
+        // Fall back to a hit test: is the link itself what a click on its centre would reach?
+        if (await reachableByClick(el)) continue;
+        const reason = (e as Error).message.split('\n').find((line) => /intercepts|not visible|not stable|disabled|outside/i.test(line))?.trim();
+        notClickable.push({ ...link, reason: reason ?? 'not actionable' });
       }
     }
+    await freeze.evaluate((style) => (style as Element).remove()).catch(() => {});
 
     let broken: UrlCheck[] = [];
     if (checkHttp) {
@@ -121,6 +134,19 @@ export async function auditLinks(
     await test.info().attach(`link audit ${new URL(page.url()).pathname}`, { body: JSON.stringify(audit, null, 2), contentType: 'application/json' });
     return audit;
   });
+}
+
+async function reachableByClick(el: import('@playwright/test').Locator): Promise<boolean> {
+  try {
+    await el.evaluate((a) => a.scrollIntoView({ block: 'center', behavior: 'instant' as ScrollBehavior }));
+    return await el.evaluate((a) => {
+      const r = a.getBoundingClientRect();
+      const hit = document.elementFromPoint(r.left + r.width / 2, r.top + r.height / 2);
+      return !!hit && (hit === a || a.contains(hit));
+    });
+  } catch {
+    return false;
+  }
 }
 
 /** Short, readable list for assertion messages: "Contact (/contact) [footer]". */

@@ -90,6 +90,29 @@ export class SitePage {
     }, this.site.baseURL);
   }
 
+  /**
+   * A menu link the way a user reaches it: visible already, or after opening a
+   * collapsed ("burger") menu, or after hovering its dropdown parent.
+   */
+  async revealLink(area: Locator, name: RegExp, parent?: RegExp): Promise<Locator> {
+    const link = area.getByRole('link', { name }).filter({ visible: true }).first();
+    if (await link.count()) return link;
+    const toggle = area
+      .getByRole('button', { name: /menu|меню|navigation/i })
+      .or(area.locator('summary, [aria-label*="menu" i], [aria-label*="меню" i], [class*="burger" i], [class*="hamburger" i]'))
+      .filter({ visible: true })
+      .first();
+    if (await toggle.count()) {
+      await toggle.click();
+      await link.waitFor({ state: 'visible', timeout: 3_000 }).catch(() => {});
+      if (await link.count()) return link;
+    }
+    if (parent) {
+      await area.getByRole('link', { name: parent }).or(area.getByRole('button', { name: parent })).filter({ visible: true }).first().hover();
+    }
+    return link;
+  }
+
   /** A visible element containing `text`, e.g. a section heading. */
   section(text: RegExp): Locator {
     return this.page.getByText(text).filter({ visible: true }).first();

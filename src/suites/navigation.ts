@@ -62,9 +62,7 @@ export function navigationTests(site: SiteConfig, options: NavigationOptions): v
       test(`menu link "${spec.name}" opens ${spec.path}`, async ({ page, pageErrors }) => {
         const sitePage = new SitePage(page, site);
         await sitePage.open(start);
-        const area = menuArea(page, spec.area);
-        if (spec.menuParent) await area.getByRole('link', { name: spec.menuParent }).or(area.getByRole('button', { name: spec.menuParent })).filter({ visible: true }).first().hover();
-        const link = area.getByRole('link', { name: spec.menu }).filter({ visible: true }).first();
+        const link = await sitePage.revealLink(menuArea(page, spec.area), spec.menu!, spec.menuParent);
         await expect(link, `"${spec.name}" link in the ${spec.area ?? 'header'}`).toBeVisible();
         await expect(link).toHaveAttribute('href', new RegExp(`${escapeRegExp(spec.path)}/?($|[?#])`));
 
@@ -108,7 +106,7 @@ export function navigationTests(site: SiteConfig, options: NavigationOptions): v
       for (const spec of options.pages.slice(0, 3)) {
         await test.step(`from ${spec.name}`, async () => {
           await sitePage.open(spec.path);
-          await menuArea(page).getByRole('link', { name: options.homeLink }).filter({ visible: true }).first().click();
+          await (await sitePage.revealLink(menuArea(page), options.homeLink)).click();
           await expect(page).toHaveURL((url) => normalize(url.pathname) === normalize(site.homePath));
         });
       }

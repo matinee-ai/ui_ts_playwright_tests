@@ -19,6 +19,8 @@ export interface AuthCall {
 export class LoginForm {
   readonly calls: AuthCall[] = [];
   private lastPassword = '';
+  /** Text visible in the form before the last attempt; anything new afterwards is feedback. */
+  private baseline: string[] = [];
 
   private constructor(
     readonly page: Page,
@@ -56,6 +58,7 @@ export class LoginForm {
       this.lastPassword = password;
       await this.identifier.fill(identifier);
       await this.password.fill(password);
+      this.baseline = await this.visibleTexts();
       await this.submitButton.click();
     });
   }
@@ -76,8 +79,17 @@ export class LoginForm {
     return null;
   }
 
-  /** Visible error feedback: alerts, error-styled text and invalid fields (with the browser's message). */
+  /**
+   * Visible error feedback after the last attempt: invalid fields, alerts, error-styled
+   * text, and any other text that appeared in the form since submitting.
+   */
   async errors(): Promise<string[]> {
+    const appeared = (await this.visibleTexts()).filter((t) => !this.baseline.includes(t));
+    return [...new Set([...(await this.announcedErrors()), ...appeared])];
+  }
+
+  /** Feedback that assistive technology can announce: invalid fields, alerts and live regions. */
+  async announcedErrors(): Promise<string[]> {
     return this.root.evaluate((root) => {
       const shown = (el: Element) => {
         const r = el.getBoundingClientRect();
@@ -97,6 +109,20 @@ export class LoginForm {
         if (text && shown(el) && !(el instanceof HTMLInputElement)) out.push(text.slice(0, 160));
       });
       return [...new Set(out)];
+    });
+  }
+
+  /** Short visible text blocks inside the form (labels, messages), excluding field values. */
+  private async visibleTexts(): Promise<string[]> {
+    return this.root.evaluate((root) => {
+      const out: string[] = [];
+      root.querySelectorAll('*').forEach((el) => {
+        if (el instanceof HTMLInputElement || el instanceof HTMLTextAreaElement || el.closest('button')) return;
+        const own = [...el.childNodes].filter((n) => n.nodeType === Node.TEXT_NODE).map((n) => n.textContent ?? '').join(' ').replace(/\s+/g, ' ').trim();
+        const r = el.getBoundingClientRect();
+        if (own && own.length < 200 && r.width > 0 && r.height > 0 && getComputedStyle(el).visibility !== 'hidden') out.push(own);
+      });
+      return out;
     });
   }
 

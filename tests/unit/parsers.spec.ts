@@ -1,6 +1,6 @@
 import { expect, test } from '../../src/fixtures.ts';
 import { parseBundleOffer, parsePlanPrices } from '../../src/pages/qastarting.ts';
-import { extractAssets, extractLinks, pageMeta, textContent } from '../../src/utils/html.ts';
+import { cloudflareEmails, extractAssets, extractLinks, pageMeta, textContent } from '../../src/utils/html.ts';
 import { parseRobots, parseSitemap } from '../../src/utils/sitemap.ts';
 
 test.describe('robots.txt', () => {
@@ -87,5 +87,15 @@ test.describe('QA Starting price parsing', () => {
   test('reads the bundle offer', () => {
     expect(parseBundleOffer(bundle)).toEqual({ regular: 3317, discounted: 2653, saving: 664, percent: 20 });
     expect(parseBundleOffer('no offer here')).toBeNull();
+  });
+});
+
+test.describe('Cloudflare email obfuscation', () => {
+  test('decodes protected addresses back to the real email', () => {
+    // "val@qastarting.org" XOR-encoded with key 0x42, as Cloudflare serves it.
+    const key = 0x42;
+    const hex = key.toString(16) + [...'val@qastarting.org'].map((c) => (c.charCodeAt(0) ^ key).toString(16).padStart(2, '0')).join('');
+    const html = `<a href="/cdn-cgi/l/email-protection#${hex}"><span class="__cf_email__" data-cfemail="${hex}">[email&#160;protected]</span></a>`;
+    expect(cloudflareEmails(html)).toEqual(['val@qastarting.org']);
   });
 });

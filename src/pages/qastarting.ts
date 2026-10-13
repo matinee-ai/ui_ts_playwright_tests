@@ -75,10 +75,12 @@ export class QaStartingSite extends SitePage {
         let card: Element | null = h.parentElement;
         const prices = (el: Element) => (el.textContent ?? '').match(/\$\s?[\d,]+/g)?.length ?? 0;
         while (card && card !== section && prices(card) < 3) card = card.parentElement;
-        return { course: (h.textContent ?? '').trim(), text: card && card !== section ? (card.textContent ?? '') : '' };
+        return { course: (h.textContent ?? '').trim(), text: card && card !== section ? (card as HTMLElement).innerText : '' };
       }),
     );
-    return cards.filter((c) => c.text).map((c) => ({ course: c.course, prices: parsePlanPrices(c.text) }));
+    return cards
+      .filter((c) => c.text && (COURSE_TRACKS as readonly string[]).includes(c.course))
+      .map((c) => ({ course: c.course, prices: parsePlanPrices(c.text) }));
   }
 
   /** Rows of the comparison table: course -> { starter, unlimited }. */
@@ -103,6 +105,16 @@ export class QaStartingSite extends SitePage {
   /** "Your order" panel on /checkout. */
   orderPanel(): Locator {
     return this.page.getByRole('heading', { name: 'Your order' }).locator('xpath=ancestor::*[.//button][1]');
+  }
+
+  /** The order's submit button ("Pay online", "Continue to crypto payment", ...): the panel's last button. */
+  payButton(): Locator {
+    return this.orderPanel().getByRole('button').last();
+  }
+
+  /** Plan buttons of a selected course on /checkout ("Starter $259 ..."). */
+  planButton(course: string, plan: 'Starter' | 'Standard' | 'Unlimited'): Locator {
+    return this.checkoutCourse(course).getByRole('button', { name: new RegExp(`^${plan} \\$`) });
   }
 
   /** Total shown in the order panel, in dollars. */
