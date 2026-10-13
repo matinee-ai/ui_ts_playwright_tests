@@ -43,7 +43,7 @@ export const SITES: Record<SiteKey, SiteConfig> = {
     baseURL: origin('QASTARTING_URL', 'https://www.qastarting.org'),
     homePath: '/',
     responseBudgetMs: 4000,
-    contacts: { emails: ['qastarting@gmail.com'], phones: ['13109204331'], telegram: [] },
+    contacts: { emails: ['val@qastarting.org'], phones: ['13109204331'], telegram: ['qastarting_bot'] },
   },
   spas: {
     key: 'spas',

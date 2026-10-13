@@ -5,7 +5,7 @@ import { escapeRegExp } from '../../../src/utils/html.ts';
 test.describe('Spas Life: icons gallery', () => {
   test('opening an icon shows its page with matching title and image', async ({ page }) => {
     const site = new SpasSite(page);
-    await site.openIcons();
+    await site.open(ICONS_PATH);
     await expect(page).toHaveURL(new RegExp(`${ICONS_PATH}/?$`));
 
     const cards = page.locator(`a[href*="${ICONS_PATH}/"]:not([href$="/icons/"])`).filter({ visible: true });

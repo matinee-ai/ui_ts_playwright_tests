@@ -1,5 +1,5 @@
 import { expect, test } from '../../src/fixtures.ts';
-import { parseBundle, parsePricePlans } from '../../src/pages/qastarting.ts';
+import { parseBundleOffer, parsePlanPrices } from '../../src/pages/qastarting.ts';
 import { extractAssets, extractLinks, pageMeta, textContent } from '../../src/utils/html.ts';
 import { parseRobots, parseSitemap } from '../../src/utils/sitemap.ts';
 
@@ -75,23 +75,17 @@ test.describe('HTML metadata', () => {
 });
 
 test.describe('QA Starting price parsing', () => {
-  // Text as published on the QA Starting landing page.
-  const text = `THE COST OF COURSES? QA BASIC Starter Plan – $259 Standart Plan – $499 Ultimate Plan – $999 QA for beginners Details
-    QA ADVANCE Starter Plan – $299 Standart Plan – $599 Ultimate Plan – $1059 QA Advance level Details
-    QA AUTOMATION Starter Plan – $399 Standart Plan – $699 Ultimate Plan – $1259 QA Automation Details
-    3 ULTIMATE COURSES $ 3317 ONLY FOR $ 2599 PAY`;
+  // Card and bundle text as published on qastarting.org.
+  const card = 'QA BASIC QA for beginners Starter Self-paced, on your own $259 Standard Guided: 1 hour with a mentor a week $499 Unlimited Maximum support: 3 hours with a mentor a week $999 View details';
+  const bundle = 'Frequently bought together −20% Complete QA path ✓ QA BASIC ✓ QA ADVANCE ✓ QA AUTOMATION $3,317 $2,653 Save $664 (~20%) All 3 courses · Unlimited plan Get the bundle';
 
-  test('groups plans per course', () => {
-    expect(parsePricePlans(text).map((c) => c.map((p) => p.price))).toEqual([
-      [259, 499, 999],
-      [299, 599, 1059],
-      [399, 699, 1259],
-    ]);
-    expect(parsePricePlans(text)[0].map((p) => p.plan)).toEqual(['starter', 'standard', 'ultimate']);
+  test('reads the three plan prices of a course card', () => {
+    expect(parsePlanPrices(card)).toEqual({ starter: 259, standard: 499, unlimited: 999 });
+    expect(parsePlanPrices('Starter $1,059 Unlimited $1,259')).toEqual({ starter: 1059, unlimited: 1259 });
   });
 
   test('reads the bundle offer', () => {
-    expect(parseBundle(text)).toEqual({ regular: 3317, discounted: 2599 });
-    expect(parseBundle('no offer here')).toBeNull();
+    expect(parseBundleOffer(bundle)).toEqual({ regular: 3317, discounted: 2653, saving: 664, percent: 20 });
+    expect(parseBundleOffer('no offer here')).toBeNull();
   });
 });

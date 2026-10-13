@@ -1,36 +1,61 @@
 import type { Locator, Page } from '@playwright/test';
 import { SITES } from '../../config/sites.ts';
-import { FormHelper } from '../helpers/forms.ts';
 import { SitePage } from '../helpers/site-page.ts';
+import type { PageSpec } from '../suites/navigation.ts';
 
-/** Learning path published on the courses page. */
-export const COURSE_TRACKS = ['QA BASIC', 'QA ADVANCE', 'QA AUTOMATION', 'AI AUTOMATION', 'n8n AUTOMATION'];
+/** The learning path, in order, with the slug of each course page. */
+export const COURSES = [
+  { name: 'QA BASIC', slug: 'qa-basic' },
+  { name: 'QA ADVANCE', slug: 'qa-advance' },
+  { name: 'QA AUTOMATION', slug: 'qa-automation' },
+  { name: 'AI AUTOMATION', slug: 'ai-automation' },
+  { name: 'n8n AUTOMATION', slug: 'n8n-automation' },
+] as const;
+export const COURSE_TRACKS = COURSES.map((c) => c.name);
+/** "Complete QA path" bundle: these three on the Unlimited plan. */
+export const CORE_BUNDLE = ['QA BASIC', 'QA ADVANCE', 'QA AUTOMATION'];
 
-export interface PricePlan {
-  plan: 'starter' | 'standard' | 'ultimate';
-  price: number;
+export const PAGES: PageSpec[] = [
+  { name: 'Career Services', path: '/career-services', heading: /^Career Services$/i, title: /Career Services/, menu: /^Career Services$/ },
+  { name: 'IT English', path: '/it-english', heading: /Learn IT English in 5 Minutes a Day/i, title: /IT English/, menu: /^IT English$/ },
+  { name: 'Enroll', path: '/checkout', heading: /^Build your course package$/i, menu: /^Enroll$/ },
+  ...COURSES.map((c) => ({ name: c.name, path: `/courses/${c.slug}`, heading: new RegExp(`^${c.name}$`, 'i'), title: new RegExp(`^${c.name} — .*QAstarting`) })),
+  { name: 'Blog: QA salaries', path: '/blog/skolko-zarabatyvaet-testirovshchik', heading: /How much does a QA tester really earn/i, title: /QAstarting/ },
+];
+
+/** Single-page sections reached from the top menu (link text -> element id). */
+export const SECTIONS = [
+  { menu: 'Quiz', id: 'quiz' },
+  { menu: 'Courses', id: 'courses' },
+  { menu: 'Pricing', id: 'pricing' },
+  { menu: 'Stories', id: 'stories' },
+  { menu: 'FAQ', id: 'faq' },
+  { menu: 'Team', id: 'team' },
+  { menu: 'Contact', id: 'contact' },
+  { menu: 'Free lessons', id: 'free' },
+];
+
+export type Plan = 'starter' | 'standard' | 'unlimited';
+export interface CoursePrices {
+  course: string;
+  prices: Partial<Record<Plan, number>>;
 }
 
-/**
- * Reads "Starter Plan – $259  Standart Plan – $499  Ultimate Plan – $999" blocks
- * from page text and groups them per course (one Starter..Ultimate run per course).
- */
-export function parsePricePlans(text: string): PricePlan[][] {
-  const re = /(starter|standa\w*|ultimate)\s+plan\s*[–—-]?\s*\$\s*([\d,]+)/gi;
-  const courses: PricePlan[][] = [];
-  for (const m of text.matchAll(re)) {
-    const plan = m[1].toLowerCase().startsWith('standa') ? 'standard' : (m[1].toLowerCase() as PricePlan['plan']);
-    const price = Number(m[2].replace(/,/g, ''));
-    if (plan === 'starter' || !courses.length) courses.push([]);
-    courses[courses.length - 1].push({ plan, price });
+const money = (text: string) => Number(text.replace(/[^\d]/g, ''));
+
+/** "Starter Self-paced... $259 Standard Guided... $499 Unlimited Maximum... $999" -> { starter: 259, ... } */
+export function parsePlanPrices(cardText: string): Partial<Record<Plan, number>> {
+  const prices: Partial<Record<Plan, number>> = {};
+  for (const m of cardText.matchAll(/\b(starter|standard|unlimited)\b[^$]*?\$\s?([\d,]+)/gi)) {
+    prices[m[1].toLowerCase() as Plan] ??= money(m[2]);
   }
-  return courses;
+  return prices;
 }
 
-/** "3 ULTIMATE COURSES $ 3317 ONLY FOR $ 2599" -> { regular: 3317, discounted: 2599 } */
-export function parseBundle(text: string): { regular: number; discounted: number } | null {
-  const m = /ultimate courses\s*\$\s*([\d,]+)\s*only for\s*\$\s*([\d,]+)/i.exec(text);
-  return m ? { regular: Number(m[1].replace(/,/g, '')), discounted: Number(m[2].replace(/,/g, '')) } : null;
+/** "$3,317 $2,653 Save $664 (~20%)" -> { regular, discounted, saving, percent } */
+export function parseBundleOffer(text: string): { regular: number; discounted: number; saving: number; percent: number } | null {
+  const m = /\$\s?([\d,]+)\s*\$\s?([\d,]+)\s*Save\s*\$\s?([\d,]+)\s*\(~?(\d+)%\)/i.exec(text);
+  return m ? { regular: money(m[1]), discounted: money(m[2]), saving: money(m[3]), percent: Number(m[4]) } : null;
 }
 
 export class QaStartingSite extends SitePage {
@@ -38,36 +63,57 @@ export class QaStartingSite extends SitePage {
     super(page, SITES.qastarting);
   }
 
-  async openCourses(): Promise<void> {
-    await this.open();
-    await this.openSection(/^(all )?courses$|курсы|our courses/i, ['/courses', '/en/courses']);
+  /** A home-page section by its anchor id ("pricing", "faq", ...). */
+  byId(id: string): Locator {
+    return this.page.locator(`[id="${id}"]`);
   }
 
-  /** Card / block of a course on the courses page. */
-  courseCard(track: string): Locator {
-    return this.page.getByText(new RegExp(`^\\s*${track}\\s*$`, 'i')).filter({ visible: true }).first();
+  /** Plan prices from each course card in the pricing section. */
+  async pricingCards(): Promise<CoursePrices[]> {
+    const cards = await this.byId('pricing').evaluate((section) =>
+      [...section.querySelectorAll('h3')].map((h) => {
+        let card: Element | null = h.parentElement;
+        const prices = (el: Element) => (el.textContent ?? '').match(/\$\s?[\d,]+/g)?.length ?? 0;
+        while (card && card !== section && prices(card) < 3) card = card.parentElement;
+        return { course: (h.textContent ?? '').trim(), text: card && card !== section ? (card.textContent ?? '') : '' };
+      }),
+    );
+    return cards.filter((c) => c.text).map((c) => ({ course: c.course, prices: parsePlanPrices(c.text) }));
   }
 
-  /** Opens a course's enrolment page from the catalogue and returns its form. */
-  async openEnrolment(track = 'QA BASIC'): Promise<FormHelper> {
-    await this.openCourses();
-    const card = this.courseCard(track);
-    // The card title, its "Details" button or the whole card may be the link.
-    const link = this.page
-      .locator('a', { has: card })
-      .or(card.locator('xpath=ancestor-or-self::a[1]'))
-      .or(card.locator('xpath=ancestor::*[.//a][1]').getByRole('link', { name: /details|enrol|enroll|learn more|more|подробнее|записаться/i }))
-      .first();
-    await link.click();
-    await this.page.waitForLoadState('domcontentloaded');
-    return FormHelper.find(this.page);
+  /** Rows of the comparison table: course -> { starter, unlimited }. */
+  async pricingTable(): Promise<CoursePrices[]> {
+    const rows = this.byId('pricing').getByRole('table').getByRole('row');
+    const out: CoursePrices[] = [];
+    for (const row of await rows.all()) {
+      const cells = await row.getByRole('cell').allInnerTexts();
+      if (cells.length < 5 || !/\$/.test(cells[3])) continue;
+      out.push({ course: cells[0].trim(), prices: { starter: money(cells[3]), unlimited: money(cells[4]) } });
+    }
+    return out;
   }
 
-  /** Expandable FAQ question (accordion trigger or <summary>). */
-  faqQuestions(): Locator {
+  /** A course card on /checkout. */
+  checkoutCourse(name: string): Locator {
     return this.page
-      .locator('[aria-expanded="false"], details:not([open]) > summary')
-      .filter({ hasText: /\?/ })
-      .filter({ visible: true });
+      .getByRole('heading', { name, exact: true })
+      .locator('xpath=ancestor::*[.//button][1]');
+  }
+
+  /** "Your order" panel on /checkout. */
+  orderPanel(): Locator {
+    return this.page.getByRole('heading', { name: 'Your order' }).locator('xpath=ancestor::*[.//button][1]');
+  }
+
+  /** Total shown in the order panel, in dollars. */
+  async orderTotal(): Promise<number> {
+    const text = await this.orderPanel().innerText();
+    const m = /Total\s*\$\s?([\d,]+)/i.exec(text);
+    if (!m) throw new Error(`No "Total $..." in the order panel: ${text.slice(0, 200)}`);
+    return money(m[1]);
+  }
+
+  loginLink(): Locator {
+    return this.page.getByRole('navigation').first().getByRole('link', { name: 'Login', exact: true });
   }
 }
