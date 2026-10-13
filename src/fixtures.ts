@@ -34,6 +34,10 @@ const ANALYTICS = [
 
 const isAnalytics = (url: string) => ANALYTICS.some((host) => url.includes(host));
 
+/** Bot-protection services forms depend on (Cloudflare Turnstile, reCAPTCHA, hCaptcha): never intercepted. */
+const BOT_PROTECTION = ['challenges.cloudflare.com', 'google.com/recaptcha', 'gstatic.com/recaptcha', 'hcaptcha.com'];
+const isBotProtection = (url: string) => BOT_PROTECTION.some((host) => url.includes(host));
+
 export interface CapturedSubmission {
   method: string;
   url: string;
@@ -106,7 +110,7 @@ export class FormSpy {
 
   private isSubmission(request: Request): boolean {
     const method = request.method();
-    if (method === 'OPTIONS' || isAnalytics(request.url())) return false;
+    if (method === 'OPTIONS' || isAnalytics(request.url()) || isBotProtection(request.url())) return false;
     if (method === 'GET' || method === 'HEAD') return decodeSafe(request.url()).includes(this.marker);
     return true;
   }

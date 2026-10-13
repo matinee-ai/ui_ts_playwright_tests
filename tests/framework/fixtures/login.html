@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Sign in (fixture)</title>
+  <style>body { font-family: sans-serif; margin: 40px; } .field-error { color: #c00; } label { display: block; margin-top: 8px; }</style>
+</head>
+<body>
+  <header><a href="/login.html">Fixture</a></header>
+  <main>
+    <h1>Sign in</h1>
+    <form id="login" novalidate>
+      <label>Email <input id="email" name="email" type="email" autocomplete="email"></label>
+      <p class="field-error" id="email-error" role="alert" hidden></p>
+      <label>Password <input id="password" name="password" type="password" autocomplete="current-password"></label>
+      <p class="field-error" id="password-error" role="alert" hidden></p>
+      <button type="submit">Sign in</button>
+      <div id="form-error" role="alert" hidden></div>
+    </form>
+    <a href="/forgot.html">Forgot your password?</a>
+  </main>
+  <script>
+    const show = (id, text) => { const el = document.getElementById(id); el.textContent = text; el.hidden = !text; };
+    document.getElementById('login').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const email = e.target.email.value.trim();
+      const password = e.target.password.value;
+      show('form-error', '');
+      show('email-error', !email ? 'Enter your email' : /^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email) ? '' : 'Enter a valid email');
+      show('password-error', password ? '' : 'Enter your password');
+      if (!email || !password || !document.getElementById('email-error').hidden) return;
+      const res = await fetch('/api/auth/login', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ email, password }) });
+      const body = await res.json();
+      show('form-error', body.error); // textContent: payloads are never rendered as HTML
+    });
+  </script>
+</body>
+</html>

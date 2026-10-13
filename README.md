@@ -2,16 +2,21 @@
 
 Playwright + TypeScript suites for three production sites, run automatically once a day per site, each at its own time, and at a different time every day.
 
-| Project | Site | Functional coverage |
+| Project | Site | What is covered |
 | --- | --- | --- |
-| `chessorro` | https://www.chessorro.com/en | Offline board: start position, legal moves for both sides, captures, illegal and out-of-turn moves rejected. Puzzles: valid position (one king each, no pawns on the back ranks), "next puzzle", difficulty filter. Openings: autoplay moves the pieces. Feature pages are live. |
-| `qastarting` | https://www.qastarting.org | Course catalogue lists all 5 tracks. A course card opens its enrolment form. Enrolment form: empty form and bad email are rejected, a complete form is sent with the entered data. Pricing: Starter < Standard < Ultimate for every course, and the 3-course bundle total matches the Ultimate prices and is discounted. FAQ expands and collapses. |
-| `spas` | https://www.spas.life | "Need help?" request form: empty form rejected, complete request sent. Icon gallery opens an icon page whose title and image match the card. A known icon page stays published. Phone, email and Telegram contacts are present and clickable. |
+| `chessorro` | https://www.chessorro.com/en | Four game cards open their games; game setup (every option group, defaults, selection, keyboard); a chess game vs the computer starts from the initial position, refuses an illegal move and answers a legal one; dark theme persists; language menu; sign-in negative suite; sign-up and password-reset validation (no account is ever created); "Continue with Google" hand-off; leaderboard requires sign-in (UI and HTTP redirect). |
+| `qastarting` | https://www.qastarting.org | Pricing rules (Starter < Standard < Unlimited, table matches cards, bundle = three Unlimited plans minus the advertised saving); course pages and their programs; checkout (order total, add/remove, `?course=` and `?bundle=` preselection, payment method, required details, intercepted order); free-lessons and callback forms; career quiz; story filters; RU/EN switch; sign-in modal negative suite. |
+| `spas` | https://www.spas.life | Russian and English menus; request and contact forms (validation, consent required, anti-spam field left empty, intercepted submission); church calendar (shows today, old style is 13 days behind, style switch, month view, readings expand); every page exists in both languages; icon pages; contact links. |
 
-Every site also gets the shared checks:
+Every site also gets the shared suites (`src/suites/`):
 
-- **API (`*-api` projects, no browser):** 200 + HTML within a time budget; HTTP redirects to HTTPS; title, description, `lang`, canonical; not `noindex`; `robots.txt` doesn't block the site; every sitemap URL is live; unknown URLs return a real 404; scripts, CSS and images load; each `hreflang` version is live and declares its language; contact details are correct.
-- **UI (`*-ui` projects, Chromium):** no uncaught JS errors or failed same-site requests while scrolling the landing page; header, menu and footer links are live; the language switcher changes `<html lang>`; contact links work; on mobile (Pixel 7) there's no horizontal scroll and the menu opens.
+- **Navigation:** each header and footer menu item opens the right page (URL, heading, title, no script errors); every page opens directly by URL; back and forward restore pages in order; the logo leads home; unknown URLs show a 404 page with a way back; one `h1` per page.
+- **Links:** on each main page every visible link has an accessible name, isn't a dead `#`/`javascript:` link, can really be clicked (not covered by another element), leads to a live page, has a valid `mailto:`/`tel:` address, and in-page `#anchors` exist; new-tab links use `rel="noopener"`.
+- **Sign-in, negative** (sites with accounts): empty fields, malformed emails, missing password, unknown account, an error that doesn't reveal whether the account exists, SQL-injection and script payloads (no script runs, nothing rendered as HTML, no server errors), password masked and never in a URL, very long input. After each: an error is shown, the user stays on the form, and no session exists.
+- **HTTP contract:** 200 + HTML within a time budget; HTTP redirects to HTTPS; SEO metadata; not `noindex`; `robots.txt`; every sitemap URL is live; real 404s; assets load; language versions; contact details.
+- **Page health:** no uncaught JS errors or failed same-site requests while scrolling; mobile layout without horizontal scroll and a working menu.
+
+The page objects (`src/pages/`) were written from a crawl of the live sites (`scripts/discover-sites.ts`, run by the *Site discovery* workflow, results on the `site-discovery` branch): real routes, headings, accessible names, forms and fields.
 
 ## Allure report
 
@@ -109,16 +114,14 @@ src/fixtures.ts            test fixture: analytics blocking, pageErrors, formSpy
 src/helpers/chess-board.ts reads/plays any DOM chess board (chessground, react-chessboard, chessboard.js, 8x8 grids)
 src/helpers/forms.ts       finds, fills, submits and validates forms by field meaning (email/phone/name/...)
 src/helpers/site-page.ts   shared page object: open, consent banners, menu navigation, contact links
+src/helpers/link-audit.ts  audits every visible link on a page (name, target, clickability, status)
+src/helpers/login-form.ts  drives any sign-in form; tracks auth requests, errors and session state
 src/pages/*.ts             one page object per site
-src/suites/common-*.ts     shared API and UI checks registered for each site
+src/suites/*.ts            shared suites: common API/UI, navigation, links, negative sign-in
 tests/<site>/{api,ui}/     site specs
 tests/unit, tests/framework  self-tests
 ```
 
-## First live run: what to check
+## Keeping the suites in step with the sites
 
-These suites were written without access to the three sites: the build environment's network policy blocked them. Selectors therefore lean on roles, visible text and DOM conventions rather than exact markup, and the helpers are proven against local fixtures. Some details came from the sites' public search snippets: the feature names, course names, prices, contact details and the icon page URL. The first real run may show places where the markup differs. Each failure message names what was expected, and the place to adjust is the matching page object in `src/pages/`. Points to look at first:
-
-- **Chessorro:** the domain. The public site found in search is `chessoro.com` (one "r"). The suite uses `chessorro.com` as given; set `CHESSORRO_URL` if that's wrong. Also check the link names and paths in `CORE_FEATURES`.
-- **QA Starting:** search engines only know `qastarting.com`. The `/courses` and `/en/qabasic` paths in `tests/qastarting/api/courses.api.spec.ts` come from there.
-- **Spas Life:** `ICONS_PATH` / `KNOWN_ICON` and the help-section wording in `src/pages/spas.ts`.
+Run the **Site discovery** workflow (Actions → Site discovery → Run workflow) after a redesign. It crawls each site and stores pages, menus, forms, API calls, accessibility snapshots and screenshots on the `site-discovery` branch. Compare it with `PAGES` in `src/pages/<site>.ts`. Failures in the report are grouped into categories: *Page changed* means a locator no longer matches, and the place to fix it is that site's page object.

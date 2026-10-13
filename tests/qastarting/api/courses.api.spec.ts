@@ -1,30 +1,31 @@
 import { SITES } from '../../../config/sites.ts';
 import { expect, test } from '../../../src/fixtures.ts';
-import { COURSE_TRACKS, parsePricePlans } from '../../../src/pages/qastarting.ts';
-import { textContent } from '../../../src/utils/html.ts';
+import { COURSES, PAGES } from '../../../src/pages/qastarting.ts';
+import { pageMeta, textContent } from '../../../src/utils/html.ts';
 
 const site = SITES.qastarting;
 
-test.describe('QA Starting: course content', () => {
-  test('courses page lists the full learning path', async ({ request }) => {
-    const res = await request.get(`${site.baseURL}/courses`);
-    expect(res.status()).toBe(200);
-    const text = textContent(await res.text());
-    for (const track of COURSE_TRACKS) expect(text, track).toMatch(new RegExp(track, 'i'));
+test.describe('QA Starting: pages and course content', () => {
+  for (const spec of PAGES) {
+    test(`${spec.path} responds 200 with its own title`, async ({ request }) => {
+      const res = await request.get(`${site.baseURL}${spec.path}`);
+      expect(res.status()).toBe(200);
+      const meta = pageMeta(await res.text(), res.url());
+      if (spec.title) expect(meta.title).toMatch(spec.title);
+    });
+  }
+
+  test('every course page lists its program modules', async ({ request }) => {
+    for (const course of COURSES) {
+      const text = textContent(await (await request.get(`${site.baseURL}/courses/${course.slug}`)).text());
+      expect(text, course.name).toContain(course.name);
+      expect(text.match(/Module \d+ —/g)?.length ?? 0, `${course.name} modules`).toBeGreaterThanOrEqual(4);
+    }
   });
 
-  test('landing page publishes a price for every plan', async ({ request }) => {
-    const res = await request.get(`${site.baseURL}${site.homePath}`);
-    const plans = parsePricePlans(textContent(await res.text()));
-    expect(plans.length, 'courses with price plans').toBeGreaterThanOrEqual(3);
-    for (const course of plans) expect(course).toHaveLength(3);
-  });
-
-  test('QA BASIC enrolment page is live and contains a form', async ({ request }) => {
-    const res = await request.get(`${site.baseURL}/en/qabasic`);
-    expect(res.status()).toBe(200);
-    const html = await res.text();
-    expect(textContent(html)).toMatch(/QA BASIC/i);
-    expect(html).toMatch(/<form[\s>]/i);
+  test('checkout has its own page title', { tag: '@minor' }, async ({ request }) => {
+    const home = pageMeta(await (await request.get(`${site.baseURL}/`)).text(), site.baseURL).title;
+    const checkout = pageMeta(await (await request.get(`${site.baseURL}/checkout`)).text(), site.baseURL).title;
+    expect(checkout, 'checkout title should differ from the home page title').not.toBe(home);
   });
 });

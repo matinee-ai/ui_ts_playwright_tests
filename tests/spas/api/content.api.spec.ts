@@ -1,6 +1,6 @@
 import { SITES } from '../../../config/sites.ts';
 import { expect, test } from '../../../src/fixtures.ts';
-import { ICONS_PATH, KNOWN_ICON } from '../../../src/pages/spas.ts';
+import { ICONS_PATH, KNOWN_ICON, PAGES } from '../../../src/pages/spas.ts';
 import { extractLinks, pageMeta, textContent } from '../../../src/utils/html.ts';
 import { brokenUrls } from '../../../src/utils/http.ts';
 
@@ -34,4 +34,20 @@ test.describe('Spas Life: published content', () => {
       expect(textContent(await res.text()), path).toMatch(/free 15-minute conversation with a mentor/i);
     }
   });
+});
+
+test.describe('Spas Life: Russian and English versions', () => {
+  for (const spec of PAGES.filter((p) => !p.path.startsWith('/orthodoxy/'))) {
+    test(`${spec.path} exists in Russian and English`, async ({ request }) => {
+      const ru = await request.get(`${site.baseURL}${spec.path}`);
+      expect(ru.status(), spec.path).toBe(200);
+      expect(pageMeta(await ru.text(), ru.url()).lang ?? '', `${spec.path} lang`).toMatch(/^ru/);
+
+      const en = await request.get(`${site.baseURL}/en${spec.path}`);
+      expect(en.status(), `/en${spec.path}`).toBe(200);
+      const meta = pageMeta(await en.text(), en.url());
+      expect(meta.lang ?? '', `/en${spec.path} lang`).toMatch(/^en/);
+      expect(meta.title, `/en${spec.path} title is translated`).not.toMatch(/[а-яё]/i);
+    });
+  }
 });

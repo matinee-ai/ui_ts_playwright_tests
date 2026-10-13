@@ -207,6 +207,14 @@ function markForm({ id, scope, newOnly }: { id: string; scope: Element | null; n
 }
 
 function describeFields(root: Element, id: string): FormField[] {
+  // Anti-spam trap fields: humans never see them, and filling one gets the submission discarded.
+  const isHoneypot = (el: HTMLElement) => {
+    if (el.tabIndex === -1 || el.closest('[aria-hidden="true"]')) return true;
+    const r = el.getBoundingClientRect();
+    if (r.right < 0 || r.bottom < 0 || r.left > window.innerWidth + 2000) return true;
+    const name = `${el.getAttribute('name') ?? ''} ${el.id}`.toLowerCase();
+    return /\b(website|url|homepage|honeypot|hp|fax|nickname_confirm)\b/.test(name) && !el.hasAttribute('required');
+  };
   const shown = (el: Element) => {
     const r = el.getBoundingClientRect();
     const s = getComputedStyle(el);
@@ -232,6 +240,7 @@ function describeFields(root: Element, id: string): FormField[] {
     const el = node as HTMLInputElement;
     const type = (el.getAttribute('type') ?? (el.tagName === 'TEXTAREA' ? 'textarea' : 'text')).toLowerCase();
     if (['hidden', 'submit', 'button', 'reset', 'image', 'file', 'search', 'password'].includes(type)) return;
+    if (isHoneypot(el)) return;
     // Custom checkboxes often hide the real input; still tick it if its label is visible.
     const target = shown(el) ? el : type === 'checkbox' || type === 'radio' ? el.closest('label') ?? null : null;
     if (!target || !shown(target)) return;

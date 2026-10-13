@@ -33,6 +33,16 @@ on:
     - cron: '10 21 * * *'
     - cron: '33 22 * * *'
     - cron: '56 23 * * *'
+  # Also run every project when the tests themselves change.
+  push:
+    branches-ignore: [gh-pages, site-discovery]
+    paths:
+      - 'tests/chessorro/**'
+      - 'tests/qastarting/**'
+      - 'tests/spas/**'
+      - 'src/**'
+      - 'config/**'
+      - 'playwright.config.ts'
   workflow_dispatch:
     inputs:
       projects:
@@ -47,6 +57,11 @@ on:
 
 permissions:
   contents: read
+
+# A newer push cancels the previous push run; scheduled and manual runs never cancel each other.
+concurrency:
+  group: ${{ github.event_name == 'push' && format('e2e-push-{0}', github.ref) || format('e2e-{0}', github.run_id) }}
+  cancel-in-progress: ${{ github.event_name == 'push' }}
 
 jobs:
   plan:

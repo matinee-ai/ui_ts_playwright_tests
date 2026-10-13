@@ -8,7 +8,6 @@ import type { Page } from '@playwright/test';
 import { expect, test } from '../../src/fixtures.ts';
 import { ChessBoard, START_POSITION, signature } from '../../src/helpers/chess-board.ts';
 import { FormHelper } from '../../src/helpers/forms.ts';
-import { SpasSite } from '../../src/pages/spas.ts';
 
 const FIXTURES = fileURLToPath(new URL('./fixtures/', import.meta.url));
 const CHESSGROUND = path.resolve('node_modules/chessground');
@@ -136,8 +135,10 @@ test.describe('FormHelper + FormSpy', () => {
     expect(sent.url).toBe('https://forms.fixtures.test/procces/');
   });
 
-  test('help form opened by a call-to-action is found instead of other forms on the page', async ({ page, formSpy }) => {
-    const form = await new SpasSite(page).openHelpForm();
+  test('a form opened by a button is found instead of forms already on the page', async ({ page, formSpy }) => {
+    await FormHelper.rememberVisibleForms(page);
+    await page.getByRole('button', { name: 'Get help' }).click();
+    const form = await FormHelper.find(page, undefined, { newOnly: true });
     await expect(form.root).toHaveAttribute('id', 'help-form');
     expect((await form.fields()).map((f) => f.kind)).toEqual(['name', 'phone', 'message']);
 
@@ -146,5 +147,13 @@ test.describe('FormHelper + FormSpy', () => {
     await form.submit();
     const sent = await formSpy.expectSubmission([formSpy.marker]);
     expect(sent.url).toBe(`${ORIGIN}/api/help`);
+  });
+
+  test('anti-spam honeypot fields are left empty', async ({ page }) => {
+    await page.locator('#native form').evaluate((form) => {
+      form.insertAdjacentHTML('afterbegin', '<input name="website" type="text" style="position:absolute;left:-9999px" tabindex="-1">');
+    });
+    const form = await FormHelper.find(page, page.locator('#native'));
+    expect((await form.fields()).map((f) => f.kind)).toEqual(['name', 'email', 'phone', 'checkbox']);
   });
 });

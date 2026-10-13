@@ -1,4 +1,5 @@
 import { SITES } from '../../../config/sites.ts';
 import { commonUiTests } from '../../../src/suites/common-ui.ts';
 
-commonUiTests(SITES.chessorro);
+// Language switching has its own, site-specific tests.
+commonUiTests(SITES.chessorro, { languageSwitch: false });

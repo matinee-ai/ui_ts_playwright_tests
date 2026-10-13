@@ -14,7 +14,7 @@ const LANGUAGE_LABEL: Record<string, RegExp> = {
 };
 
 /** Registers the browser checks every site must pass. */
-export function commonUiTests(site: SiteConfig): void {
+export function commonUiTests(site: SiteConfig, { languageSwitch = true } = {}): void {
   test.describe(`${site.name}: common UI`, () => {
     test('landing page renders without script errors or failed requests', { tag: '@critical' }, async ({ page, pageErrors }) => {
       const failed: string[] = [];
@@ -53,7 +53,7 @@ export function commonUiTests(site: SiteConfig): void {
       expect(await brokenUrls(page.request, links)).toEqual([]);
     });
 
-    test('language switcher changes the page language', { tag: '@minor' }, async ({ page }) => {
+    if (languageSwitch) test('language switcher changes the page language', { tag: '@minor' }, async ({ page }) => {
       const sitePage = new SitePage(page, site);
       await sitePage.open();
       const startLang = ((await page.locator('html').getAttribute('lang')) ?? '').toLowerCase().split('-')[0];
