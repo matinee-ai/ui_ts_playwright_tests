@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Offline board (chessground fixture)</title>
+  <link rel="stylesheet" href="/vendor/chessground.base.css">
+  <link rel="stylesheet" href="/vendor/chessground.brown.css">
+  <link rel="stylesheet" href="/vendor/chessground.cburnett.css">
+  <style>body { margin: 40px; } #board { width: 480px; height: 480px; }</style>
+</head>
+<body>
+  <h1>Offline board</h1>
+  <div id="board"></div>
+  <script type="module">
+    import { Chessground } from '/vendor/chessground.min.js';
+    import { legalTargets } from '/rules.js';
+
+    const ROLE = { pawn: 'p', knight: 'n', bishop: 'b', rook: 'r', queen: 'q', king: 'k' };
+    const orientation = new URLSearchParams(location.search).get('orientation') || 'white';
+    let turn = 'w';
+
+    const position = () => {
+      const p = {};
+      for (const [key, piece] of cg.state.pieces) p[key] = piece.color[0] + ROLE[piece.role];
+      return p;
+    };
+    const dests = () => {
+      const map = new Map();
+      const p = position();
+      for (const sq of Object.keys(p)) {
+        const targets = legalTargets(p, sq, turn);
+        if (targets.length) map.set(sq, targets);
+      }
+      return map;
+    };
+
+    const cg = Chessground(document.getElementById('board'), {
+      orientation,
+      turnColor: 'white',
+      animation: { enabled: true, duration: 150 },
+      movable: {
+        free: false,
+        color: 'white',
+        events: {
+          after: () => {
+            turn = turn === 'w' ? 'b' : 'w';
+            const color = turn === 'w' ? 'white' : 'black';
+            cg.set({ turnColor: color, movable: { color, dests: dests() } });
+          },
+        },
+      },
+    });
+    cg.set({ movable: { dests: dests() } });
+  </script>
+</body>
+</html>

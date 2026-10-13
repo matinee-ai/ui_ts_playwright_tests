@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Puzzle (data-square grid fixture)</title>
+  <style>
+    body { margin: 40px; font-family: sans-serif; }
+    #board { display: grid; grid-template-columns: repeat(8, 56px); grid-template-rows: repeat(8, 56px); width: 448px; border: 6px solid #333; }
+    #board > div { display: flex; align-items: center; justify-content: center; font-size: 38px; cursor: pointer; user-select: none; }
+    .light { background: #eee; } .dark { background: #8a6; } .selected { outline: 3px solid gold; outline-offset: -3px; }
+  </style>
+</head>
+<body>
+  <!-- Mimics react-chessboard / chessboard.js markup: squares carry data-square, pieces data-piece. Click-to-move only. -->
+  <div id="board"></div>
+  <button id="next" type="button">Next puzzle</button>
+  <script type="module">
+    import { legalTargets, startPosition } from '/rules.js';
+
+    const GLYPH = { wk: '♔', wq: '♕', wr: '♖', wb: '♗', wn: '♘', wp: '♙', bk: '♚', bq: '♛', br: '♜', bb: '♝', bn: '♞', bp: '♟' };
+    const PUZZLES = [
+      { e1: 'wk', e8: 'bk', d1: 'wq', a7: 'bp', h2: 'wp' },
+      { g1: 'wk', g8: 'bk', f7: 'bp', g7: 'bp', h7: 'bp', e1: 'wr' },
+    ];
+    const flipped = new URLSearchParams(location.search).get('orientation') === 'black';
+    const mode = new URLSearchParams(location.search).get('mode') || 'game';
+    let position = mode === 'puzzle' ? { ...PUZZLES[0] } : startPosition();
+    let puzzle = 0;
+    let turn = 'w';
+    let selected = null;
+
+    function render() {
+      const board = document.getElementById('board');
+      board.innerHTML = '';
+      for (let row = 0; row < 8; row++) {
+        for (let col = 0; col < 8; col++) {
+          const file = flipped ? 7 - col : col;
+          const rank = flipped ? row : 7 - row;
+          const sq = String.fromCharCode(97 + file) + (rank + 1);
+          const cell = document.createElement('div');
+          cell.dataset.square = sq;
+          cell.className = (file + rank) % 2 ? 'light' : 'dark';
+          if (sq === selected) cell.classList.add('selected');
+          if (position[sq]) {
+            const piece = document.createElement('div');
+            piece.dataset.piece = position[sq][0] + position[sq][1].toUpperCase();
+            piece.textContent = GLYPH[position[sq]];
+            piece.style.cssText = 'width: 48px; height: 48px; text-align: center; line-height: 48px;';
+            cell.appendChild(piece);
+          }
+          cell.addEventListener('click', () => onClick(sq));
+          board.appendChild(cell);
+        }
+      }
+    }
+
+    function onClick(sq) {
+      if (selected && legalTargets(position, selected, turn).includes(sq)) {
+        position[sq] = position[selected];
+        delete position[selected];
+        turn = turn === 'w' ? 'b' : 'w';
+        selected = null;
+      } else {
+        selected = position[sq] && position[sq][0] === turn ? sq : null;
+      }
+      render();
+    }
+
+    document.getElementById('next').addEventListener('click', () => {
+      puzzle = (puzzle + 1) % PUZZLES.length;
+      position = { ...PUZZLES[puzzle] };
+      render();
+    });
+    render();
+  </script>
+</body>
+</html>

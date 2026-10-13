@@ -1,0 +1,29 @@
+{
+  "name": "ui-ts-playwright-tests",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Playwright + TypeScript UI and API regression suites for chessorro.com, qastarting.org and spas.life, run daily at a different time per project.",
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "test": "playwright test",
+    "test:api": "playwright test --project=chessorro-api --project=qastarting-api --project=spas-api",
+    "test:ui": "playwright test --project=chessorro-ui --project=qastarting-ui --project=spas-ui",
+    "test:chessorro": "playwright test --project=chessorro-api --project=chessorro-ui",
+    "test:qastarting": "playwright test --project=qastarting-api --project=qastarting-ui",
+    "test:spas": "playwright test --project=spas-api --project=spas-ui",
+    "test:self": "playwright test --project=unit --project=framework",
+    "typecheck": "tsc --noEmit",
+    "report": "playwright show-report",
+    "schedule": "node scripts/schedule-cli.ts show 14",
+    "schedule:cron": "node scripts/schedule-cli.ts cron"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "@types/node": "^22.20.5",
+    "chessground": "^9.2.1",
+    "typescript": "5.9"
+  },
+  "type": "module"
+}

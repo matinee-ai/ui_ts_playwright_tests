@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Forms fixture</title>
+  <style>
+    body { font-family: sans-serif; margin: 40px; }
+    .error { color: #c00; display: none; } .error.show { display: block; }
+    .consent input { position: absolute; opacity: 0; width: 0; height: 0; }
+    .consent span::before { content: '☐ '; } .consent input:checked + span::before { content: '☑ '; }
+    #modal { display: none; border: 1px solid #999; padding: 16px; } #modal.open { display: block; }
+  </style>
+</head>
+<body>
+  <!-- 1. Native validation, JSON fetch, custom (visually hidden) consent checkbox. -->
+  <section id="native">
+    <h2>QA BASIC: book a place</h2>
+    <form id="enrol">
+      <label>Your name <input name="name" required></label>
+      <label>Email <input type="email" name="email" required></label>
+      <label>Phone <input type="tel" name="phone"></label>
+      <label class="consent"><input type="checkbox" name="consent" required><span>I agree to the privacy policy</span></label>
+      <button type="submit">Book a place</button>
+    </form>
+  </section>
+
+  <!-- 2. Tilda-style: novalidate, JS error messages, urlencoded XHR. -->
+  <section id="tilda">
+    <h2>Want to get 3 free lessons?</h2>
+    <form id="lessons" novalidate>
+      <input name="Phone" placeholder="Phone number" data-tilda-rule="phone">
+      <div class="t-input-error error" id="phone-error">Please enter a phone number</div>
+      <input name="Email" placeholder="E-mail" data-tilda-rule="email">
+      <div class="t-input-error error" id="email-error">Please enter a valid email</div>
+      <a class="t-submit" role="button" href="#" id="lessons-submit">Get lessons</a>
+    </form>
+  </section>
+
+  <!-- 3. Call-to-action that opens a modal form. -->
+  <section id="help">
+    <h2>Do you or someone close to you need help?</h2>
+    <p>A free 15-minute conversation with a mentor.</p>
+    <button type="button" id="open-help">Get help</button>
+  </section>
+  <div id="modal">
+    <form id="help-form">
+      <input name="name" placeholder="Your name" required>
+      <input type="tel" name="phone" placeholder="Phone" required>
+      <textarea name="message" placeholder="How can we help?"></textarea>
+      <button type="submit">Send request</button>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById('enrol').addEventListener('submit', (e) => {
+      e.preventDefault();
+      fetch('https://api.fixtures.test/leads', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(Object.fromEntries(new FormData(e.target))) });
+    });
+
+    document.getElementById('lessons-submit').addEventListener('click', (e) => {
+      e.preventDefault();
+      const form = document.getElementById('lessons');
+      const phone = form.Phone.value.replace(/\D/g, '');
+      const email = form.Email.value;
+      const phoneOk = phone.length >= 10;
+      const emailOk = /^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email);
+      document.getElementById('phone-error').classList.toggle('show', !phoneOk);
+      document.getElementById('email-error').classList.toggle('show', !emailOk);
+      if (!phoneOk || !emailOk) return;
+      const xhr = new XMLHttpRequest();
+      xhr.open('POST', 'https://forms.fixtures.test/procces/');
+      xhr.setRequestHeader('content-type', 'application/x-www-form-urlencoded');
+      xhr.send(new URLSearchParams({ Phone: form.Phone.value, Email: email }).toString());
+    });
+
+    document.getElementById('open-help').addEventListener('click', () => document.getElementById('modal').classList.add('open'));
+    document.getElementById('help-form').addEventListener('submit', (e) => {
+      e.preventDefault();
+      fetch('/api/help', { method: 'POST', body: new FormData(e.target) });
+    });
+  </script>
+</body>
+</html>
