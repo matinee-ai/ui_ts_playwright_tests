@@ -2,8 +2,10 @@ name: CI
 
 # Checks the framework itself on every push: types, scheduler, parsers and the
 # board/form helpers against local fixtures. Does not touch the live sites.
+# On pushes the Allure report is hosted on GitHub Pages under self-test/ and linked from the run.
 on:
   push:
+    branches-ignore: [gh-pages]
   pull_request:
 
 permissions:
@@ -13,6 +15,9 @@ jobs:
   self-test:
     runs-on: ubuntu-latest
     timeout-minutes: 15
+    permissions:
+      contents: write # publish the Allure report to the gh-pages branch
+      pages: read # look up the GitHub Pages URL for the report link
     env:
       CI: true
     steps:
@@ -25,7 +30,23 @@ jobs:
       - run: npm run typecheck
       - name: Install Chromium
         run: npx playwright install --with-deps chromium
-      - run: npm run test:self
+      - name: Run self-tests
+        id: tests
+        run: npm run test:self
+      - name: Build Allure report
+        if: ${{ !cancelled() && (steps.tests.outcome == 'success' || steps.tests.outcome == 'failure') }}
+        env:
+          ALLURE_REPORT_NAME: Framework self-tests
+        run: |
+          bash scripts/allure-pages.sh pull-history self-test
+          ALLURE_SINGLE_FILE=0 ALLURE_OUTPUT=allure-site npx allure generate
+      - name: Publish Allure report
+        # Only pushes publish: pull requests (forks included) get a read-only token.
+        if: ${{ !cancelled() && github.event_name == 'push' && (steps.tests.outcome == 'success' || steps.tests.outcome == 'failure') }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPORT_BASE_URL: ${{ vars.REPORT_BASE_URL }}
+        run: bash scripts/allure-pages.sh publish self-test allure-site
       - name: Upload report
         if: ${{ failure() }}
         uses: actions/upload-artifact@v4

@@ -90,12 +90,16 @@ jobs:
     if: needs.plan.outputs.projects != '[]'
     runs-on: ubuntu-latest
     timeout-minutes: 45
+    permissions:
+      contents: write # publish the Allure report to the gh-pages branch
+      pages: read # look up the GitHub Pages URL for the report link
     strategy:
       fail-fast: false
       matrix:
         project: ${{ fromJSON(needs.plan.outputs.projects) }}
     env:
       CI: true
+      PROJECT: ${{ matrix.project }}
       # Optional repository variables to point a run at another environment.
       CHESSORRO_URL: ${{ vars.CHESSORRO_URL }}
       QASTARTING_URL: ${{ vars.QASTARTING_URL }}
@@ -110,8 +114,8 @@ jobs:
       - name: Install Chromium
         run: npx playwright install --with-deps chromium
       - name: Run ${{ matrix.project }} tests
+        id: tests
         env:
-          PROJECT: ${{ matrix.project }}
           SUITE: ${{ inputs.suite || 'all' }}
         run: |
           case "$SUITE" in
@@ -120,45 +124,40 @@ jobs:
             *)   npx playwright test --project="$PROJECT-api" --project="$PROJECT-ui" ;;
           esac
 
-      # Allure: one self-contained HTML file per project. History (trends, "new failure" / "fixed"
-      # markers) lives in the Actions cache, one entry per project, refreshed by every run.
+      # Allure report, hosted on GitHub Pages (gh-pages branch, one folder per project).
+      # The link is posted as a run annotation and in the run summary.
       - name: Restore Allure history
-        if: ${{ !cancelled() }}
-        uses: actions/cache/restore@v4
-        with:
-          path: allure-history
-          key: allure-history-${{ matrix.project }}-${{ github.run_id }}-${{ github.run_attempt }}
-          restore-keys: allure-history-${{ matrix.project }}-
+        if: ${{ !cancelled() && (steps.tests.outcome == 'success' || steps.tests.outcome == 'failure') }}
+        run: bash scripts/allure-pages.sh pull-history "$PROJECT"
       - name: Build Allure report
-        if: ${{ !cancelled() }}
+        if: ${{ !cancelled() && (steps.tests.outcome == 'success' || steps.tests.outcome == 'failure') }}
         env:
           ALLURE_REPORT_NAME: Daily E2E - ${{ matrix.project }}
           SCHEDULE_SLOT: ${{ github.event.schedule }}
-        run: npx allure generate
-      - name: Save Allure history
-        if: ${{ !cancelled() }}
-        uses: actions/cache/save@v4
-        with:
-          path: allure-history
-          key: allure-history-${{ matrix.project }}-${{ github.run_id }}-${{ github.run_attempt }}
-      - name: Upload Allure report
-        if: ${{ !cancelled() }}
-        uses: actions/upload-artifact@v4
-        with:
-          name: allure-report-${{ matrix.project }}-${{ github.run_id }}
-          path: allure-report/
-          retention-days: 30
+        run: |
+          ALLURE_SINGLE_FILE=0 ALLURE_OUTPUT=allure-site npx allure generate   # hosted copy
+          ALLURE_APPEND_HISTORY=0 npx allure generate                          # single-file copy for the artifact
       - name: Summary
-        if: ${{ !cancelled() }}
-        env:
-          PROJECT: ${{ matrix.project }}
+        if: ${{ !cancelled() && (steps.tests.outcome == 'success' || steps.tests.outcome == 'failure') }}
         run: |
           node -e '
             const { stats } = JSON.parse(require("fs").readFileSync("allure-report/summary.json", "utf8"));
             const parts = Object.entries(stats).filter(([k]) => k !== "total").map(([k, v]) => `${v} ${k}`);
             console.log(`### ${process.env.PROJECT}: ${stats.total} tests, ${parts.join(", ")}`);
-            console.log(`Allure report: download the \`allure-report-${process.env.PROJECT}-${process.env.GITHUB_RUN_ID}\` artifact and open \`index.html\`.`);
           ' >> "$GITHUB_STEP_SUMMARY"
+      - name: Publish Allure report
+        if: ${{ !cancelled() && (steps.tests.outcome == 'success' || steps.tests.outcome == 'failure') }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPORT_BASE_URL: ${{ vars.REPORT_BASE_URL }}
+        run: bash scripts/allure-pages.sh publish "$PROJECT" allure-site
+      - name: Upload Allure report (single file)
+        if: ${{ !cancelled() && (steps.tests.outcome == 'success' || steps.tests.outcome == 'failure') }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-report-${{ matrix.project }}-${{ github.run_id }}
+          path: allure-report/
+          retention-days: 30
 
       - name: Upload Playwright report and traces
         if: ${{ !cancelled() }}

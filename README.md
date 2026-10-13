@@ -33,7 +33,25 @@ What's in it:
 - **Report header** with the URLs under test, the trigger, commit and a link to the CI run.
 - **History and trends**: `allure-history/history.jsonl` marks new, fixed and flaky tests and feeds the trend charts.
 
-In the daily workflow each project gets its own report, uploaded as the `allure-report-<project>-<run id>` artifact (kept 30 days), with a pass/fail line in the run summary. Each project's history is kept in the Actions cache, so trends build up run after run. The Playwright HTML report and traces are still uploaded separately as `playwright-report-<project>-<run id>`.
+### Report links
+
+Reports are hosted on GitHub Pages: **https://matinee-ai.github.io/ui_ts_playwright_tests/**
+
+That page is a dashboard with each project's latest status and its recent runs. Every workflow run also posts its own report link:
+
+- in the run's **Annotations** box ("Allure report: chessorro" → link), and
+- in the run **Summary**, with the latest report for that project and the dashboard.
+
+| Path | Contents |
+| --- | --- |
+| `/<project>/latest/` | latest report for `chessorro`, `qastarting`, `spas`, or `self-test` (CI on every push) |
+| `/<project>/runs/<run id>-<attempt>/` | report of one run (newest 15 kept per project) |
+
+**One-time setup:** Settings → Pages → Build and deployment → Source: *Deploy from a branch* → `gh-pages` / `(root)` → Save. The workflows create and update the `gh-pages` branch themselves. Until Pages is on, runs show a warning next to the link. Each run's history (trends, new and fixed tests) is stored on `gh-pages` next to its report.
+
+The `gh-pages` branch always holds a single commit (force-pushed with a lease and retried if two runs publish at once), so old reports don't pile up in git history. `scripts/allure-pages.sh` does the publishing. To serve the reports from another domain, set the repository variable `REPORT_BASE_URL`.
+
+Each daily run also uploads a single-file copy as the `allure-report-<project>-<run id>` artifact (30 days), plus the Playwright report and traces as `playwright-report-<project>-<run id>`.
 
 ## Forms never reach production
 
@@ -51,7 +69,7 @@ Form tests use the `formSpy` fixture (`src/fixtures.ts`). Once armed, it answers
 npm run schedule        # upcoming run times for the next 14 days (UTC)
 ```
 
-Hours with nothing due finish in a few seconds. Each run uploads an Allure report (see above) and the Playwright report as artifacts. Use **Actions → Daily E2E → Run workflow** to run any project or suite (`all` / `api` / `ui`) on demand.
+Hours with nothing due finish in a few seconds. Each run publishes its Allure report and posts the link (see [Report links](#report-links)). Use **Actions → Daily E2E → Run workflow** to run any project or suite (`all` / `api` / `ui`) on demand.
 
 > GitHub only runs scheduled workflows from the repository's **default branch**, so the schedule starts once this is on the default branch.
 
@@ -83,6 +101,8 @@ npm run test:self            # scheduler + parsers (unit) and the board/form hel
 
 ```
 allurerc.mjs               Allure report settings: categories, history, report header
+report-site/index.html     dashboard at the root of the GitHub Pages site
+scripts/allure-pages.sh    publishes a report to gh-pages and posts its link
 config/sites.ts            base URLs, landing paths, expected contact details
 scripts/schedule.ts        daily planner (no dependencies; CI runs it with plain `node`)
 src/fixtures.ts            test fixture: analytics blocking, pageErrors, formSpy, Allure labels
