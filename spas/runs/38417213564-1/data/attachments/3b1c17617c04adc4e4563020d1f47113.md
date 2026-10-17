@@ -1,0 +1,158 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Онлайн-реабилитация" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - img [ref=e6]
+        - generic [ref=e8]: Онлайн-реабилитация
+      - generic [ref=e9]:
+        - generic [ref=e10]:
+          - link "RU" [ref=e11] [cursor=pointer]:
+            - /url: /orthodoxy/calendar
+          - link "EN" [ref=e12] [cursor=pointer]:
+            - /url: /en/orthodoxy/calendar
+        - link "Записаться" [ref=e13] [cursor=pointer]:
+          - /url: /booking
+        - group [ref=e14]:
+          - generic "Menu" [ref=e15] [cursor=pointer]:
+            - img [ref=e16]
+  - generic [ref=e18]:
+    - navigation "Навигационная цепочка" [ref=e19]:
+      - list [ref=e20]:
+        - listitem [ref=e21]:
+          - link "Главная" [ref=e22] [cursor=pointer]:
+            - /url: /
+        - listitem [ref=e23]:
+          - generic [ref=e24]: ›
+          - link "Православие" [ref=e25] [cursor=pointer]:
+            - /url: /orthodoxy
+        - listitem [ref=e26]:
+          - generic [ref=e27]: ›
+          - generic [ref=e28]: Церковный календарь
+    - navigation "Разделы «Православие»" [ref=e29]:
+      - list [ref=e30]:
+        - listitem [ref=e31]:
+          - link "Календарь" [ref=e32] [cursor=pointer]:
+            - /url: /orthodoxy/calendar
+        - listitem [ref=e33]:
+          - link "Иконы" [ref=e34] [cursor=pointer]:
+            - /url: /orthodoxy/icons
+        - listitem [ref=e35]:
+          - link "История Церкви" [ref=e36] [cursor=pointer]:
+            - /url: /orthodoxy/history
+        - listitem [ref=e37]:
+          - link "Жития святых" [ref=e38] [cursor=pointer]:
+            - /url: /orthodoxy/history/saints
+        - listitem [ref=e39]:
+          - link "Молитвы" [ref=e40] [cursor=pointer]:
+            - /url: /orthodoxy/prayers
+        - listitem [ref=e41]:
+          - link "Святые места" [ref=e42] [cursor=pointer]:
+            - /url: /orthodoxy/places
+  - main [ref=e43]:
+    - heading "Сегодня в церковном календаре" [level=1] [ref=e44]
+    - generic [ref=e45]:
+      - group "Стиль календаря" [ref=e46]:
+        - link "Старый стиль" [ref=e47] [cursor=pointer]:
+          - /url: /orthodoxy/calendar
+        - link "Новый стиль" [ref=e48] [cursor=pointer]:
+          - /url: /orthodoxy/calendar/new-style
+      - link "Календарь на месяц" [ref=e49] [cursor=pointer]:
+        - /url: /orthodoxy/calendar/2026-10
+    - region "6 октября 2026" [ref=e50]:
+      - paragraph [ref=e51]: Вторник
+      - heading "6 октября 2026" [level=2] [ref=e52]
+      - paragraph [ref=e53]: 23 сентября (ст. ст.) · Седмица 19-я по Пятидесятнице
+      - paragraph [ref=e54]: Русская Православная Церковь (старый стиль)
+      - generic [ref=e56]:
+        - region "События дня" [ref=e57]:
+          - heading "События дня" [level=3] [ref=e58]
+          - list [ref=e59]:
+            - listitem [ref=e60]:
+              - paragraph [ref=e61]: Зачатие честного Пророка, Предтечи и Крестителя Господня Иоанна
+              - paragraph [ref=e62]: Полиелейный
+        - region "Пост" [ref=e63]:
+          - heading "Пост" [level=3] [ref=e64]
+          - paragraph [ref=e65]: Поста нет
+          - paragraph [ref=e66]: Поста нет.
+          - paragraph [ref=e67]: Пищевые правила — справочная церковная информация. Личную меру поста согласуйте со священником; при болезни посоветуйтесь с врачом.
+        - region "Чтения дня" [ref=e68]:
+          - heading "Чтения дня" [level=3] [ref=e69]
+          - list [ref=e70]:
+            - listitem [ref=e71]:
+              - paragraph [ref=e72]: Апостол на литургии
+              - paragraph [ref=e73]: Флп. 1:8–14 (зач. 236)
+              - group [ref=e74]:
+                - generic "Показать текст" [ref=e75] [cursor=pointer]
+            - listitem [ref=e76]:
+              - paragraph [ref=e77]: Апостол на литургии · Предтече
+              - paragraph [ref=e78]: Гал. 4:22–31 (зач. 210 от полу)
+              - group [ref=e79]:
+                - generic "Показать текст" [ref=e80] [cursor=pointer]
+            - listitem [ref=e81]:
+              - paragraph [ref=e82]: Евангелие на литургии
+              - paragraph [ref=e83]: Лк. 3:23–4:1 (зач. 11)
+              - group [ref=e84]:
+                - generic "Показать текст" [ref=e85] [cursor=pointer]
+            - listitem [ref=e86]:
+              - paragraph [ref=e87]: Евангелие на литургии · Предтече
+              - paragraph [ref=e88]: Лк. 1:5–25 (зач. 2)
+              - group [ref=e89]:
+                - generic "Показать текст" [ref=e90] [cursor=pointer]
+          - paragraph [ref=e91]: "Источник: Orthocal: данные о чтениях — славянская традиция, старый стиль. Текст: Синодальный перевод (РБО, 1995; сверка с изданиями РБО 2002 и ИМП 2016)."
+        - region "Святые и иконы" [ref=e92]:
+          - heading "Святые и иконы" [level=3] [ref=e93]
+          - list [ref=e94]:
+            - listitem [ref=e95]:
+              - text: "Молитва дня:"
+              - link "Молитва Иисусова" [ref=e96] [cursor=pointer]:
+                - /url: /orthodoxy/prayers/jesus-prayer
+      - paragraph [ref=e97]:
+        - link "Открыть день полностью" [ref=e98] [cursor=pointer]:
+          - /url: /orthodoxy/calendar/2026-10-06
+  - complementary "Нужна помощь вам или близкому?" [ref=e99]:
+    - generic [ref=e100]:
+      - generic [ref=e101]:
+        - heading "Нужна помощь вам или близкому?" [level=2] [ref=e102]
+        - paragraph [ref=e103]: Бесплатный 15-минутный разговор с наставником, который сам прошёл путь восстановления.
+      - link "Записаться на разговор" [ref=e104] [cursor=pointer]:
+        - /url: /booking
+    - paragraph [ref=e105]:
+      - link "О разделе" [ref=e106] [cursor=pointer]:
+        - /url: /orthodoxy
+      - link "Лицензии" [ref=e107] [cursor=pointer]:
+        - /url: /orthodoxy/licenses
+      - link "Онлайн-реабилитация" [ref=e108] [cursor=pointer]:
+        - /url: /
+  - contentinfo [ref=e109]:
+    - separator [ref=e110]
+    - generic [ref=e111]:
+      - generic [ref=e112]:
+        - paragraph [ref=e113]: Онлайн-реабилитация
+        - paragraph [ref=e114]: Христианская онлайн-поддержка для зависимых и их родственников. Участие бесплатное.
+      - generic [ref=e115]:
+        - heading "Быстрые действия" [level=2] [ref=e116]
+        - generic [ref=e117]:
+          - link "Записаться на 15 минут" [ref=e118] [cursor=pointer]:
+            - /url: /booking
+          - link "Оставить заявку" [ref=e119] [cursor=pointer]:
+            - /url: /register
+          - link "Задать вопрос" [ref=e120] [cursor=pointer]:
+            - /url: /contact
+          - link "Поддержать проект" [ref=e121] [cursor=pointer]:
+            - /url: /support
+          - link "Политика конфиденциальности" [ref=e122] [cursor=pointer]:
+            - /url: /privacy
+      - generic [ref=e123]:
+        - heading "Контакты" [level=2] [ref=e124]
+        - generic [ref=e125]:
+          - 'link "Телефон: +1 (954) 501-0763" [ref=e126] [cursor=pointer]':
+            - /url: tel:+19545010763
+          - 'link "Email: support@spas.life" [ref=e127] [cursor=pointer]':
+            - /url: mailto:support@spas.life
+          - 'link "Telegram: @spaslife_ch" [ref=e128] [cursor=pointer]':
+            - /url: https://t.me/spaslife_ch
+```

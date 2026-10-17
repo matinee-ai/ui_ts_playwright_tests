@@ -1,0 +1,221 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Online Rehabilitation" [ref=e4] [cursor=pointer]:
+        - /url: /en
+        - img [ref=e6]
+        - generic [ref=e8]: Online Rehabilitation
+      - generic [ref=e9]:
+        - generic [ref=e10]:
+          - link "RU" [ref=e11] [cursor=pointer]:
+            - /url: /
+          - link "EN" [ref=e12] [cursor=pointer]:
+            - /url: /en
+        - link "Book a call" [ref=e13] [cursor=pointer]:
+          - /url: /en/booking
+        - group [ref=e14]:
+          - generic "Menu" [ref=e15] [cursor=pointer]:
+            - img [ref=e16]
+  - main [ref=e18]:
+    - generic [ref=e19]:
+      - generic [ref=e20]:
+        - paragraph [ref=e21]: Volunteer program • free • online
+        - heading "Free online help for people with addiction and their families" [level=1] [ref=e22]
+        - paragraph [ref=e23]: 15 minutes with a mentor who has walked the road of recovery himself. No payment. No pressure. With respect.
+        - paragraph [ref=e24]: A free program for those struggling with alcohol or drug addiction, and for their families — no clinics, no queues, from anywhere in the world.
+        - generic [ref=e25]:
+          - link "Book a 15-minute call" [ref=e26] [cursor=pointer]:
+            - /url: /en/booking
+          - link "Send a request" [ref=e27] [cursor=pointer]:
+            - /url: /en/register
+        - paragraph [ref=e28]:
+          - text: Free • Online • Confidential ·
+          - link "+1 (954) 501-0763" [ref=e29] [cursor=pointer]:
+            - /url: tel:+19545010763
+      - complementary [ref=e30]:
+        - paragraph [ref=e31]: How the program works
+        - heading "The first step is simple" [level=2] [ref=e32]
+        - list [ref=e33]:
+          - listitem [ref=e34]:
+            - generic [ref=e35]: "1"
+            - generic [ref=e36]: Read a short overview of the program.
+          - listitem [ref=e37]:
+            - generic [ref=e38]: "2"
+            - generic [ref=e39]: Book a 15-minute call.
+          - listitem [ref=e40]:
+            - generic [ref=e41]: "3"
+            - generic [ref=e42]: A mentor helps you figure out the next step.
+    - generic [ref=e43]:
+      - paragraph [ref=e44]: Where to start
+      - heading "Choose your situation" [level=2] [ref=e45]
+      - generic [ref=e46]:
+        - generic [ref=e47]:
+          - heading "I am struggling with addiction myself" [level=3] [ref=e48]
+          - paragraph [ref=e49]: Admitting you need help is already the hardest step. From here, you will not walk alone.
+          - link "What happens next →" [ref=e50] [cursor=pointer]:
+            - /url: /en/for-participants
+        - generic [ref=e51]:
+          - heading "I am a relative or a loved one" [level=3] [ref=e52]
+          - paragraph [ref=e53]: You love them — and you are exhausted. That is okay. You deserve support no less than they do.
+          - link "How we can help you →" [ref=e54] [cursor=pointer]:
+            - /url: /en/for-family
+    - generic [ref=e55]:
+      - separator [ref=e56]
+      - generic [ref=e57]:
+        - definition [ref=e59]:
+          - generic [ref=e60]: 1000+
+          - generic [ref=e61]: people received support
+        - definition [ref=e63]:
+          - generic [ref=e64]: ★★★★★
+          - generic [ref=e65]: "4.9"
+          - generic [ref=e66]: average participant rating
+        - definition [ref=e68]:
+          - generic [ref=e69]: FREE
+          - generic [ref=e70]: participation costs nothing
+      - separator [ref=e71]
+    - generic [ref=e73]:
+      - generic [ref=e74]:
+        - paragraph [ref=e75]: Who this program is for
+        - heading "This program is for you if:" [level=2] [ref=e76]
+      - list [ref=e77]:
+        - listitem [ref=e78]:
+          - generic [ref=e79]: —
+          - text: You or someone close to you struggles with alcohol, drugs or another addiction.
+        - listitem [ref=e80]:
+          - generic [ref=e81]: —
+          - text: You are tired of promises to "quit on my own" and do not know what to do next.
+        - listitem [ref=e82]:
+          - generic [ref=e83]: —
+          - text: You are a relative and feel powerless, afraid or emptied out.
+        - listitem [ref=e84]:
+          - generic [ref=e85]: —
+          - text: You want help but cannot afford a paid center.
+    - generic [ref=e86]:
+      - paragraph [ref=e87]: How the program works
+      - heading "The Gospel, prayer, honest conversation and responsibility" [level=2] [ref=e88]
+      - paragraph [ref=e89]: Each session can include reading and reflecting on the Gospel, prayer, an emotional and practical part, and concrete steps for the week ahead.
+      - generic [ref=e90]:
+        - generic [ref=e91]:
+          - generic [ref=e92]: "01"
+          - generic [ref=e93]:
+            - heading "Reading the Gospel" [level=3] [ref=e94]
+            - paragraph [ref=e95]: A short passage — and a real conversation about what it means for you right now.
+        - generic [ref=e96]:
+          - generic [ref=e97]: "02"
+          - generic [ref=e98]:
+            - heading "Prayer" [level=3] [ref=e99]
+            - paragraph [ref=e100]: Not a ritual, but an honest conversation with God. Many people pray for the first time here.
+        - generic [ref=e101]:
+          - generic [ref=e102]: "03"
+          - generic [ref=e103]:
+            - heading "Talking with a mentor" [level=3] [ref=e104]
+            - paragraph [ref=e105]: Talk about what is really going on. No judgment, no advice from above.
+        - generic [ref=e106]:
+          - generic [ref=e107]: "04"
+          - generic [ref=e108]:
+            - heading "Steps for the week" [level=3] [ref=e109]
+            - paragraph [ref=e110]: One small, concrete task — something you can do before the next meeting.
+        - paragraph [ref=e111]: No two meetings are alike. Some begin with questions about faith. Others — with what happened yesterday. The mentor walks beside you, not ahead of you.
+    - generic [ref=e112]:
+      - paragraph [ref=e113]: Words from those who walked this road
+      - generic [ref=e114]:
+        - figure "— Andrey" [ref=e115]:
+          - blockquote [ref=e116]: I came without believing anything would come of it. Today I have a completely different life.
+          - generic [ref=e117]: — Andrey
+        - figure "— a participant's father" [ref=e118]:
+          - blockquote [ref=e119]: It turned out that to love is not to control.
+          - generic [ref=e120]: — a participant's father
+        - figure "— a participant's wife" [ref=e121]:
+          - blockquote [ref=e122]: For the first time in years I am not doing this alone or in fear.
+          - generic [ref=e123]: — a participant's wife
+      - link "Read the stories" [ref=e125] [cursor=pointer]:
+        - /url: /en/stories
+    - generic [ref=e127]:
+      - paragraph [ref=e128]: Who runs the program
+      - paragraph [ref=e129]: "The program is led not by credentialed therapists, but by people who have been through addiction themselves and come out of it — there are four of them right now, each with 6–9 years of sobriety and their own story: drugs, alcohol, relapses, rebuilding a family, the path of a woman in addiction. We deliberately do not publish their surnames or photos — it is a matter of respect for each person’s journey. But their stories are real, and you can read about each of them."
+      - link "Meet the mentors →" [ref=e130] [cursor=pointer]:
+        - /url: /en/mentors
+    - generic [ref=e131]:
+      - separator [ref=e132]
+      - generic [ref=e133]:
+        - heading "Is this a cult?" [level=2] [ref=e134]
+        - paragraph [ref=e135]: No one will force you to do anything. This is not a cult, not a clinic and not an AA group. It is a real conversation with someone you can trust. Faith helps, but participation is built on your own free choice.
+      - separator [ref=e136]
+    - generic [ref=e138]:
+      - paragraph [ref=e139]: Common questions
+      - generic [ref=e140]:
+        - generic [ref=e141]:
+          - heading "Is it free?" [level=3] [ref=e142]
+          - paragraph [ref=e143]: Yes. This is a volunteer program — we do not charge for participation. Ever.
+        - generic [ref=e144]:
+          - heading "Is this a cult?" [level=3] [ref=e145]
+          - paragraph [ref=e146]: No. We require no money, no attendance, no giving up your family or church. You can leave at any time.
+        - generic [ref=e147]:
+          - heading "Does the program replace a doctor?" [level=3] [ref=e148]
+          - paragraph [ref=e149]: No. In case of a threat to life, withdrawal, psychosis or another dangerous condition, contact emergency services.
+      - link "See all questions →" [ref=e151] [cursor=pointer]:
+        - /url: /en/faq
+    - generic [ref=e153]:
+      - heading "Ready to take the first step?" [level=2] [ref=e154]
+      - paragraph [ref=e155]: Start with a free 15-minute conversation with a mentor. It commits you to nothing.
+      - generic [ref=e156]:
+        - link "Book a 15-minute call" [ref=e157] [cursor=pointer]:
+          - /url: /en/booking
+        - link "Send a request" [ref=e158] [cursor=pointer]:
+          - /url: /en/register
+    - region "Today in the Church calendar" [ref=e159]:
+      - separator [ref=e160]
+      - generic [ref=e161]:
+        - generic [ref=e162]:
+          - heading "Today in the Church calendar" [level=2] [ref=e163]
+          - generic [ref=e164]:
+            - paragraph [ref=e165]: Tuesday, October 6 · 23 September (Old Style)
+            - paragraph [ref=e166]: Conception of the Holy Prophet, Forerunner and Baptist John
+            - paragraph [ref=e167]: No fast
+            - paragraph [ref=e168]:
+              - link "Open the full day" [ref=e169] [cursor=pointer]:
+                - /url: /en/orthodoxy/calendar/2026-10-06
+              - link "Church calendar" [ref=e170] [cursor=pointer]:
+                - /url: /en/orthodoxy/calendar
+        - 'link "The Angel with Golden Hair: a bust-length image of an archangel whose hair is drawn with fine golden lines. Icons The Angel with Golden Hair Second half of the 12th century" [ref=e171] [cursor=pointer]':
+          - /url: /en/orthodoxy/icons/angel-with-golden-hair
+          - 'img "The Angel with Golden Hair: a bust-length image of an archangel whose hair is drawn with fine golden lines." [ref=e172]'
+          - generic [ref=e173]:
+            - generic [ref=e174]: Icons
+            - generic [ref=e175]: The Angel with Golden Hair
+            - generic [ref=e176]: Second half of the 12th century
+      - paragraph [ref=e177]:
+        - link "Orthodoxy" [ref=e178] [cursor=pointer]:
+          - /url: /en/orthodoxy
+  - contentinfo [ref=e179]:
+    - separator [ref=e180]
+    - generic [ref=e181]:
+      - generic [ref=e182]:
+        - paragraph [ref=e183]: Online Rehabilitation
+        - paragraph [ref=e184]: Christian online support for people with addiction and their relatives. Participation is free.
+      - generic [ref=e185]:
+        - heading "Quick actions" [level=2] [ref=e186]
+        - generic [ref=e187]:
+          - link "Book 15 minutes" [ref=e188] [cursor=pointer]:
+            - /url: /en/booking
+          - link "Send a request" [ref=e189] [cursor=pointer]:
+            - /url: /en/register
+          - link "Ask a question" [ref=e190] [cursor=pointer]:
+            - /url: /en/contact
+          - link "Support the project" [ref=e191] [cursor=pointer]:
+            - /url: /en/support
+          - link "Privacy Policy" [ref=e192] [cursor=pointer]:
+            - /url: /en/privacy
+      - generic [ref=e193]:
+        - heading "Contacts" [level=2] [ref=e194]
+        - generic [ref=e195]:
+          - 'link "Phone: +1 (954) 501-0763" [ref=e196] [cursor=pointer]':
+            - /url: tel:+19545010763
+          - 'link "Email: support@spas.life" [ref=e197] [cursor=pointer]':
+            - /url: mailto:support@spas.life
+          - 'link "Telegram: @spaslife_ch" [ref=e198] [cursor=pointer]':
+            - /url: https://t.me/spaslife_ch
+```

@@ -1,0 +1,94 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Онлайн-реабилитация" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - img [ref=e6]
+        - generic [ref=e8]: Онлайн-реабилитация
+      - generic [ref=e9]:
+        - generic [ref=e10]:
+          - link "RU" [ref=e11] [cursor=pointer]:
+            - /url: /faq
+          - link "EN" [ref=e12] [cursor=pointer]:
+            - /url: /en/faq
+        - link "Записаться" [ref=e13] [cursor=pointer]:
+          - /url: /booking
+        - group [ref=e14]:
+          - generic "Menu" [ref=e15] [cursor=pointer]:
+            - img [ref=e16]
+  - main [ref=e18]:
+    - generic [ref=e19]:
+      - paragraph [ref=e20]: FAQ
+      - heading "Вопросы и ответы" [level=1] [ref=e21]
+    - generic [ref=e22]:
+      - generic [ref=e23]:
+        - heading "Общие вопросы" [level=2] [ref=e24]
+        - generic [ref=e25]:
+          - group [ref=e26]:
+            - generic "Это бесплатно? +" [ref=e27] [cursor=pointer]
+          - group [ref=e28]:
+            - generic "Это христианская программа? +" [ref=e29] [cursor=pointer]
+          - group [ref=e30]:
+            - generic "А это не секта? +" [ref=e31] [cursor=pointer]
+          - group [ref=e32]:
+            - generic "Заменяет ли программа врача? +" [ref=e33] [cursor=pointer]
+          - group [ref=e34]:
+            - generic "Что если я не из России или СНГ? +" [ref=e35] [cursor=pointer]
+      - generic [ref=e36]:
+        - heading "Для участников" [level=2] [ref=e37]
+        - generic [ref=e38]:
+          - group [ref=e39]:
+            - generic "Можно ли сначала просто поговорить? +" [ref=e40] [cursor=pointer]
+          - group [ref=e41]:
+            - generic "Могу ли я участвовать анонимно? +" [ref=e42] [cursor=pointer]
+          - group [ref=e43]:
+            - generic "Насколько это конфиденциально? +" [ref=e44] [cursor=pointer]
+          - group [ref=e45]:
+            - generic "Как проходит встреча технически? +" [ref=e46] [cursor=pointer]
+          - group [ref=e47]:
+            - generic "Как часто проходят встречи? +" [ref=e48] [cursor=pointer]
+          - group [ref=e49]:
+            - generic "Что будет, если я сорвусь? +" [ref=e50] [cursor=pointer]
+          - group [ref=e51]:
+            - generic "Сколько длится программа? +" [ref=e52] [cursor=pointer]
+      - generic [ref=e53]:
+        - heading "Для родственников" [level=2] [ref=e54]
+        - generic [ref=e55]:
+          - group [ref=e56]:
+            - generic "Помогаете ли вы родственникам? +" [ref=e57] [cursor=pointer]
+          - group [ref=e58]:
+            - generic "Можно ли участвовать, если близкий ещё не готов? +" [ref=e59] [cursor=pointer]
+          - group [ref=e60]:
+            - generic "Что такое созависимость и помогаете ли вы с этим? +" [ref=e61] [cursor=pointer]
+  - contentinfo [ref=e62]:
+    - separator [ref=e63]
+    - generic [ref=e64]:
+      - generic [ref=e65]:
+        - paragraph [ref=e66]: Онлайн-реабилитация
+        - paragraph [ref=e67]: Христианская онлайн-поддержка для зависимых и их родственников. Участие бесплатное.
+      - generic [ref=e68]:
+        - heading "Быстрые действия" [level=2] [ref=e69]
+        - generic [ref=e70]:
+          - link "Записаться на 15 минут" [ref=e71] [cursor=pointer]:
+            - /url: /booking
+          - link "Оставить заявку" [ref=e72] [cursor=pointer]:
+            - /url: /register
+          - link "Задать вопрос" [ref=e73] [cursor=pointer]:
+            - /url: /contact
+          - link "Поддержать проект" [ref=e74] [cursor=pointer]:
+            - /url: /support
+          - link "Политика конфиденциальности" [ref=e75] [cursor=pointer]:
+            - /url: /privacy
+      - generic [ref=e76]:
+        - heading "Контакты" [level=2] [ref=e77]
+        - generic [ref=e78]:
+          - 'link "Телефон: +1 (954) 501-0763" [ref=e79] [cursor=pointer]':
+            - /url: tel:+19545010763
+          - 'link "Email: support@spas.life" [ref=e80] [cursor=pointer]':
+            - /url: mailto:support@spas.life
+          - 'link "Telegram: @spaslife_ch" [ref=e81] [cursor=pointer]':
+            - /url: https://t.me/spaslife_ch
+```

@@ -1,0 +1,5 @@
+{
+  "method": "POST",
+  "url": "https://forms.fixtures.test/procces/",
+  "body": "Phone=2025550143&Email=pwqamv6smjxv9812%40example.com\nPhone=2025550143&Email=pwqamv6smjxv9812@example.com\nhttps://forms.fixtures.test/procces/"
+}

@@ -1,0 +1,1 @@
+{"id":"d9d25cb512ae139639ecdffed1ea9727","fullName":"../../../src/suites/login-negative.ts:108:5","name":"password is masked and never sent in the URL","status":"passed","testResultsByEnv":{"default":"4c3faf18ec38d759e29733b8025048bb"}}

@@ -1,0 +1,71 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#main"
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - generic [ref=e5]:
+        - link "Chessorro" [ref=e6] [cursor=pointer]:
+          - /url: /en
+          - text: Chessorro
+        - generic [ref=e8]:
+          - navigation "Main" [ref=e9]:
+            - link "Play now" [ref=e10] [cursor=pointer]:
+              - /url: /en/play/chess
+            - link "History" [ref=e11] [cursor=pointer]:
+              - /url: /en/history
+            - link "Ratings" [ref=e12] [cursor=pointer]:
+              - /url: /en/ratings
+            - link "Sign in" [ref=e13] [cursor=pointer]:
+              - /url: /en/login
+            - link "Start a game" [ref=e14] [cursor=pointer]:
+              - /url: /en/signup
+          - button "Choose a language" [ref=e16]:
+            - img [ref=e17]
+            - generic [ref=e20]: EN
+          - button "Switch to dark theme" [ref=e21]:
+            - img [ref=e22]
+    - main [ref=e24]:
+      - article [ref=e25]:
+        - heading "Privacy Policy" [level=1] [ref=e26]
+        - paragraph [ref=e27]: Beta policy — last updated August 2026.
+        - generic [ref=e28]:
+          - heading "What we collect" [level=2] [ref=e29]
+          - paragraph [ref=e30]: Your email address and password (or Google or Apple account identity) for sign-in; your username, display name, and optional avatar; your games, moves, ratings, MOVE Points, and notifications; and, if you enable push notifications in the iPhone app, a device push token used only to deliver them. We hash invitation tokens and IP addresses used for rate limiting — raw values are never stored.
+          - heading "How it is used" [level=2] [ref=e31]
+          - paragraph [ref=e32]: "Solely to run Chessorro: authenticating you, pairing games, keeping score, and notifying you when it is your move. We do not sell your data or use it for advertising."
+          - heading "Where it lives" [level=2] [ref=e33]
+          - paragraph [ref=e34]: Data is stored with Supabase (PostgreSQL and authentication) and the app is served by Vercel. Passwords are hashed by Supabase Auth and are never visible to us.
+          - heading "What others see" [level=2] [ref=e35]
+          - paragraph [ref=e36]: Your username, display name, avatar, and ratings are visible to other players (for example on the leaderboard and in games). Your email is never shown to other players.
+          - heading "Your choices" [level=2] [ref=e37]
+          - paragraph [ref=e38]:
+            - text: You can edit your profile at any time, and delete your account yourself from the Profile page — this removes your sign-in, email, profile, notifications, and devices immediately, while finished games remain in your opponents' histories under an anonymous name. You can also email
+            - link "support@chessorro.com" [ref=e39] [cursor=pointer]:
+              - /url: mailto:support@chessorro.com?subject=Delete%20my%20account
+            - text: from the address you signed up with and we will remove it.
+          - heading "Getting in touch" [level=2] [ref=e40]
+          - paragraph [ref=e41]:
+            - text: Questions about any of the above go to the same address. See
+            - link "contact" [ref=e42] [cursor=pointer]:
+              - /url: /en/contact
+            - text: for what else support can help with.
+    - contentinfo [ref=e43]:
+      - generic [ref=e44]:
+        - paragraph [ref=e45]: © 2026 Chessorro
+        - paragraph [ref=e46]: MOVE Points are a free in-app reward with no cash value. They cannot be purchased, transferred, or exchanged.
+        - navigation "More" [ref=e47]:
+          - link "Contact" [ref=e48] [cursor=pointer]:
+            - /url: /en/contact
+          - link "History" [ref=e49] [cursor=pointer]:
+            - /url: /en/history
+          - link "Ratings" [ref=e50] [cursor=pointer]:
+            - /url: /en/ratings
+          - link "Terms" [ref=e51] [cursor=pointer]:
+            - /url: /en/terms
+          - link "Privacy" [ref=e52] [cursor=pointer]:
+            - /url: /en/privacy
+  - alert [ref=e53]
+```
