@@ -1,0 +1,5 @@
+{
+  "method": "POST",
+  "url": "https://www.spas.life/api/register",
+  "body": "back=%2Fen%2Fregister&elapsed=9090&website=&name=Playwright+pwqamvfs9xo8951&phone=2025550143&email=pwqamvfs9xo8951%40example.com&role=Myself&situation=Automated+test%2C+please+ignore+%28pwqamvfs9xo8951%29&time=Playwright+pwqamvfs9xo8951&cf-turnstile-response=\nback=/en/register&elapsed=9090&website=&name=Playwright pwqamvfs9xo8951&phone=2025550143&email=pwqamvfs9xo8951@example.com&role=Myself&situation=Automated test, please ignore (pwqamvfs9xo8951)&time=Playwright pwqamvfs9xo8951&cf-turnstile-response=\nhttps://www.spas.life/api/register"
+}

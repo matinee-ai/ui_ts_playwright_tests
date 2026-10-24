@@ -1,0 +1,269 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - button "Переключить на светлую тему" [ref=e4] [cursor=pointer]:
+    - img [ref=e5]
+  - navigation [ref=e8]:
+    - generic [ref=e9]:
+      - link "QAstarting — go to the home page" [ref=e10] [cursor=pointer]:
+        - /url: /
+        - text: QAstarting
+      - generic [ref=e11]:
+        - link "Quiz" [ref=e12]:
+          - /url: "#quiz"
+          - text: Quiz
+        - link "Courses" [ref=e13]:
+          - /url: "#courses"
+          - text: Courses
+        - link "Pricing" [ref=e14]:
+          - /url: "#pricing"
+          - text: Pricing
+        - link "Stories" [ref=e15]:
+          - /url: "#stories"
+          - text: Stories
+        - link "FAQ" [ref=e16]:
+          - /url: "#faq"
+          - text: FAQ
+        - link "Team" [ref=e17]:
+          - /url: "#team"
+          - text: Team
+        - link "Contact" [ref=e18]:
+          - /url: "#contact"
+          - text: Contact
+        - link "Career Services" [ref=e19]:
+          - /url: /career-services
+          - text: Career Services
+        - link "IT English" [ref=e20]:
+          - /url: /it-english
+          - text: IT English
+      - generic [ref=e21]:
+        - button "Переключить на русский" [ref=e22] [cursor=pointer]: RU/EN
+        - link "Login" [ref=e23]:
+          - /url: "#/login"
+        - link "Free lessons" [ref=e24]:
+          - /url: "#free"
+        - link "Enroll" [ref=e25]:
+          - /url: /checkout
+  - main [ref=e26]:
+    - generic [ref=e27]:
+      - link "← Back to all courses" [ref=e28]:
+        - /url: /#courses
+      - generic [ref=e30]:
+        - generic [ref=e32]: Automation
+        - heading "QA AUTOMATION" [level=1] [ref=e33]
+        - paragraph [ref=e34]: Build an automation portfolio with a clear framework and real tests.
+        - generic [ref=e35]:
+          - generic [ref=e36]:
+            - generic [ref=e37]: Best for
+            - generic [ref=e38]: QA who want to move into automation
+          - generic [ref=e39]:
+            - generic [ref=e40]: Outcome
+            - generic [ref=e41]: A ready automation framework and portfolio
+          - generic [ref=e42]:
+            - generic [ref=e43]: Duration
+            - generic [ref=e44]: 8–12 weeks, flexible pace
+      - generic [ref=e45]:
+        - generic [ref=e46]:
+          - generic [ref=e47]:
+            - heading "What you'll learn" [level=2] [ref=e48]
+            - list [ref=e49]:
+              - listitem [ref=e50]:
+                - generic [ref=e52]: Playwright or Selenium track
+              - listitem [ref=e53]:
+                - generic [ref=e55]: Test framework structure
+              - listitem [ref=e56]:
+                - generic [ref=e58]: Reports and CI basics
+              - listitem [ref=e59]:
+                - generic [ref=e61]: Automation best practices
+          - generic [ref=e62]:
+            - heading "Course program" [level=2] [ref=e63]
+            - paragraph [ref=e64]: Practical, job-focused topics with hands-on tasks.
+            - generic [ref=e65]:
+              - generic [ref=e66]:
+                - heading "Module 1 — Java Core for QA Automation" [level=3] [ref=e67]
+                - list [ref=e68]:
+                  - listitem [ref=e69]:
+                    - generic [ref=e71]: OOP basics, classes, methods
+                  - listitem [ref=e72]:
+                    - generic [ref=e74]: Collections, loops, conditions
+                  - listitem [ref=e75]:
+                    - generic [ref=e77]: Exceptions + clean code practices
+              - generic [ref=e78]:
+                - heading "Module 2 — Framework setup" [level=3] [ref=e79]
+                - list [ref=e80]:
+                  - listitem [ref=e81]:
+                    - generic [ref=e83]: Maven project structure
+                  - listitem [ref=e84]:
+                    - generic [ref=e86]: Config files (env, browser, baseUrl)
+                  - listitem [ref=e87]:
+                    - generic [ref=e89]: Test runner setup (TestNG/JUnit)
+              - generic [ref=e90]:
+                - heading "Module 3 — Selenium UI Automation" [level=3] [ref=e91]
+                - list [ref=e92]:
+                  - listitem [ref=e93]:
+                    - generic [ref=e95]: Locators (CSS/XPath) + best practices
+                  - listitem [ref=e96]:
+                    - generic [ref=e98]: Waits (implicit/explicit) + stability rules
+                  - listitem [ref=e99]:
+                    - generic [ref=e101]: Page Object Model (POM)
+              - generic [ref=e102]:
+                - heading "Module 4 — UI test design" [level=3] [ref=e103]
+                - list [ref=e104]:
+                  - listitem [ref=e105]:
+                    - generic [ref=e107]: Critical path automation
+                  - listitem [ref=e108]:
+                    - generic [ref=e110]: Data-driven tests basics
+                  - listitem [ref=e111]:
+                    - generic [ref=e113]: Screenshots & logs on failures
+              - generic [ref=e114]:
+                - heading "Module 5 — RestAssured API Automation" [level=3] [ref=e115]
+                - list [ref=e116]:
+                  - listitem [ref=e117]:
+                    - generic [ref=e119]: GET/POST/PUT/DELETE, headers, params
+                  - listitem [ref=e120]:
+                    - generic [ref=e122]: Auth basics (tokens, bearer, etc.)
+                  - listitem [ref=e123]:
+                    - generic [ref=e125]: "Assertions: status, schema, response body"
+              - generic [ref=e126]:
+                - heading "Module 6 — Combining UI + API" [level=3] [ref=e127]
+                - list [ref=e128]:
+                  - listitem [ref=e129]:
+                    - generic [ref=e131]: Create data via API → validate via UI
+                  - listitem [ref=e132]:
+                    - generic [ref=e134]: Cleanup strategies
+                  - listitem [ref=e135]:
+                    - generic [ref=e137]: Layered test approach
+              - generic [ref=e138]:
+                - heading "Module 7 — Reporting & debugging" [level=3] [ref=e139]
+                - list [ref=e140]:
+                  - listitem [ref=e141]:
+                    - generic [ref=e143]: Allure/Extent (optional)
+                  - listitem [ref=e144]:
+                    - generic [ref=e146]: Logs + screenshots in reports
+                  - listitem [ref=e147]:
+                    - generic [ref=e149]: Readable assertions & messages
+              - generic [ref=e150]:
+                - heading "Module 8 — CI basics" [level=3] [ref=e151]
+                - list [ref=e152]:
+                  - listitem [ref=e153]:
+                    - generic [ref=e155]: GitHub Actions (recommended) or Jenkins intro
+                  - listitem [ref=e156]:
+                    - generic [ref=e158]: Headless runs
+                  - listitem [ref=e159]:
+                    - generic [ref=e161]: "Artifacts: reports, screenshots"
+              - generic [ref=e162]:
+                - heading "Final Project — Automation Portfolio Framework" [level=3] [ref=e163]
+                - list [ref=e164]:
+                  - listitem [ref=e165]:
+                    - generic [ref=e167]: UI suite (10–20 stable tests)
+                  - listitem [ref=e168]:
+                    - generic [ref=e170]: API suite (10–25 endpoints tests)
+                  - listitem [ref=e171]:
+                    - generic [ref=e173]: Config per environment + clean structure
+                  - listitem [ref=e174]:
+                    - generic [ref=e176]: README + how to run + CI pipeline
+        - generic [ref=e178]:
+          - heading "Learning plans" [level=2] [ref=e179]
+          - paragraph [ref=e180]: Same course program in every plan — what changes is how much support you get. Tap a plan to see what it includes.
+          - generic [ref=e181]:
+            - button "Starter $399 Self-paced, on your own +" [ref=e183] [cursor=pointer]:
+              - generic [ref=e184]:
+                - generic [ref=e186]: Starter
+                - generic [ref=e187]: $399
+              - generic [ref=e188]:
+                - generic [ref=e189]: Self-paced, on your own
+                - generic [ref=e190]: +
+            - generic [ref=e191]:
+              - 'button "Standard Most popular $699 Guided: 1 hour with a mentor a week +" [expanded] [ref=e192] [cursor=pointer]':
+                - generic [ref=e193]:
+                  - generic [ref=e194]:
+                    - generic [ref=e195]: Standard
+                    - generic [ref=e196]: Most popular
+                  - generic [ref=e197]: $699
+                - generic [ref=e198]:
+                  - generic [ref=e199]: "Guided: 1 hour with a mentor a week"
+                  - generic [ref=e200]: +
+              - generic [ref=e202]:
+                - generic [ref=e203]: "Everything in Starter, plus:"
+                - list [ref=e204]:
+                  - listitem [ref=e205]:
+                    - generic [ref=e206]: ✓
+                    - generic [ref=e207]: Personal homework review with written feedback
+                  - listitem [ref=e208]:
+                    - generic [ref=e209]: ✓
+                    - generic [ref=e210]: 1 hour of mentor time a week — a call, or an async review if the time does not fit
+                  - listitem [ref=e211]:
+                    - generic [ref=e212]: ✓
+                    - generic [ref=e213]: "Interview prep: question bank and mock interviews"
+                  - listitem [ref=e214]:
+                    - generic [ref=e215]: ✓
+                    - generic [ref=e216]: Portfolio review before you start applying
+            - 'button "Unlimited $1259 Maximum support: 3 hours with a mentor a week +" [ref=e218] [cursor=pointer]':
+              - generic [ref=e219]:
+                - generic [ref=e221]: Unlimited
+                - generic [ref=e222]: $1259
+              - generic [ref=e223]:
+                - generic [ref=e224]: "Maximum support: 3 hours with a mentor a week"
+                - generic [ref=e225]: +
+          - link "Enroll in this course" [ref=e226] [cursor=pointer]:
+            - /url: /checkout?course=qa-automation
+          - link "3 free lessons" [ref=e227]:
+            - /url: "#free"
+  - contentinfo [ref=e228]:
+    - generic [ref=e229]:
+      - generic [ref=e230]:
+        - generic [ref=e231]:
+          - link "QAstarting — go to the home page" [ref=e232]:
+            - /url: /
+            - text: QAstarting
+          - paragraph [ref=e233]: Online software testing courses. We make your path into IT simple and successful.
+        - generic [ref=e234]:
+          - heading "Learning" [level=4] [ref=e235]
+          - list [ref=e236]:
+            - listitem [ref=e237]:
+              - link "Courses" [ref=e238]:
+                - /url: /#courses
+            - listitem [ref=e239]:
+              - link "Pricing" [ref=e240]:
+                - /url: /#pricing
+            - listitem [ref=e241]:
+              - link "Free lessons" [ref=e242]:
+                - /url: /#free
+            - listitem [ref=e243]:
+              - link "Career services" [ref=e244]:
+                - /url: /career-services
+            - listitem [ref=e245]:
+              - link "IT English — 5 minutes a day" [ref=e246]:
+                - /url: /it-english
+        - generic [ref=e247]:
+          - heading "Information" [level=4] [ref=e248]
+          - list [ref=e249]:
+            - listitem [ref=e250]:
+              - link "Success stories" [ref=e251]:
+                - /url: /#stories
+            - listitem [ref=e252]:
+              - link "FAQ" [ref=e253]:
+                - /url: /#faq
+            - listitem [ref=e254]:
+              - link "Our team" [ref=e255]:
+                - /url: /#team
+            - listitem [ref=e256]:
+              - link "Contact" [ref=e257]:
+                - /url: /#contact
+        - generic [ref=e258]:
+          - heading "Get in touch" [level=4] [ref=e259]
+          - list [ref=e260]:
+            - listitem [ref=e261]:
+              - link "(310) 920-4331" [ref=e262]:
+                - /url: tel:+13109204331
+            - listitem [ref=e263]:
+              - 'link "Telegram: @qastarting_bot" [ref=e264]':
+                - /url: https://t.me/qastarting_bot
+            - listitem [ref=e265]:
+              - link "val@qastarting.org" [ref=e266]:
+                - /url: mailto:val@qastarting.org
+      - generic [ref=e267]:
+        - paragraph [ref=e268]: © 2026 QAstarting. All rights reserved.
+        - paragraph [ref=e269]: Start your IT career as a QA engineer
+```

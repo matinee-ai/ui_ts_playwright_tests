@@ -1,0 +1,1 @@
+{"id":"e6cb154088205176bef313d734f3f4cb","fullName":"checkout.ui.spec.ts:19:3","name":"adding courses adds them to the order and the total grows; removing takes them out","status":"passed","testResultsByEnv":{"default":"742e188e80e2fc36249ff9e4ab0a2d6b"}}

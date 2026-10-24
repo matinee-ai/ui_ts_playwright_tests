@@ -1,0 +1,199 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - button "Переключить на светлую тему" [ref=e4] [cursor=pointer]:
+    - img [ref=e5]
+  - navigation [ref=e8]:
+    - generic [ref=e9]:
+      - link "QAstarting — go to the home page" [ref=e10] [cursor=pointer]:
+        - /url: /
+        - text: QAstarting
+      - generic [ref=e11]:
+        - link "Quiz" [ref=e12]:
+          - /url: "#quiz"
+          - text: Quiz
+        - link "Courses" [ref=e13]:
+          - /url: "#courses"
+          - text: Courses
+        - link "Pricing" [ref=e14]:
+          - /url: "#pricing"
+          - text: Pricing
+        - link "Stories" [ref=e15]:
+          - /url: "#stories"
+          - text: Stories
+        - link "FAQ" [ref=e16]:
+          - /url: "#faq"
+          - text: FAQ
+        - link "Team" [ref=e17]:
+          - /url: "#team"
+          - text: Team
+        - link "Contact" [ref=e18]:
+          - /url: "#contact"
+          - text: Contact
+        - link "Career Services" [ref=e19]:
+          - /url: /career-services
+          - text: Career Services
+        - link "IT English" [ref=e20]:
+          - /url: /it-english
+          - text: IT English
+      - generic [ref=e21]:
+        - button "Переключить на русский" [ref=e22] [cursor=pointer]: RU/EN
+        - link "Login" [ref=e23]:
+          - /url: "#/login"
+        - link "Free lessons" [ref=e24]:
+          - /url: "#free"
+        - link "Enroll" [ref=e25]:
+          - /url: /checkout
+  - main [ref=e27]:
+    - generic [ref=e28]:
+      - generic [ref=e30]:
+        - generic [ref=e31]:
+          - generic [ref=e32]: 🇺🇸 IT English — 5 minutes a day
+          - heading "Learn IT English in 5 Minutes a Day" [level=1] [ref=e33]
+          - paragraph [ref=e34]: 2 words. 2 real IT phrases. Every day. 365 days. Free.
+          - paragraph [ref=e35]: For QA engineers, developers, SDETs, analysts, support — and anyone preparing for an IT career.
+          - generic [ref=e36]:
+            - button "Start Today" [ref=e37] [cursor=pointer]
+            - generic [ref=e38]: 365 days • 700+ words • Free
+        - generic [ref=e39]:
+          - generic [ref=e40]:
+            - paragraph [ref=e41]: Day 1 of 365
+            - generic [ref=e43]:
+              - generic [ref=e44]:
+                - generic [ref=e45]: 0 / 365 days
+                - generic [ref=e46]: 0%
+              - progressbar "0 / 365 days" [ref=e47]
+          - generic [ref=e48]:
+            - generic [ref=e49]:
+              - paragraph [ref=e50]: Streak
+              - paragraph [ref=e51]: 🔥0 days
+            - generic [ref=e52]:
+              - paragraph [ref=e53]: Longest streak
+              - paragraph [ref=e54]: 0 days
+          - generic [ref=e55]:
+            - generic [ref=e56]:
+              - paragraph [ref=e57]: Words learned
+              - paragraph [ref=e58]: "0"
+            - generic [ref=e59]:
+              - paragraph [ref=e60]: Phrases practiced
+              - paragraph [ref=e61]: "0"
+      - region "Day 1 of 365 — Finding a Problem" [ref=e62]:
+        - generic [ref=e63]:
+          - generic [ref=e64]:
+            - paragraph [ref=e65]: Today’s lesson
+            - heading "Day 1 of 365 — Finding a Problem" [level=2] [ref=e66]
+            - paragraph [ref=e67]: "Topic: Essential IT Workplace English"
+          - generic [ref=e68]:
+            - generic [ref=e69]: issue
+            - generic [ref=e70]: fix
+      - region "How it works" [ref=e71]:
+        - heading "How it works" [level=2] [ref=e72]
+        - list [ref=e73]:
+          - listitem [ref=e74]:
+            - paragraph [ref=e75]: 📖
+            - paragraph [ref=e76]: 1. Learn
+            - paragraph [ref=e77]: Two new IT words with pronunciation, meaning and a real example.
+          - listitem [ref=e78]:
+            - paragraph [ref=e79]: 🔊
+            - paragraph [ref=e80]: 2. Listen & repeat
+            - paragraph [ref=e81]: Two phrases you can actually say in a standup, Jira or Slack. Normal and slow audio.
+          - listitem [ref=e82]:
+            - paragraph [ref=e83]: 🎮
+            - paragraph [ref=e84]: 3. Play
+            - paragraph [ref=e85]: A one-minute mini-game to lock the words in.
+          - listitem [ref=e86]:
+            - paragraph [ref=e87]: 🔁
+            - paragraph [ref=e88]: 4. Review
+            - paragraph [ref=e89]: One older word comes back at the right time.
+      - region "Milestones" [ref=e90]:
+        - generic [ref=e91]:
+          - heading "Milestones" [level=2] [ref=e92]
+          - button "View progress →" [ref=e93] [cursor=pointer]
+        - list "Milestones" [ref=e94]:
+          - 'listitem "First Week: —" [ref=e95]':
+            - paragraph [ref=e96]: 🔒
+            - paragraph [ref=e97]: First Week
+            - paragraph [ref=e98]: 7 days
+          - 'listitem "IT English Starter: —" [ref=e99]':
+            - paragraph [ref=e100]: 🔒
+            - paragraph [ref=e101]: IT English Starter
+            - paragraph [ref=e102]: 30 days
+          - 'listitem "100 Words: —" [ref=e103]':
+            - paragraph [ref=e104]: 🔒
+            - paragraph [ref=e105]: 100 Words
+            - paragraph [ref=e106]: 50 days
+          - 'listitem "IT Communicator: —" [ref=e107]':
+            - paragraph [ref=e108]: 🔒
+            - paragraph [ref=e109]: IT Communicator
+            - paragraph [ref=e110]: 100 days
+          - 'listitem "Halfway: —" [ref=e111]':
+            - paragraph [ref=e112]: 🔒
+            - paragraph [ref=e113]: Halfway
+            - paragraph [ref=e114]: 183 days
+          - 'listitem "Workplace English: —" [ref=e115]':
+            - paragraph [ref=e116]: 🔒
+            - paragraph [ref=e117]: Workplace English
+            - paragraph [ref=e118]: 250 days
+          - 'listitem "IT English 365: —" [ref=e119]':
+            - paragraph [ref=e120]: 🔒
+            - paragraph [ref=e121]: IT English 365
+            - paragraph [ref=e122]: 365 days
+        - paragraph [ref=e123]: Progress is saved in this browser. Log in to sync across devices.
+  - contentinfo [ref=e124]:
+    - generic [ref=e125]:
+      - generic [ref=e126]:
+        - generic [ref=e127]:
+          - link "QAstarting — go to the home page" [ref=e128]:
+            - /url: /
+            - text: QAstarting
+          - paragraph [ref=e129]: Online software testing courses. We make your path into IT simple and successful.
+        - generic [ref=e130]:
+          - heading "Learning" [level=4] [ref=e131]
+          - list [ref=e132]:
+            - listitem [ref=e133]:
+              - link "Courses" [ref=e134]:
+                - /url: /#courses
+            - listitem [ref=e135]:
+              - link "Pricing" [ref=e136]:
+                - /url: /#pricing
+            - listitem [ref=e137]:
+              - link "Free lessons" [ref=e138]:
+                - /url: /#free
+            - listitem [ref=e139]:
+              - link "Career services" [ref=e140]:
+                - /url: /career-services
+            - listitem [ref=e141]:
+              - link "IT English — 5 minutes a day" [ref=e142]:
+                - /url: /it-english
+        - generic [ref=e143]:
+          - heading "Information" [level=4] [ref=e144]
+          - list [ref=e145]:
+            - listitem [ref=e146]:
+              - link "Success stories" [ref=e147]:
+                - /url: /#stories
+            - listitem [ref=e148]:
+              - link "FAQ" [ref=e149]:
+                - /url: /#faq
+            - listitem [ref=e150]:
+              - link "Our team" [ref=e151]:
+                - /url: /#team
+            - listitem [ref=e152]:
+              - link "Contact" [ref=e153]:
+                - /url: /#contact
+        - generic [ref=e154]:
+          - heading "Get in touch" [level=4] [ref=e155]
+          - list [ref=e156]:
+            - listitem [ref=e157]:
+              - link "(310) 920-4331" [ref=e158]:
+                - /url: tel:+13109204331
+            - listitem [ref=e159]:
+              - 'link "Telegram: @qastarting_bot" [ref=e160]':
+                - /url: https://t.me/qastarting_bot
+            - listitem [ref=e161]:
+              - link "val@qastarting.org" [ref=e162]:
+                - /url: mailto:val@qastarting.org
+      - generic [ref=e163]:
+        - paragraph [ref=e164]: © 2026 QAstarting. All rights reserved.
+        - paragraph [ref=e165]: Start your IT career as a QA engineer
+```

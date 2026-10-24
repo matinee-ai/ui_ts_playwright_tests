@@ -1,0 +1,1 @@
+{"id":"42a6188e033cae73f45016e60834b795","fullName":"../../../src/suites/login-negative.ts:53:5","name":"empty email and password are rejected","status":"passed","testResultsByEnv":{"default":"ae6a015c8c3a03cfe3cf38e485881666"}}

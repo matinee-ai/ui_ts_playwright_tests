@@ -1,0 +1,253 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - button "Переключить на светлую тему" [ref=e4] [cursor=pointer]:
+    - img [ref=e5]
+  - navigation [ref=e8]:
+    - generic [ref=e9]:
+      - link "QAstarting — go to the home page" [ref=e10] [cursor=pointer]:
+        - /url: /
+        - text: QAstarting
+      - generic [ref=e11]:
+        - link "Quiz" [ref=e12]:
+          - /url: "#quiz"
+          - text: Quiz
+        - link "Courses" [ref=e13]:
+          - /url: "#courses"
+          - text: Courses
+        - link "Pricing" [ref=e14]:
+          - /url: "#pricing"
+          - text: Pricing
+        - link "Stories" [ref=e15]:
+          - /url: "#stories"
+          - text: Stories
+        - link "FAQ" [ref=e16]:
+          - /url: "#faq"
+          - text: FAQ
+        - link "Team" [ref=e17]:
+          - /url: "#team"
+          - text: Team
+        - link "Contact" [ref=e18]:
+          - /url: "#contact"
+          - text: Contact
+        - link "Career Services" [ref=e19]:
+          - /url: /career-services
+          - text: Career Services
+        - link "IT English" [ref=e20]:
+          - /url: /it-english
+          - text: IT English
+      - generic [ref=e21]:
+        - button "Переключить на русский" [ref=e22] [cursor=pointer]: RU/EN
+        - link "Login" [ref=e23]:
+          - /url: "#/login"
+        - link "Free lessons" [ref=e24]:
+          - /url: "#free"
+        - link "Enroll" [ref=e25]:
+          - /url: /checkout
+  - main [ref=e26]:
+    - generic [ref=e27]:
+      - link "← Back to all courses" [ref=e28]:
+        - /url: /#courses
+      - generic [ref=e30]:
+        - generic [ref=e31]:
+          - generic [ref=e32]: Intermediate
+          - generic [ref=e33]: Popular
+        - heading "QA ADVANCE" [level=1] [ref=e34]
+        - paragraph [ref=e35]: "Level up: API testing, test design, documentation and deeper practice."
+        - generic [ref=e36]:
+          - generic [ref=e37]:
+            - generic [ref=e38]: Best for
+            - generic [ref=e39]: QA with the basics, junior testers
+          - generic [ref=e40]:
+            - generic [ref=e41]: Outcome
+            - generic [ref=e42]: Confident work with APIs, SQL and documentation
+          - generic [ref=e43]:
+            - generic [ref=e44]: Duration
+            - generic [ref=e45]: 6–10 weeks, flexible pace
+      - generic [ref=e46]:
+        - generic [ref=e47]:
+          - generic [ref=e48]:
+            - heading "What you'll learn" [level=2] [ref=e49]
+            - list [ref=e50]:
+              - listitem [ref=e51]:
+                - generic [ref=e53]: Advanced test design
+              - listitem [ref=e54]:
+                - generic [ref=e56]: API testing (Postman)
+              - listitem [ref=e57]:
+                - generic [ref=e59]: SQL basics for QA
+              - listitem [ref=e60]:
+                - generic [ref=e62]: Test plan and regression strategy
+          - generic [ref=e63]:
+            - heading "Course program" [level=2] [ref=e64]
+            - paragraph [ref=e65]: Practical, job-focused topics with hands-on tasks.
+            - generic [ref=e66]:
+              - generic [ref=e67]:
+                - heading "Module 1 — Advanced test design" [level=3] [ref=e68]
+                - list [ref=e69]:
+                  - listitem [ref=e70]:
+                    - generic [ref=e72]: Risk-based testing & prioritization
+                  - listitem [ref=e73]:
+                    - generic [ref=e75]: Advanced negative scenarios
+                  - listitem [ref=e76]:
+                    - generic [ref=e78]: "Regression planning: what to include/exclude"
+              - generic [ref=e79]:
+                - heading "Module 2 — API testing in Postman" [level=3] [ref=e80]
+                - list [ref=e81]:
+                  - listitem [ref=e82]:
+                    - generic [ref=e84]: Collections, variables, environments
+                  - listitem [ref=e85]:
+                    - generic [ref=e87]: "Auth basics: tokens, headers"
+                  - listitem [ref=e88]:
+                    - generic [ref=e90]: Basic assertions + test scripts
+              - generic [ref=e91]:
+                - heading "Module 3 — Working with logs & evidence" [level=3] [ref=e92]
+                - list [ref=e93]:
+                  - listitem [ref=e94]:
+                    - generic [ref=e96]: "Network tab: requests, status codes"
+                  - listitem [ref=e97]:
+                    - generic [ref=e99]: Console errors & screenshots that matter
+                  - listitem [ref=e100]:
+                    - generic [ref=e102]: How to write “debug-friendly” bug reports
+              - generic [ref=e103]:
+                - heading "Module 4 — SQL for QA" [level=3] [ref=e104]
+                - list [ref=e105]:
+                  - listitem [ref=e106]:
+                    - generic [ref=e108]: SELECT, WHERE, ORDER BY, LIMIT
+                  - listitem [ref=e109]:
+                    - generic [ref=e111]: Basic joins concept (when/why)
+                  - listitem [ref=e112]:
+                    - generic [ref=e114]: Data checks for common QA scenarios
+              - generic [ref=e115]:
+                - heading "Module 5 — Documentation & QA reports" [level=3] [ref=e116]
+                - list [ref=e117]:
+                  - listitem [ref=e118]:
+                    - generic [ref=e120]: "Test plan: scope, risks, approach"
+                  - listitem [ref=e121]:
+                    - generic [ref=e123]: Regression checklist maintenance
+                  - listitem [ref=e124]:
+                    - generic [ref=e126]: "QA summary: what was tested and what’s risky"
+              - generic [ref=e127]:
+                - heading "Module 6 — Real-world workflow" [level=3] [ref=e128]
+                - list [ref=e129]:
+                  - listitem [ref=e130]:
+                    - generic [ref=e132]: User stories & acceptance criteria
+                  - listitem [ref=e133]:
+                    - generic [ref=e135]: Bug triage basics
+                  - listitem [ref=e136]:
+                    - generic [ref=e138]: "Release testing: smoke → regression"
+              - generic [ref=e139]:
+                - heading "Final Project — “Advanced QA Pack”" [level=3] [ref=e140]
+                - list [ref=e141]:
+                  - listitem [ref=e142]:
+                    - generic [ref=e144]: API Collection (10–20 requests) + basic assertions
+                  - listitem [ref=e145]:
+                    - generic [ref=e147]: SQL checks (5–10 queries) for data validation
+                  - listitem [ref=e148]:
+                    - generic [ref=e150]: Test Plan + Regression Strategy
+                  - listitem [ref=e151]:
+                    - generic [ref=e153]: QA Summary report (clear, simple, recruiter-friendly)
+        - generic [ref=e155]:
+          - heading "Learning plans" [level=2] [ref=e156]
+          - paragraph [ref=e157]: Same course program in every plan — what changes is how much support you get. Tap a plan to see what it includes.
+          - generic [ref=e158]:
+            - button "Starter $299 Self-paced, on your own +" [ref=e160] [cursor=pointer]:
+              - generic [ref=e161]:
+                - generic [ref=e163]: Starter
+                - generic [ref=e164]: $299
+              - generic [ref=e165]:
+                - generic [ref=e166]: Self-paced, on your own
+                - generic [ref=e167]: +
+            - generic [ref=e168]:
+              - 'button "Standard Most popular $599 Guided: 1 hour with a mentor a week +" [expanded] [ref=e169] [cursor=pointer]':
+                - generic [ref=e170]:
+                  - generic [ref=e171]:
+                    - generic [ref=e172]: Standard
+                    - generic [ref=e173]: Most popular
+                  - generic [ref=e174]: $599
+                - generic [ref=e175]:
+                  - generic [ref=e176]: "Guided: 1 hour with a mentor a week"
+                  - generic [ref=e177]: +
+              - generic [ref=e179]:
+                - generic [ref=e180]: "Everything in Starter, plus:"
+                - list [ref=e181]:
+                  - listitem [ref=e182]:
+                    - generic [ref=e183]: ✓
+                    - generic [ref=e184]: Personal homework review with written feedback
+                  - listitem [ref=e185]:
+                    - generic [ref=e186]: ✓
+                    - generic [ref=e187]: 1 hour of mentor time a week — a call, or an async review if the time does not fit
+                  - listitem [ref=e188]:
+                    - generic [ref=e189]: ✓
+                    - generic [ref=e190]: "Interview prep: question bank and mock interviews"
+                  - listitem [ref=e191]:
+                    - generic [ref=e192]: ✓
+                    - generic [ref=e193]: Portfolio review before you start applying
+            - 'button "Unlimited $1059 Maximum support: 3 hours with a mentor a week +" [ref=e195] [cursor=pointer]':
+              - generic [ref=e196]:
+                - generic [ref=e198]: Unlimited
+                - generic [ref=e199]: $1059
+              - generic [ref=e200]:
+                - generic [ref=e201]: "Maximum support: 3 hours with a mentor a week"
+                - generic [ref=e202]: +
+          - link "Enroll in this course" [ref=e203] [cursor=pointer]:
+            - /url: /checkout?course=qa-advance
+          - link "3 free lessons" [ref=e204]:
+            - /url: "#free"
+  - contentinfo [ref=e205]:
+    - generic [ref=e206]:
+      - generic [ref=e207]:
+        - generic [ref=e208]:
+          - link "QAstarting — go to the home page" [ref=e209]:
+            - /url: /
+            - text: QAstarting
+          - paragraph [ref=e210]: Online software testing courses. We make your path into IT simple and successful.
+        - generic [ref=e211]:
+          - heading "Learning" [level=4] [ref=e212]
+          - list [ref=e213]:
+            - listitem [ref=e214]:
+              - link "Courses" [ref=e215]:
+                - /url: /#courses
+            - listitem [ref=e216]:
+              - link "Pricing" [ref=e217]:
+                - /url: /#pricing
+            - listitem [ref=e218]:
+              - link "Free lessons" [ref=e219]:
+                - /url: /#free
+            - listitem [ref=e220]:
+              - link "Career services" [ref=e221]:
+                - /url: /career-services
+            - listitem [ref=e222]:
+              - link "IT English — 5 minutes a day" [ref=e223]:
+                - /url: /it-english
+        - generic [ref=e224]:
+          - heading "Information" [level=4] [ref=e225]
+          - list [ref=e226]:
+            - listitem [ref=e227]:
+              - link "Success stories" [ref=e228]:
+                - /url: /#stories
+            - listitem [ref=e229]:
+              - link "FAQ" [ref=e230]:
+                - /url: /#faq
+            - listitem [ref=e231]:
+              - link "Our team" [ref=e232]:
+                - /url: /#team
+            - listitem [ref=e233]:
+              - link "Contact" [ref=e234]:
+                - /url: /#contact
+        - generic [ref=e235]:
+          - heading "Get in touch" [level=4] [ref=e236]
+          - list [ref=e237]:
+            - listitem [ref=e238]:
+              - link "(310) 920-4331" [ref=e239]:
+                - /url: tel:+13109204331
+            - listitem [ref=e240]:
+              - 'link "Telegram: @qastarting_bot" [ref=e241]':
+                - /url: https://t.me/qastarting_bot
+            - listitem [ref=e242]:
+              - link "val@qastarting.org" [ref=e243]:
+                - /url: mailto:val@qastarting.org
+      - generic [ref=e244]:
+        - paragraph [ref=e245]: © 2026 QAstarting. All rights reserved.
+        - paragraph [ref=e246]: Start your IT career as a QA engineer
+```

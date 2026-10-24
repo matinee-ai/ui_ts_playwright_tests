@@ -1,0 +1,26 @@
+{
+  "page": "https://www.spas.life/for-participants",
+  "links": [
+    {
+      "index": 33,
+      "name": "Записаться на встречу",
+      "href": "/booking",
+      "url": "https://www.spas.life/booking",
+      "kind": "internal",
+      "target": null,
+      "rel": "",
+      "area": "main",
+      "visible": true,
+      "offscreen": false,
+      "isButton": false,
+      "anchorMissing": false
+    }
+  ],
+  "unnamed": [],
+  "dead": [],
+  "notClickable": [],
+  "broken": [],
+  "unsafeBlank": [],
+  "malformedContact": [],
+  "missingAnchors": []
+}

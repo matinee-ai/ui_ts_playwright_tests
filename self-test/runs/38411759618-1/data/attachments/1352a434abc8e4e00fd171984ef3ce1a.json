@@ -1,0 +1,5 @@
+{
+  "method": "POST",
+  "url": "https://api.fixtures.test/leads",
+  "body": "{\"name\":\"Playwright pwqamv6rk9er8139\",\"email\":\"pwqamv6rk9er8139@example.com\",\"phone\":\"2025550143\",\"consent\":\"on\"}\n{\"name\":\"Playwright pwqamv6rk9er8139\",\"email\":\"pwqamv6rk9er8139@example.com\",\"phone\":\"2025550143\",\"consent\":\"on\"}\nhttps://api.fixtures.test/leads"
+}

@@ -1,0 +1,5 @@
+{
+  "method": "POST",
+  "url": "https://api.web3forms.com/submit",
+  "body": "{\"access_key\":\"bee73d39-e13e-4d3a-b7a1-6d64a95a5059\",\"subject\":\"New course order — $499 (Zelle)\",\"from_name\":\"QAstarting checkout\",\"name\":\"Playwright pwqamvg73y6b7189\",\"contact\":\"pwqamvg73y6b7189@example.com\",\"message\":\"ORDER / ЗАКАЗ\\n• QA BASIC — Standard: $499\\nTotal: $499\\nIn full\\nPayment method: Zelle\\nName: Playwright pwqamvg73y6b7189\\nPhone or email: pwqamvg73y6b7189@example.com\\nNote (optional): Automated test, please ignore (pwqamvg73y6b7189)\"}\n{\"access_key\":\"bee73d39-e13e-4d3a-b7a1-6d64a95a5059\",\"subject\":\"New course order — $499 (Zelle)\",\"from_name\":\"QAstarting checkout\",\"name\":\"Playwright pwqamvg73y6b7189\",\"contact\":\"pwqamvg73y6b7189@example.com\",\"message\":\"ORDER / ЗАКАЗ\\n• QA BASIC — Standard: $499\\nTotal: $499\\nIn full\\nPayment method: Zelle\\nName: Playwright pwqamvg73y6b7189\\nPhone or email: pwqamvg73y6b7189@example.com\\nNote (optional): Automated test, please ignore (pwqamvg73y6b7189)\"}\nhttps://api.web3forms.com/submit"
+}

@@ -1,0 +1,110 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#main"
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - generic [ref=e5]:
+        - link "Chessorro" [ref=e6] [cursor=pointer]:
+          - /url: /en
+          - text: Chessorro
+        - generic [ref=e8]:
+          - navigation "Main" [ref=e9]:
+            - link "Play now" [ref=e10] [cursor=pointer]:
+              - /url: /en/play/chess
+            - link "History" [ref=e11] [cursor=pointer]:
+              - /url: /en/history
+            - link "Ratings" [ref=e12] [cursor=pointer]:
+              - /url: /en/ratings
+            - link "Sign in" [ref=e13] [cursor=pointer]:
+              - /url: /en/login
+            - link "Start a game" [ref=e14] [cursor=pointer]:
+              - /url: /en/signup
+          - button "Choose a language" [ref=e16]:
+            - img [ref=e17]
+            - generic [ref=e20]: EN
+          - button "Switch to dark theme" [ref=e21]:
+            - img [ref=e22]
+    - main [ref=e24]:
+      - generic [ref=e25]:
+        - generic [ref=e26]:
+          - paragraph [ref=e27]: Play instantly · no sign in required
+          - heading "Chess vs computer" [level=1] [ref=e28]
+        - generic [ref=e31]:
+          - heading "Set up your game" [level=2] [ref=e32]
+          - paragraph [ref=e33]: Choose how you want to play chess. You can change any of it between games.
+          - generic [ref=e34]:
+            - group "Difficulty" [ref=e35]:
+              - generic [ref=e36]: Difficulty
+              - radiogroup "Difficulty" [ref=e37]:
+                - radio "Beginner" [ref=e38]
+                - radio "Standard" [checked] [active] [ref=e39]
+                - radio "Advanced" [ref=e40]
+              - paragraph [ref=e41]: Takes the obvious captures and points.
+            - group "You play" [ref=e42]:
+              - generic [ref=e43]: You play
+              - radiogroup "You play" [ref=e44]:
+                - radio "White" [checked] [ref=e45]
+                - radio "Black" [ref=e46]
+                - radio "Random" [ref=e47]
+              - paragraph [ref=e48]: You play White and move first.
+            - group "Match length" [ref=e49]:
+              - generic [ref=e50]: Match length
+              - radiogroup "Match length" [ref=e51]:
+                - radio "Single game" [checked] [ref=e52]
+                - radio "First to 3" [ref=e53]
+                - radio "First to 5" [ref=e54]
+              - paragraph [ref=e55]: One game, then you are done.
+            - group "Computer speed" [ref=e56]:
+              - generic [ref=e57]: Computer speed
+              - radiogroup "Computer speed" [ref=e58]:
+                - radio "Instant" [ref=e59]
+                - radio "Normal" [checked] [ref=e60]
+                - radio "Relaxed" [ref=e61]
+              - paragraph [ref=e62]: Short pause before replying.
+            - group "Clock" [ref=e63]:
+              - generic [ref=e64]: Clock
+              - radiogroup "Clock" [ref=e65]:
+                - radio "No clock" [checked] [ref=e66]
+                - radio "Bullet 1+0" [ref=e67]
+                - radio "Blitz 3+2" [ref=e68]
+                - radio "Blitz 5+0" [ref=e69]
+                - radio "Rapid 10+5" [ref=e70]
+              - paragraph [ref=e71]: Take as long as you like.
+            - group "Board style" [ref=e73]:
+              - generic [ref=e74]: Board style
+              - radiogroup "Board style" [ref=e75]:
+                - radio "Royal Ivory" [checked] [ref=e76]:
+                  - generic [ref=e82]: Royal Ivory
+                - radio "Walnut" [ref=e83]:
+                  - generic [ref=e89]: Walnut
+                - radio "Emerald Club" [ref=e90]:
+                  - generic [ref=e96]: Emerald Club
+                - radio "Midnight" [ref=e97]:
+                  - generic [ref=e103]: Midnight
+                - radio "Crimson Noir" [ref=e104]:
+                  - generic [ref=e110]: Crimson Noir
+                - radio "Tournament Blue" [ref=e111]:
+                  - generic [ref=e117]: Tournament Blue
+            - group [ref=e118]:
+              - generic "Sound" [ref=e119] [cursor=pointer]
+          - button "Start game" [ref=e120]
+    - contentinfo [ref=e121]:
+      - generic [ref=e122]:
+        - paragraph [ref=e123]: © 2026 Chessorro
+        - paragraph [ref=e124]: MOVE Points are a free in-app reward with no cash value. They cannot be purchased, transferred, or exchanged.
+        - navigation "More" [ref=e125]:
+          - link "Contact" [ref=e126] [cursor=pointer]:
+            - /url: /en/contact
+          - link "History" [ref=e127] [cursor=pointer]:
+            - /url: /en/history
+          - link "Ratings" [ref=e128] [cursor=pointer]:
+            - /url: /en/ratings
+          - link "Terms" [ref=e129] [cursor=pointer]:
+            - /url: /en/terms
+          - link "Privacy" [ref=e130] [cursor=pointer]:
+            - /url: /en/privacy
+  - alert [ref=e131]
+```

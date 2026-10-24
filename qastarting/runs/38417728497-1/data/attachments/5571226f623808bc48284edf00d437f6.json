@@ -1,0 +1,5 @@
+{
+  "method": "POST",
+  "url": "https://api.web3forms.com/submit",
+  "body": "{\"access_key\":\"bee73d39-e13e-4d3a-b7a1-6d64a95a5059\",\"subject\":\"New request from the QAstarting website\",\"from_name\":\"QAstarting\",\"name\":\"Playwright pwqamv6t4qfa5997\",\"phone\":\"2025550143\",\"message\":\"Automated test, please ignore (pwqamv6t4qfa5997)\"}\n{\"access_key\":\"bee73d39-e13e-4d3a-b7a1-6d64a95a5059\",\"subject\":\"New request from the QAstarting website\",\"from_name\":\"QAstarting\",\"name\":\"Playwright pwqamv6t4qfa5997\",\"phone\":\"2025550143\",\"message\":\"Automated test, please ignore (pwqamv6t4qfa5997)\"}\nhttps://api.web3forms.com/submit"
+}

@@ -1,0 +1,1 @@
+{"id":"2cdd1cefa4a9bceb7b226517c5a07025","fullName":"../../../src/suites/login-negative.ts:88:5","name":"SQL injection and script payloads are rejected safely","status":"passed","testResultsByEnv":{"default":"bdace9a1b0ca6b8af34c6141871fbd32"}}
