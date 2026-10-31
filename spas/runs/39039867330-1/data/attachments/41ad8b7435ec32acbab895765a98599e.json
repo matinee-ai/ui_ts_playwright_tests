@@ -1,0 +1,68 @@
+{
+  "page": "https://www.spas.life/contact",
+  "links": [
+    {
+      "index": 33,
+      "name": "Телефон: +1 (954) 501-0763",
+      "href": "tel:+19545010763",
+      "url": "",
+      "kind": "tel",
+      "target": null,
+      "rel": "",
+      "area": "main",
+      "visible": true,
+      "offscreen": false,
+      "isButton": false,
+      "anchorMissing": false
+    },
+    {
+      "index": 34,
+      "name": "Email: support@spas.life",
+      "href": "mailto:support@spas.life",
+      "url": "",
+      "kind": "mailto",
+      "target": null,
+      "rel": "",
+      "area": "main",
+      "visible": true,
+      "offscreen": false,
+      "isButton": false,
+      "anchorMissing": false
+    },
+    {
+      "index": 35,
+      "name": "Telegram: @spaslife_ch",
+      "href": "https://t.me/spaslife_ch",
+      "url": "https://t.me/spaslife_ch",
+      "kind": "external",
+      "target": "_blank",
+      "rel": "noreferrer",
+      "area": "main",
+      "visible": true,
+      "offscreen": false,
+      "isButton": false,
+      "anchorMissing": false
+    },
+    {
+      "index": 36,
+      "name": "Написать в Telegram",
+      "href": "https://t.me/spaslife_bot",
+      "url": "https://t.me/spaslife_bot",
+      "kind": "external",
+      "target": "_blank",
+      "rel": "noreferrer",
+      "area": "main",
+      "visible": true,
+      "offscreen": false,
+      "isButton": false,
+      "anchorMissing": false
+    }
+  ],
+  "unnamed": [],
+  "dead": [],
+  "notClickable": [],
+  "broken": [],
+  "unsafeBlank": [],
+  "malformedContact": [],
+  "missingAnchors": []
+}

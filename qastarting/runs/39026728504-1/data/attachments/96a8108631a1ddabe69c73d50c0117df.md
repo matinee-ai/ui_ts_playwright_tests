@@ -1,0 +1,251 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - button "Переключить на светлую тему" [ref=e4] [cursor=pointer]:
+    - img [ref=e5]
+  - navigation [ref=e8]:
+    - generic [ref=e9]:
+      - link "QAstarting — go to the home page" [ref=e10] [cursor=pointer]:
+        - /url: /
+        - text: QAstarting
+      - generic [ref=e11]:
+        - link "Quiz" [ref=e12]:
+          - /url: "#quiz"
+          - text: Quiz
+        - link "Courses" [ref=e13]:
+          - /url: "#courses"
+          - text: Courses
+        - link "Pricing" [ref=e14]:
+          - /url: "#pricing"
+          - text: Pricing
+        - link "Stories" [ref=e15]:
+          - /url: "#stories"
+          - text: Stories
+        - link "FAQ" [ref=e16]:
+          - /url: "#faq"
+          - text: FAQ
+        - link "Team" [ref=e17]:
+          - /url: "#team"
+          - text: Team
+        - link "Contact" [ref=e18]:
+          - /url: "#contact"
+          - text: Contact
+        - link "Career Services" [ref=e19]:
+          - /url: /career-services
+          - text: Career Services
+        - link "IT English" [ref=e20]:
+          - /url: /it-english
+          - text: IT English
+      - generic [ref=e21]:
+        - button "Переключить на русский" [ref=e22] [cursor=pointer]: RU/EN
+        - link "Login" [ref=e23]:
+          - /url: "#/login"
+        - link "Free lessons" [ref=e24]:
+          - /url: "#free"
+        - link "Enroll" [ref=e25]:
+          - /url: /checkout
+  - main [ref=e26]:
+    - generic [ref=e27]:
+      - link "← Back to all courses" [ref=e28]:
+        - /url: /#courses
+      - generic [ref=e30]:
+        - generic [ref=e32]: Beginner
+        - heading "QA BASIC" [level=1] [ref=e33]
+        - paragraph [ref=e34]: A perfect start for beginners. Real projects, bug reports, test cases and Jira basics.
+        - generic [ref=e35]:
+          - generic [ref=e36]:
+            - generic [ref=e37]: Best for
+            - generic [ref=e38]: Beginners, career switchers, students
+          - generic [ref=e39]:
+            - generic [ref=e40]: Outcome
+            - generic [ref=e41]: Portfolio + interview-ready skills
+          - generic [ref=e42]:
+            - generic [ref=e43]: Duration
+            - generic [ref=e44]: 4–8 weeks, flexible pace
+      - generic [ref=e45]:
+        - generic [ref=e46]:
+          - generic [ref=e47]:
+            - heading "What you'll learn" [level=2] [ref=e48]
+            - list [ref=e49]:
+              - listitem [ref=e50]:
+                - generic [ref=e52]: Web and mobile testing fundamentals
+              - listitem [ref=e53]:
+                - generic [ref=e55]: Professional-level bug reporting
+              - listitem [ref=e56]:
+                - generic [ref=e58]: Test cases and checklists
+              - listitem [ref=e59]:
+                - generic [ref=e61]: A job-ready portfolio
+          - generic [ref=e62]:
+            - heading "Course program" [level=2] [ref=e63]
+            - paragraph [ref=e64]: Practical, job-focused topics with hands-on tasks.
+            - generic [ref=e65]:
+              - generic [ref=e66]:
+                - heading "Module 1 — QA mindset" [level=3] [ref=e67]
+                - list [ref=e68]:
+                  - listitem [ref=e69]:
+                    - generic [ref=e71]: SDLC basics, roles, environments
+                  - listitem [ref=e72]:
+                    - generic [ref=e74]: Types of testing (smoke, regression, exploratory)
+                  - listitem [ref=e75]:
+                    - generic [ref=e77]: How to create a test strategy for beginners
+              - generic [ref=e78]:
+                - heading "Module 2 — Test design" [level=3] [ref=e79]
+                - list [ref=e80]:
+                  - listitem [ref=e81]:
+                    - generic [ref=e83]: Positive/negative scenarios
+                  - listitem [ref=e84]:
+                    - generic [ref=e86]: Boundary values & equivalence partitions
+                  - listitem [ref=e87]:
+                    - generic [ref=e89]: Checklists vs test cases (when to use)
+              - generic [ref=e90]:
+                - heading "Module 3 — Bug reporting" [level=3] [ref=e91]
+                - list [ref=e92]:
+                  - listitem [ref=e93]:
+                    - generic [ref=e95]: Repro steps + expected/actual
+                  - listitem [ref=e96]:
+                    - generic [ref=e98]: Severity vs priority
+                  - listitem [ref=e99]:
+                    - generic [ref=e101]: Screenshots, videos, logs (what matters)
+              - generic [ref=e102]:
+                - heading "Module 4 — Web testing practice" [level=3] [ref=e103]
+                - list [ref=e104]:
+                  - listitem [ref=e105]:
+                    - generic [ref=e107]: Forms, validation, UI states
+                  - listitem [ref=e108]:
+                    - generic [ref=e110]: Cross-browser basics
+                  - listitem [ref=e111]:
+                    - generic [ref=e113]: Accessibility & usability quick checks
+              - generic [ref=e114]:
+                - heading "Module 5 — DevTools essentials" [level=3] [ref=e115]
+                - list [ref=e116]:
+                  - listitem [ref=e117]:
+                    - generic [ref=e119]: Console errors & network requests
+                  - listitem [ref=e120]:
+                    - generic [ref=e122]: Cookies/local storage basics
+                  - listitem [ref=e123]:
+                    - generic [ref=e125]: How to capture evidence for bugs
+              - generic [ref=e126]:
+                - heading "Module 6 — Tools & workflow" [level=3] [ref=e127]
+                - list [ref=e128]:
+                  - listitem [ref=e129]:
+                    - generic [ref=e131]: Jira basics (or equivalent)
+                  - listitem [ref=e132]:
+                    - generic [ref=e134]: Test management basics
+                  - listitem [ref=e135]:
+                    - generic [ref=e137]: "Daily work: test, report, retest"
+              - generic [ref=e138]:
+                - heading "Final Project — Portfolio Pack" [level=3] [ref=e139]
+                - list [ref=e140]:
+                  - listitem [ref=e141]:
+                    - generic [ref=e143]: Test Plan (scope, approach, risks)
+                  - listitem [ref=e144]:
+                    - generic [ref=e146]: 30–60 Test Cases + checklist
+                  - listitem [ref=e147]:
+                    - generic [ref=e149]: Bug Report Pack (5–15 well-written bugs)
+                  - listitem [ref=e150]:
+                    - generic [ref=e152]: Regression checklist + short summary report
+        - generic [ref=e154]:
+          - heading "Learning plans" [level=2] [ref=e155]
+          - paragraph [ref=e156]: Same course program in every plan — what changes is how much support you get. Tap a plan to see what it includes.
+          - generic [ref=e157]:
+            - button "Starter $259 Self-paced, on your own +" [ref=e159] [cursor=pointer]:
+              - generic [ref=e160]:
+                - generic [ref=e162]: Starter
+                - generic [ref=e163]: $259
+              - generic [ref=e164]:
+                - generic [ref=e165]: Self-paced, on your own
+                - generic [ref=e166]: +
+            - generic [ref=e167]:
+              - 'button "Standard Most popular $499 Guided: 1 hour with a mentor a week +" [expanded] [ref=e168] [cursor=pointer]':
+                - generic [ref=e169]:
+                  - generic [ref=e170]:
+                    - generic [ref=e171]: Standard
+                    - generic [ref=e172]: Most popular
+                  - generic [ref=e173]: $499
+                - generic [ref=e174]:
+                  - generic [ref=e175]: "Guided: 1 hour with a mentor a week"
+                  - generic [ref=e176]: +
+              - generic [ref=e178]:
+                - generic [ref=e179]: "Everything in Starter, plus:"
+                - list [ref=e180]:
+                  - listitem [ref=e181]:
+                    - generic [ref=e182]: ✓
+                    - generic [ref=e183]: Personal homework review with written feedback
+                  - listitem [ref=e184]:
+                    - generic [ref=e185]: ✓
+                    - generic [ref=e186]: 1 hour of mentor time a week — a call, or an async review if the time does not fit
+                  - listitem [ref=e187]:
+                    - generic [ref=e188]: ✓
+                    - generic [ref=e189]: "Interview prep: question bank and mock interviews"
+                  - listitem [ref=e190]:
+                    - generic [ref=e191]: ✓
+                    - generic [ref=e192]: Portfolio review before you start applying
+            - 'button "Unlimited $999 Maximum support: 3 hours with a mentor a week +" [ref=e194] [cursor=pointer]':
+              - generic [ref=e195]:
+                - generic [ref=e197]: Unlimited
+                - generic [ref=e198]: $999
+              - generic [ref=e199]:
+                - generic [ref=e200]: "Maximum support: 3 hours with a mentor a week"
+                - generic [ref=e201]: +
+          - link "Enroll in this course" [ref=e202] [cursor=pointer]:
+            - /url: /checkout?course=qa-basic
+          - link "3 free lessons" [ref=e203]:
+            - /url: "#free"
+  - contentinfo [ref=e204]:
+    - generic [ref=e205]:
+      - generic [ref=e206]:
+        - generic [ref=e207]:
+          - link "QAstarting — go to the home page" [ref=e208]:
+            - /url: /
+            - text: QAstarting
+          - paragraph [ref=e209]: Online software testing courses. We make your path into IT simple and successful.
+        - generic [ref=e210]:
+          - heading "Learning" [level=4] [ref=e211]
+          - list [ref=e212]:
+            - listitem [ref=e213]:
+              - link "Courses" [ref=e214]:
+                - /url: /#courses
+            - listitem [ref=e215]:
+              - link "Pricing" [ref=e216]:
+                - /url: /#pricing
+            - listitem [ref=e217]:
+              - link "Free lessons" [ref=e218]:
+                - /url: /#free
+            - listitem [ref=e219]:
+              - link "Career services" [ref=e220]:
+                - /url: /career-services
+            - listitem [ref=e221]:
+              - link "IT English — 5 minutes a day" [ref=e222]:
+                - /url: /it-english
+        - generic [ref=e223]:
+          - heading "Information" [level=4] [ref=e224]
+          - list [ref=e225]:
+            - listitem [ref=e226]:
+              - link "Success stories" [ref=e227]:
+                - /url: /#stories
+            - listitem [ref=e228]:
+              - link "FAQ" [ref=e229]:
+                - /url: /#faq
+            - listitem [ref=e230]:
+              - link "Our team" [ref=e231]:
+                - /url: /#team
+            - listitem [ref=e232]:
+              - link "Contact" [ref=e233]:
+                - /url: /#contact
+        - generic [ref=e234]:
+          - heading "Get in touch" [level=4] [ref=e235]
+          - list [ref=e236]:
+            - listitem [ref=e237]:
+              - link "(310) 920-4331" [ref=e238]:
+                - /url: tel:+13109204331
+            - listitem [ref=e239]:
+              - 'link "Telegram: @qastarting_bot" [ref=e240]':
+                - /url: https://t.me/qastarting_bot
+            - listitem [ref=e241]:
+              - link "val@qastarting.org" [ref=e242]:
+                - /url: mailto:val@qastarting.org
+      - generic [ref=e243]:
+        - paragraph [ref=e244]: © 2026 QAstarting. All rights reserved.
+        - paragraph [ref=e245]: Start your IT career as a QA engineer
+```

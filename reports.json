@@ -1,0 +1,714 @@
+{
+  "generatedAt": 1793462249630,
+  "slots": {
+    "chessorro": {
+      "latest": "chessorro/latest/",
+      "runs": [
+        {
+          "id": "41202562455-1",
+          "path": "chessorro/runs/41202562455-1/",
+          "stats": {
+            "total": 74,
+            "passed": 70,
+            "retries": 4,
+            "failed": 4
+          },
+          "status": "failed",
+          "createdAt": 1793450864249,
+          "duration": 56932
+        },
+        {
+          "id": "41107872997-1",
+          "path": "chessorro/runs/41107872997-1/",
+          "stats": {
+            "total": 74,
+            "passed": 70,
+            "retries": 4,
+            "failed": 4
+          },
+          "status": "failed",
+          "createdAt": 1793385277053,
+          "duration": 53889
+        },
+        {
+          "id": "40972779884-1",
+          "path": "chessorro/runs/40972779884-1/",
+          "stats": {
+            "total": 74,
+            "passed": 70,
+            "retries": 4,
+            "failed": 4
+          },
+          "status": "failed",
+          "createdAt": 1793316293977,
+          "duration": 61732
+        },
+        {
+          "id": "40674937494-1",
+          "path": "chessorro/runs/40674937494-1/",
+          "stats": {
+            "total": 74,
+            "passed": 70,
+            "retries": 4,
+            "failed": 4
+          },
+          "status": "failed",
+          "createdAt": 1793184580076,
+          "duration": 63686
+        },
+        {
+          "id": "40561870623-1",
+          "path": "chessorro/runs/40561870623-1/",
+          "stats": {
+            "total": 74,
+            "passed": 70,
+            "retries": 4,
+            "failed": 4
+          },
+          "status": "failed",
+          "createdAt": 1793126410340,
+          "duration": 55653
+        },
+        {
+          "id": "40433360193-1",
+          "path": "chessorro/runs/40433360193-1/",
+          "stats": {
+            "total": 74,
+            "passed": 70,
+            "retries": 4,
+            "failed": 4
+          },
+          "status": "failed",
+          "createdAt": 1793064965477,
+          "duration": 59900
+        },
+        {
+          "id": "40194599051-1",
+          "path": "chessorro/runs/40194599051-1/",
+          "stats": {
+            "total": 74,
+            "passed": 70,
+            "retries": 4,
+            "failed": 4
+          },
+          "status": "failed",
+          "createdAt": 1792932490515,
+          "duration": 64529
+        },
+        {
+          "id": "40094840317-1",
+          "path": "chessorro/runs/40094840317-1/",
+          "stats": {
+            "total": 74,
+            "passed": 70,
+            "retries": 4,
+            "failed": 4
+          },
+          "status": "failed",
+          "createdAt": 1792845679369,
+          "duration": 54141
+        },
+        {
+          "id": "40020694347-1",
+          "path": "chessorro/runs/40020694347-1/",
+          "stats": {
+            "total": 74,
+            "passed": 70,
+            "retries": 4,
+            "failed": 4
+          },
+          "status": "failed",
+          "createdAt": 1792787974387,
+          "duration": 62580
+        },
+        {
+          "id": "39744400637-1",
+          "path": "chessorro/runs/39744400637-1/",
+          "stats": {
+            "total": 74,
+            "passed": 70,
+            "retries": 4,
+            "failed": 4
+          },
+          "status": "failed",
+          "createdAt": 1792656065702,
+          "duration": 62713
+        },
+        {
+          "id": "39630566492-1",
+          "path": "chessorro/runs/39630566492-1/",
+          "stats": {
+            "total": 74,
+            "passed": 70,
+            "retries": 4,
+            "failed": 4
+          },
+          "status": "failed",
+          "createdAt": 1792598422865,
+          "duration": 55338
+        },
+        {
+          "id": "39514936671-1",
+          "path": "chessorro/runs/39514936671-1/",
+          "stats": {
+            "total": 74,
+            "passed": 70,
+            "retries": 4,
+            "failed": 4
+          },
+          "status": "failed",
+          "createdAt": 1792538883451,
+          "duration": 62884
+        },
+        {
+          "id": "39199682421-1",
+          "path": "chessorro/runs/39199682421-1/",
+          "stats": {
+            "total": 74,
+            "passed": 70,
+            "retries": 4,
+            "failed": 4
+          },
+          "status": "failed",
+          "createdAt": 1792384234880,
+          "duration": 53864
+        },
+        {
+          "id": "39153507218-1",
+          "path": "chessorro/runs/39153507218-1/",
+          "stats": {
+            "total": 74,
+            "passed": 70,
+            "retries": 4,
+            "failed": 4
+          },
+          "status": "failed",
+          "createdAt": 1792347581671,
+          "duration": 63215
+        },
+        {
+          "id": "39064173228-1",
+          "path": "chessorro/runs/39064173228-1/",
+          "stats": {
+            "total": 74,
+            "passed": 70,
+            "retries": 4,
+            "failed": 4
+          },
+          "status": "failed",
+          "createdAt": 1792266709840,
+          "duration": 51930
+        }
+      ]
+    },
+    "qastarting": {
+      "latest": "qastarting/latest/",
+      "runs": [
+        {
+          "id": "41217002632-1",
+          "path": "qastarting/runs/41217002632-1/",
+          "stats": {
+            "total": 88,
+            "retries": 9,
+            "failed": 9,
+            "passed": 79
+          },
+          "status": "failed",
+          "createdAt": 1793462220846,
+          "duration": 172654
+        },
+        {
+          "id": "41161607929-1",
+          "path": "qastarting/runs/41161607929-1/",
+          "stats": {
+            "total": 88,
+            "passed": 79,
+            "retries": 9,
+            "failed": 9
+          },
+          "status": "failed",
+          "createdAt": 1793415244818,
+          "duration": 276755
+        },
+        {
+          "id": "40865265814-1",
+          "path": "qastarting/runs/40865265814-1/",
+          "stats": {
+            "total": 88,
+            "passed": 79,
+            "retries": 9,
+            "failed": 9
+          },
+          "status": "failed",
+          "createdAt": 1793273343008,
+          "duration": 186394
+        },
+        {
+          "id": "40712372633-1",
+          "path": "qastarting/runs/40712372633-1/",
+          "stats": {
+            "total": 88,
+            "passed": 79,
+            "retries": 9,
+            "failed": 9
+          },
+          "status": "failed",
+          "createdAt": 1793200279267,
+          "duration": 296485
+        },
+        {
+          "id": "40622052362-1",
+          "path": "qastarting/runs/40622052362-1/",
+          "stats": {
+            "total": 88,
+            "passed": 79,
+            "retries": 9,
+            "failed": 9
+          },
+          "status": "failed",
+          "createdAt": 1793155339056,
+          "duration": 233407
+        },
+        {
+          "id": "40290282769-1",
+          "path": "qastarting/runs/40290282769-1/",
+          "stats": {
+            "total": 88,
+            "passed": 79,
+            "retries": 10,
+            "failed": 9
+          },
+          "status": "failed",
+          "createdAt": 1793002495260,
+          "duration": 301847
+        },
+        {
+          "id": "40199681866-1",
+          "path": "qastarting/runs/40199681866-1/",
+          "stats": {
+            "total": 88,
+            "passed": 79,
+            "retries": 9,
+            "failed": 9
+          },
+          "status": "failed",
+          "createdAt": 1792936730131,
+          "duration": 280878
+        },
+        {
+          "id": "40139848798-1",
+          "path": "qastarting/runs/40139848798-1/",
+          "stats": {
+            "total": 88,
+            "passed": 79,
+            "retries": 9,
+            "failed": 9
+          },
+          "status": "failed",
+          "createdAt": 1792882199833,
+          "duration": 282145
+        },
+        {
+          "id": "39925837299-1",
+          "path": "qastarting/runs/39925837299-1/",
+          "stats": {
+            "total": 88,
+            "passed": 79,
+            "retries": 9,
+            "failed": 9
+          },
+          "status": "failed",
+          "createdAt": 1792744834584,
+          "duration": 164798
+        },
+        {
+          "id": "39833825543-1",
+          "path": "qastarting/runs/39833825543-1/",
+          "stats": {
+            "total": 88,
+            "passed": 79,
+            "retries": 9,
+            "failed": 9
+          },
+          "status": "failed",
+          "createdAt": 1792694948023,
+          "duration": 281294
+        },
+        {
+          "id": "39696886590-1",
+          "path": "qastarting/runs/39696886590-1/",
+          "stats": {
+            "total": 88,
+            "passed": 79,
+            "retries": 9,
+            "failed": 9
+          },
+          "status": "failed",
+          "createdAt": 1792627492083,
+          "duration": 285019
+        },
+        {
+          "id": "39370702028-1",
+          "path": "qastarting/runs/39370702028-1/",
+          "stats": {
+            "total": 88,
+            "passed": 79,
+            "retries": 9,
+            "failed": 9
+          },
+          "status": "failed",
+          "createdAt": 1792471486715,
+          "duration": 291274
+        },
+        {
+          "id": "39305758625-1",
+          "path": "qastarting/runs/39305758625-1/",
+          "stats": {
+            "total": 88,
+            "retries": 9,
+            "failed": 9,
+            "passed": 79
+          },
+          "status": "failed",
+          "createdAt": 1792436055344,
+          "duration": 244599
+        },
+        {
+          "id": "39159738360-1",
+          "path": "qastarting/runs/39159738360-1/",
+          "stats": {
+            "total": 88,
+            "passed": 79,
+            "retries": 9,
+            "failed": 9
+          },
+          "status": "failed",
+          "createdAt": 1792352543715,
+          "duration": 162455
+        },
+        {
+          "id": "39026728504-1",
+          "path": "qastarting/runs/39026728504-1/",
+          "stats": {
+            "total": 88,
+            "passed": 79,
+            "retries": 9,
+            "failed": 9
+          },
+          "status": "failed",
+          "createdAt": 1792234832928,
+          "duration": 268014
+        }
+      ]
+    },
+    "self-test": {
+      "latest": "self-test/latest/",
+      "runs": [
+        {
+          "id": "38417925642-1",
+          "path": "self-test/runs/38417925642-1/",
+          "stats": {
+            "total": 40,
+            "passed": 40
+          },
+          "status": "passed",
+          "createdAt": 1791903543031,
+          "duration": 26490
+        },
+        {
+          "id": "38417728449-1",
+          "path": "self-test/runs/38417728449-1/",
+          "stats": {
+            "total": 40,
+            "passed": 40,
+            "new": 1
+          },
+          "status": "passed",
+          "createdAt": 1791903456639,
+          "duration": 22232
+        },
+        {
+          "id": "38417213561-1",
+          "path": "self-test/runs/38417213561-1/",
+          "stats": {
+            "total": 39,
+            "passed": 39
+          },
+          "status": "passed",
+          "createdAt": 1791903246585,
+          "duration": 24575
+        },
+        {
+          "id": "38416012573-1",
+          "path": "self-test/runs/38416012573-1/",
+          "stats": {
+            "total": 39,
+            "passed": 39,
+            "new": 3
+          },
+          "status": "passed",
+          "createdAt": 1791902753315,
+          "duration": 23772
+        },
+        {
+          "id": "38414097210-1",
+          "path": "self-test/runs/38414097210-1/",
+          "stats": {
+            "total": 36,
+            "passed": 36
+          },
+          "status": "passed",
+          "createdAt": 1791901954235,
+          "duration": 21408
+        },
+        {
+          "id": "38413954012-1",
+          "path": "self-test/runs/38413954012-1/",
+          "stats": {
+            "total": 36,
+            "new": 12,
+            "passed": 36
+          },
+          "status": "passed",
+          "createdAt": 1791901891801,
+          "duration": 24931
+        },
+        {
+          "id": "38411759618-1",
+          "path": "self-test/runs/38411759618-1/",
+          "stats": {
+            "total": 26,
+            "passed": 26
+          },
+          "status": "passed",
+          "createdAt": 1791900963538,
+          "duration": 17673
+        },
+        {
+          "id": "38410931888-1",
+          "path": "self-test/runs/38410931888-1/",
+          "stats": {
+            "total": 26,
+            "passed": 26
+          },
+          "status": "passed",
+          "createdAt": 1791900624012,
+          "duration": 19509
+        },
+        {
+          "id": "38410165164-1",
+          "path": "self-test/runs/38410165164-1/",
+          "stats": {
+            "total": 26,
+            "new": 26,
+            "passed": 26
+          },
+          "status": "passed",
+          "createdAt": 1791900290249,
+          "duration": 21045
+        }
+      ]
+    },
+    "spas": {
+      "latest": "spas/latest/",
+      "runs": [
+        {
+          "id": "41061079943-1",
+          "path": "spas/runs/41061079943-1/",
+          "stats": {
+            "total": 77,
+            "passed": 76,
+            "retries": 1,
+            "failed": 1
+          },
+          "status": "failed",
+          "createdAt": 1793365958554,
+          "duration": 70976
+        },
+        {
+          "id": "40932638600-1",
+          "path": "spas/runs/40932638600-1/",
+          "stats": {
+            "total": 77,
+            "passed": 76,
+            "retries": 1,
+            "failed": 1
+          },
+          "status": "failed",
+          "createdAt": 1793299181122,
+          "duration": 58808
+        },
+        {
+          "id": "40796883329-1",
+          "path": "spas/runs/40796883329-1/",
+          "stats": {
+            "total": 77,
+            "passed": 76,
+            "retries": 1,
+            "failed": 1
+          },
+          "status": "failed",
+          "createdAt": 1793235243659,
+          "duration": 43989
+        },
+        {
+          "id": "40503622518-1",
+          "path": "spas/runs/40503622518-1/",
+          "stats": {
+            "total": 77,
+            "passed": 76,
+            "retries": 1,
+            "failed": 1
+          },
+          "status": "failed",
+          "createdAt": 1793104618489,
+          "duration": 40841
+        },
+        {
+          "id": "40398559719-1",
+          "path": "spas/runs/40398559719-1/",
+          "stats": {
+            "total": 77,
+            "passed": 76,
+            "retries": 1,
+            "failed": 1
+          },
+          "status": "failed",
+          "createdAt": 1793047638785,
+          "duration": 37611
+        },
+        {
+          "id": "40223890213-1",
+          "path": "spas/runs/40223890213-1/",
+          "stats": {
+            "total": 77,
+            "passed": 76,
+            "retries": 1,
+            "failed": 1
+          },
+          "status": "failed",
+          "createdAt": 1792954890416,
+          "duration": 47875
+        },
+        {
+          "id": "40068625460-1",
+          "path": "spas/runs/40068625460-1/",
+          "stats": {
+            "total": 77,
+            "passed": 76,
+            "retries": 1,
+            "failed": 1
+          },
+          "status": "failed",
+          "createdAt": 1792821855157,
+          "duration": 56059
+        },
+        {
+          "id": "39978741809-1",
+          "path": "spas/runs/39978741809-1/",
+          "stats": {
+            "total": 77,
+            "passed": 76,
+            "retries": 1,
+            "failed": 1
+          },
+          "status": "failed",
+          "createdAt": 1792769485098,
+          "duration": 57222
+        },
+        {
+          "id": "39865209036-1",
+          "path": "spas/runs/39865209036-1/",
+          "stats": {
+            "total": 77,
+            "passed": 76,
+            "retries": 1,
+            "failed": 1
+          },
+          "status": "failed",
+          "createdAt": 1792708189601,
+          "duration": 41898
+        },
+        {
+          "id": "39578255485-1",
+          "path": "spas/runs/39578255485-1/",
+          "stats": {
+            "total": 77,
+            "passed": 76,
+            "retries": 1,
+            "failed": 1
+          },
+          "status": "failed",
+          "createdAt": 1792575478664,
+          "duration": 46672
+        },
+        {
+          "id": "39470307489-1",
+          "path": "spas/runs/39470307489-1/",
+          "stats": {
+            "total": 77,
+            "passed": 76,
+            "retries": 1,
+            "failed": 1
+          },
+          "status": "failed",
+          "createdAt": 1792519049970,
+          "duration": 44204
+        },
+        {
+          "id": "39329833358-1",
+          "path": "spas/runs/39329833358-1/",
+          "stats": {
+            "total": 77,
+            "passed": 76,
+            "retries": 1,
+            "failed": 1
+          },
+          "status": "failed",
+          "createdAt": 1792446363656,
+          "duration": 50306
+        },
+        {
+          "id": "39096658184-1",
+          "path": "spas/runs/39096658184-1/",
+          "stats": {
+            "total": 77,
+            "passed": 76,
+            "retries": 1,
+            "failed": 1
+          },
+          "status": "failed",
+          "createdAt": 1792297212020,
+          "duration": 37707
+        },
+        {
+          "id": "39039867330-1",
+          "path": "spas/runs/39039867330-1/",
+          "stats": {
+            "total": 77,
+            "passed": 76,
+            "retries": 1,
+            "flaky": 1,
+            "failed": 1
+          },
+          "status": "failed",
+          "createdAt": 1792246538978,
+          "duration": 54242
+        },
+        {
+          "id": "38960830714-1",
+          "path": "spas/runs/38960830714-1/",
+          "stats": {
+            "total": 77,
+            "passed": 76,
+            "retries": 1,
+            "failed": 1
+          },
+          "status": "failed",
+          "createdAt": 1792181766645,
+          "duration": 39811
+        }
+      ]
+    }
+  }
+}

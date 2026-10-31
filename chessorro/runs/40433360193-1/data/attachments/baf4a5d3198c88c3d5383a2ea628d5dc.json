@@ -1,0 +1,82 @@
+{
+  "page": "https://www.chessorro.com/en/history",
+  "links": [
+    {
+      "index": 0,
+      "name": "Skip to content",
+      "href": "#main",
+      "url": "",
+      "kind": "fragment",
+      "target": null,
+      "rel": "",
+      "area": "main",
+      "visible": true,
+      "offscreen": true,
+      "isButton": false,
+      "anchorMissing": false
+    },
+    {
+      "index": 7,
+      "name": "Play Chess",
+      "href": "/en/play/chess",
+      "url": "https://www.chessorro.com/en/play/chess",
+      "kind": "internal",
+      "target": null,
+      "rel": "",
+      "area": "main",
+      "visible": true,
+      "offscreen": false,
+      "isButton": false,
+      "anchorMissing": false
+    },
+    {
+      "index": 8,
+      "name": "Play Checkers",
+      "href": "/en/play/checkers",
+      "url": "https://www.chessorro.com/en/play/checkers",
+      "kind": "internal",
+      "target": null,
+      "rel": "",
+      "area": "main",
+      "visible": true,
+      "offscreen": false,
+      "isButton": false,
+      "anchorMissing": false
+    },
+    {
+      "index": 9,
+      "name": "Play Backgammon",
+      "href": "/en/play/backgammon",
+      "url": "https://www.chessorro.com/en/play/backgammon",
+      "kind": "internal",
+      "target": null,
+      "rel": "",
+      "area": "main",
+      "visible": true,
+      "offscreen": false,
+      "isButton": false,
+      "anchorMissing": false
+    },
+    {
+      "index": 10,
+      "name": "Play Dominoes",
+      "href": "/en/play/dominoes",
+      "url": "https://www.chessorro.com/en/play/dominoes",
+      "kind": "internal",
+      "target": null,
+      "rel": "",
+      "area": "main",
+      "visible": true,
+      "offscreen": false,
+      "isButton": false,
+      "anchorMissing": false
+    }
+  ],
+  "unnamed": [],
+  "dead": [],
+  "notClickable": [],
+  "broken": [],
+  "unsafeBlank": [],
+  "malformedContact": [],
+  "missingAnchors": []
+}

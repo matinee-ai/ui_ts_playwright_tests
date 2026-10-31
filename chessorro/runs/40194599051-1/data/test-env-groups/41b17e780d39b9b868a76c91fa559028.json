@@ -1,0 +1,1 @@
+{"id":"41b17e780d39b9b868a76c91fa559028","fullName":"../../../src/suites/login-negative.ts:58:5","name":"malformed email addresses are rejected","status":"passed","testResultsByEnv":{"default":"3117069515dc9d46cd204cc67a785c6e"}}

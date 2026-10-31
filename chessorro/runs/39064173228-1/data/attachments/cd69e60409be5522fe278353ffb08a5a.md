@@ -1,0 +1,61 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#main"
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - generic [ref=e5]:
+        - link "Chessorro" [ref=e6] [cursor=pointer]:
+          - /url: /en
+          - text: Chessorro
+        - generic [ref=e8]:
+          - navigation "Main" [ref=e9]:
+            - link "Play now" [ref=e10] [cursor=pointer]:
+              - /url: /en/play/chess
+            - link "History" [ref=e11] [cursor=pointer]:
+              - /url: /en/history
+            - link "Ratings" [ref=e12] [cursor=pointer]:
+              - /url: /en/ratings
+            - link "Sign in" [ref=e13] [cursor=pointer]:
+              - /url: /en/login
+            - link "Start a game" [ref=e14] [cursor=pointer]:
+              - /url: /en/signup
+          - button "Choose a language" [ref=e16]:
+            - img [ref=e17]
+            - generic [ref=e20]: EN
+          - button "Switch to dark theme" [ref=e21]:
+            - img [ref=e22]
+    - main [ref=e24]:
+      - generic [ref=e26]:
+        - generic [ref=e27]:
+          - heading "Reset your password" [level=3] [ref=e28]
+          - paragraph [ref=e29]: Enter your email and we'll send you a reset link.
+        - generic [ref=e30]:
+          - generic [ref=e31]:
+            - generic [ref=e32]:
+              - generic [ref=e33]: Email
+              - textbox "Email" [ref=e34]
+            - button "Send reset link" [ref=e35]
+          - paragraph [ref=e36]:
+            - text: Remembered it?
+            - link "Back to sign in" [ref=e37] [cursor=pointer]:
+              - /url: /en/login
+    - contentinfo [ref=e38]:
+      - generic [ref=e39]:
+        - paragraph [ref=e40]: © 2026 Chessorro
+        - paragraph [ref=e41]: MOVE Points are a free in-app reward with no cash value. They cannot be purchased, transferred, or exchanged.
+        - navigation "More" [ref=e42]:
+          - link "Contact" [ref=e43] [cursor=pointer]:
+            - /url: /en/contact
+          - link "History" [ref=e44] [cursor=pointer]:
+            - /url: /en/history
+          - link "Ratings" [ref=e45] [cursor=pointer]:
+            - /url: /en/ratings
+          - link "Terms" [ref=e46] [cursor=pointer]:
+            - /url: /en/terms
+          - link "Privacy" [ref=e47] [cursor=pointer]:
+            - /url: /en/privacy
+  - alert [ref=e48]
+```

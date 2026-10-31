@@ -1,0 +1,1 @@
+{"id":"ffcca9963c80f99a128c77a2d862845e","fullName":"auth.ui.spec.ts:15:3","name":"sign-up refuses a password shorter than 8 characters","status":"passed","testResultsByEnv":{"default":"a25a2ae4f4d83062f037b95b7f9c380b"}}
