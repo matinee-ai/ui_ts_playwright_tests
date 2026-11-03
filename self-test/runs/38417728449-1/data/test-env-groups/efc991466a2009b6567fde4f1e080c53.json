@@ -1,0 +1,1 @@
+{"id":"efc991466a2009b6567fde4f1e080c53","fullName":"schedule.spec.ts:63:3","name":"a late 23:xx run that starts after midnight uses the previous day","status":"passed","testResultsByEnv":{"default":"4eb5b194c7421cbcbb05b47f769c389b"}}

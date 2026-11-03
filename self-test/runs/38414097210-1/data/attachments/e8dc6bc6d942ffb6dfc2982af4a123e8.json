@@ -1,0 +1,5 @@
+{
+  "method": "POST",
+  "url": "https://fixtures.test/api/help",
+  "body": "------WebKitFormBoundaryVA4wqWxmhCAw0lsS\r\nContent-Disposition: form-data; name=\"name\"\r\n\r\nPlaywright pwqamv6s5gw79354\r\n------WebKitFormBoundaryVA4wqWxmhCAw0lsS\r\nContent-Disposition: form-data; name=\"phone\"\r\n\r\n2025550143\r\n------WebKitFormBoundaryVA4wqWxmhCAw0lsS\r\nContent-Disposition: form-data; name=\"message\"\r\n\r\nAutomated test, please ignore (pwqamv6s5gw79354)\r\n------WebKitFormBoundaryVA4wqWxmhCAw0lsS--\r\n\n------WebKitFormBoundaryVA4wqWxmhCAw0lsS\r\nContent-Disposition: form-data; name=\"name\"\r\n\r\nPlaywright pwqamv6s5gw79354\r\n------WebKitFormBoundaryVA4wqWxmhCAw0lsS\r\nContent-Disposition: form-data; name=\"phone\"\r\n\r\n2025550143\r\n------WebKitFormBoundaryVA4wqWxmhCAw0lsS\r\nContent-Disposition: form-data; name=\"message\"\r\n\r\nAutomated test, please ignore (pwqamv6s5gw79354)\r\n------WebKitFormBoundaryVA4wqWxmhCAw0lsS--\r\n\nhttps://fixtures.test/api/help"
+}

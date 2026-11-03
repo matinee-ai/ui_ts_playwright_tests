@@ -1,0 +1,54 @@
+{
+  "page": "https://www.chessorro.com/en/ratings",
+  "links": [
+    {
+      "index": 0,
+      "name": "Skip to content",
+      "href": "#main",
+      "url": "",
+      "kind": "fragment",
+      "target": null,
+      "rel": "",
+      "area": "main",
+      "visible": true,
+      "offscreen": true,
+      "isButton": false,
+      "anchorMissing": false
+    },
+    {
+      "index": 7,
+      "name": "Where these games came from",
+      "href": "/en/history",
+      "url": "https://www.chessorro.com/en/history",
+      "kind": "internal",
+      "target": null,
+      "rel": "",
+      "area": "main",
+      "visible": true,
+      "offscreen": false,
+      "isButton": false,
+      "anchorMissing": false
+    },
+    {
+      "index": 8,
+      "name": "See the leaderboard",
+      "href": "/en/leaderboard",
+      "url": "https://www.chessorro.com/en/leaderboard",
+      "kind": "internal",
+      "target": null,
+      "rel": "",
+      "area": "main",
+      "visible": true,
+      "offscreen": false,
+      "isButton": false,
+      "anchorMissing": false
+    }
+  ],
+  "unnamed": [],
+  "dead": [],
+  "notClickable": [],
+  "broken": [],
+  "unsafeBlank": [],
+  "malformedContact": [],
+  "missingAnchors": []
+}

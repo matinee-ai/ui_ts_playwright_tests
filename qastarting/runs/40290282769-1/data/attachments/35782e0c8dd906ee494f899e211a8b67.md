@@ -1,0 +1,1141 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - button "Переключить на светлую тему" [ref=e4] [cursor=pointer]:
+    - img [ref=e5]
+  - navigation [ref=e8]:
+    - generic [ref=e9]:
+      - link "QAstarting — go to the home page" [ref=e10] [cursor=pointer]:
+        - /url: /
+        - text: QAstarting
+      - generic [ref=e11]:
+        - link "Quiz" [ref=e12]:
+          - /url: "#quiz"
+          - text: Quiz
+        - link "Courses" [ref=e13]:
+          - /url: "#courses"
+          - text: Courses
+        - link "Pricing" [ref=e14]:
+          - /url: "#pricing"
+          - text: Pricing
+        - link "Stories" [ref=e15]:
+          - /url: "#stories"
+          - text: Stories
+        - link "FAQ" [ref=e16]:
+          - /url: "#faq"
+          - text: FAQ
+        - link "Team" [ref=e17]:
+          - /url: "#team"
+          - text: Team
+        - link "Contact" [ref=e18]:
+          - /url: "#contact"
+          - text: Contact
+        - link "Career Services" [ref=e19]:
+          - /url: /career-services
+          - text: Career Services
+        - link "IT English" [ref=e20]:
+          - /url: /it-english
+          - text: IT English
+      - generic [ref=e21]:
+        - button "Переключить на русский" [ref=e22] [cursor=pointer]: RU/EN
+        - link "Login" [ref=e23]:
+          - /url: "#/login"
+        - link "Free lessons" [ref=e24]:
+          - /url: "#free"
+        - link "Enroll" [ref=e25]:
+          - /url: /checkout
+  - main [ref=e26]:
+    - generic [ref=e27]:
+      - generic [ref=e32]:
+        - generic [ref=e33]: Online QA testing courses
+        - heading "Start your IT career as a QA engineer" [level=1] [ref=e34]:
+          - text: Start your IT career
+          - text: as a QA engineer
+        - paragraph [ref=e35]: "We teach software testing from scratch. Personal guidance every step of the way: resume help, profile setup for the job search, and support until you are hired. We make your path into IT simple and successful."
+        - generic [ref=e36]:
+          - link "3 free lessons" [ref=e37] [cursor=pointer]:
+            - /url: "#free"
+          - link "Choose a course" [ref=e38] [cursor=pointer]:
+            - /url: "#pricing"
+        - generic [ref=e39]:
+          - generic [ref=e40]:
+            - generic [ref=e41]: $20–80
+            - generic [ref=e42]: QA pay per hour
+          - generic [ref=e43]:
+            - generic [ref=e44]: 15–65
+            - generic [ref=e45]: student ages
+          - generic [ref=e46]:
+            - generic [ref=e47]: 2–6 mo
+            - generic [ref=e48]: to employment
+        - generic [ref=e49]:
+          - generic [ref=e50]:
+            - generic [ref=e51]: 1K+
+            - generic [ref=e52]: happy students
+          - generic [ref=e54]:
+            - generic [ref=e55]:
+              - generic [ref=e56]: "4.9"
+              - generic [ref=e57]: ★★★★★
+            - generic [ref=e58]: average rating
+      - generic:
+        - generic:
+          - generic: SCROLL DOWN
+    - generic [ref=e60]:
+      - generic [ref=e61]:
+        - text: WHY IT
+        - heading "A career in IT is promising, prestigious, rewarding" [level=2] [ref=e62]
+      - generic [ref=e63]:
+        - generic [ref=e64]:
+          - generic [ref=e65]: 💰
+          - heading "High income" [level=3] [ref=e66]
+          - paragraph [ref=e67]: Testing is one of the highest-paid professions in IT.
+        - generic [ref=e68]:
+          - generic [ref=e69]: 📈
+          - heading "Real prospects" [level=3] [ref=e70]
+          - paragraph [ref=e71]: No career ceiling — testers are paid what they are worth.
+        - generic [ref=e72]:
+          - generic [ref=e73]: 🧑‍💻
+          - heading "Plenty of openings" [level=3] [ref=e74]
+          - paragraph [ref=e75]: QA engineer is an in-demand profession, and demand grows every year.
+        - generic [ref=e76]:
+          - generic [ref=e77]: 🌍
+          - heading "Work without borders" [level=3] [ref=e78]
+          - paragraph [ref=e79]: Work remotely with clients all over the world.
+        - generic [ref=e80]:
+          - generic [ref=e81]: 🚀
+          - heading "Constant growth" [level=3] [ref=e82]
+          - paragraph [ref=e83]: Level up your skills with courses and training.
+        - generic [ref=e84]:
+          - generic [ref=e85]: 🎁
+          - heading "Nice perks" [level=3] [ref=e86]
+          - paragraph [ref=e87]: Comfortable offices, health insurance, paid vacation and much more.
+      - generic [ref=e88]:
+        - heading "QA career growth" [level=3] [ref=e89]
+        - generic [ref=e90]:
+          - generic [ref=e93]:
+            - generic [ref=e94]: Beginner
+            - generic [ref=e95]: Junior QA
+            - generic [ref=e96]: $20–35
+            - generic [ref=e97]: per hour
+          - generic [ref=e100]:
+            - generic [ref=e101]: Specialist
+            - generic [ref=e102]: Middle QA
+            - generic [ref=e103]: $30–55
+            - generic [ref=e104]: per hour
+          - generic [ref=e107]:
+            - generic [ref=e108]: Professional
+            - generic [ref=e109]: Senior QA
+            - generic [ref=e110]: $45–80
+            - generic [ref=e111]: per hour
+    - generic [ref=e113]:
+      - generic [ref=e114]:
+        - text: OUR TRAINING
+        - heading "Why students choose QAstarting" [level=2] [ref=e115]
+      - generic [ref=e116]:
+        - generic [ref=e117]:
+          - generic [ref=e118]: 🎓
+          - heading "Experience" [level=3] [ref=e119]
+          - paragraph [ref=e120]: Years of teaching let us build the most effective training programs.
+        - generic [ref=e121]:
+          - generic [ref=e122]: 🤝
+          - heading "Individual approach" [level=3] [ref=e123]
+          - paragraph [ref=e124]: We find the right approach for every student — no one is left behind.
+        - generic [ref=e125]:
+          - generic [ref=e126]: 🧠
+          - heading "Expertise" [level=3] [ref=e127]
+          - paragraph [ref=e128]: Our instructors are practicing testers. We teach what you will actually be paid for.
+        - generic [ref=e129]:
+          - generic [ref=e130]: 💬
+          - heading "Online support" [level=3] [ref=e131]
+          - paragraph [ref=e132]: Homework reviews and consultations between lessons, all online.
+        - generic [ref=e133]:
+          - generic [ref=e134]: 🌐
+          - heading "A gateway to the industry" [level=3] [ref=e135]
+          - paragraph [ref=e136]: Knowledge is your ticket into professional software testing — and a job for our best students.
+    - generic [ref=e140]:
+      - text: FREE LESSONS
+      - heading "3 free QA Basic lessons" [level=2] [ref=e141]
+      - paragraph [ref=e142]: Try yourself in the role of a tester. Drop your email and get instant access to the first 3 lessons of QA Basic — free, no payment required.
+      - generic [ref=e143]:
+        - generic [ref=e144]:
+          - generic [ref=e145]: Name
+          - textbox "Your name" [ref=e146]
+        - generic [ref=e147]:
+          - generic [ref=e148]: Email
+          - textbox "you@example.com" [ref=e149]
+        - button "Get my 3 free lessons" [ref=e150] [cursor=pointer]
+    - generic [ref=e153]:
+      - generic [ref=e154]:
+        - text: FREE • NEW
+        - heading "🇺🇸 IT English — 5 Minutes a Day" [level=2] [ref=e155]
+        - paragraph [ref=e156]: 2 words + 2 real IT phrases every day. Free.
+        - paragraph [ref=e157]: 365 days • 700+ words • Free
+      - link "Start Today" [ref=e159] [cursor=pointer]:
+        - /url: /it-english
+    - generic [ref=e161]:
+      - generic [ref=e162]:
+        - text: PROCESS
+        - heading "How the training works" [level=2] [ref=e163]
+        - paragraph [ref=e164]: From sign-up to employment — a well-thought-out path where you are supported every step of the way.
+      - generic [ref=e165]:
+        - generic [ref=e166]:
+          - generic [ref=e167]:
+            - generic [ref=e168]: "01"
+            - generic [ref=e169]: Getting started
+          - list [ref=e170]:
+            - listitem [ref=e171]:
+              - generic [ref=e173]: Registration on the learning platform
+            - listitem [ref=e174]:
+              - generic [ref=e176]: Course materials and syllabus
+        - generic [ref=e177]:
+          - generic [ref=e178]:
+            - generic [ref=e179]: "02"
+            - generic [ref=e180]: During the lesson
+          - list [ref=e181]:
+            - listitem [ref=e182]:
+              - generic [ref=e184]: Video lessons explaining the theory
+            - listitem [ref=e185]:
+              - generic [ref=e187]: Hands-on practice and homework assignments
+        - generic [ref=e188]:
+          - generic [ref=e189]:
+            - generic [ref=e190]: "03"
+            - generic [ref=e191]: Between lessons
+          - list [ref=e192]:
+            - listitem [ref=e193]:
+              - generic [ref=e195]: Extra days to study
+            - listitem [ref=e196]:
+              - generic [ref=e198]: Instructor consultations
+            - listitem [ref=e199]:
+              - generic [ref=e201]: Doing homework with online review
+        - generic [ref=e202]:
+          - generic [ref=e203]:
+            - generic [ref=e204]: "04"
+            - generic [ref=e205]: After the course
+          - list [ref=e206]:
+            - listitem [ref=e207]:
+              - generic [ref=e209]: Capstone project
+            - listitem [ref=e210]:
+              - generic [ref=e212]: Job placement support
+            - listitem [ref=e213]:
+              - generic [ref=e215]: Enrolling in the next course
+    - generic [ref=e217]:
+      - generic [ref=e218]:
+        - text: QUIZ
+        - heading "Can you be a QA?" [level=2] [ref=e219]
+        - paragraph [ref=e220]: Answer 12 quick questions and find out whether QA testing is the right fit for you.
+      - generic [ref=e222]:
+        - generic [ref=e223]: 🧠
+        - paragraph [ref=e224]: Answer 12 quick questions and find out whether QA testing is the right fit for you.
+        - button "Take the quiz" [ref=e225] [cursor=pointer]
+    - generic [ref=e227]:
+      - generic [ref=e228]:
+        - text: COURSES
+        - heading "Choose your path in QA" [level=2] [ref=e229]
+        - paragraph [ref=e230]: From manual testing to AI and no-code automation. Click a course to see the details or enroll.
+      - generic [ref=e231]:
+        - generic [ref=e232]:
+          - generic [ref=e233]: Manual QA
+          - generic [ref=e234]: →
+        - generic [ref=e235]:
+          - generic [ref=e236]: Advanced QA
+          - generic [ref=e237]: →
+        - generic [ref=e238]:
+          - generic [ref=e239]: QA Automation
+          - generic [ref=e240]: →
+        - generic [ref=e241]:
+          - generic [ref=e242]: AI Automation
+          - generic [ref=e243]: →
+        - generic [ref=e245]: n8n Automation
+      - generic [ref=e246]:
+        - generic [ref=e248]:
+          - generic [ref=e249]: Beginner
+          - heading "QA BASIC" [level=3] [ref=e250]
+          - paragraph [ref=e251]: A perfect start for beginners. Real projects, bug reports, test cases and Jira basics.
+          - list [ref=e252]:
+            - listitem [ref=e253]:
+              - generic [ref=e255]: Web and mobile testing fundamentals
+            - listitem [ref=e256]:
+              - generic [ref=e258]: Professional-level bug reporting
+            - listitem [ref=e259]:
+              - generic [ref=e261]: Test cases and checklists
+            - listitem [ref=e262]:
+              - generic [ref=e264]: A job-ready portfolio
+          - link "View details →" [ref=e265] [cursor=pointer]:
+            - /url: /courses/qa-basic
+        - generic [ref=e266]:
+          - generic [ref=e267]: Popular
+          - generic [ref=e268]:
+            - generic [ref=e269]: Intermediate
+            - heading "QA ADVANCE" [level=3] [ref=e270]
+            - paragraph [ref=e271]: "Level up: API testing, test design, documentation and deeper practice."
+            - list [ref=e272]:
+              - listitem [ref=e273]:
+                - generic [ref=e275]: Advanced test design
+              - listitem [ref=e276]:
+                - generic [ref=e278]: API testing (Postman)
+              - listitem [ref=e279]:
+                - generic [ref=e281]: SQL basics for QA
+              - listitem [ref=e282]:
+                - generic [ref=e284]: Test plan and regression strategy
+            - link "View details →" [ref=e285] [cursor=pointer]:
+              - /url: /courses/qa-advance
+        - generic [ref=e287]:
+          - generic [ref=e288]: Automation
+          - heading "QA AUTOMATION" [level=3] [ref=e289]
+          - paragraph [ref=e290]: Build an automation portfolio with a clear framework and real tests.
+          - list [ref=e291]:
+            - listitem [ref=e292]:
+              - generic [ref=e294]: Playwright or Selenium track
+            - listitem [ref=e295]:
+              - generic [ref=e297]: Test framework structure
+            - listitem [ref=e298]:
+              - generic [ref=e300]: Reports and CI basics
+            - listitem [ref=e301]:
+              - generic [ref=e303]: Automation best practices
+          - link "View details →" [ref=e304] [cursor=pointer]:
+            - /url: /courses/qa-automation
+        - generic [ref=e305]:
+          - generic [ref=e306]: Hot
+          - generic [ref=e307]:
+            - generic [ref=e308]: Advanced
+            - heading "AI AUTOMATION" [level=3] [ref=e309]
+            - paragraph [ref=e310]: "Use AI tools to speed up QA work: test ideas, bug reproduction, documentation and reports."
+            - list [ref=e311]:
+              - listitem [ref=e312]:
+                - generic [ref=e314]: AI for test design and coverage
+              - listitem [ref=e315]:
+                - generic [ref=e317]: AI-assisted bug reports
+              - listitem [ref=e318]:
+                - generic [ref=e320]: Prompt templates for QA tasks
+              - listitem [ref=e321]:
+                - generic [ref=e323]: "AI skills with phases: the agent writes and checks the tests"
+              - listitem [ref=e324]:
+                - generic [ref=e326]: Practical workflow acceleration
+            - link "View details →" [ref=e327] [cursor=pointer]:
+              - /url: /courses/ai-automation
+        - generic [ref=e328]:
+          - generic [ref=e329]: New
+          - generic [ref=e330]:
+            - generic [ref=e331]: No-code / low-code
+            - heading "n8n AUTOMATION" [level=3] [ref=e332]
+            - paragraph [ref=e333]: "Build no-code/low-code automations: job alerts, lead forms, QA bots and reporting flows."
+            - list [ref=e334]:
+              - listitem [ref=e335]:
+                - generic [ref=e337]: "n8n basics: nodes and triggers"
+              - listitem [ref=e338]:
+                - generic [ref=e340]: Telegram / Sheets / Webhooks
+              - listitem [ref=e341]:
+                - generic [ref=e343]: AI + n8n workflows
+              - listitem [ref=e344]:
+                - generic [ref=e346]: "n8n for QA: test runs, digests, bug reports"
+              - listitem [ref=e347]:
+                - generic [ref=e349]: Deploying and maintaining automations
+            - link "View details →" [ref=e350] [cursor=pointer]:
+              - /url: /courses/n8n-automation
+        - generic [ref=e351]:
+          - heading "Not sure which one to choose?" [level=3] [ref=e352]
+          - paragraph [ref=e353]: Get a personal recommendation based on your experience and goals.
+          - link "Get your QA career plan" [ref=e354] [cursor=pointer]:
+            - /url: "#contact"
+    - generic [ref=e356]:
+      - generic [ref=e357]:
+        - text: PRICING
+        - heading "How much do the courses cost?" [level=2] [ref=e358]
+        - paragraph [ref=e359]: Five tracks — from manual testing to AI and no-code automation. Flexible plans for your goals and budget.
+      - generic [ref=e360]:
+        - generic [ref=e362]:
+          - heading "QA BASIC" [level=3] [ref=e363]
+          - paragraph [ref=e364]: QA for beginners
+          - generic [ref=e365]:
+            - generic [ref=e366]:
+              - generic [ref=e367]:
+                - generic [ref=e368]: Starter
+                - generic [ref=e369]: Self-paced, on your own
+              - generic [ref=e370]: $259
+            - generic [ref=e371]:
+              - generic [ref=e372]:
+                - generic [ref=e373]: Standard
+                - generic [ref=e374]: "Guided: 1 hour with a mentor a week"
+              - generic [ref=e375]: $499
+            - generic [ref=e376]:
+              - generic [ref=e377]:
+                - generic [ref=e378]: Unlimited
+                - generic [ref=e379]: "Maximum support: 3 hours with a mentor a week"
+              - generic [ref=e380]: $999
+          - link "View details" [ref=e381] [cursor=pointer]:
+            - /url: /courses/qa-basic
+        - generic [ref=e382]:
+          - generic [ref=e383]: Popular
+          - generic [ref=e384]:
+            - heading "QA ADVANCE" [level=3] [ref=e385]
+            - paragraph [ref=e386]: Advanced QA course
+            - generic [ref=e387]:
+              - generic [ref=e388]:
+                - generic [ref=e389]:
+                  - generic [ref=e390]: Starter
+                  - generic [ref=e391]: Self-paced, on your own
+                - generic [ref=e392]: $299
+              - generic [ref=e393]:
+                - generic [ref=e394]:
+                  - generic [ref=e395]: Standard
+                  - generic [ref=e396]: "Guided: 1 hour with a mentor a week"
+                - generic [ref=e397]: $599
+              - generic [ref=e398]:
+                - generic [ref=e399]:
+                  - generic [ref=e400]: Unlimited
+                  - generic [ref=e401]: "Maximum support: 3 hours with a mentor a week"
+                - generic [ref=e402]: $1059
+            - link "View details" [ref=e403] [cursor=pointer]:
+              - /url: /courses/qa-advance
+        - generic [ref=e405]:
+          - heading "QA AUTOMATION" [level=3] [ref=e406]
+          - paragraph [ref=e407]: Test automation
+          - generic [ref=e408]:
+            - generic [ref=e409]:
+              - generic [ref=e410]:
+                - generic [ref=e411]: Starter
+                - generic [ref=e412]: Self-paced, on your own
+              - generic [ref=e413]: $399
+            - generic [ref=e414]:
+              - generic [ref=e415]:
+                - generic [ref=e416]: Standard
+                - generic [ref=e417]: "Guided: 1 hour with a mentor a week"
+              - generic [ref=e418]: $699
+            - generic [ref=e419]:
+              - generic [ref=e420]:
+                - generic [ref=e421]: Unlimited
+                - generic [ref=e422]: "Maximum support: 3 hours with a mentor a week"
+              - generic [ref=e423]: $1259
+          - link "View details" [ref=e424] [cursor=pointer]:
+            - /url: /courses/qa-automation
+        - generic [ref=e425]:
+          - generic [ref=e426]: Hot
+          - generic [ref=e427]:
+            - heading "AI AUTOMATION" [level=3] [ref=e428]
+            - paragraph [ref=e429]: AI tools for QA
+            - generic [ref=e430]:
+              - generic [ref=e431]:
+                - generic [ref=e432]:
+                  - generic [ref=e433]: Starter
+                  - generic [ref=e434]: Self-paced, on your own
+                - generic [ref=e435]: $449
+              - generic [ref=e436]:
+                - generic [ref=e437]:
+                  - generic [ref=e438]: Standard
+                  - generic [ref=e439]: "Guided: 1 hour with a mentor a week"
+                - generic [ref=e440]: $799
+              - generic [ref=e441]:
+                - generic [ref=e442]:
+                  - generic [ref=e443]: Unlimited
+                  - generic [ref=e444]: "Maximum support: 3 hours with a mentor a week"
+                - generic [ref=e445]: $1399
+            - link "View details" [ref=e446] [cursor=pointer]:
+              - /url: /courses/ai-automation
+        - generic [ref=e447]:
+          - generic [ref=e448]: New
+          - generic [ref=e449]:
+            - heading "n8n AUTOMATION" [level=3] [ref=e450]
+            - paragraph [ref=e451]: No-code / low-code automation
+            - generic [ref=e452]:
+              - generic [ref=e453]:
+                - generic [ref=e454]:
+                  - generic [ref=e455]: Starter
+                  - generic [ref=e456]: Self-paced, on your own
+                - generic [ref=e457]: $349
+              - generic [ref=e458]:
+                - generic [ref=e459]:
+                  - generic [ref=e460]: Standard
+                  - generic [ref=e461]: "Guided: 1 hour with a mentor a week"
+                - generic [ref=e462]: $649
+              - generic [ref=e463]:
+                - generic [ref=e464]:
+                  - generic [ref=e465]: Unlimited
+                  - generic [ref=e466]: "Maximum support: 3 hours with a mentor a week"
+                - generic [ref=e467]: $1199
+            - link "View details" [ref=e468] [cursor=pointer]:
+              - /url: /courses/n8n-automation
+      - generic [ref=e469]:
+        - heading "What the plans include" [level=3] [ref=e470]
+        - paragraph [ref=e471]: The course program is the same in every plan — what changes is how much support you get. The plans are identical across all courses; only the price differs.
+        - generic [ref=e472]:
+          - generic [ref=e473]:
+            - heading "Starter" [level=4] [ref=e474]
+            - paragraph [ref=e475]: Self-paced, on your own
+            - generic [ref=e476]: What's included
+            - list [ref=e477]:
+              - listitem [ref=e478]:
+                - generic [ref=e479]: ✓
+                - generic [ref=e480]: Full access to every lesson and material for 1 year
+              - listitem [ref=e481]:
+                - generic [ref=e482]: ✓
+                - generic [ref=e483]: "Templates and checklists: test cases, bug reports, AI prompts"
+              - listitem [ref=e484]:
+                - generic [ref=e485]: ✓
+                - generic [ref=e486]: Homework with self-check answer keys
+              - listitem [ref=e487]:
+                - generic [ref=e488]: ✓
+                - generic [ref=e489]: Access to the student community chat
+              - listitem [ref=e490]:
+                - generic [ref=e491]: ✓
+                - generic [ref=e492]: Certificate of completion
+          - generic [ref=e493]:
+            - generic [ref=e494]: Most popular
+            - heading "Standard" [level=4] [ref=e495]
+            - paragraph [ref=e496]: "Guided: 1 hour with a mentor a week"
+            - generic [ref=e497]: "Everything in Starter, plus:"
+            - list [ref=e498]:
+              - listitem [ref=e499]:
+                - generic [ref=e500]: ✓
+                - generic [ref=e501]: Personal homework review with written feedback
+              - listitem [ref=e502]:
+                - generic [ref=e503]: ✓
+                - generic [ref=e504]: 1 hour of mentor time a week — a call, or an async review if the time does not fit
+              - listitem [ref=e505]:
+                - generic [ref=e506]: ✓
+                - generic [ref=e507]: "Interview prep: question bank and mock interviews"
+              - listitem [ref=e508]:
+                - generic [ref=e509]: ✓
+                - generic [ref=e510]: Portfolio review before you start applying
+          - generic [ref=e511]:
+            - heading "Unlimited" [level=4] [ref=e512]
+            - paragraph [ref=e513]: "Maximum support: 3 hours with a mentor a week"
+            - generic [ref=e514]: "Everything in Standard, plus:"
+            - list [ref=e515]:
+              - listitem [ref=e516]:
+                - generic [ref=e517]: ✓
+                - generic [ref=e518]: Lifetime access to the materials and every course update
+              - listitem [ref=e519]:
+                - generic [ref=e520]: ✓
+                - generic [ref=e521]: Unlimited reviews — 24–48h turnaround on weekdays
+              - listitem [ref=e522]:
+                - generic [ref=e523]: ✓
+                - generic [ref=e524]: 3 hours of mentor time a week — 2–3 calls, or one long deep-dive session
+              - listitem [ref=e525]:
+                - generic [ref=e526]: ✓
+                - generic [ref=e527]: Resume and LinkedIn profile optimization
+              - listitem [ref=e528]:
+                - generic [ref=e529]: ✓
+                - generic [ref=e530]: Job-search strategy with a weekly action plan
+              - listitem [ref=e531]:
+                - generic [ref=e532]: ✓
+                - generic [ref=e533]: "Custom roadmap: manual / automation / AI / n8n"
+        - paragraph [ref=e534]: Not sure which plan to pick? Start with the 3 free lessons, or message us and we'll suggest one based on your goal.
+      - table [ref=e536]:
+        - rowgroup [ref=e537]:
+          - row "Track Level Key focus Starter Unlimited" [ref=e538]:
+            - cell "Track" [ref=e539]
+            - cell "Level" [ref=e540]
+            - cell "Key focus" [ref=e541]
+            - cell "Starter" [ref=e542]
+            - cell "Unlimited" [ref=e543]
+        - rowgroup [ref=e544]:
+          - row "QA BASIC Beginner Bug reports, test cases, Jira $259 $999" [ref=e545]:
+            - cell "QA BASIC" [ref=e546]:
+              - link "QA BASIC" [ref=e547]:
+                - /url: /courses/qa-basic
+            - cell "Beginner" [ref=e548]
+            - cell "Bug reports, test cases, Jira" [ref=e549]
+            - cell "$259" [ref=e550]
+            - cell "$999" [ref=e551]
+          - row "QA ADVANCE Intermediate API testing, SQL, test design $299 $1059" [ref=e552]:
+            - cell "QA ADVANCE" [ref=e553]:
+              - link "QA ADVANCE" [ref=e554]:
+                - /url: /courses/qa-advance
+            - cell "Intermediate" [ref=e555]
+            - cell "API testing, SQL, test design" [ref=e556]
+            - cell "$299" [ref=e557]
+            - cell "$1059" [ref=e558]
+          - row "QA AUTOMATION Automation Playwright/Selenium, CI $399 $1259" [ref=e559]:
+            - cell "QA AUTOMATION" [ref=e560]:
+              - link "QA AUTOMATION" [ref=e561]:
+                - /url: /courses/qa-automation
+            - cell "Automation" [ref=e562]
+            - cell "Playwright/Selenium, CI" [ref=e563]
+            - cell "$399" [ref=e564]
+            - cell "$1259" [ref=e565]
+          - row "AI AUTOMATION Advanced AI test design, AI bug reports $449 $1399" [ref=e566]:
+            - cell "AI AUTOMATION" [ref=e567]:
+              - link "AI AUTOMATION" [ref=e568]:
+                - /url: /courses/ai-automation
+            - cell "Advanced" [ref=e569]
+            - cell "AI test design, AI bug reports" [ref=e570]
+            - cell "$449" [ref=e571]
+            - cell "$1399" [ref=e572]
+          - row "n8n AUTOMATION No-code / low-code n8n, Telegram/Sheets, AI workflows $349 $1199" [ref=e573]:
+            - cell "n8n AUTOMATION" [ref=e574]:
+              - link "n8n AUTOMATION" [ref=e575]:
+                - /url: /courses/n8n-automation
+            - cell "No-code / low-code" [ref=e576]
+            - cell "n8n, Telegram/Sheets, AI workflows" [ref=e577]
+            - cell "$349" [ref=e578]
+            - cell "$1199" [ref=e579]
+      - paragraph [ref=e581]:
+        - strong [ref=e582]: "Try before you buy:"
+        - text: start with the 3 free lessons to see if QA is right for you. Payment plans available — no extra fees. Please note refunds aren't offered after payment, which is exactly why we recommend the free lessons first.
+      - generic [ref=e583]:
+        - heading "Course bundles" [level=3] [ref=e584]
+        - paragraph [ref=e585]: Take several courses at once on the Unlimited plan — a bundle costs less than the same courses bought separately.
+        - generic [ref=e588]:
+          - generic [ref=e589]:
+            - generic [ref=e590]: Frequently bought together
+            - generic [ref=e591]: −20%
+          - heading "Complete QA path" [level=4] [ref=e592]
+          - paragraph [ref=e593]: The three core courses most often taken together — the journey from manual testing to automation. Unlimited plan on all three.
+          - generic [ref=e594]:
+            - generic [ref=e595]: ✓ QA BASIC
+            - generic [ref=e596]: ✓ QA ADVANCE
+            - generic [ref=e597]: ✓ QA AUTOMATION
+          - generic [ref=e598]:
+            - generic [ref=e599]: $3,317
+            - generic [ref=e600]: $2,653
+            - generic [ref=e601]: Save $664 (~20%)
+            - generic [ref=e602]: All 3 courses · Unlimited plan
+          - link "Get the bundle" [ref=e603] [cursor=pointer]:
+            - /url: /checkout?bundle=core
+    - generic [ref=e605]:
+      - heading "Our students work at" [level=2] [ref=e606]
+      - generic [ref=e608]:
+        - generic [ref=e609]: Uber
+        - generic [ref=e610]: Disney
+        - generic [ref=e611]: Amazon
+        - generic [ref=e612]: Google
+        - generic [ref=e613]: Microsoft
+        - generic [ref=e614]: Netflix
+        - generic [ref=e615]: Meta
+        - generic [ref=e616]: Tesla
+        - generic [ref=e617]: PayPal
+        - generic [ref=e618]: Adobe
+        - generic [ref=e619]: Uber
+        - generic [ref=e620]: Disney
+        - generic [ref=e621]: Amazon
+        - generic [ref=e622]: Google
+        - generic [ref=e623]: Microsoft
+        - generic [ref=e624]: Netflix
+        - generic [ref=e625]: Meta
+        - generic [ref=e626]: Tesla
+        - generic [ref=e627]: PayPal
+        - generic [ref=e628]: Adobe
+    - generic [ref=e630]:
+      - generic [ref=e631]:
+        - text: REVIEWS
+        - heading "What our students say" [level=2] [ref=e632]
+      - generic [ref=e633]:
+        - generic [ref=e634]:
+          - generic [ref=e635]: “
+          - paragraph [ref=e636]: I was working at Uber when I heard about QAstarting. I decided to give it a try. After finishing, I started job hunting — it was hard, but the mentors always helped and encouraged me. My first contract was $20/hour; three months later a big company offered me $40, and six months after that I was poached — now I earn $60/hour. So glad I took the courses!
+          - generic [ref=e637]:
+            - generic [ref=e638]: M
+            - generic [ref=e639]:
+              - generic [ref=e640]: Maxim
+              - generic [ref=e641]: from Uber → a major tech company
+        - generic [ref=e642]:
+          - generic [ref=e643]: “
+          - paragraph [ref=e644]: My husband and I had just moved to America and my English was below average. I decided to try QA and finished the courses remotely while pregnant. I was able to work from home when my baby was 3 months old, and then I got an offer from Disney! We now have three kids, I work from home 4 days a week, and I earn more than the average American.
+          - generic [ref=e645]:
+            - generic [ref=e646]: R
+            - generic [ref=e647]:
+              - generic [ref=e648]: Rita
+              - generic [ref=e649]: moved to the US → Disney
+        - generic [ref=e650]:
+          - generic [ref=e651]: “
+          - paragraph [ref=e652]: I heard about the courses from my mom. After a month of study I landed a $35/hour contract, and a year later that same company hired me full-time at $100,000 a year with paid vacation and sick leave. Throughout the course I felt the instructors’ support — they explained everything and helped. The process is thought out to the last detail and learning was genuinely fun.
+          - generic [ref=e653]:
+            - generic [ref=e654]: A
+            - generic [ref=e655]:
+              - generic [ref=e656]: Alexey
+              - generic [ref=e657]: intern → $100k a year
+    - generic [ref=e659]:
+      - generic [ref=e660]:
+        - text: SUCCESS STORIES
+        - heading "20+ real stories" [level=2] [ref=e661]
+        - paragraph [ref=e662]: "Women and men from all kinds of backgrounds: career switchers, students, busy parents, newcomers to tech. The common thread — a clear plan and small, consistent steps."
+        - paragraph [ref=e663]: Names are used with permission or anonymized for privacy.
+      - generic [ref=e664]:
+        - generic [ref=e665]:
+          - generic [ref=e666]: 🏆
+          - heading "Most common wins" [level=3] [ref=e667]
+          - paragraph [ref=e668]: Confidence, a portfolio, and a steady interview-prep routine.
+        - generic [ref=e669]:
+          - generic [ref=e670]: 🧭
+          - heading "What changes first" [level=3] [ref=e671]
+          - paragraph [ref=e672]: People stop trying to learn everything and follow a clear sequence.
+        - generic [ref=e673]:
+          - generic [ref=e674]: 🛠️
+          - heading "What helps most" [level=3] [ref=e675]
+          - paragraph [ref=e676]: "Real tasks: bug reports, test cases, API checks, a mini-project."
+      - generic [ref=e677]:
+        - button "All" [ref=e678] [cursor=pointer]
+        - button "Career switch" [ref=e679] [cursor=pointer]
+        - button "Parents" [ref=e680] [cursor=pointer]
+        - button "Students" [ref=e681] [cursor=pointer]
+        - button "Automation" [ref=e682] [cursor=pointer]
+      - generic [ref=e683]:
+        - generic [ref=e684]:
+          - generic [ref=e685]:
+            - generic [ref=e686]: A
+            - generic [ref=e687]:
+              - generic [ref=e688]: Anya, 29
+              - generic [ref=e689]: from retail to Manual QA
+          - generic [ref=e690]:
+            - generic [ref=e691]: Career switch
+            - generic [ref=e692]: Zero tech experience
+            - generic [ref=e693]: 10 weeks
+          - paragraph [ref=e694]: «The plan gave me the key thing — what NOT to learn. I focused on bug reports and test cases, and in interviews I finally sounded like a QA.»
+          - generic [ref=e695]:
+            - generic [ref=e696]: "✓ Result:"
+            - generic [ref=e697]: Junior contract → a full-time offer two months later.
+        - generic [ref=e698]:
+          - generic [ref=e699]:
+            - generic [ref=e700]: M
+            - generic [ref=e701]:
+              - generic [ref=e702]: Marta, 35
+              - generic [ref=e703]: mom of two, returning to work
+          - generic [ref=e704]:
+            - generic [ref=e705]: Parents
+            - generic [ref=e706]: 6–8 hrs/week
+            - generic [ref=e707]: 12 weeks
+          - paragraph [ref=e708]: «30–40 minutes a day plus one longer session on weekends. I leveled up bug reports, DevTools and a small API checklist in Postman.»
+          - generic [ref=e709]:
+            - generic [ref=e710]: "✓ Result:"
+            - generic [ref=e711]: Interviews started coming 3 weeks after updating LinkedIn and my portfolio.
+        - generic [ref=e712]:
+          - generic [ref=e713]:
+            - generic [ref=e714]: S
+            - generic [ref=e715]:
+              - generic [ref=e716]: Sofia, 19
+              - generic [ref=e717]: student, first role in IT
+          - generic [ref=e718]:
+            - generic [ref=e719]: Students
+            - generic [ref=e720]: "\"Is QA just clicking around?\""
+            - generic [ref=e721]: 8 weeks
+          - paragraph [ref=e722]: "«The plan made me fall in love with test design: boundaries, negative scenarios, \"what could go wrong\". I was writing bugs professionally.»"
+          - generic [ref=e723]:
+            - generic [ref=e724]: "✓ Result:"
+            - generic [ref=e725]: Internship offer + a part-time extension.
+        - generic [ref=e726]:
+          - generic [ref=e727]:
+            - generic [ref=e728]: L
+            - generic [ref=e729]:
+              - generic [ref=e730]: Lina, 32
+              - generic [ref=e731]: from support to QA
+          - generic [ref=e732]:
+            - generic [ref=e733]: Career switch
+            - generic [ref=e734]: Strong communication
+            - generic [ref=e735]: 9 weeks
+          - paragraph [ref=e736]: «The plan showed me how to turn "user pain" into scenarios and acceptance criteria. Recruiters noticed my little page on regression.»
+          - generic [ref=e737]:
+            - generic [ref=e738]: "✓ Result:"
+            - generic [ref=e739]: Hired as a QA Analyst on a product team.
+        - generic [ref=e740]:
+          - generic [ref=e741]:
+            - generic [ref=e742]: D
+            - generic [ref=e743]:
+              - generic [ref=e744]: Dasha, 27
+              - generic [ref=e745]: manual → automation (finally)
+          - generic [ref=e746]:
+            - generic [ref=e747]: Automation
+            - generic [ref=e748]: 1 year of manual
+            - generic [ref=e749]: 6 weeks
+          - paragraph [ref=e750]: «Pick one stack, write 10 solid tests, then reports and CI. I chose Playwright + JavaScript — and it all clicked.»
+          - generic [ref=e751]:
+            - generic [ref=e752]: "✓ Result:"
+            - generic [ref=e753]: Moved into a hybrid QA role and got a promotion.
+        - generic [ref=e754]:
+          - generic [ref=e755]:
+            - generic [ref=e756]: K
+            - generic [ref=e757]:
+              - generic [ref=e758]: Katya, 41
+              - generic [ref=e759]: "\"too late for me in tech\" (spoiler: no)"
+          - generic [ref=e760]:
+            - generic [ref=e761]: Career switch
+            - generic [ref=e762]: Confidence at zero
+            - generic [ref=e763]: 14 weeks
+          - paragraph [ref=e764]: «The plan spoke to me as a grown-up professional. I leaned on attention to detail, calm and consistency.»
+          - generic [ref=e765]:
+            - generic [ref=e766]: "✓ Result:"
+            - generic [ref=e767]: 1st interview → 2nd → offer. I cried in the car.
+        - generic [ref=e768]:
+          - generic [ref=e769]:
+            - generic [ref=e770]: "N"
+            - generic [ref=e771]:
+              - generic [ref=e772]: Nina, 22
+              - generic [ref=e773]: student, chose Automation
+          - generic [ref=e774]:
+            - generic [ref=e775]: Automation
+            - generic [ref=e776]: Basic JS
+            - generic [ref=e777]: 10 weeks
+          - paragraph [ref=e778]: «The plan told me not to drop manual skills — that's the key. First test cases, then automation, then API and a simple CI.»
+          - generic [ref=e779]:
+            - generic [ref=e780]: "✓ Result:"
+            - generic [ref=e781]: Quickly made the shortlist thanks to my repo and screenshots.
+        - generic [ref=e782]:
+          - generic [ref=e783]:
+            - generic [ref=e784]: E
+            - generic [ref=e785]:
+              - generic [ref=e786]: Elena, 30
+              - generic [ref=e787]: relocating, needed a remote role
+          - generic [ref=e788]:
+            - generic [ref=e789]: Career switch
+            - generic [ref=e790]: High stress
+            - generic [ref=e791]: 11 weeks
+          - paragraph [ref=e792]: "«Week by week: learn → practice → apply. I built one portfolio project as documentation — test plan, cases, bugs, summary.»"
+          - generic [ref=e793]:
+            - generic [ref=e794]: "✓ Result:"
+            - generic [ref=e795]: A remote QA role — and I finally got a proper night of sleep.
+        - generic [ref=e796]:
+          - generic [ref=e797]:
+            - generic [ref=e798]: I
+            - generic [ref=e799]:
+              - generic [ref=e800]: Ira, 33
+              - generic [ref=e801]: studied a little, but steadily
+          - generic [ref=e802]:
+            - generic [ref=e803]: Career switch
+            - generic [ref=e804]: 5 hrs/week
+            - generic [ref=e805]: 16 weeks
+          - paragraph [ref=e806]: "«Every week I \"shipped\" something: a checklist, a set of tests, bug reports, a Postman collection. It turned into confidence.»"
+          - generic [ref=e807]:
+            - generic [ref=e808]: "✓ Result:"
+            - generic [ref=e809]: First offer after 4 interviews — and it was worth it.
+        - generic [ref=e810]:
+          - generic [ref=e811]:
+            - generic [ref=e812]: "Y"
+            - generic [ref=e813]:
+              - generic [ref=e814]: Yulia, 17
+              - generic [ref=e815]: first QA projects while still in school
+          - generic [ref=e816]:
+            - generic [ref=e817]: Students
+            - generic [ref=e818]: Curiosity
+            - generic [ref=e819]: 5 weeks
+          - paragraph [ref=e820]: "«The plan gave me mini-projects: test an app, write 15 test cases, file 5 bugs and run a regression.»"
+          - generic [ref=e821]:
+            - generic [ref=e822]: "✓ Result:"
+            - generic [ref=e823]: Built my first portfolio before graduating.
+        - generic [ref=e824]:
+          - generic [ref=e825]:
+            - generic [ref=e826]: J
+            - generic [ref=e827]:
+              - generic [ref=e828]: Jake, 26
+              - generic [ref=e829]: from a warehouse to QA
+          - generic [ref=e830]:
+            - generic [ref=e831]: Career switch
+            - generic [ref=e832]: "\"I needed a clear plan\""
+            - generic [ref=e833]: 12 weeks
+          - paragraph [ref=e834]: «Bug report → test cases → basic API checks. Every day I practiced on one product and built a folder of evidence.»
+          - generic [ref=e835]:
+            - generic [ref=e836]: "✓ Result:"
+            - generic [ref=e837]: A junior role after building a solid portfolio.
+        - generic [ref=e838]:
+          - generic [ref=e839]:
+            - generic [ref=e840]: R
+            - generic [ref=e841]:
+              - generic [ref=e842]: Ryan, 31
+              - generic [ref=e843]: manual QA → automation
+          - generic [ref=e844]:
+            - generic [ref=e845]: Automation
+            - generic [ref=e846]: 2 years of manual
+            - generic [ref=e847]: 7 weeks
+          - paragraph [ref=e848]: "«The plan made me commit to one stack: Playwright + TypeScript. I could explain why I automate the critical path first.»"
+          - generic [ref=e849]:
+            - generic [ref=e850]: "✓ Result:"
+            - generic [ref=e851]: Moved onto an SDET track and landed a stronger offer.
+        - generic [ref=e852]:
+          - generic [ref=e853]:
+            - generic [ref=e854]: T
+            - generic [ref=e855]:
+              - generic [ref=e856]: Tim, 20
+              - generic [ref=e857]: student, first internship
+          - generic [ref=e858]:
+            - generic [ref=e859]: Students
+            - generic [ref=e860]: Afraid of interviews
+            - generic [ref=e861]: 9 weeks
+          - paragraph [ref=e862]: «30 minutes of practice, 30 minutes on the portfolio, 20 minutes applying. Confidence came from real artifacts.»
+          - generic [ref=e863]:
+            - generic [ref=e864]: "✓ Result:"
+            - generic [ref=e865]: Internship offer + an extension.
+        - generic [ref=e866]:
+          - generic [ref=e867]:
+            - generic [ref=e868]: O
+            - generic [ref=e869]:
+              - generic [ref=e870]: Omar, 28
+              - generic [ref=e871]: from delivery driving to QA
+          - generic [ref=e872]:
+            - generic [ref=e873]: Career switch
+            - generic [ref=e874]: 8–10 hrs/week
+            - generic [ref=e875]: 13 weeks
+          - paragraph [ref=e876]: "«The plan showed me I could start with a QA mindset. I built a portfolio project: a test plan, scenarios, a regression checklist.»"
+          - generic [ref=e877]:
+            - generic [ref=e878]: "✓ Result:"
+            - generic [ref=e879]: Steady interview invites after updating my profile.
+        - generic [ref=e880]:
+          - generic [ref=e881]:
+            - generic [ref=e882]: P
+            - generic [ref=e883]:
+              - generic [ref=e884]: Priya, 34
+              - generic [ref=e885]: analyst, moved into QA fast
+          - generic [ref=e886]:
+            - generic [ref=e887]: Career switch
+            - generic [ref=e888]: Strong structure
+            - generic [ref=e889]: 6 weeks
+          - paragraph [ref=e890]: «I produced clean test documentation and added API checks in Postman. In interviews I talked about risks and coverage.»
+          - generic [ref=e891]:
+            - generic [ref=e892]: "✓ Result:"
+            - generic [ref=e893]: A QA Analyst offer at a fintech product.
+        - generic [ref=e894]:
+          - generic [ref=e895]:
+            - generic [ref=e896]: B
+            - generic [ref=e897]:
+              - generic [ref=e898]: Ben, 38
+              - generic [ref=e899]: dad, studying in the evenings
+          - generic [ref=e900]:
+            - generic [ref=e901]: Parents
+            - generic [ref=e902]: 5–7 hrs/week
+            - generic [ref=e903]: 15 weeks
+          - paragraph [ref=e904]: "«The plan split everything into a \"weekly deliverable\": a batch of bug reports, a set of test cases, API checks. That way I saw progress and didn't quit.»"
+          - generic [ref=e905]:
+            - generic [ref=e906]: "✓ Result:"
+            - generic [ref=e907]: An offer through a referral — someone saw my portfolio.
+        - generic [ref=e908]:
+          - generic [ref=e909]:
+            - generic [ref=e910]: C
+            - generic [ref=e911]:
+              - generic [ref=e912]: Chen, 25
+              - generic [ref=e913]: focused on automation from day one
+          - generic [ref=e914]:
+            - generic [ref=e915]: Automation
+            - generic [ref=e916]: Basic Python
+            - generic [ref=e917]: 10 weeks
+          - paragraph [ref=e918]: «First test design, then automating the stable flows. When tests failed, I understood the product behavior.»
+          - generic [ref=e919]:
+            - generic [ref=e920]: "✓ Result:"
+            - generic [ref=e921]: Quick shortlists for QA Automation roles.
+        - generic [ref=e922]:
+          - generic [ref=e923]:
+            - generic [ref=e924]: G
+            - generic [ref=e925]:
+              - generic [ref=e926]: Grace, 23
+              - generic [ref=e927]: "\"I'm shy, interviews aren't for me\""
+          - generic [ref=e928]:
+            - generic [ref=e929]: Career switch
+            - generic [ref=e930]: Anxiety
+            - generic [ref=e931]: 11 weeks
+          - paragraph [ref=e932]: «The plan had "scripts" — how to talk about my project, bugs and decisions. I didn't become an extrovert — I became prepared.»
+          - generic [ref=e933]:
+            - generic [ref=e934]: "✓ Result:"
+            - generic [ref=e935]: Passed the tech screen and surprised myself.
+        - generic [ref=e936]:
+          - generic [ref=e937]:
+            - generic [ref=e938]: V
+            - generic [ref=e939]:
+              - generic [ref=e940]: Victor, 21
+              - generic [ref=e941]: "\"gamer\" brain → QA mindset"
+          - generic [ref=e942]:
+            - generic [ref=e943]: Students
+            - generic [ref=e944]: Curiosity
+            - generic [ref=e945]: 8 weeks
+          - paragraph [ref=e946]: «The plan taught me to file bugs professionally and think in terms of risk and coverage. My "I find bugs" became a valuable skill.»
+          - generic [ref=e947]:
+            - generic [ref=e948]: "✓ Result:"
+            - generic [ref=e949]: A junior role on a small team with a mentor.
+        - generic [ref=e950]:
+          - generic [ref=e951]:
+            - generic [ref=e952]: H
+            - generic [ref=e953]:
+              - generic [ref=e954]: Hanna, 37
+              - generic [ref=e955]: a restart after burnout
+          - generic [ref=e956]:
+            - generic [ref=e957]: Career switch
+            - generic [ref=e958]: Needed a calm plan
+            - generic [ref=e959]: 12 weeks
+          - paragraph [ref=e960]: "«The plan was gentle but steady: learn, practice, and add one small result to the portfolio every week.»"
+          - generic [ref=e961]:
+            - generic [ref=e962]: "✓ Result:"
+            - generic [ref=e963]: A remote QA role with a sane pace and healthy boundaries.
+      - generic [ref=e964]:
+        - paragraph [ref=e965]: Want the next story to be yours?
+        - link "Start your journey" [ref=e966] [cursor=pointer]:
+          - /url: "#contact"
+    - generic [ref=e968]:
+      - generic [ref=e969]:
+        - text: FAQ
+        - heading "Questions & answers" [level=2] [ref=e970]
+      - generic [ref=e971]:
+        - button "Will AI replace testers? Does it still make sense to go into QA? +" [ref=e973] [cursor=pointer]:
+          - generic [ref=e974]: Will AI replace testers? Does it still make sense to go into QA?
+          - generic [ref=e975]: +
+        - button "I know nothing about testing. Can I still take your courses? +" [ref=e977] [cursor=pointer]:
+          - generic [ref=e978]: I know nothing about testing. Can I still take your courses?
+          - generic [ref=e979]: +
+        - button "I don’t know which course to start with — how do I choose? +" [ref=e981] [cursor=pointer]:
+          - generic [ref=e982]: I don’t know which course to start with — how do I choose?
+          - generic [ref=e983]: +
+        - button "Are there any age limits for students? +" [ref=e985] [cursor=pointer]:
+          - generic [ref=e986]: Are there any age limits for students?
+          - generic [ref=e987]: +
+        - button "How many hours a week do I need to study? +" [ref=e989] [cursor=pointer]:
+          - generic [ref=e990]: How many hours a week do I need to study?
+          - generic [ref=e991]: +
+        - button "Are the lessons live or recorded? +" [ref=e993] [cursor=pointer]:
+          - generic [ref=e994]: Are the lessons live or recorded?
+          - generic [ref=e995]: +
+        - button "Can I start the training at any time? +" [ref=e997] [cursor=pointer]:
+          - generic [ref=e998]: Can I start the training at any time?
+          - generic [ref=e999]: +
+        - button "How long do I have access to the materials? What if I fall behind? +" [ref=e1001] [cursor=pointer]:
+          - generic [ref=e1002]: How long do I have access to the materials? What if I fall behind?
+          - generic [ref=e1003]: +
+        - button "How in-demand is the profession now and in the future? +" [ref=e1005] [cursor=pointer]:
+          - generic [ref=e1006]: How in-demand is the profession now and in the future?
+          - generic [ref=e1007]: +
+        - button "Can I pay for the course in installments? +" [ref=e1009] [cursor=pointer]:
+          - generic [ref=e1010]: Can I pay for the course in installments?
+          - generic [ref=e1011]: +
+        - button "Is there a trial period or refund? +" [ref=e1013] [cursor=pointer]:
+          - generic [ref=e1014]: Is there a trial period or refund?
+          - generic [ref=e1015]: +
+        - button "Do I need to buy any extra tools or software? +" [ref=e1017] [cursor=pointer]:
+          - generic [ref=e1018]: Do I need to buy any extra tools or software?
+          - generic [ref=e1019]: +
+        - button "Can I study if I live outside the US or in a different time zone? +" [ref=e1021] [cursor=pointer]:
+          - generic [ref=e1022]: Can I study if I live outside the US or in a different time zone?
+          - generic [ref=e1023]: +
+        - button "Do you assign homework? +" [ref=e1025] [cursor=pointer]:
+          - generic [ref=e1026]: Do you assign homework?
+          - generic [ref=e1027]: +
+        - button "What language is the training in? +" [ref=e1029] [cursor=pointer]:
+          - generic [ref=e1030]: What language is the training in?
+          - generic [ref=e1031]: +
+        - button "Do you issue a certificate or diploma? +" [ref=e1033] [cursor=pointer]:
+          - generic [ref=e1034]: Do you issue a certificate or diploma?
+          - generic [ref=e1035]: +
+        - button "Do you help me find a job after the courses? +" [ref=e1037] [cursor=pointer]:
+          - generic [ref=e1038]: Do you help me find a job after the courses?
+          - generic [ref=e1039]: +
+      - generic [ref=e1040]:
+        - heading "Read also" [level=3] [ref=e1041]
+        - list [ref=e1042]:
+          - listitem [ref=e1043]:
+            - link "Is it too late to become a QA tester at 35–40? →" [ref=e1044]:
+              - /url: /blog/ne-pozdno-li-v-40-stat-testirovshchikom
+          - listitem [ref=e1045]:
+            - link "How much does a QA tester really earn? →" [ref=e1046]:
+              - /url: /blog/skolko-zarabatyvaet-testirovshchik
+          - listitem [ref=e1047]:
+            - link "Can you get a QA job with no experience? →" [ref=e1048]:
+              - /url: /blog/rabota-testirovshchikom-bez-opyta
+          - listitem [ref=e1049]:
+            - link "How long does it take to become a QA tester from scratch? →" [ref=e1050]:
+              - /url: /blog/skolko-uchitsya-na-testirovshchika
+    - generic [ref=e1052]:
+      - generic [ref=e1053]:
+        - text: TEAM
+        - heading "Our team" [level=2] [ref=e1054]
+        - paragraph [ref=e1055]: Practicing testers who will guide you from your first lesson to a job offer.
+      - generic [ref=e1056]:
+        - generic [ref=e1057]:
+          - img "Valery" [ref=e1059]
+          - generic [ref=e1060]:
+            - heading "Valery" [level=3] [ref=e1061]
+            - paragraph [ref=e1062]: QA & Dev Mentor
+            - link "LinkedIn →" [ref=e1063]:
+              - /url: https://www.linkedin.com/in/val-pog/
+              - text: LinkedIn
+              - generic [ref=e1064]: →
+        - generic [ref=e1065]:
+          - img "Olya" [ref=e1067]
+          - generic [ref=e1068]:
+            - heading "Olya" [level=3] [ref=e1069]
+            - paragraph [ref=e1070]: QA Mentor
+            - link "LinkedIn →" [ref=e1071]:
+              - /url: https://www.linkedin.com/in/olgapogorila/
+              - text: LinkedIn
+              - generic [ref=e1072]: →
+    - generic [ref=e1074]:
+      - generic [ref=e1075]:
+        - text: CONTACT
+        - heading "Still have questions? Request a callback" [level=2] [ref=e1076]
+        - paragraph [ref=e1077]: We will call you back shortly and answer all your questions.
+      - generic [ref=e1079]:
+        - generic [ref=e1080]:
+          - generic [ref=e1081]:
+            - generic [ref=e1082]: Name
+            - textbox "Your name" [ref=e1083]
+          - generic [ref=e1084]:
+            - generic [ref=e1085]: Phone
+            - textbox "+1 (___) ___-____" [ref=e1086]
+        - generic [ref=e1087]:
+          - generic [ref=e1088]: Message
+          - textbox "Tell us which course you are interested in..." [ref=e1089]
+        - button "Request a callback" [ref=e1090] [cursor=pointer]
+      - generic [ref=e1091]:
+        - link "📞 Phone (310) 920-4331" [ref=e1092]:
+          - /url: tel:+13109204331
+          - generic [ref=e1093]: 📞
+          - generic [ref=e1094]: Phone
+          - generic [ref=e1095]: (310) 920-4331
+        - link "✈️ Telegram @qastarting_bot" [ref=e1096]:
+          - /url: https://t.me/qastarting_bot
+          - generic [ref=e1097]: ✈️
+          - generic [ref=e1098]: Telegram
+          - generic [ref=e1099]: "@qastarting_bot"
+        - link "✉️ Email val@qastarting.org" [ref=e1100]:
+          - /url: mailto:val@qastarting.org
+          - generic [ref=e1101]: ✉️
+          - generic [ref=e1102]: Email
+          - generic [ref=e1103]: val@qastarting.org
+  - contentinfo [ref=e1104]:
+    - generic [ref=e1105]:
+      - generic [ref=e1106]:
+        - generic [ref=e1107]:
+          - link "QAstarting — go to the home page" [ref=e1108]:
+            - /url: /
+            - text: QAstarting
+          - paragraph [ref=e1109]: Online software testing courses. We make your path into IT simple and successful.
+        - generic [ref=e1110]:
+          - heading "Learning" [level=4] [ref=e1111]
+          - list [ref=e1112]:
+            - listitem [ref=e1113]:
+              - link "Courses" [ref=e1114]:
+                - /url: /#courses
+            - listitem [ref=e1115]:
+              - link "Pricing" [ref=e1116]:
+                - /url: /#pricing
+            - listitem [ref=e1117]:
+              - link "Free lessons" [ref=e1118]:
+                - /url: /#free
+            - listitem [ref=e1119]:
+              - link "Career services" [ref=e1120]:
+                - /url: /career-services
+            - listitem [ref=e1121]:
+              - link "IT English — 5 minutes a day" [ref=e1122]:
+                - /url: /it-english
+        - generic [ref=e1123]:
+          - heading "Information" [level=4] [ref=e1124]
+          - list [ref=e1125]:
+            - listitem [ref=e1126]:
+              - link "Success stories" [ref=e1127]:
+                - /url: /#stories
+            - listitem [ref=e1128]:
+              - link "FAQ" [ref=e1129]:
+                - /url: /#faq
+            - listitem [ref=e1130]:
+              - link "Our team" [ref=e1131]:
+                - /url: /#team
+            - listitem [ref=e1132]:
+              - link "Contact" [ref=e1133]:
+                - /url: /#contact
+        - generic [ref=e1134]:
+          - heading "Get in touch" [level=4] [ref=e1135]
+          - list [ref=e1136]:
+            - listitem [ref=e1137]:
+              - link "(310) 920-4331" [ref=e1138]:
+                - /url: tel:+13109204331
+            - listitem [ref=e1139]:
+              - 'link "Telegram: @qastarting_bot" [ref=e1140]':
+                - /url: https://t.me/qastarting_bot
+            - listitem [ref=e1141]:
+              - link "val@qastarting.org" [ref=e1142]:
+                - /url: mailto:val@qastarting.org
+      - generic [ref=e1143]:
+        - paragraph [ref=e1144]: © 2026 QAstarting. All rights reserved.
+        - paragraph [ref=e1145]: Start your IT career as a QA engineer
+```

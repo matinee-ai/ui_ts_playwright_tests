@@ -1,0 +1,40 @@
+{
+  "page": "https://www.qastarting.org/checkout",
+  "links": [
+    {
+      "index": 13,
+      "name": "← Back home",
+      "href": "/",
+      "url": "https://www.qastarting.org/",
+      "kind": "internal",
+      "target": null,
+      "rel": "",
+      "area": "main",
+      "visible": true,
+      "offscreen": false,
+      "isButton": false,
+      "anchorMissing": false
+    },
+    {
+      "index": 14,
+      "name": "Try the 3 free lessons first",
+      "href": "/#free",
+      "url": "https://www.qastarting.org/",
+      "kind": "internal",
+      "target": null,
+      "rel": "",
+      "area": "main",
+      "visible": true,
+      "offscreen": false,
+      "isButton": false,
+      "anchorMissing": false
+    }
+  ],
+  "unnamed": [],
+  "dead": [],
+  "notClickable": [],
+  "broken": [],
+  "unsafeBlank": [],
+  "malformedContact": [],
+  "missingAnchors": []
+}

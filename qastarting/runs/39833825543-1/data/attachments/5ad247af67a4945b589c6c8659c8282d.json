@@ -1,0 +1,69 @@
+{
+  "page": "https://www.qastarting.org/courses/qa-advance",
+  "links": [
+    {
+      "index": 13,
+      "name": "← Back to all courses",
+      "href": "/#courses",
+      "url": "https://www.qastarting.org/",
+      "kind": "internal",
+      "target": null,
+      "rel": "",
+      "area": "main",
+      "visible": true,
+      "offscreen": false,
+      "isButton": false,
+      "anchorMissing": false
+    },
+    {
+      "index": 14,
+      "name": "Enroll in this course",
+      "href": "/checkout?course=qa-advance",
+      "url": "https://www.qastarting.org/checkout?course=qa-advance",
+      "kind": "internal",
+      "target": null,
+      "rel": "",
+      "area": "main",
+      "visible": true,
+      "offscreen": false,
+      "isButton": false,
+      "anchorMissing": false
+    },
+    {
+      "index": 15,
+      "name": "3 free lessons",
+      "href": "#free",
+      "url": "",
+      "kind": "fragment",
+      "target": null,
+      "rel": "",
+      "area": "main",
+      "visible": true,
+      "offscreen": false,
+      "isButton": false,
+      "anchorMissing": true
+    }
+  ],
+  "unnamed": [],
+  "dead": [],
+  "notClickable": [],
+  "broken": [],
+  "unsafeBlank": [],
+  "malformedContact": [],
+  "missingAnchors": [
+    {
+      "index": 15,
+      "name": "3 free lessons",
+      "href": "#free",
+      "url": "",
+      "kind": "fragment",
+      "target": null,
+      "rel": "",
+      "area": "main",
+      "visible": true,
+      "offscreen": false,
+      "isButton": false,
+      "anchorMissing": true
+    }
+  ]
+}

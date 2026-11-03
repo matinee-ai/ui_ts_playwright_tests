@@ -1,0 +1,56 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#main"
+  - alert [ref=e3]
+  - generic [ref=e4]:
+    - banner [ref=e5]:
+      - generic [ref=e6]:
+        - link "Chessorro" [ref=e7] [cursor=pointer]:
+          - /url: /en
+          - text: Chessorro
+        - generic [ref=e9]:
+          - navigation "Main" [ref=e10]:
+            - link "Play now" [ref=e11] [cursor=pointer]:
+              - /url: /en/play/chess
+            - link "History" [ref=e12] [cursor=pointer]:
+              - /url: /en/history
+            - link "Ratings" [ref=e13] [cursor=pointer]:
+              - /url: /en/ratings
+            - link "Sign in" [ref=e14] [cursor=pointer]:
+              - /url: /en/login
+            - link "Start a game" [ref=e15] [cursor=pointer]:
+              - /url: /en/signup
+          - button "Choose a language" [ref=e17]:
+            - img [ref=e18]
+            - generic [ref=e21]: EN
+          - button "Switch to dark theme" [ref=e22]:
+            - img [ref=e23]
+    - main [ref=e25]:
+      - generic [ref=e26]:
+        - paragraph [ref=e27]: "404"
+        - heading "Page not found" [level=1] [ref=e28]
+        - paragraph [ref=e29]: The page you are looking for does not exist or has moved.
+        - generic [ref=e30]:
+          - link "Back to home" [ref=e31] [cursor=pointer]:
+            - /url: /en
+          - link "Play vs computer" [ref=e32] [cursor=pointer]:
+            - /url: /en/play/chess
+    - contentinfo [ref=e33]:
+      - generic [ref=e34]:
+        - paragraph [ref=e35]: © 2026 Chessorro
+        - paragraph [ref=e36]: MOVE Points are a free in-app reward with no cash value. They cannot be purchased, transferred, or exchanged.
+        - navigation "More" [ref=e37]:
+          - link "Contact" [ref=e38] [cursor=pointer]:
+            - /url: /en/contact
+          - link "History" [ref=e39] [cursor=pointer]:
+            - /url: /en/history
+          - link "Ratings" [ref=e40] [cursor=pointer]:
+            - /url: /en/ratings
+          - link "Terms" [ref=e41] [cursor=pointer]:
+            - /url: /en/terms
+          - link "Privacy" [ref=e42] [cursor=pointer]:
+            - /url: /en/privacy
+```

@@ -1,0 +1,54 @@
+{
+  "page": "https://www.chessorro.com/en/privacy",
+  "links": [
+    {
+      "index": 0,
+      "name": "Skip to content",
+      "href": "#main",
+      "url": "",
+      "kind": "fragment",
+      "target": null,
+      "rel": "",
+      "area": "main",
+      "visible": true,
+      "offscreen": true,
+      "isButton": false,
+      "anchorMissing": false
+    },
+    {
+      "index": 7,
+      "name": "support@chessorro.com",
+      "href": "mailto:support@chessorro.com?subject=Delete%20my%20account",
+      "url": "",
+      "kind": "mailto",
+      "target": null,
+      "rel": "",
+      "area": "main",
+      "visible": true,
+      "offscreen": false,
+      "isButton": false,
+      "anchorMissing": false
+    },
+    {
+      "index": 8,
+      "name": "contact",
+      "href": "/en/contact",
+      "url": "https://www.chessorro.com/en/contact",
+      "kind": "internal",
+      "target": null,
+      "rel": "",
+      "area": "main",
+      "visible": true,
+      "offscreen": false,
+      "isButton": false,
+      "anchorMissing": false
+    }
+  ],
+  "unnamed": [],
+  "dead": [],
+  "notClickable": [],
+  "broken": [],
+  "unsafeBlank": [],
+  "malformedContact": [],
+  "missingAnchors": []
+}

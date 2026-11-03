@@ -1,0 +1,5 @@
+{
+  "method": "POST",
+  "url": "https://www.qastarting.org/api/send-free-lessons-email",
+  "body": "{\"name\":\"Playwright pwqamvmznzkg5219\",\"email\":\"pwqamvmznzkg5219@example.com\",\"lang\":\"en\"}\n{\"name\":\"Playwright pwqamvmznzkg5219\",\"email\":\"pwqamvmznzkg5219@example.com\",\"lang\":\"en\"}\nhttps://www.qastarting.org/api/send-free-lessons-email"
+}

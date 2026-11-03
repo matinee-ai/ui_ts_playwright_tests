@@ -1,0 +1,26 @@
+{
+  "page": "https://www.chessorro.com/en/ratings",
+  "links": [
+    {
+      "index": 0,
+      "name": "Skip to content",
+      "href": "#main",
+      "url": "",
+      "kind": "fragment",
+      "target": null,
+      "rel": "",
+      "area": "main",
+      "visible": true,
+      "offscreen": true,
+      "isButton": false,
+      "anchorMissing": false
+    }
+  ],
+  "unnamed": [],
+  "dead": [],
+  "notClickable": [],
+  "broken": [],
+  "unsafeBlank": [],
+  "malformedContact": [],
+  "missingAnchors": []
+}

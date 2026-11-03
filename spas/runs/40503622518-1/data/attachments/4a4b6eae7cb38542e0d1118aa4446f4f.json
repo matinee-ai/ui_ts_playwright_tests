@@ -1,0 +1,26 @@
+{
+  "page": "https://www.spas.life/about",
+  "links": [
+    {
+      "index": 33,
+      "name": "Сделать первый шаг",
+      "href": "/booking",
+      "url": "https://www.spas.life/booking",
+      "kind": "internal",
+      "target": null,
+      "rel": "",
+      "area": "main",
+      "visible": true,
+      "offscreen": false,
+      "isButton": false,
+      "anchorMissing": false
+    }
+  ],
+  "unnamed": [],
+  "dead": [],
+  "notClickable": [],
+  "broken": [],
+  "unsafeBlank": [],
+  "malformedContact": [],
+  "missingAnchors": []
+}

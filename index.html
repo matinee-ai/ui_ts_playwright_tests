@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily E2E Reports</title>
+  <style>
+    :root {
+      --bg: #f6f7f9; --card: #ffffff; --text: #1d2330; --muted: #626b7a; --line: #e3e6eb;
+      --pass: #1f9d55; --fail: #d64545; --broken: #d98a1c; --skip: #9aa3af; --link: #2f5bd3;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg: #12151b; --card: #1b1f27; --text: #e7eaf0; --muted: #9aa3b2; --line: #2b313c;
+        --pass: #3fbf75; --fail: #ef6b6b; --broken: #e9a547; --skip: #6b7482; --link: #8aa8ff;
+      }
+    }
+    :root[data-theme="dark"] {
+      --bg: #12151b; --card: #1b1f27; --text: #e7eaf0; --muted: #9aa3b2; --line: #2b313c;
+      --pass: #3fbf75; --fail: #ef6b6b; --broken: #e9a547; --skip: #6b7482; --link: #8aa8ff;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--text); font: 15px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; }
+    main { max-width: 1100px; margin: 0 auto; padding: 32px 16px 48px; }
+    h1 { font-size: 24px; margin: 0 0 4px; }
+    .sub { color: var(--muted); margin: 0 0 24px; }
+    .grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); }
+    .card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 18px; display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+    .head { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
+    .name { font-weight: 600; font-size: 17px; }
+    .site { color: var(--muted); font-size: 13px; word-break: break-all; }
+    .pill { font-size: 12px; font-weight: 600; padding: 2px 10px; border-radius: 999px; color: #fff; white-space: nowrap; }
+    .pill.passed { background: var(--pass); } .pill.failed { background: var(--fail); } .pill.broken { background: var(--broken); } .pill.none { background: var(--skip); }
+    .bar { display: flex; height: 8px; border-radius: 4px; overflow: hidden; background: var(--line); }
+    .bar span { display: block; height: 100%; }
+    .counts { display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: 13px; color: var(--muted); }
+    .counts b { color: var(--text); font-weight: 600; }
+    a { color: var(--link); text-decoration: none; } a:hover { text-decoration: underline; }
+    .open { align-self: flex-start; font-weight: 600; }
+    .runs { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
+    .runs li { display: flex; align-items: center; gap: 8px; padding: 6px 0; border-bottom: 1px solid var(--line); font-size: 13px; }
+    .dot { width: 8px; height: 8px; border-radius: 50%; flex: none; }
+    .runs .when { flex: 1; min-width: 0; }
+    .runs .score { color: var(--muted); font-variant-numeric: tabular-nums; }
+    .empty { color: var(--muted); font-size: 14px; }
+    footer { margin-top: 28px; color: var(--muted); font-size: 13px; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Daily E2E reports</h1>
+    <p class="sub">Allure reports from the scheduled UI and API runs. Each project runs once a day at a different time.</p>
+    <div class="grid" id="grid"><p class="empty">Loading…</p></div>
+    <footer id="footer"></footer>
+  </main>
+  <script>
+    const SLOTS = {
+      chessorro: { name: 'Chessorro', site: 'https://www.chessorro.com/en' },
+      qastarting: { name: 'QA Starting', site: 'https://www.qastarting.org' },
+      spas: { name: 'Spas Life', site: 'https://www.spas.life' },
+      'self-test': { name: 'Framework self-tests', site: 'Runs on every push' },
+    };
+    const COLORS = { passed: 'var(--pass)', failed: 'var(--fail)', broken: 'var(--broken)', skipped: 'var(--skip)' };
+    const fmt = new Intl.DateTimeFormat(undefined, { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' });
+
+    const ago = (ms) => {
+      const m = Math.round((Date.now() - ms) / 60000);
+      if (m < 60) return `${m} min ago`;
+      const h = Math.round(m / 60);
+      return h < 48 ? `${h} h ago` : `${Math.round(h / 24)} days ago`;
+    };
+    const outcome = (s = {}) => (s.failed ? 'failed' : s.broken ? 'broken' : 'passed');
+    const el = (tag, attrs = {}, ...children) => {
+      const node = document.createElement(tag);
+      Object.entries(attrs).forEach(([k, v]) => (k === 'style' ? (node.style.cssText = v) : node.setAttribute(k, v)));
+      children.flat().forEach((c) => node.append(c));
+      return node;
+    };
+
+    function card(slot, data) {
+      const meta = SLOTS[slot] ?? { name: slot, site: '' };
+      const runs = data?.runs ?? [];
+      const last = runs[0];
+      const head = el('div', { class: 'head' },
+        el('div', {}, el('div', { class: 'name' }, meta.name), el('div', { class: 'site' }, meta.site)),
+        el('span', { class: `pill ${last ? outcome(last.stats) : 'none'}` }, last ? outcome(last.stats) : 'no runs yet'));
+      if (!last) return el('section', { class: 'card' }, head, el('p', { class: 'empty' }, 'The first report appears after this project\'s next scheduled run.'));
+
+      const s = last.stats;
+      const bar = el('div', { class: 'bar', title: 'passed / failed / broken / skipped' },
+        ['passed', 'failed', 'broken', 'skipped'].filter((k) => s[k]).map((k) =>
+          el('span', { style: `width:${(100 * s[k]) / s.total}%;background:${COLORS[k]}` })));
+      const counts = el('div', { class: 'counts' },
+        el('span', {}, el('b', {}, String(s.total)), ' tests'),
+        ...['passed', 'failed', 'broken', 'skipped', 'flaky'].filter((k) => s[k]).map((k) => el('span', {}, el('b', {}, String(s[k])), ` ${k}`)),
+        el('span', {}, `${fmt.format(last.createdAt)} (${ago(last.createdAt)})`));
+      const list = el('ul', { class: 'runs' }, runs.slice(0, 10).map((run) =>
+        el('li', {},
+          el('span', { class: 'dot', style: `background:${COLORS[outcome(run.stats)]}` }),
+          el('a', { class: 'when', href: run.path }, fmt.format(run.createdAt)),
+          el('span', { class: 'score' }, `${run.stats.passed ?? 0}/${run.stats.total} passed`))));
+      return el('section', { class: 'card' }, head, bar, counts,
+        el('a', { class: 'open', href: data.latest }, 'Open latest report →'), list);
+    }
+
+    fetch('reports.json', { cache: 'no-store' })
+      .then((r) => (r.ok ? r.json() : { slots: {} }))
+      .catch(() => ({ slots: {} }))
+      .then(({ slots = {}, generatedAt }) => {
+        const order = [...Object.keys(SLOTS), ...Object.keys(slots).filter((k) => !SLOTS[k])];
+        document.getElementById('grid').replaceChildren(...order.map((slot) => card(slot, slots[slot])));
+        if (generatedAt) document.getElementById('footer').textContent = `Updated ${fmt.format(generatedAt)}`;
+      });
+  </script>
+</body>
+</html>
